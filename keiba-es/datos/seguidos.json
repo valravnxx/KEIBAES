@@ -1,0 +1,10 @@
+{
+  "_": "Tus caballos. Edítalo aquí (también desde el móvil, en github.com) y el pipeline los prioriza: sus noticias van arriba y su ficha se rellena antes que las demás. La estrella de la app es solo para este dispositivo; esta lista es la que va contigo a todas partes.",
+  "caballos": [
+    "Meisho Tabaru",
+    "Juryoku Pierrot"
+  ],
+  "jockeys": [
+    "Yutaka Take"
+  ]
+}
