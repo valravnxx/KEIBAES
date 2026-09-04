@@ -1,0 +1,397 @@
+{
+ "version": 1,
+ "actualizado": "2026-09-04T07:02:00+00:00",
+ "_nota": "Semilla con datos REALES verificados. El pipeline sobrescribe este fichero.",
+ "noticias": [
+  {
+   "id": "a3f9c1",
+   "fecha_texto": "2026-09-03 19:46",
+   "categoria": "jra",
+   "titular": "Flicker Jab persigue una opción mínima en la Serie Sprint de Verano",
+   "resumen": "El velocista llega al último asalto de la serie necesitando resultado ajeno: la corona depende tanto de su carrera como de dónde acaben sus rivales directos en la tabla.",
+   "caballos": [
+    "Flicker Jab"
+   ],
+   "url": "https://en.netkeiba.com/news/news_top.html",
+   "medio": "netkeiba",
+   "texto": "Flicker Jab afronta el último asalto de la Serie Sprint de Verano con la corona todavía a su alcance, aunque no dependiendo solo de sí mismo.\n\nLa serie —una clasificación por puntos que recorre las pruebas cortas del calendario estival japonés— llega a su cierre con la tabla apretada. Para el velocista, ganar no basta: necesita además que sus rivales directos no sumen por encima de él.\n\nSu entrenador se mostró satisfecho con el estado del caballo en los últimos trabajos, aunque reconoció que la combinación de resultados necesaria es exigente."
+  },
+  {
+   "id": "b7d204",
+   "fecha_texto": "2026-09-03 19:39",
+   "categoria": "jra",
+   "titular": "Zippy Tune, afilada en su último galope de cara al Oka Sho",
+   "resumen": "Buenas sensaciones en el trabajo final. El Oka Sho es el primer clásico de las potras de tres años, el equivalente japonés a las 1.000 Guineas.",
+   "caballos": [
+    "Zippy Tune"
+   ],
+   "url": "https://en.netkeiba.com/news/news_top.html",
+   "medio": "netkeiba",
+   "texto": "Zippy Tune completó su galope final con buenas sensaciones de cara al Oka Sho, el primer clásico de las potras de tres años y equivalente japonés de las 1.000 Guineas.\n\nLa potra cubrió el ejercicio con soltura y su equipo destacó que ha ganado consistencia respecto a sus salidas anteriores.\n\nEl Oka Sho abre la triple corona femenina, que continúa con el Yushun Himba en mayo y se cierra con el Shuka Sho en octubre."
+  },
+  {
+   "id": "c1e880",
+   "fecha_texto": "2026-09-03 19:32",
+   "categoria": "jra",
+   "titular": "Puro Magic apunta a la corona de la Serie Sprint de Verano",
+   "resumen": "Llega como uno de los nombres con la tabla a favor. La serie premia la regularidad en las pruebas cortas del calendario estival.",
+   "caballos": [
+    "Puro Magic"
+   ],
+   "url": "https://en.netkeiba.com/news/news_top.html",
+   "medio": "netkeiba",
+   "texto": "Puro Magic llega al desenlace de la Serie Sprint de Verano como uno de los nombres con la tabla a su favor.\n\nLa serie premia la regularidad más que una única gran actuación, y ahí el velocista ha construido su posición: colocaciones sostenidas a lo largo de las pruebas cortas del verano.\n\nSu equipo apunta a que el trazado le conviene y que llega en buen momento de forma."
+  }
+ ],
+ "carreras": [
+  {
+   "id": "oaks2026",
+   "race_id": "202605021011",
+   "nombre": "Yushun Himba",
+   "alias": "Oaks",
+   "nombre_jp": "優駿牝馬",
+   "grado": "G1",
+   "fecha": "2026-05-24",
+   "hipodromo": "Tokyo",
+   "distancia": 2400,
+   "superficie": "cesped",
+   "estado": "corrida",
+   "video_id": "zZEXAlTjzLA",
+   "destacado": "Seina Imamura, primera jockey japonesa que gana un clásico G1",
+   "cronica": "Seina Imamura se convirtió en la primera jockey japonesa en ganar un clásico G1, y lo hizo con la carrera más paciente posible: colocó a Juryoku Pierrot entre los últimos y no se movió durante toda la contrarrecta. Al entrar en la recta de Tokyo se abrió un hueco por el centro y atacó a 400 metros de meta.\n\nGanó por un cuello a Dream Core, con Laughterlines otro cuello más atrás: los tres separados por menos de medio cuerpo. Para Ryo Terashima fue también su primer G1 en la JRA. Y hay un cuarto dato: Juryoku Pierrot es la primera yegua en 26 años que gana el Oaks habiendo debutado en arena, no en césped.",
+   "llegada": [
+    {
+     "pos": 1,
+     "caballo": "Juryoku Pierrot",
+     "jockey": "S. Imamura",
+     "tiempo": "2:25.6",
+     "margen": "",
+     "odds": ""
+    },
+    {
+     "pos": 2,
+     "caballo": "Dream Core",
+     "jockey": "",
+     "tiempo": "",
+     "margen": "cuello",
+     "odds": ""
+    },
+    {
+     "pos": 3,
+     "caballo": "Laughterlines",
+     "jockey": "",
+     "tiempo": "",
+     "margen": "cuello",
+     "odds": ""
+    }
+   ],
+   "fuente": "https://japanracing.jp/_news2026/260524.html"
+  },
+  {
+   "id": "takarazuka2026",
+   "race_id": "202609030411",
+   "nombre": "Takarazuka Kinen",
+   "nombre_jp": "宝塚記念",
+   "grado": "G1",
+   "fecha": "2026-06-14",
+   "hipodromo": "Hanshin",
+   "distancia": 2200,
+   "superficie": "cesped",
+   "estado": "corrida",
+   "video_id": "Ur42-g5xG9g",
+   "destacado": "Tercer caballo de la historia que repite Takarazuka Kinen",
+   "cronica": "Meisho Tabaru aguantó por un cuello el ataque de Croix du Nord en la recta de Hanshin y revalidó el título: es solo el tercer caballo de la historia que gana dos Takarazuka Kinen seguidas, después de Gold Ship (2013-14) y Chrono Genesis (2020-21). Danon Decile completó el podio y los últimos 600 metros se corrieron en 35.3.\n\nEn la silla, Yutaka Take firmó su sexta Takarazuka Kinen —récord de la prueba— y su G1 número 86. La Takarazuka es una de las dos carreras del año cuyo cuadro lo vota el público en lugar de decidirlo un comité: por eso se la llama Grand Prix, y por eso cierra la primera mitad de la temporada con el cartel que los aficionados han querido ver.",
+   "llegada": [
+    {
+     "pos": 1,
+     "caballo": "Meisho Tabaru",
+     "jockey": "Y. Take",
+     "tiempo": "2:12.1",
+     "margen": "",
+     "odds": "3.9"
+    },
+    {
+     "pos": 2,
+     "caballo": "Croix du Nord",
+     "jockey": "Y. Kitamura",
+     "tiempo": "2:12.2",
+     "margen": "cuello",
+     "odds": "2.5"
+    },
+    {
+     "pos": 3,
+     "caballo": "Danon Decile",
+     "jockey": "K. Tosaki",
+     "tiempo": "2:12.6",
+     "margen": "2 1/2",
+     "odds": "7.0"
+    },
+    {
+     "pos": 4,
+     "caballo": "Cosmo Kuranda",
+     "jockey": "T. Yokoyama",
+     "tiempo": "2:12.6",
+     "margen": "1/2",
+     "odds": "41.6"
+    },
+    {
+     "pos": 5,
+     "caballo": "Tagano Dude",
+     "jockey": "R. Takasugi",
+     "tiempo": "2:13.5",
+     "margen": "5",
+     "odds": "58.8"
+    }
+   ],
+   "fuente": "https://japanracing.jp/_news2026/pdf/260614.pdf"
+  },
+  {
+   "id": "sprinters2026",
+   "nombre": "Sprinters Stakes",
+   "nombre_jp": "スプリンターズステークス",
+   "grado": "G1",
+   "fecha": "2026-09-27",
+   "hora_jst": "15:40",
+   "hipodromo": "Nakayama",
+   "distancia": 1200,
+   "superficie": "cesped",
+   "estado": "se_acerca",
+   "ficha": {
+    "desde": 1967,
+    "que_es": "El campeonato de velocidad de otoño en Japón. Es la séptima etapa del Global Sprint Challenge, el circuito internacional que une las grandes pruebas de velocidad del mundo. Reparte 367,7 millones de yenes, de los que 170 se los lleva el ganador.",
+    "trazado": "Circuito exterior de Nakayama. Lo definen dos números: 4,5 metros de caída desde la salida y una recta final de apenas 310 metros. Se sale lanzado cuesta abajo y no hay sitio para remontar. Es velocidad pura y colocación temprana.",
+    "ganadores": [
+     [
+      "2025",
+      "Win Carnelian",
+      "K. Miura"
+     ],
+     [
+      "2024",
+      "Lugal",
+      "A. Nishimura"
+     ],
+     [
+      "2023",
+      "Mama Cocha",
+      "Y. Kawada"
+     ],
+     [
+      "2022",
+      "Gendarme",
+      "K. Ogino"
+     ],
+     [
+      "2021",
+      "Pixie Knight",
+      "Y. Fukunaga"
+     ],
+     [
+      "2020",
+      "Gran Alegria",
+      "C. Lemaire"
+     ]
+    ]
+   },
+   "suenan": [
+    "Flicker Jab",
+    "Puro Magic"
+   ],
+   "participantes": [],
+   "llegada": [],
+   "fuente": "https://en.netkeiba.com/library/detail.html?no=233"
+  },
+  {
+   "id": "shuka2026",
+   "nombre": "Shuka Sho",
+   "grado": "G1",
+   "fecha": "2026-10-18",
+   "hipodromo": "Kyoto",
+   "distancia": 2000,
+   "estado": "lejana",
+   "suenan": [
+    "Juryoku Pierrot"
+   ],
+   "llegada": [],
+   "ficha": {
+    "que_es": "Tercera y última pata de la triple corona femenina japonesa."
+   }
+  },
+  {
+   "id": "kikuka2026",
+   "nombre": "Kikuka Sho",
+   "alias": "St. Leger japonés",
+   "grado": "G1",
+   "fecha": "2026-10-25",
+   "hipodromo": "Kyoto",
+   "distancia": 3000,
+   "estado": "lejana",
+   "llegada": []
+  },
+  {
+   "id": "japancup2026",
+   "nombre": "Japan Cup",
+   "grado": "G1",
+   "fecha": "2026-11-29",
+   "hipodromo": "Tokyo",
+   "distancia": 2400,
+   "estado": "lejana",
+   "llegada": [],
+   "ficha": {
+    "que_es": "Invitación internacional. La carrera con la que Japón se mide al resto del mundo en casa."
+   }
+  },
+  {
+   "id": "arima2026",
+   "nombre": "Arima Kinen",
+   "grado": "G1",
+   "fecha": "2026-12-27",
+   "hipodromo": "Nakayama",
+   "distancia": 2500,
+   "estado": "lejana",
+   "suenan": [
+    "Meisho Tabaru"
+   ],
+   "llegada": [],
+   "ficha": {
+    "que_es": "El otro Grand Prix: cuadro votado por los aficionados y cierre del año. La carrera más vista del calendario japonés."
+   }
+  }
+ ],
+ "caballos": [
+  {
+   "nombre": "Meisho Tabaru",
+   "perfil": "fondo · 2.000-2.500 m",
+   "jockey": "Yutaka Take",
+   "forma": [
+    1,
+    3,
+    6,
+    2,
+    1
+   ],
+   "victorias": 1,
+   "g1": 1,
+   "menciones": 1,
+   "porque": "Ganó la Takarazuka Kinen de 2026 y con ella entró en una lista de tres: solo Gold Ship y Chrono Genesis habían ganado dos ediciones seguidas de uno de los dos Grand Prix del calendario japonés.",
+   "historial": [
+    {
+     "carrera": "takarazuka2026",
+     "fecha": "2026-06-14",
+     "pos": 1,
+     "grado": "G1"
+    }
+   ],
+   "proxima": "arima2026",
+   "seguido": true
+  },
+  {
+   "nombre": "Juryoku Pierrot",
+   "perfil": "potra 3 años · 2.400 m",
+   "jockey": "Seina Imamura",
+   "forma": [
+    1,
+    1,
+    2,
+    4,
+    3
+   ],
+   "victorias": 1,
+   "g1": 1,
+   "menciones": 1,
+   "porque": "Ganó el Yushun Himba, la segunda pata de la triple corona femenina. Le queda la tercera: el Shuka Sho del 18 de octubre.",
+   "historial": [
+    {
+     "carrera": "oaks2026",
+     "fecha": "2026-05-24",
+     "pos": 1,
+     "grado": "G1"
+    }
+   ],
+   "proxima": "shuka2026",
+   "seguido": true
+  },
+  {
+   "nombre": "Croix du Nord",
+   "perfil": "fondo",
+   "forma": [
+    2,
+    1,
+    2,
+    3,
+    5
+   ],
+   "victorias": 0,
+   "g1": 0,
+   "menciones": 1,
+   "porque": "Salía favorito en la Takarazuka Kinen y perdió por un cuello. Rival directo de Meisho Tabaru.",
+   "historial": [
+    {
+     "carrera": "takarazuka2026",
+     "fecha": "2026-06-14",
+     "pos": 2,
+     "grado": "G1"
+    }
+   ],
+   "seguido": false
+  },
+  {
+   "nombre": "Flicker Jab",
+   "perfil": "velocista · 1.200-1.400 m",
+   "forma": [],
+   "victorias": 0,
+   "g1": 0,
+   "menciones": 1,
+   "porque": "Aparece en las noticias a cuenta de la Serie Sprint de Verano, la clasificación que premia la regularidad en las pruebas cortas del verano japonés.",
+   "historial": [],
+   "proxima": "sprinters2026",
+   "seguido": false
+  },
+  {
+   "nombre": "Puro Magic",
+   "perfil": "velocista · 1.200 m",
+   "forma": [],
+   "victorias": 0,
+   "g1": 0,
+   "menciones": 1,
+   "porque": "Llega al final de la Serie Sprint de Verano con la tabla a favor.",
+   "historial": [],
+   "proxima": "sprinters2026",
+   "seguido": false
+  }
+ ],
+ "estadisticas": {
+  "jockeys": [
+   {
+    "nombre": "Christophe Lemaire",
+    "victorias": 176,
+    "pct": 29.8,
+    "anio": 2024,
+    "nota": "séptimo título de jockey líder"
+   }
+  ],
+  "records": [
+   {
+    "que": "Yutaka Take · G1 ganados",
+    "valor": 86
+   },
+   {
+    "que": "Yutaka Take · Takarazuka Kinen",
+    "valor": 6
+   },
+   {
+    "que": "Caballos con doble Takarazuka",
+    "valor": 3
+   }
+  ]
+ },
+ "seguidos": {
+  "caballos": [
+   "Meisho Tabaru",
+   "Juryoku Pierrot"
+  ],
+  "jockeys": [
+   "Yutaka Take"
+  ]
+ }
+}

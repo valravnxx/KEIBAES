@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0e1114">
+<meta name="description" content="Las carreras de la JRA en español: calendario, crónicas, vídeos y los caballos del momento.">
+<title>KEIBA ES</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="iconos/icono-192.png">
+<link rel="apple-touch-icon" href="iconos/icono-192.png">
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="hd" id="hd-main">
+      <div class="logo"><b>KEIBA</b><span>ES</span></div>
+      <div style="display:flex;align-items:center;gap:12px">
+        <button class="ico" onclick="abrir('p-buscar','Buscar')" aria-label="Buscar">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
+        <button class="avatar" onclick="abrir('p-perfil','Mi perfil')">YO</button>
+      </div>
+    </div>
+    <div class="hd" id="hd-back" hidden>
+      <button class="back" onclick="volver()">
+        <svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>Volver</button>
+      <div class="sync" id="hd-title"></div>
+    </div>
+  </header>
+
+  <section class="page on" id="p-hoy"></section>
+  <section class="page" id="p-cal"></section>
+  <section class="page" id="p-cab"></section>
+  <section class="page" id="p-res"></section>
+
+  <!-- pantallas de detalle, rellenadas al vuelo -->
+  <section class="page" id="p-carrera"></section>
+  <section class="page" id="p-caballo"></section>
+  <section class="page" id="p-perfil"></section>
+  <section class="page" id="p-ajustes"></section>
+  <section class="page" id="p-stats"></section>
+  <section class="page" id="p-buscar"></section>
+  <section class="page" id="p-guia"></section>
+  <section class="page" id="p-leer"></section>
+</div>
+
+<nav>
+  <div class="nv">
+    <button class="nb on" data-p="p-hoy">
+      <svg viewBox="0 0 24 24"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>HOY</button>
+    <button class="nb" data-p="p-cal">
+      <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>CALENDARIO</button>
+    <button class="nb" data-p="p-cab">
+      <svg viewBox="0 0 24 24"><path d="M12 21s-7-4.4-7-9.5A4.5 4.5 0 0 1 12 8a4.5 4.5 0 0 1 7 3.5C19 16.6 12 21 12 21z"/></svg>CABALLOS</button>
+    <button class="nb" data-p="p-res">
+      <svg viewBox="0 0 24 24"><path d="M4 5h16v11H4z"/><path d="M9 20h6M12 16v4"/><path d="M10 8.5l4 2.5-4 2.5z"/></svg>RESULTADOS</button>
+  </div>
+</nav>
+
+<script src="app.js"></script>
+</body>
+</html>
