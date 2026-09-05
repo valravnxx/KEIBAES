@@ -1,6 +1,6 @@
 {
  "version": 1,
- "actualizado": "2026-09-05T14:41:00+00:00",
+ "actualizado": "2026-09-05T14:50:16+00:00",
  "noticias": [
   {
    "id": "a3f9c1",
@@ -151,7 +151,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0201negishi.html",
    "anio": 2026,
    "dias": -216,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1400,
+   "superficie": "arena",
+   "hipodromo": "Nakayama",
+   "sentido": "izquierdas",
+   "edades": "4 años en adelante",
+   "premio": "¥86,800,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Costa Nova"
+     ]
+    ]
+   }
   },
   {
    "id": "4c2ac8d4ea",
@@ -173,7 +187,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0208kisaragi.html",
    "anio": 2026,
    "dias": -209,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1800,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "3 años",
+   "premio": "¥88,370,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Satono Shining"
+     ]
+    ]
+   }
   },
   {
    "id": "3b289cc3e6",
@@ -184,7 +212,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0208tokyo-shimbun.html",
    "anio": 2026,
    "dias": -209,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1600,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "izquierdas",
+   "edades": "4 años en adelante",
+   "premio": "¥88,370,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Water Licht"
+     ]
+    ]
+   }
   },
   {
    "id": "bc18357522",
@@ -195,7 +237,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0214queen.html",
    "anio": 2026,
    "dias": -203,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1600,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "izquierdas",
+   "edades": "3 años",
+   "premio": "¥82,260,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Embroidery"
+     ]
+    ]
+   }
   },
   {
    "id": "8b07f1a694",
@@ -206,7 +262,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0215kyodonews.html",
    "anio": 2026,
    "dias": -202,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1800,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "izquierdas",
+   "edades": "3 años",
+   "premio": "¥88,370,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Masquerade Ball"
+     ]
+    ]
+   }
   },
   {
    "id": "74eb823fb7",
@@ -217,7 +287,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0215kyoto-kinen.html",
    "anio": 2026,
    "dias": -202,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 2200,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "4 años en adelante",
+   "premio": "¥135,240,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Yoho Lake"
+     ]
+    ]
+   }
   },
   {
    "id": "efc99d76ee",
@@ -228,7 +312,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0221diamond.html",
    "anio": 2026,
    "dias": -196,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 3400,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "izquierdas",
+   "edades": "4 años en adelante",
+   "premio": "¥93,410,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Redentor"
+     ]
+    ]
+   }
   },
   {
    "id": "163f08c4c8",
@@ -239,7 +337,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0221hankyu.html",
    "anio": 2026,
    "dias": -196,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1400,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "4 años en adelante",
+   "premio": "¥93,410,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Kangchenjunga"
+     ]
+    ]
+   }
   },
   {
    "id": "09b1819a5e",
@@ -250,7 +362,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0222february.html",
    "anio": 2026,
    "dias": -195,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1600,
+   "superficie": "arena",
+   "hipodromo": "Nakayama",
+   "sentido": "izquierdas",
+   "edades": "4 años en adelante",
+   "premio": "¥326,500,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Costa Nova"
+     ]
+    ]
+   }
   },
   {
    "id": "eff6ba4527",
@@ -261,7 +387,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0222kokura-daishoten.html",
    "anio": 2026,
    "dias": -195,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1800,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "4 años en adelante",
+   "premio": "¥93,410,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Long Run"
+     ]
+    ]
+   }
   },
   {
    "id": "0728227cd1",
@@ -272,7 +412,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0228ocean.html",
    "anio": 2026,
    "dias": -189,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1200,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "4 años en adelante",
+   "premio": "¥93,410,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Mama Cocha"
+     ]
+    ]
+   }
   },
   {
    "id": "78311aed11",
@@ -283,7 +437,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0301nakayama-kinen.html",
    "anio": 2026,
    "dias": -188,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1800,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "4 años en adelante",
+   "premio": "¥145,790,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Sixpence"
+     ]
+    ]
+   }
   },
   {
    "id": "17cbe2e536",
@@ -294,7 +462,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0301tulip.html",
    "anio": 2026,
    "dias": -188,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1600,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "3 años",
+   "premio": "¥113,040,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Kurino Mei"
+     ]
+    ]
+   }
   },
   {
    "id": "82c8da5eba",
@@ -305,7 +487,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0307nakayama-himba.html",
    "anio": 2026,
    "dias": -182,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1800,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "4 años en adelante",
+   "premio": "¥82,260,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Shirankedo"
+     ]
+    ]
+   }
   },
   {
    "id": "9e10a31d8b",
@@ -316,7 +512,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0307fillies.html",
    "anio": 2026,
    "dias": -182,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1400,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "3 años",
+   "premio": "¥113,040,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Shonan Xanadu"
+     ]
+    ]
+   }
   },
   {
    "id": "7fe1067eae",
@@ -327,7 +537,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0308yayoi.html",
    "anio": 2026,
    "dias": -181,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 2000,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "3 años",
+   "premio": "¥118,080,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Faust Rasen"
+     ]
+    ]
+   }
   },
   {
    "id": "bb74b9aceb",
@@ -338,7 +562,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0315spring.html",
    "anio": 2026,
    "dias": -174,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1800,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "3 años",
+   "premio": "¥118,080,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Piko Chan Black"
+     ]
+    ]
+   }
   },
   {
    "id": "5958234c48",
@@ -349,7 +587,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0315kinko.html",
    "anio": 2026,
    "dias": -174,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 2000,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "izquierdas",
+   "edades": "4 años en adelante",
+   "premio": "¥145,790,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Queen's Walk"
+     ]
+    ]
+   }
   },
   {
    "id": "4c7ffc794b",
@@ -360,7 +612,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0321flower.html",
    "anio": 2026,
    "dias": -168,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1800,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "3 años",
+   "premio": "¥82,260,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Lesedrama"
+     ]
+    ]
+   }
   },
   {
    "id": "1c67cb6bf3",
@@ -371,7 +637,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0321falcon.html",
    "anio": 2026,
    "dias": -168,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1400,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "izquierdas",
+   "edades": "3 años",
+   "premio": "¥88,370,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Yankee Barows"
+     ]
+    ]
+   }
   },
   {
    "id": "1f8101b5cf",
@@ -382,7 +662,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0322hanshin-daishoten.html",
    "anio": 2026,
    "dias": -167,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 3000,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "4 años en adelante",
+   "premio": "¥145,790,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Sunrise Earth"
+     ]
+    ]
+   }
   },
   {
    "id": "d5633a5220",
@@ -393,7 +687,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0322aichi.html",
    "anio": 2026,
    "dias": -167,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1400,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "izquierdas",
+   "edades": "4 años en adelante",
+   "premio": "¥82,260,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Wide Latour"
+     ]
+    ]
+   }
   },
   {
    "id": "830c21653e",
@@ -404,7 +712,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0328nikkei.html",
    "anio": 2026,
    "dias": -161,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 2500,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "4 años en adelante",
+   "premio": "¥145,790,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Meiner Emperor"
+     ]
+    ]
+   }
   },
   {
    "id": "bdef3be5ec",
@@ -415,7 +737,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0328mainichi.html",
    "anio": 2026,
    "dias": -161,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1800,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "3 años",
+   "premio": "¥88,370,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Fandom"
+     ]
+    ]
+   }
   },
   {
    "id": "03b368cf2e",
@@ -426,7 +762,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0329march.html",
    "anio": 2026,
    "dias": -160,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1800,
+   "superficie": "arena",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "4 años en adelante",
+   "premio": "¥82,260,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Brian Sense"
+     ]
+    ]
+   }
   },
   {
    "id": "3172ed27ff",
@@ -437,7 +787,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0329takamatsunomiya.html",
    "anio": 2026,
    "dias": -160,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1200,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "izquierdas",
+   "edades": "4 años en adelante",
+   "premio": "¥369,900,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Satono Reve"
+     ]
+    ]
+   }
   },
   {
    "id": "c4ef941b83",
@@ -448,7 +812,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0404lord-derby.html",
    "anio": 2026,
    "dias": -154,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1600,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "4 años en adelante",
+   "premio": "¥88,370,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Trovatore"
+     ]
+    ]
+   }
   },
   {
    "id": "04e04c171b",
@@ -459,7 +837,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0404churchill.html",
    "anio": 2026,
    "dias": -154,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1600,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "3 años",
+   "premio": "¥88,370,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Lance of Chaos"
+     ]
+    ]
+   }
   },
   {
    "id": "050538fa8a",
@@ -470,7 +862,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0405osaka.html",
    "anio": 2026,
    "dias": -153,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 2000,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "4 años en adelante",
+   "premio": "¥651,000,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Bellagio Opera"
+     ]
+    ]
+   }
   },
   {
    "id": "e73401ca51",
@@ -481,7 +887,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0411newzealand.html",
    "anio": 2026,
    "dias": -147,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1600,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "3 años",
+   "premio": "¥118,080,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Immigrant Song"
+     ]
+    ]
+   }
   },
   {
    "id": "38f7454976",
@@ -492,7 +912,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0411hanshin-himba.html",
    "anio": 2026,
    "dias": -147,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1600,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "4 años en adelante",
+   "premio": "¥119,650,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Safira"
+     ]
+    ]
+   }
   },
   {
    "id": "f6763cd8b8",
@@ -503,7 +937,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0412oka.html",
    "anio": 2026,
    "dias": -146,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1600,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "3 años",
+   "premio": "¥303,800,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Embroidery"
+     ]
+    ]
+   }
   },
   {
    "id": "622a399a8f",
@@ -514,7 +962,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0418antares.html",
    "anio": 2026,
    "dias": -140,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1800,
+   "superficie": "arena",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "4 años en adelante",
+   "premio": "¥82,260,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Mikki Fight"
+     ]
+    ]
+   }
   },
   {
    "id": "d7532eef48",
@@ -525,7 +987,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0419satsuki.html",
    "anio": 2026,
    "dias": -139,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 2000,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "3 años",
+   "premio": "¥434,000,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Museum Mile"
+     ]
+    ]
+   }
   },
   {
    "id": "7f7b5da6d2",
@@ -536,7 +1012,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0419fukushima-himba.html",
    "anio": 2026,
    "dias": -139,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1800,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "4 años en adelante",
+   "premio": "¥86,800,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Admire Matsuri"
+     ]
+    ]
+   }
   },
   {
    "id": "b707b3e976",
@@ -547,7 +1037,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0425aoba.html",
    "anio": 2026,
    "dias": -133,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 2400,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "izquierdas",
+   "edades": "3 años",
+   "premio": "¥118,080,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Energico"
+     ]
+    ]
+   }
   },
   {
    "id": "1d174dfab3",
@@ -558,7 +1062,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0426flora.html",
    "anio": 2026,
    "dias": -132,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 2000,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "izquierdas",
+   "edades": "3 años",
+   "premio": "¥113,040,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Kamunyak"
+     ]
+    ]
+   }
   },
   {
    "id": "5635c5bbad",
@@ -569,7 +1087,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0426yomiuri-milers.html",
    "anio": 2026,
    "dias": -132,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1600,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "4 años en adelante",
+   "premio": "¥128,730,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Long Run"
+     ]
+    ]
+   }
   },
   {
    "id": "ea3dda8c3e",
@@ -580,7 +1112,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0502keio-hai.html",
    "anio": 2026,
    "dias": -126,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1400,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "izquierdas",
+   "edades": "4 años en adelante",
+   "premio": "¥128,730,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Toshin Macau"
+     ]
+    ]
+   }
   },
   {
    "id": "52e6188c3e",
@@ -591,7 +1137,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0502unicorn.html",
    "anio": 2026,
    "dias": -126,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1900,
+   "superficie": "arena",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "3 años",
+   "premio": "¥80,590,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Canal Beagle"
+     ]
+    ]
+   }
   },
   {
    "id": "cb8b3fc26f",
@@ -602,7 +1162,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0503tenno-spring.html",
    "anio": 2026,
    "dias": -125,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 3200,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "4 años en adelante",
+   "premio": "¥651,000,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Redentor"
+     ]
+    ]
+   }
   },
   {
    "id": "05cf189280",
@@ -613,7 +1187,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0509epsom.html",
    "anio": 2026,
    "dias": -119,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1800,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "izquierdas",
+   "edades": "4 años en adelante",
+   "premio": "¥93,410,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Seiun Hades"
+     ]
+    ]
+   }
   },
   {
    "id": "88a249e0bb",
@@ -624,7 +1212,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0509kyoto-shimbun.html",
    "anio": 2026,
    "dias": -119,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 2200,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "3 años",
+   "premio": "¥118,080,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Shohei"
+     ]
+    ]
+   }
   },
   {
    "id": "7bd1d1cfb4",
@@ -635,7 +1237,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0510nhk-mile.html",
    "anio": 2026,
    "dias": -118,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1600,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "izquierdas",
+   "edades": "3 años",
+   "premio": "¥283,100,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Panja Tower"
+     ]
+    ]
+   }
   },
   {
    "id": "b6aae495a1",
@@ -646,7 +1262,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0516niigata-daishoten.html",
    "anio": 2026,
    "dias": -112,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 2000,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "izquierdas",
+   "edades": "4 años en adelante",
+   "premio": "¥93,410,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Sirius Colt"
+     ]
+    ]
+   }
   },
   {
    "id": "402b844951",
@@ -657,7 +1287,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0517victoria.html",
    "anio": 2026,
    "dias": -111,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1600,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "izquierdas",
+   "edades": "4 años en adelante",
+   "premio": "¥326,500,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Ascoli Piceno"
+     ]
+    ]
+   }
   },
   {
    "id": "2f145b0c9a",
@@ -668,7 +1312,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0523heian.html",
    "anio": 2026,
    "dias": -105,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1900,
+   "superficie": "arena",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "4 años en adelante",
+   "premio": "¥86,800,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Outrange"
+     ]
+    ]
+   }
   },
   {
    "id": "oaks2026",
@@ -723,7 +1381,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0524oaks.html",
    "anio": 2026,
    "dias": -104,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 2400,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "izquierdas",
+   "edades": "3 años",
+   "premio": "¥326,500,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Kamunyak"
+     ]
+    ]
+   }
   },
   {
    "id": "ce65ec308c",
@@ -734,7 +1406,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0530aoi.html",
    "anio": 2026,
    "dias": -98,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1200,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "3 años",
+   "premio": "¥88,370,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Abu Qir Bay"
+     ]
+    ]
+   }
   },
   {
    "id": "07a4bbc4c4",
@@ -745,7 +1431,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0531derby.html",
    "anio": 2026,
    "dias": -97,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 2400,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "izquierdas",
+   "edades": "3 años",
+   "premio": "¥651,000,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Croix du Nord"
+     ]
+    ]
+   }
   },
   {
    "id": "7b6aa1ddee",
@@ -756,7 +1456,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0531meguro.html",
    "anio": 2026,
    "dias": -97,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 2500,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "izquierdas",
+   "edades": "4 años en adelante",
+   "premio": "¥123,690,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Admire Terra"
+     ]
+    ]
+   }
   },
   {
    "id": "568e089089",
@@ -2413,7 +3127,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1206champions.html",
    "anio": 2026,
    "dias": 92,
-   "estado": "lejana"
+   "estado": "lejana",
+   "distancia": 1800,
+   "superficie": "arena",
+   "hipodromo": "Nakayama",
+   "sentido": "izquierdas",
+   "edades": "3 años en adelante",
+   "premio": "¥326,500,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "W Heart Bond"
+     ]
+    ]
+   }
   },
   {
    "id": "1a4263e993",
@@ -2424,7 +3152,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1212chunichi.html",
    "anio": 2026,
    "dias": 98,
-   "estado": "lejana"
+   "estado": "lejana",
+   "distancia": 2000,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "izquierdas",
+   "edades": "3 años en adelante",
+   "premio": "¥93,410,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Shake Your Heart"
+     ]
+    ]
+   }
   },
   {
    "id": "5bbf972839",
@@ -2435,7 +3177,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1213capella.html",
    "anio": 2026,
    "dias": 99,
-   "estado": "lejana"
+   "estado": "lejana",
+   "distancia": 1200,
+   "superficie": "arena",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "3 años en adelante",
+   "premio": "¥82,260,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "T O Elvis"
+     ]
+    ]
+   }
   },
   {
    "id": "2aac9f86c7",
@@ -2446,7 +3202,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1213juvenile.html",
    "anio": 2026,
    "dias": 99,
-   "estado": "lejana"
+   "estado": "lejana",
+   "distancia": 1600,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "2 años",
+   "premio": "¥162,750,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Star Anise"
+     ]
+    ]
+   }
   },
   {
    "id": "d95a010f21",
@@ -2457,7 +3227,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1219turquoise.html",
    "anio": 2026,
    "dias": 105,
-   "estado": "lejana"
+   "estado": "lejana",
+   "distancia": 1600,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "3 años en adelante",
+   "premio": "¥82,260,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Drop of Light"
+     ]
+    ]
+   }
   },
   {
    "id": "fad78c74b5",
@@ -2468,7 +3252,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1220futurity.html",
    "anio": 2026,
    "dias": 106,
-   "estado": "lejana"
+   "estado": "lejana",
+   "distancia": 1600,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "2 años",
+   "premio": "¥173,600,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Cavallerizzo"
+     ]
+    ]
+   }
   },
   {
    "id": "e274a5c1f7",
@@ -2479,7 +3277,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1226hopeful.html",
    "anio": 2026,
    "dias": 112,
-   "estado": "lejana"
+   "estado": "lejana",
+   "distancia": 2000,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "2 años",
+   "premio": "¥173,600,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Lovcen"
+     ]
+    ]
+   }
   },
   {
    "id": "c0894ccb20",
@@ -2490,7 +3302,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1226hanshin.html",
    "anio": 2026,
    "dias": 112,
-   "estado": "lejana"
+   "estado": "lejana",
+   "distancia": 1400,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "3 años en adelante",
+   "premio": "¥145,790,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Lugal"
+     ]
+    ]
+   }
   },
   {
    "id": "arima2026",
@@ -2518,7 +3344,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1227arima.html",
    "anio": 2026,
    "dias": 113,
-   "estado": "lejana"
+   "estado": "lejana",
+   "distancia": 2500,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "3 años en adelante",
+   "premio": "¥1,090,000,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Museum Mile"
+     ]
+    ]
+   }
   }
  ],
  "caballos": [
