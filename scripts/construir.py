@@ -87,6 +87,19 @@ def derivar_caballos(carreras, noticias, seguidos_previos) -> list[dict]:
                                    "pos": pos["pos"], "grado": c.get("grado")})
             f["forma"].append(pos["pos"])
 
+    # 1b. Los inscritos en una carrera que está por correrse.
+    for c in carreras:
+        for p in c.get("participantes", []):
+            nombre = p.get("caballo")
+            if not nombre:
+                continue
+            f = fichas.setdefault(nombre, {"nombre": nombre, "historial": [],
+                                           "forma": [], "menciones": 0})
+            if p.get("jockey") and not f.get("jockey"):
+                f["jockey"] = p["jockey"]
+            if p.get("sexo_edad") and not f.get("perfil"):
+                f["perfil"] = p["sexo_edad"]
+
     # 2. Los que se repiten en las noticias, aunque no hayan corrido aún.
     for nombre, n in menciones.items():
         if n >= MIN_MENCIONES or nombre in fichas:

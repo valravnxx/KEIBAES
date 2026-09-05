@@ -365,40 +365,236 @@ def buscar_video(nombre: str, anio: int, grado: str = "G1") -> str:
     return ""
 
 
-# --------------------------------------------------------------- resultados
+# ------------------------------------------------- caballos y resultados
 
-def recolectar_resultado(race_id: str) -> dict | None:
+def _norm(t: str) -> str:
+    """Para comparar nombres de carrera entre la JRA y netkeiba."""
+    return re.sub(r"[^a-z0-9]", "", (t or "").lower())
+
+
+def tabla_por_cabeceras(sopa) -> list[dict]:
+    """
+    Lee la tabla más grande de la página usando los NOMBRES de las columnas.
+    Fijar índices de columna a mano era pedir que se rompiera al primer
+    rediseño; los títulos ("Horse Name", "Jockey") son mucho más estables.
+    """
+    mejor, mejor_filas = None, 0
+    for tabla in sopa.find_all("table"):
+        n = len(tabla.find_all("tr"))
+        if n > mejor_filas:
+            mejor, mejor_filas = tabla, n
+    if mejor is None:
+        return []
+
+    filas = mejor.find_all("tr")
+    mapa, inicio = {}, 0
+    for i, fila in enumerate(filas[:4]):
+        celdas = [limpiar(c.get_text()).lower() for c in fila.find_all(["th", "td"])]
+        if not celdas:
+            continue
+        # Dos pasadas. Primero coincidencia EXACTA, y solo después parcial:
+        # si no, "Horse Number" se llevaba la columna de "Horse Name" porque
+        # contiene la palabra "horse".
+        encontrado, usadas = {}, set()
+        for exacta in (True, False):
+            for campo, alias in F.COLUMNAS.items():
+                if campo in encontrado:
+                    continue
+                for j, texto in enumerate(celdas):
+                    if j in usadas:
+                        continue
+                    if any(a == texto for a in alias) if exacta else \
+                       any(a in texto for a in alias):
+                        encontrado[campo] = j
+                        usadas.add(j)
+                        break
+        if "caballo" in encontrado:
+            mapa, inicio = encontrado, i + 1
+            break
+    if not mapa:
+        return []
+
+    salida = []
+    for fila in filas[inicio:]:
+        celdas = [limpiar(c.get_text()) for c in fila.find_all("td")]
+        if len(celdas) < 3:
+            continue
+        reg = {}
+        for campo, j in mapa.items():
+            if j < len(celdas) and celdas[j]:
+                reg[campo] = celdas[j]
+        if reg.get("caballo"):
+            salida.append(reg)
+    return salida
+
+
+def race_ids_de_jornada(fecha_iso: str) -> dict:
+    """{nombre normalizado: {race_id, hora}} para todas las carreras de un día."""
+    sopa = bajar(F.url_jornada(fecha_iso.replace("-", "")))
+    if not sopa:
+        return {}
+    salida = {}
+    for a in sopa.select('a[href*="race_id="]'):
+        m = re.search(r"race_id=(\d{10,14})", a.get("href", ""))
+        if not m:
+            continue
+        texto = limpiar(a.get_text(" "))
+        if len(texto) < 4:
+            continue
+        nombre = re.sub(r"\b(J?-?G[123]|Jpn[123])\b", "", texto).strip()
+        hora = ""
+        mh = re.search(r"\b([0-2]?\d:[0-5]\d)\b", texto)
+        if mh:
+            hora = mh.group(1)
+            nombre = nombre.replace(hora, "").strip()
+        clave = _norm(nombre)
+        if clave and clave not in salida:
+            salida[clave] = {"race_id": m.group(1), "hora_jst": hora}
+    return salida
+
+
+def precargar(carreras: list[dict]) -> None:
+    """
+    Copia sobre el calendario recién leído lo que ya se descargó otros días
+    (race_id, clasificación, inscritos, ficha...). Sin esto, cada ejecución
+    creería que no tiene nada y volvería a pedirlo todo desde cero.
+    """
+    prev = RAIZ / "web" / "datos.json"
+    if not prev.exists():
+        return
+    try:
+        antiguas = {c.get("id"): c for c in
+                    json.loads(prev.read_text(encoding="utf-8")).get("carreras", [])}
+    except Exception:
+        return
+    guardar = ("race_id", "hora_jst", "llegada", "participantes", "video_id",
+               "distancia", "superficie", "hipodromo", "sentido", "edades",
+               "premio", "ficha", "cronica", "destacado")
+    n = 0
+    for c in carreras:
+        vieja = antiguas.get(c["id"])
+        if not vieja:
+            continue
+        for campo in guardar:
+            if vieja.get(campo) and not c.get(campo):
+                c[campo] = vieja[campo]
+        n += 1
+    log(f"reaprovechado lo ya descargado de {n} carreras")
+
+
+def resolver_race_ids(carreras: list[dict], max_jornadas=14) -> int:
+    """
+    El calendario de la JRA no da race_id y netkeiba lo necesita. Se resuelve
+    por jornada: una sola petición por día sirve para todas las carreras
+    graduadas de ese día.
+    """
+    pendientes = [c for c in carreras if not c.get("race_id") and c.get("fecha")]
+    if not pendientes:
+        return 0
+    hoy = datetime.now(timezone.utc).date()
+    fechas = sorted({c["fecha"] for c in pendientes},
+                    key=lambda f: abs((datetime.fromisoformat(f).date() - hoy).days))
+
+    n = 0
+    for fecha in fechas[:max_jornadas]:
+        jornada = race_ids_de_jornada(fecha)
+        if not jornada:
+            continue
+        for c in pendientes:
+            if c["fecha"] != fecha:
+                continue
+            clave = _norm(c["nombre"])
+            dato = jornada.get(clave)
+            if not dato:
+                # A veces netkeiba abrevia; se busca por coincidencia parcial.
+                for k, v in jornada.items():
+                    if clave and (clave in k or k in clave):
+                        dato = v
+                        break
+            if dato:
+                c["race_id"] = dato["race_id"]
+                if dato.get("hora_jst"):
+                    c["hora_jst"] = dato["hora_jst"]
+                n += 1
+    log(f"race_id resueltos: {n} (en {min(len(fechas), max_jornadas)} jornadas)")
+    return n
+
+
+def recolectar_resultado(race_id: str) -> list[dict]:
     sopa = bajar(F.url_resultado(race_id), f"resultado-{race_id}")
     if not sopa:
-        return None
-
+        return []
     llegada = []
-    for fila in sopa.select(F.SEL_RESULTADO.fila):
-        celdas = [limpiar(c.get_text()) for c in fila.select("td")]
-        if len(celdas) < 6:
+    for reg in tabla_por_cabeceras(sopa):
+        pos = re.sub(r"\D", "", reg.get("puesto", ""))
+        if not pos:
             continue
-        if not celdas[F.SEL_RESULTADO.col_puesto].isdigit():
-            continue
-
-        def col(i):
-            return celdas[i] if i < len(celdas) else ""
-
         llegada.append({
-            "pos": int(celdas[F.SEL_RESULTADO.col_puesto]),
-            "caballo": col(F.SEL_RESULTADO.col_caballo),
-            "jockey": col(F.SEL_RESULTADO.col_jockey),
-            "tiempo": col(F.SEL_RESULTADO.col_tiempo),
-            "margen": col(F.SEL_RESULTADO.col_margen),
-            "odds": col(F.SEL_RESULTADO.col_odds),
+            "pos": int(pos),
+            "caballo": reg.get("caballo", ""),
+            "jockey": reg.get("jockey", ""),
+            "tiempo": reg.get("tiempo", ""),
+            "margen": reg.get("margen", ""),
+            "odds": reg.get("odds", ""),
         })
-
-    if not llegada:
-        log(f"resultado {race_id}: tabla vacía — revisa los índices de columna")
-        return None
-
     llegada.sort(key=lambda x: x["pos"])
-    log(f"resultado {race_id}: {len(llegada)} clasificados, gana {llegada[0]['caballo']}")
-    return {"race_id": race_id, "llegada": llegada[:18]}
+    return llegada[:18]
+
+
+def recolectar_participantes(race_id: str) -> list[dict]:
+    sopa = bajar(F.url_inscripciones(race_id), f"inscritos-{race_id}")
+    if not sopa:
+        return []
+    fuera = []
+    for reg in tabla_por_cabeceras(sopa):
+        fuera.append({
+            "caballo": reg.get("caballo", ""),
+            "jockey": reg.get("jockey", ""),
+            "entrenador": reg.get("entrenador", ""),
+            "peso": reg.get("peso", ""),
+            "sexo_edad": reg.get("sexo_edad", ""),
+            "odds": reg.get("odds", ""),
+        })
+    return fuera[:20]
+
+
+def completar_resultados(carreras: list[dict], maximo=12) -> int:
+    """Clasificaciones de lo ya corrido, empezando por lo más reciente."""
+    hoy = datetime.now(timezone.utc).date()
+    pendientes = [c for c in carreras
+                  if c.get("race_id") and not c.get("llegada")
+                  and c.get("fecha")
+                  and datetime.fromisoformat(c["fecha"]).date() < hoy]
+    pendientes.sort(key=lambda c: c["fecha"], reverse=True)
+    n = 0
+    for c in pendientes[:maximo]:
+        llegada = recolectar_resultado(c["race_id"])
+        if llegada:
+            c["llegada"] = llegada
+            n += 1
+    log(f"clasificaciones nuevas: {n} (quedaban {len(pendientes)})")
+    return n
+
+
+def completar_participantes(carreras: list[dict], dias=12, maximo=8) -> int:
+    """Inscritos de lo que está a punto de correrse. Antes de eso no existen."""
+    hoy = datetime.now(timezone.utc).date()
+    proximas = []
+    for c in carreras:
+        if not c.get("race_id") or not c.get("fecha") or c.get("llegada"):
+            continue
+        d = (datetime.fromisoformat(c["fecha"]).date() - hoy).days
+        if 0 <= d <= dias:
+            proximas.append((d, c))
+    proximas.sort(key=lambda x: x[0])
+    n = 0
+    for _, c in proximas[:maximo]:
+        gente = recolectar_participantes(c["race_id"])
+        if gente:
+            c["participantes"] = gente
+            n += 1
+    log(f"cuadros de inscritos: {n}")
+    return n
 
 
 # -------------------------------------------------------------------- main
@@ -422,11 +618,16 @@ def main():
     if args.solo in (None, "noticias"):
         crudo["noticias"] = recolectar_noticias()
     if args.solo in (None, "calendario"):
-        crudo["calendario"] = recolectar_calendario(anio)
-        completar_fichas(crudo["calendario"])
-    if args.solo in (None, "resultados") and args.race_id:
-        crudo["resultados"] = [r for r in (recolectar_resultado(x)
-                                           for x in args.race_id) if r]
+        cal = recolectar_calendario(anio)
+        precargar(cal)
+        completar_fichas(cal)
+        resolver_race_ids(cal)
+        completar_participantes(cal)
+        completar_resultados(cal)
+        crudo["calendario"] = cal
+    if args.solo == "resultados" and args.race_id:
+        crudo["resultados"] = [{"race_id": x, "llegada": recolectar_resultado(x)}
+                               for x in args.race_id]
 
     destino = DATOS / "crudo.json"
     destino.write_text(json.dumps(crudo, ensure_ascii=False, indent=1),

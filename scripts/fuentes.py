@@ -105,20 +105,28 @@ def url_ficha_carrera(no: int) -> str:
     return f"https://en.netkeiba.com/library/detail.html?no={no}"
 
 
-@dataclass
-class SelectoresResultado:
-    fila: str = "table.RaceTable01 tr, table tr"
-    # Índices de columna en la tabla de resultados (0-based).
-    # Ajustar tras mirar el HTML real.
-    col_puesto: int = 0
-    col_caballo: int = 3
-    col_jockey: int = 6
-    col_tiempo: int = 7
-    col_margen: int = 8
-    col_odds: int = 10
+def url_jornada(fecha_aaaammdd: str) -> str:
+    """Todas las carreras de un día, con su race_id. Es el puente entre el
+    calendario de la JRA (que no da race_id) y las fichas de netkeiba."""
+    return f"https://en.netkeiba.com/race/race_list.html?kaisai_date={fecha_aaaammdd}"
 
 
-SEL_RESULTADO = SelectoresResultado()
+# Las tablas de netkeiba se leen POR CABECERA, no por número de columna:
+# el orden de las columnas cambia entre vistas y entre rediseños, pero
+# "Horse Name" se sigue llamando "Horse Name".
+COLUMNAS = {
+    "puesto":  ("finish", "order", "rank", "pos"),
+    "dorsal":  ("horse number", "no.", "num"),
+    "caballo": ("horse name", "horse"),
+    "jockey":  ("jockey",),
+    "entrenador": ("trainer",),
+    "tiempo":  ("time",),
+    "margen":  ("margin", "diff"),
+    "odds":    ("odds",),
+    "favorito": ("fav", "popularity"),
+    "peso":    ("wgt", "weight", "handicap"),
+    "sexo_edad": ("a&s", "sex/age", "age"),
+}
 
 
 # --------------------------------------------------------------- vídeo
