@@ -1,7 +1,6 @@
 {
  "version": 1,
- "actualizado": "2026-09-04T07:02:00+00:00",
- "_nota": "Semilla con datos REALES verificados. El pipeline sobrescribe este fichero.",
+ "actualizado": "2026-09-05T14:10:18+00:00",
  "noticias": [
   {
    "id": "a3f9c1",
@@ -45,6 +44,576 @@
  ],
  "carreras": [
   {
+   "id": "ff3cea3bf0",
+   "nombre": "Nikkan Sports ShoNakayama Kimpai",
+   "grado": "G3",
+   "fecha": "2026-01-04",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0104nakayamakimpai.html",
+   "anio": 2026,
+   "dias": -244,
+   "estado": "pasada"
+  },
+  {
+   "id": "0cb0993da5",
+   "nombre": "Sports Nippon ShoKyoto Kimpai",
+   "grado": "G3",
+   "fecha": "2026-01-04",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0104kyotokimpai.html",
+   "anio": 2026,
+   "dias": -244,
+   "estado": "pasada"
+  },
+  {
+   "id": "851652bf11",
+   "nombre": "Fairy Stakes",
+   "grado": "G3",
+   "fecha": "2026-01-11",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0111fairy.html",
+   "anio": 2026,
+   "dias": -237,
+   "estado": "pasada"
+  },
+  {
+   "id": "945515bffc",
+   "nombre": "Nikkan Sports ShoShinzan Kinen",
+   "grado": "G3",
+   "fecha": "2026-01-12",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0112shinzan-kinen.html",
+   "anio": 2026,
+   "dias": -236,
+   "estado": "pasada"
+  },
+  {
+   "id": "70452c3d5d",
+   "nombre": "Keisei Hai",
+   "grado": "G3",
+   "fecha": "2026-01-18",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0118keisei.html",
+   "anio": 2026,
+   "dias": -230,
+   "estado": "pasada"
+  },
+  {
+   "id": "5f4957dba6",
+   "nombre": "Nikkei Shinshun Hai",
+   "grado": "G2",
+   "fecha": "2026-01-18",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0118nikkei-shinshun.html",
+   "anio": 2026,
+   "dias": -230,
+   "estado": "pasada"
+  },
+  {
+   "id": "4e9430e96b",
+   "nombre": "Kokura Himba Stakes",
+   "grado": "G3",
+   "fecha": "2026-01-24",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0124kokura-himba.html",
+   "anio": 2026,
+   "dias": -224,
+   "estado": "pasada"
+  },
+  {
+   "id": "794b90d4db",
+   "nombre": "American Jockey Club Cup",
+   "grado": "G2",
+   "fecha": "2026-01-25",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0125ajcc.html",
+   "anio": 2026,
+   "dias": -223,
+   "estado": "pasada"
+  },
+  {
+   "id": "aff330e467",
+   "nombre": "Procyon Stakes",
+   "grado": "G2",
+   "fecha": "2026-01-25",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0125procyon.html",
+   "anio": 2026,
+   "dias": -223,
+   "estado": "pasada"
+  },
+  {
+   "id": "d5bdb512a7",
+   "nombre": "Commemoration of the Breeders' Cup Classic (G1) Victory by Forever Young Negishi Stakes",
+   "grado": "G3",
+   "fecha": "2026-02-01",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0201negishi.html",
+   "anio": 2026,
+   "dias": -216,
+   "estado": "pasada"
+  },
+  {
+   "id": "948691303a",
+   "nombre": "Silk Road Stakes",
+   "grado": "G3",
+   "fecha": "2026-02-01",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0201silkroad.html",
+   "anio": 2026,
+   "dias": -216,
+   "estado": "pasada"
+  },
+  {
+   "id": "5703e82434",
+   "nombre": "Kisaragi Sho",
+   "grado": "G3",
+   "fecha": "2026-02-08",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0208kisaragi.html",
+   "anio": 2026,
+   "dias": -209,
+   "estado": "pasada"
+  },
+  {
+   "id": "9f56facc73",
+   "nombre": "Tokyo Shimbun Hai",
+   "grado": "G3",
+   "fecha": "2026-02-08",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0208tokyo-shimbun.html",
+   "anio": 2026,
+   "dias": -209,
+   "estado": "pasada"
+  },
+  {
+   "id": "9715b6a3f9",
+   "nombre": "Daily Hai Queen Cup",
+   "grado": "G3",
+   "fecha": "2026-02-14",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0214queen.html",
+   "anio": 2026,
+   "dias": -203,
+   "estado": "pasada"
+  },
+  {
+   "id": "171a0920e0",
+   "nombre": "Kyodo News Hai(Tokinominoru Kinen)",
+   "grado": "G3",
+   "fecha": "2026-02-15",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0215kyodonews.html",
+   "anio": 2026,
+   "dias": -202,
+   "estado": "pasada"
+  },
+  {
+   "id": "3a06917a03",
+   "nombre": "Kyoto Kinen",
+   "grado": "G2",
+   "fecha": "2026-02-15",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0215kyoto-kinen.html",
+   "anio": 2026,
+   "dias": -202,
+   "estado": "pasada"
+  },
+  {
+   "id": "5f8d7ba9bb",
+   "nombre": "Diamond Stakes",
+   "grado": "G3",
+   "fecha": "2026-02-21",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0221diamond.html",
+   "anio": 2026,
+   "dias": -196,
+   "estado": "pasada"
+  },
+  {
+   "id": "db4d30531a",
+   "nombre": "Hankyu Hai",
+   "grado": "G3",
+   "fecha": "2026-02-21",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0221hankyu.html",
+   "anio": 2026,
+   "dias": -196,
+   "estado": "pasada"
+  },
+  {
+   "id": "e67e281379",
+   "nombre": "February Stakes",
+   "grado": "G1",
+   "fecha": "2026-02-22",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0222february.html",
+   "anio": 2026,
+   "dias": -195,
+   "estado": "pasada"
+  },
+  {
+   "id": "db47490048",
+   "nombre": "Kokura Daishoten",
+   "grado": "G3",
+   "fecha": "2026-02-22",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0222kokura-daishoten.html",
+   "anio": 2026,
+   "dias": -195,
+   "estado": "pasada"
+  },
+  {
+   "id": "7958902097",
+   "nombre": "Ocean Stakes",
+   "grado": "G3",
+   "fecha": "2026-02-28",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0228ocean.html",
+   "anio": 2026,
+   "dias": -189,
+   "estado": "pasada"
+  },
+  {
+   "id": "56cb4e2b30",
+   "nombre": "Nakayama Kinen",
+   "grado": "G2",
+   "fecha": "2026-03-01",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0301nakayama-kinen.html",
+   "anio": 2026,
+   "dias": -188,
+   "estado": "pasada"
+  },
+  {
+   "id": "c21c4bf7ca",
+   "nombre": "Tulip Sho(Japanese 1000 Guineas Trial)",
+   "grado": "G2",
+   "fecha": "2026-03-01",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0301tulip.html",
+   "anio": 2026,
+   "dias": -188,
+   "estado": "pasada"
+  },
+  {
+   "id": "cd62a3ec28",
+   "nombre": "Laurel R.C. ShoNakayama Himba Stakes",
+   "grado": "G3",
+   "fecha": "2026-03-07",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0307nakayama-himba.html",
+   "anio": 2026,
+   "dias": -182,
+   "estado": "pasada"
+  },
+  {
+   "id": "877da25055",
+   "nombre": "Hochi Hai Fillies' Revue(Japanese 1000 Guineas Trial)",
+   "grado": "G2",
+   "fecha": "2026-03-07",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0307fillies.html",
+   "anio": 2026,
+   "dias": -182,
+   "estado": "pasada"
+  },
+  {
+   "id": "a6a19d3add",
+   "nombre": "Hochi Hai Yayoi Sho Deep Impact Kinen(Japanese 2000 Guineas Trial)",
+   "grado": "G2",
+   "fecha": "2026-03-08",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0308yayoi.html",
+   "anio": 2026,
+   "dias": -181,
+   "estado": "pasada"
+  },
+  {
+   "id": "4e6372c562",
+   "nombre": "Fuji TV Sho Spring Stakes (Japanese 2000 Guineas Trial)",
+   "grado": "G2",
+   "fecha": "2026-03-15",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0315spring.html",
+   "anio": 2026,
+   "dias": -174,
+   "estado": "pasada"
+  },
+  {
+   "id": "a92e02293f",
+   "nombre": "Tokai TV Hai Kinko Sho",
+   "grado": "G2",
+   "fecha": "2026-03-15",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0315kinko.html",
+   "anio": 2026,
+   "dias": -174,
+   "estado": "pasada"
+  },
+  {
+   "id": "9269edc995",
+   "nombre": "Flower Cup",
+   "grado": "G3",
+   "fecha": "2026-03-21",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0321flower.html",
+   "anio": 2026,
+   "dias": -168,
+   "estado": "pasada"
+  },
+  {
+   "id": "d72aa51a6b",
+   "nombre": "Chunichi Sports ShoFalcon Stakes",
+   "grado": "G3",
+   "fecha": "2026-03-21",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0321falcon.html",
+   "anio": 2026,
+   "dias": -168,
+   "estado": "pasada"
+  },
+  {
+   "id": "a54a4e1c24",
+   "nombre": "Hanshin Daishoten",
+   "grado": "G2",
+   "fecha": "2026-03-22",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0322hanshin-daishoten.html",
+   "anio": 2026,
+   "dias": -167,
+   "estado": "pasada"
+  },
+  {
+   "id": "3028ab278f",
+   "nombre": "Aichi Hai",
+   "grado": "G3",
+   "fecha": "2026-03-22",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0322aichi.html",
+   "anio": 2026,
+   "dias": -167,
+   "estado": "pasada"
+  },
+  {
+   "id": "5b07497d65",
+   "nombre": "Nikkei Sho",
+   "grado": "G2",
+   "fecha": "2026-03-28",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0328nikkei.html",
+   "anio": 2026,
+   "dias": -161,
+   "estado": "pasada"
+  },
+  {
+   "id": "1fcf522373",
+   "nombre": "Mainichi Hai",
+   "grado": "G3",
+   "fecha": "2026-03-28",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0328mainichi.html",
+   "anio": 2026,
+   "dias": -161,
+   "estado": "pasada"
+  },
+  {
+   "id": "9ed950bcfb",
+   "nombre": "March Stakes",
+   "grado": "G3",
+   "fecha": "2026-03-29",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0329march.html",
+   "anio": 2026,
+   "dias": -160,
+   "estado": "pasada"
+  },
+  {
+   "id": "a537a32730",
+   "nombre": "Takamatsunomiya Kinen",
+   "grado": "G1",
+   "fecha": "2026-03-29",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0329takamatsunomiya.html",
+   "anio": 2026,
+   "dias": -160,
+   "estado": "pasada"
+  },
+  {
+   "id": "9882bb65f5",
+   "nombre": "Lord Derby Challenge Trophy",
+   "grado": "G3",
+   "fecha": "2026-04-04",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0404lord-derby.html",
+   "anio": 2026,
+   "dias": -154,
+   "estado": "pasada"
+  },
+  {
+   "id": "3d036a85b9",
+   "nombre": "Churchill Downs Cup (NHK Mile Cup Trial)",
+   "grado": "G3",
+   "fecha": "2026-04-04",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0404churchill.html",
+   "anio": 2026,
+   "dias": -154,
+   "estado": "pasada"
+  },
+  {
+   "id": "3959207ef5",
+   "nombre": "Osaka Hai",
+   "grado": "G1",
+   "fecha": "2026-04-05",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0405osaka.html",
+   "anio": 2026,
+   "dias": -153,
+   "estado": "pasada"
+  },
+  {
+   "id": "63ccc129d4",
+   "nombre": "New Zealand Trophy(NHK Mile Cup Trial)",
+   "grado": "G2",
+   "fecha": "2026-04-11",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0411newzealand.html",
+   "anio": 2026,
+   "dias": -147,
+   "estado": "pasada"
+  },
+  {
+   "id": "9e7b593920",
+   "nombre": "Sankei Sports HaiHanshin Himba Stakes",
+   "grado": "G2",
+   "fecha": "2026-04-11",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0411hanshin-himba.html",
+   "anio": 2026,
+   "dias": -147,
+   "estado": "pasada"
+  },
+  {
+   "id": "76c7775881",
+   "nombre": "Oka Sho(Japanese 1000 Guineas)",
+   "grado": "G1",
+   "fecha": "2026-04-12",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0412oka.html",
+   "anio": 2026,
+   "dias": -146,
+   "estado": "pasada"
+  },
+  {
+   "id": "71aad0e531",
+   "nombre": "Antares Stakes",
+   "grado": "G3",
+   "fecha": "2026-04-18",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0418antares.html",
+   "anio": 2026,
+   "dias": -140,
+   "estado": "pasada"
+  },
+  {
+   "id": "36c8b50ae9",
+   "nombre": "Satsuki Sho(Japanese 2000 Guineas)",
+   "grado": "G1",
+   "fecha": "2026-04-19",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0419satsuki.html",
+   "anio": 2026,
+   "dias": -139,
+   "estado": "pasada"
+  },
+  {
+   "id": "7406b26b3f",
+   "nombre": "Fukushima Himba Stakes",
+   "grado": "G3",
+   "fecha": "2026-04-19",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0419fukushima-himba.html",
+   "anio": 2026,
+   "dias": -139,
+   "estado": "pasada"
+  },
+  {
+   "id": "a31c8ff081",
+   "nombre": "TV Tokyo Hai Aoba Sho(Japanese Derby Trial)",
+   "grado": "G2",
+   "fecha": "2026-04-25",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0425aoba.html",
+   "anio": 2026,
+   "dias": -133,
+   "estado": "pasada"
+  },
+  {
+   "id": "c621e1c979",
+   "nombre": "Sankei Sports Sho Flora Stakes(Japanese Oaks Trial)",
+   "grado": "G2",
+   "fecha": "2026-04-26",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0426flora.html",
+   "anio": 2026,
+   "dias": -132,
+   "estado": "pasada"
+  },
+  {
+   "id": "9998758d3c",
+   "nombre": "Yomiuri Milers Cup",
+   "grado": "G2",
+   "fecha": "2026-04-26",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0426yomiuri-milers.html",
+   "anio": 2026,
+   "dias": -132,
+   "estado": "pasada"
+  },
+  {
+   "id": "a841f59769",
+   "nombre": "Keio Hai Spring Cup",
+   "grado": "G2",
+   "fecha": "2026-05-02",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0502keio-hai.html",
+   "anio": 2026,
+   "dias": -126,
+   "estado": "pasada"
+  },
+  {
+   "id": "bef9b123e2",
+   "nombre": "Unicorn Stakes",
+   "grado": "G3",
+   "fecha": "2026-05-02",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0502unicorn.html",
+   "anio": 2026,
+   "dias": -126,
+   "estado": "pasada"
+  },
+  {
+   "id": "8ac77dc071",
+   "nombre": "Tenno Sho (Spring)",
+   "grado": "G1",
+   "fecha": "2026-05-03",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0503tenno-spring.html",
+   "anio": 2026,
+   "dias": -125,
+   "estado": "pasada"
+  },
+  {
+   "id": "838b792499",
+   "nombre": "Epsom Cup",
+   "grado": "G3",
+   "fecha": "2026-05-09",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0509epsom.html",
+   "anio": 2026,
+   "dias": -119,
+   "estado": "pasada"
+  },
+  {
+   "id": "705ea1f36c",
+   "nombre": "Kyoto Shimbun Hai",
+   "grado": "G2",
+   "fecha": "2026-05-09",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0509kyoto-shimbun.html",
+   "anio": 2026,
+   "dias": -119,
+   "estado": "pasada"
+  },
+  {
+   "id": "b00ac71ad7",
+   "nombre": "NHK Mile Cup",
+   "grado": "G1",
+   "fecha": "2026-05-10",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0510nhk-mile.html",
+   "anio": 2026,
+   "dias": -118,
+   "estado": "pasada"
+  },
+  {
+   "id": "8fe8c4b95c",
+   "nombre": "Niigata Daishoten",
+   "grado": "G3",
+   "fecha": "2026-05-16",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0516niigata-daishoten.html",
+   "anio": 2026,
+   "dias": -112,
+   "estado": "pasada"
+  },
+  {
+   "id": "df5e3400ce",
+   "nombre": "Victoria Mile",
+   "grado": "G1",
+   "fecha": "2026-05-17",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0517victoria.html",
+   "anio": 2026,
+   "dias": -111,
+   "estado": "pasada"
+  },
+  {
+   "id": "d1aebc105d",
+   "nombre": "Heian Stakes",
+   "grado": "G3",
+   "fecha": "2026-05-23",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0523heian.html",
+   "anio": 2026,
+   "dias": -105,
+   "estado": "pasada"
+  },
+  {
    "id": "oaks2026",
    "race_id": "202605021011",
    "nombre": "Yushun Himba",
@@ -85,7 +654,68 @@
      "odds": ""
     }
    ],
-   "fuente": "https://japanracing.jp/_news2026/260524.html"
+   "fuente": "https://japanracing.jp/_news2026/260524.html",
+   "dias": -104
+  },
+  {
+   "id": "f841c18652",
+   "nombre": "Yushun Himba(Japanese Oaks)",
+   "grado": "G1",
+   "fecha": "2026-05-24",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0524oaks.html",
+   "anio": 2026,
+   "dias": -104,
+   "estado": "pasada"
+  },
+  {
+   "id": "364e767892",
+   "nombre": "Aoi Stakes",
+   "grado": "G3",
+   "fecha": "2026-05-30",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0530aoi.html",
+   "anio": 2026,
+   "dias": -98,
+   "estado": "pasada"
+  },
+  {
+   "id": "cd385f991e",
+   "nombre": "Tokyo Yushun(Japanese Derby)",
+   "grado": "G1",
+   "fecha": "2026-05-31",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0531derby.html",
+   "anio": 2026,
+   "dias": -97,
+   "estado": "pasada"
+  },
+  {
+   "id": "f5c24909f1",
+   "nombre": "Meguro Kinen",
+   "grado": "G2",
+   "fecha": "2026-05-31",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0531meguro.html",
+   "anio": 2026,
+   "dias": -97,
+   "estado": "pasada"
+  },
+  {
+   "id": "9b98671142",
+   "nombre": "Yasuda Kinen",
+   "grado": "G1",
+   "fecha": "2026-06-07",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0607yasuda.html",
+   "anio": 2026,
+   "dias": -90,
+   "estado": "pasada"
+  },
+  {
+   "id": "ffe342991b",
+   "nombre": "Hakodate Sprint Stakes",
+   "grado": "G3",
+   "fecha": "2026-06-13",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0613hakodate-sprint.html",
+   "anio": 2026,
+   "dias": -84,
+   "estado": "pasada"
   },
   {
    "id": "takarazuka2026",
@@ -143,7 +773,328 @@
      "odds": "58.8"
     }
    ],
-   "fuente": "https://japanracing.jp/_news2026/pdf/260614.pdf"
+   "fuente": "https://japanracing.jp/_news2026/pdf/260614.pdf",
+   "dias": -83
+  },
+  {
+   "id": "acfc781c28",
+   "nombre": "Takarazuka Kinen",
+   "grado": "G1",
+   "fecha": "2026-06-14",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0614takarazuka.html",
+   "anio": 2026,
+   "dias": -83,
+   "estado": "pasada"
+  },
+  {
+   "id": "f96e3f8979",
+   "nombre": "Fuchu Himba Stakes",
+   "grado": "G3",
+   "fecha": "2026-06-21",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0621fuchu-himba.html",
+   "anio": 2026,
+   "dias": -76,
+   "estado": "pasada"
+  },
+  {
+   "id": "7ad7a3cf16",
+   "nombre": "Shirasagi Stakes",
+   "grado": "G3",
+   "fecha": "2026-06-21",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0621shirasagi.html",
+   "anio": 2026,
+   "dias": -76,
+   "estado": "pasada"
+  },
+  {
+   "id": "9691b4a232",
+   "nombre": "Radio Nikkei Sho",
+   "grado": "G3",
+   "fecha": "2026-06-28",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0628radionikkei.html",
+   "anio": 2026,
+   "dias": -69,
+   "estado": "pasada"
+  },
+  {
+   "id": "6aa1c4e75b",
+   "nombre": "Hakodate Kinen",
+   "grado": "G3",
+   "fecha": "2026-06-28",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0628hakodate-kinen.html",
+   "anio": 2026,
+   "dias": -69,
+   "estado": "pasada"
+  },
+  {
+   "id": "30b4d9a24f",
+   "nombre": "TV Nishinippon Corp. ShoKitakyushu Kinen",
+   "grado": "G3",
+   "fecha": "2026-07-05",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0705kitakyushu-kinen.html",
+   "anio": 2026,
+   "dias": -62,
+   "estado": "pasada"
+  },
+  {
+   "id": "9f95c919ea",
+   "nombre": "Tanabata Sho",
+   "grado": "G3",
+   "fecha": "2026-07-12",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0712tanabata.html",
+   "anio": 2026,
+   "dias": -55,
+   "estado": "pasada"
+  },
+  {
+   "id": "6aab75e5f6",
+   "nombre": "Kokura Kinen",
+   "grado": "G3",
+   "fecha": "2026-07-19",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0719kokura-kinen.html",
+   "anio": 2026,
+   "dias": -48,
+   "estado": "pasada"
+  },
+  {
+   "id": "e09783be42",
+   "nombre": "Hakodate Nisai Stakes",
+   "grado": "G3",
+   "fecha": "2026-07-19",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0719hakodate-nisai.html",
+   "anio": 2026,
+   "dias": -48,
+   "estado": "pasada"
+  },
+  {
+   "id": "33aa0052b6",
+   "nombre": "Sekiya Kinen",
+   "grado": "G3",
+   "fecha": "2026-07-26",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0726sekiya.html",
+   "anio": 2026,
+   "dias": -41,
+   "estado": "pasada"
+  },
+  {
+   "id": "5dba3c9a35",
+   "nombre": "Tokai Stakes",
+   "grado": "G3",
+   "fecha": "2026-07-26",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0726tokai.html",
+   "anio": 2026,
+   "dias": -41,
+   "estado": "pasada"
+  },
+  {
+   "id": "0b4aad7dae",
+   "nombre": "Ibis Summer Dash",
+   "grado": "G3",
+   "fecha": "2026-08-02",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0802ibis.html",
+   "anio": 2026,
+   "dias": -34,
+   "estado": "pasada"
+  },
+  {
+   "id": "b0f75b48b1",
+   "nombre": "Hokkaido Shimbun HaiQueen Stakes",
+   "grado": "G3",
+   "fecha": "2026-08-02",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0802queen.html",
+   "anio": 2026,
+   "dias": -34,
+   "estado": "pasada"
+  },
+  {
+   "id": "1cc199e3f3",
+   "nombre": "Elm Stakes",
+   "grado": "G3",
+   "fecha": "2026-08-08",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0808elm.html",
+   "anio": 2026,
+   "dias": -28,
+   "estado": "pasada"
+  },
+  {
+   "id": "eb3d6dceaf",
+   "nombre": "Leopard Stakes",
+   "grado": "G3",
+   "fecha": "2026-08-09",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0809leopard.html",
+   "anio": 2026,
+   "dias": -27,
+   "estado": "pasada"
+  },
+  {
+   "id": "0487ad6803",
+   "nombre": "CBC Sho",
+   "grado": "G3",
+   "fecha": "2026-08-09",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0809cbc.html",
+   "anio": 2026,
+   "dias": -27,
+   "estado": "pasada"
+  },
+  {
+   "id": "29dc0d0eb8",
+   "nombre": "Chukyo Kinen",
+   "grado": "G3",
+   "fecha": "2026-08-16",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0816chukyo-kinen.html",
+   "anio": 2026,
+   "dias": -20,
+   "estado": "pasada"
+  },
+  {
+   "id": "49209da11d",
+   "nombre": "Sapporo Kinen",
+   "grado": "G2",
+   "fecha": "2026-08-16",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0816sapporo-kinen.html",
+   "anio": 2026,
+   "dias": -20,
+   "estado": "pasada"
+  },
+  {
+   "id": "3465fd0d39",
+   "nombre": "Niigata Nisai Stakes",
+   "grado": "G3",
+   "fecha": "2026-08-23",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0823niigata-nisai.html",
+   "anio": 2026,
+   "dias": -13,
+   "estado": "pasada"
+  },
+  {
+   "id": "16cf3124e1",
+   "nombre": "Keeneland Cup",
+   "grado": "G3",
+   "fecha": "2026-08-23",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0823keeneland.html",
+   "anio": 2026,
+   "dias": -13,
+   "estado": "pasada"
+  },
+  {
+   "id": "8f5fb3fa6b",
+   "nombre": "Niigata Kinen",
+   "grado": "G3",
+   "fecha": "2026-08-30",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0830niigata-kinen.html",
+   "anio": 2026,
+   "dias": -6,
+   "estado": "pasada"
+  },
+  {
+   "id": "30d28b9963",
+   "nombre": "Chukyo Nisai Stakes",
+   "grado": "G3",
+   "fecha": "2026-08-30",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0830chukyo-nisai.html",
+   "anio": 2026,
+   "dias": -6,
+   "estado": "pasada"
+  },
+  {
+   "id": "7a7e2fc8fb",
+   "nombre": "Keisei HaiAutumn Handicap",
+   "grado": "G3",
+   "fecha": "2026-09-05",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0905keisei-hai.html",
+   "anio": 2026,
+   "dias": 0,
+   "estado": "lejana"
+  },
+  {
+   "id": "7941291a13",
+   "nombre": "Sapporo Nisai Stakes",
+   "grado": "G3",
+   "fecha": "2026-09-05",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0905sapporo-nisai.html",
+   "anio": 2026,
+   "dias": 0,
+   "estado": "lejana"
+  },
+  {
+   "id": "89c607716c",
+   "nombre": "Shion Stakes(Shuka Sho Trial)",
+   "grado": "G2",
+   "fecha": "2026-09-06",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0906shion.html",
+   "anio": 2026,
+   "dias": 1,
+   "estado": "lejana"
+  },
+  {
+   "id": "ec590e560b",
+   "nombre": "Sankei Sho Centaur Stakes",
+   "grado": "G2",
+   "fecha": "2026-09-06",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0906centaur.html",
+   "anio": 2026,
+   "dias": 1,
+   "estado": "lejana"
+  },
+  {
+   "id": "218e10e831",
+   "nombre": "Challenge Cup",
+   "grado": "G3",
+   "fecha": "2026-09-12",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0912challenge.html",
+   "anio": 2026,
+   "dias": 7,
+   "estado": "lejana"
+  },
+  {
+   "id": "64596e2717",
+   "nombre": "Asahi Hai St. Lite Kinen(Japanese St. Leger Trial)",
+   "grado": "G2",
+   "fecha": "2026-09-13",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0913stlite-kinen.html",
+   "anio": 2026,
+   "dias": 8,
+   "estado": "lejana"
+  },
+  {
+   "id": "88be32e025",
+   "nombre": "Kansai Telecasting Corp. ShoRose Stakes(Shuka Sho Trial)",
+   "grado": "G2",
+   "fecha": "2026-09-13",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0913rose.html",
+   "anio": 2026,
+   "dias": 8,
+   "estado": "lejana"
+  },
+  {
+   "id": "53398f5615",
+   "nombre": "Sankei Sho All Comers",
+   "grado": "G2",
+   "fecha": "2026-09-20",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0920allcomers.html",
+   "anio": 2026,
+   "dias": 15,
+   "estado": "lejana"
+  },
+  {
+   "id": "cca6bc6871",
+   "nombre": "Kobe Shimbun Hai(Japanese St. Leger Trial)",
+   "grado": "G2",
+   "fecha": "2026-09-21",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0921kobe-shimbun.html",
+   "anio": 2026,
+   "dias": 16,
+   "estado": "lejana"
+  },
+  {
+   "id": "5b2f54bd99",
+   "nombre": "Sirius Stakes",
+   "grado": "G3",
+   "fecha": "2026-09-26",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0926sirius.html",
+   "anio": 2026,
+   "dias": 21,
+   "estado": "lejana"
   },
   {
    "id": "sprinters2026",
@@ -199,7 +1150,78 @@
    ],
    "participantes": [],
    "llegada": [],
-   "fuente": "https://en.netkeiba.com/library/detail.html?no=233"
+   "fuente": "https://en.netkeiba.com/library/detail.html?no=233",
+   "dias": 22
+  },
+  {
+   "id": "425f89f544",
+   "nombre": "Sprinters Stakes",
+   "grado": "G1",
+   "fecha": "2026-09-27",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0927sprinters.html",
+   "anio": 2026,
+   "dias": 22,
+   "estado": "lejana"
+  },
+  {
+   "id": "ada70c8772",
+   "nombre": "Mainichi Okan",
+   "grado": "G2",
+   "fecha": "2026-10-04",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1004mainichi-okan.html",
+   "anio": 2026,
+   "dias": 29,
+   "estado": "lejana"
+  },
+  {
+   "id": "36700cde98",
+   "nombre": "Kyoto Daishoten",
+   "grado": "G2",
+   "fecha": "2026-10-04",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1004kyoto-daishoten.html",
+   "anio": 2026,
+   "dias": 29,
+   "estado": "lejana"
+  },
+  {
+   "id": "6bb4ee1ba8",
+   "nombre": "Saudi Arabia Royal Cup",
+   "grado": "G3",
+   "fecha": "2026-10-10",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1010sarc.html",
+   "anio": 2026,
+   "dias": 35,
+   "estado": "lejana"
+  },
+  {
+   "id": "5ca8e6f8a3",
+   "nombre": "Ireland Trophy",
+   "grado": "G2",
+   "fecha": "2026-10-11",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1011ireland-trophy.html",
+   "anio": 2026,
+   "dias": 36,
+   "estado": "lejana"
+  },
+  {
+   "id": "2c09687922",
+   "nombre": "MBS ShoSwan Stakes",
+   "grado": "G2",
+   "fecha": "2026-10-12",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1012swan.html",
+   "anio": 2026,
+   "dias": 37,
+   "estado": "lejana"
+  },
+  {
+   "id": "ce7bf1c366",
+   "nombre": "Fuji Stakes",
+   "grado": "G3",
+   "fecha": "2026-10-17",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1017fuji.html",
+   "anio": 2026,
+   "dias": 42,
+   "estado": "lejana"
   },
   {
    "id": "shuka2026",
@@ -208,14 +1230,35 @@
    "fecha": "2026-10-18",
    "hipodromo": "Kyoto",
    "distancia": 2000,
-   "estado": "lejana",
+   "estado": "se_acerca",
    "suenan": [
     "Juryoku Pierrot"
    ],
    "llegada": [],
    "ficha": {
     "que_es": "Tercera y última pata de la triple corona femenina japonesa."
-   }
+   },
+   "dias": 43
+  },
+  {
+   "id": "fe216ac64f",
+   "nombre": "Shuka Sho",
+   "grado": "G1",
+   "fecha": "2026-10-18",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1018shuka.html",
+   "anio": 2026,
+   "dias": 43,
+   "estado": "lejana"
+  },
+  {
+   "id": "6f3136b610",
+   "nombre": "Artemis Stakes",
+   "grado": "G3",
+   "fecha": "2026-10-24",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1024artemis.html",
+   "anio": 2026,
+   "dias": 49,
+   "estado": "lejana"
   },
   {
    "id": "kikuka2026",
@@ -226,7 +1269,138 @@
    "hipodromo": "Kyoto",
    "distancia": 3000,
    "estado": "lejana",
-   "llegada": []
+   "llegada": [],
+   "dias": 50
+  },
+  {
+   "id": "39e43b1902",
+   "nombre": "Kikuka Sho(Japanese St. Leger)",
+   "grado": "G1",
+   "fecha": "2026-10-25",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1025kikuka.html",
+   "anio": 2026,
+   "dias": 50,
+   "estado": "lejana"
+  },
+  {
+   "id": "c0d3c72ef4",
+   "nombre": "KBS Kyoto Sho Fantasy Stakes",
+   "grado": "G3",
+   "fecha": "2026-10-31",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1031fantasy.html",
+   "anio": 2026,
+   "dias": 56,
+   "estado": "lejana"
+  },
+  {
+   "id": "cd5afb923d",
+   "nombre": "Tenno Sho (Autumn)",
+   "grado": "G1",
+   "fecha": "2026-11-01",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1101tenno-autumn.html",
+   "anio": 2026,
+   "dias": 57,
+   "estado": "lejana"
+  },
+  {
+   "id": "283768499d",
+   "nombre": "Keio Hai Nisai Stakes",
+   "grado": "G2",
+   "fecha": "2026-11-07",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1107keio-hai-nisai.html",
+   "anio": 2026,
+   "dias": 63,
+   "estado": "lejana"
+  },
+  {
+   "id": "d46c34f80a",
+   "nombre": "Copa Republica Argentina",
+   "grado": "G2",
+   "fecha": "2026-11-08",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1108argentina.html",
+   "anio": 2026,
+   "dias": 64,
+   "estado": "lejana"
+  },
+  {
+   "id": "7a9e915f3f",
+   "nombre": "Miyako Stakes",
+   "grado": "G3",
+   "fecha": "2026-11-08",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1108miyako.html",
+   "anio": 2026,
+   "dias": 64,
+   "estado": "lejana"
+  },
+  {
+   "id": "cfded77561",
+   "nombre": "Musashino Stakes",
+   "grado": "G3",
+   "fecha": "2026-11-14",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1114musashino.html",
+   "anio": 2026,
+   "dias": 70,
+   "estado": "lejana"
+  },
+  {
+   "id": "5552e7014a",
+   "nombre": "Daily Hai Nisai Stakes",
+   "grado": "G2",
+   "fecha": "2026-11-14",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1114daily-hai.html",
+   "anio": 2026,
+   "dias": 70,
+   "estado": "lejana"
+  },
+  {
+   "id": "169add6fe4",
+   "nombre": "Queen Elizabeth II Cup",
+   "grado": "G1",
+   "fecha": "2026-11-15",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1115qe2.html",
+   "anio": 2026,
+   "dias": 71,
+   "estado": "lejana"
+  },
+  {
+   "id": "b45da8be8b",
+   "nombre": "Fukushima Kinen",
+   "grado": "G3",
+   "fecha": "2026-11-21",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1121fukushima-kinen.html",
+   "anio": 2026,
+   "dias": 77,
+   "estado": "lejana"
+  },
+  {
+   "id": "8f81d772d2",
+   "nombre": "Mile Championship",
+   "grado": "G1",
+   "fecha": "2026-11-22",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1122mcs.html",
+   "anio": 2026,
+   "dias": 78,
+   "estado": "lejana"
+  },
+  {
+   "id": "038072c200",
+   "nombre": "Tokyo Sports Hai Nisai Stakes",
+   "grado": "G3",
+   "fecha": "2026-11-23",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1123tokyo-sports.html",
+   "anio": 2026,
+   "dias": 79,
+   "estado": "lejana"
+  },
+  {
+   "id": "cbd59cfae7",
+   "nombre": "Radio Nikkei Hai Kyoto Nisai Stakes",
+   "grado": "G3",
+   "fecha": "2026-11-28",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1128kyoto-nisai.html",
+   "anio": 2026,
+   "dias": 84,
+   "estado": "lejana"
   },
   {
    "id": "japancup2026",
@@ -239,7 +1413,128 @@
    "llegada": [],
    "ficha": {
     "que_es": "Invitación internacional. La carrera con la que Japón se mide al resto del mundo en casa."
-   }
+   },
+   "dias": 85
+  },
+  {
+   "id": "6f4cd0c532",
+   "nombre": "Japan Cup(International Invitational)",
+   "grado": "G1",
+   "fecha": "2026-11-29",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1129jc.html",
+   "anio": 2026,
+   "dias": 85,
+   "estado": "lejana"
+  },
+  {
+   "id": "17eb0afda4",
+   "nombre": "Keihan Hai",
+   "grado": "G3",
+   "fecha": "2026-11-29",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1129keihan.html",
+   "anio": 2026,
+   "dias": 85,
+   "estado": "lejana"
+  },
+  {
+   "id": "89ea2b7039",
+   "nombre": "Sports Nippon Sho Stayers Stakes",
+   "grado": "G2",
+   "fecha": "2026-12-05",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1205stayers.html",
+   "anio": 2026,
+   "dias": 91,
+   "estado": "lejana"
+  },
+  {
+   "id": "98eef44960",
+   "nombre": "Naruo Kinen",
+   "grado": "G3",
+   "fecha": "2026-12-05",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1205naruo.html",
+   "anio": 2026,
+   "dias": 91,
+   "estado": "lejana"
+  },
+  {
+   "id": "9ce8a0a959",
+   "nombre": "Champions Cup",
+   "grado": "G1",
+   "fecha": "2026-12-06",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1206champions.html",
+   "anio": 2026,
+   "dias": 92,
+   "estado": "lejana"
+  },
+  {
+   "id": "cbf3506e20",
+   "nombre": "Chunichi Shimbun Hai",
+   "grado": "G3",
+   "fecha": "2026-12-12",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1212chunichi.html",
+   "anio": 2026,
+   "dias": 98,
+   "estado": "lejana"
+  },
+  {
+   "id": "7d0e5a55d0",
+   "nombre": "Capella Stakes",
+   "grado": "G3",
+   "fecha": "2026-12-13",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1213capella.html",
+   "anio": 2026,
+   "dias": 99,
+   "estado": "lejana"
+  },
+  {
+   "id": "99a82b0753",
+   "nombre": "Hanshin Juvenile Fillies",
+   "grado": "G1",
+   "fecha": "2026-12-13",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1213juvenile.html",
+   "anio": 2026,
+   "dias": 99,
+   "estado": "lejana"
+  },
+  {
+   "id": "67a94260dc",
+   "nombre": "Turquoise Stakes",
+   "grado": "G3",
+   "fecha": "2026-12-19",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1219turquoise.html",
+   "anio": 2026,
+   "dias": 105,
+   "estado": "lejana"
+  },
+  {
+   "id": "46fe32888f",
+   "nombre": "Asahi Hai Futurity Stakes",
+   "grado": "G1",
+   "fecha": "2026-12-20",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1220futurity.html",
+   "anio": 2026,
+   "dias": 106,
+   "estado": "lejana"
+  },
+  {
+   "id": "513616a462",
+   "nombre": "Hopeful Stakes",
+   "grado": "G1",
+   "fecha": "2026-12-26",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1226hopeful.html",
+   "anio": 2026,
+   "dias": 112,
+   "estado": "lejana"
+  },
+  {
+   "id": "63f513e620",
+   "nombre": "Hanshin Cup",
+   "grado": "G2",
+   "fecha": "2026-12-26",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1226hanshin.html",
+   "anio": 2026,
+   "dias": 112,
+   "estado": "lejana"
   },
   {
    "id": "arima2026",
@@ -248,58 +1543,30 @@
    "fecha": "2026-12-27",
    "hipodromo": "Nakayama",
    "distancia": 2500,
-   "estado": "lejana",
+   "estado": "se_acerca",
    "suenan": [
     "Meisho Tabaru"
    ],
    "llegada": [],
    "ficha": {
     "que_es": "El otro Grand Prix: cuadro votado por los aficionados y cierre del año. La carrera más vista del calendario japonés."
-   }
+   },
+   "dias": 113
+  },
+  {
+   "id": "f841f6ac60",
+   "nombre": "Arima Kinen (The Grand Prix)",
+   "grado": "G1",
+   "fecha": "2026-12-27",
+   "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1227arima.html",
+   "anio": 2026,
+   "dias": 113,
+   "estado": "lejana"
   }
  ],
  "caballos": [
   {
-   "nombre": "Meisho Tabaru",
-   "perfil": "fondo · 2.000-2.500 m",
-   "jockey": "Yutaka Take",
-   "forma": [
-    1,
-    3,
-    6,
-    2,
-    1
-   ],
-   "victorias": 1,
-   "g1": 1,
-   "menciones": 1,
-   "porque": "Ganó la Takarazuka Kinen de 2026 y con ella entró en una lista de tres: solo Gold Ship y Chrono Genesis habían ganado dos ediciones seguidas de uno de los dos Grand Prix del calendario japonés.",
-   "historial": [
-    {
-     "carrera": "takarazuka2026",
-     "fecha": "2026-06-14",
-     "pos": 1,
-     "grado": "G1"
-    }
-   ],
-   "proxima": "arima2026",
-   "seguido": true
-  },
-  {
    "nombre": "Juryoku Pierrot",
-   "perfil": "potra 3 años · 2.400 m",
-   "jockey": "Seina Imamura",
-   "forma": [
-    1,
-    1,
-    2,
-    4,
-    3
-   ],
-   "victorias": 1,
-   "g1": 1,
-   "menciones": 1,
-   "porque": "Ganó el Yushun Himba, la segunda pata de la triple corona femenina. Le queda la tercera: el Shuka Sho del 18 de octubre.",
    "historial": [
     {
      "carrera": "oaks2026",
@@ -308,23 +1575,72 @@
      "grado": "G1"
     }
    ],
+   "forma": [
+    1
+   ],
+   "menciones": 0,
    "proxima": "shuka2026",
+   "victorias": 1,
+   "g1": 1,
    "seguido": true
   },
   {
-   "nombre": "Croix du Nord",
-   "perfil": "fondo",
-   "forma": [
-    2,
-    1,
-    2,
-    3,
-    5
+   "nombre": "Meisho Tabaru",
+   "historial": [
+    {
+     "carrera": "takarazuka2026",
+     "fecha": "2026-06-14",
+     "pos": 1,
+     "grado": "G1"
+    }
    ],
+   "forma": [
+    1
+   ],
+   "menciones": 0,
+   "proxima": "arima2026",
+   "victorias": 1,
+   "g1": 1,
+   "seguido": true
+  },
+  {
+   "nombre": "Dream Core",
+   "historial": [
+    {
+     "carrera": "oaks2026",
+     "fecha": "2026-05-24",
+     "pos": 2,
+     "grado": "G1"
+    }
+   ],
+   "forma": [
+    2
+   ],
+   "menciones": 0,
    "victorias": 0,
    "g1": 0,
-   "menciones": 1,
-   "porque": "Salía favorito en la Takarazuka Kinen y perdió por un cuello. Rival directo de Meisho Tabaru.",
+   "seguido": false
+  },
+  {
+   "nombre": "Laughterlines",
+   "historial": [
+    {
+     "carrera": "oaks2026",
+     "fecha": "2026-05-24",
+     "pos": 3,
+     "grado": "G1"
+    }
+   ],
+   "forma": [
+    3
+   ],
+   "menciones": 0,
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Croix du Nord",
    "historial": [
     {
      "carrera": "takarazuka2026",
@@ -333,58 +1649,33 @@
      "grado": "G1"
     }
    ],
+   "forma": [
+    2
+   ],
+   "menciones": 0,
+   "victorias": 0,
+   "g1": 0,
    "seguido": false
   },
   {
-   "nombre": "Flicker Jab",
-   "perfil": "velocista · 1.200-1.400 m",
-   "forma": [],
+   "nombre": "Danon Decile",
+   "historial": [
+    {
+     "carrera": "takarazuka2026",
+     "fecha": "2026-06-14",
+     "pos": 3,
+     "grado": "G1"
+    }
+   ],
+   "forma": [
+    3
+   ],
+   "menciones": 0,
    "victorias": 0,
    "g1": 0,
-   "menciones": 1,
-   "porque": "Aparece en las noticias a cuenta de la Serie Sprint de Verano, la clasificación que premia la regularidad en las pruebas cortas del verano japonés.",
-   "historial": [],
-   "proxima": "sprinters2026",
-   "seguido": false
-  },
-  {
-   "nombre": "Puro Magic",
-   "perfil": "velocista · 1.200 m",
-   "forma": [],
-   "victorias": 0,
-   "g1": 0,
-   "menciones": 1,
-   "porque": "Llega al final de la Serie Sprint de Verano con la tabla a favor.",
-   "historial": [],
-   "proxima": "sprinters2026",
    "seguido": false
   }
  ],
- "estadisticas": {
-  "jockeys": [
-   {
-    "nombre": "Christophe Lemaire",
-    "victorias": 176,
-    "pct": 29.8,
-    "anio": 2024,
-    "nota": "séptimo título de jockey líder"
-   }
-  ],
-  "records": [
-   {
-    "que": "Yutaka Take · G1 ganados",
-    "valor": 86
-   },
-   {
-    "que": "Yutaka Take · Takarazuka Kinen",
-    "valor": 6
-   },
-   {
-    "que": "Caballos con doble Takarazuka",
-    "valor": 3
-   }
-  ]
- },
  "seguidos": {
   "caballos": [
    "Meisho Tabaru",
