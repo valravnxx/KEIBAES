@@ -271,34 +271,63 @@ function cuentaAtras(c) {
   timerCuenta = setInterval(tick, 30000);
 }
 
+var CAL = { modo: 'proximas', filtro: 'Todas' };
+
 function pintaCalendario() {
-  var cs = (D.carreras || []).filter(function (c) { return c.fecha; });
-  var h = '<div class="filters">' +
-    ['Todas','Solo G1','Tokyo','Nakayama','Kyoto','Hanshin'].map(function (t, i) {
-      return '<button class="f' + (i === 0 ? ' on' : '') + '" onclick="filtroCal(this,\'' + t + '\')">' + t + '</button>';
-    }).join('') + '</div><div id="cal-lista">' + listaCalendario(cs, 'Todas') + '</div>';
+  var modos = [['proximas', 'Próximas'], ['pasadas', 'Ya corridas']];
+  var filtros = ['Todas', 'Solo G1', 'G2 y G3', 'Tokyo', 'Nakayama', 'Kyoto', 'Hanshin'];
+
+  var h = '<div class="filters">' + modos.map(function (m) {
+      return '<button class="f' + (CAL.modo === m[0] ? ' on' : '') +
+        '" onclick="calModo(\'' + m[0] + '\')">' + m[1] + '</button>';
+    }).join('') + '</div>' +
+    '<div class="filters">' + filtros.map(function (t) {
+      return '<button class="f' + (CAL.filtro === t ? ' on' : '') +
+        '" onclick="calFiltro(\'' + t + '\')">' + t + '</button>';
+    }).join('') + '</div>' +
+    '<div id="cal-lista">' + listaCalendario() + '</div>';
   document.getElementById('p-cal').innerHTML = h;
 }
 
-function listaCalendario(cs, filtro) {
-  if (filtro === 'Solo G1') cs = cs.filter(function (c) { return c.grado === 'G1'; });
-  else if (filtro !== 'Todas') cs = cs.filter(function (c) { return c.hipodromo === filtro; });
-  if (!cs.length) return '<div class="empty">Nada con ese filtro.</div>';
+function calModo(m) { CAL.modo = m; pintaCalendario(); }
+function calFiltro(f) { CAL.filtro = f; pintaCalendario(); }
 
-  var h = '', mes = '';
+function listaCalendario() {
+  var cs = (D.carreras || []).filter(function (c) { return c.fecha; });
+
+  // Lo que ya se ha corrido no estorba a lo que viene: son dos pestañas.
+  var corrida = function (c) {
+    return c.estado === 'corrida' || c.estado === 'pasada' ||
+           (c.dias != null && c.dias < 0);
+  };
+  cs = cs.filter(function (c) {
+    return CAL.modo === 'pasadas' ? corrida(c) : !corrida(c);
+  });
+
+  var f = CAL.filtro;
+  if (f === 'Solo G1') cs = cs.filter(function (c) { return c.grado === 'G1'; });
+  else if (f === 'G2 y G3') cs = cs.filter(function (c) { return c.grado === 'G2' || c.grado === 'G3'; });
+  else if (f !== 'Todas') cs = cs.filter(function (c) { return c.hipodromo === f; });
+
+  // Próximas: de la más cercana en adelante. Pasadas: de la más reciente atrás.
+  cs.sort(function (a, b) {
+    return CAL.modo === 'pasadas' ? (a.fecha < b.fecha ? 1 : -1)
+                                  : (a.fecha > b.fecha ? 1 : -1);
+  });
+
+  if (!cs.length) {
+    return '<div class="empty">Nada con ese filtro.</div>';
+  }
+
+  var h = '<div class="empty" style="padding:4px 0 12px;text-align:left">' +
+    cs.length + (CAL.modo === 'pasadas' ? ' ya corridas' : ' por delante') + '</div>';
+  var mes = '';
   cs.forEach(function (c) {
-    var f = fecha(c.fecha), etiqueta = f.m + ' ' + f.anio;
+    var fe = fecha(c.fecha), etiqueta = fe.m + ' ' + fe.anio;
     if (etiqueta !== mes) { mes = etiqueta; h += '<div class="month">' + esc(mes) + '</div>'; }
     h += filaCarrera(c, true);
   });
   return h;
-}
-
-function filtroCal(btn, t) {
-  btn.parentNode.querySelectorAll('.f').forEach(function (x) { x.classList.remove('on'); });
-  btn.classList.add('on');
-  document.getElementById('cal-lista').innerHTML =
-    listaCalendario((D.carreras || []).filter(function (c) { return c.fecha; }), t);
 }
 
 function pintaCaballos() {
@@ -410,7 +439,8 @@ function fichaFutura(c) {
       c.distancia ? c.distancia + ' m' : ''].filter(Boolean).join(' · ')) + '</p>' +
     '<div class="meta">' +
     (he ? '<span class="chip">' + esc(c.hora_jst) + ' JST · ' + he + ' España</span>' : '') +
-    (c.dias != null ? '<span class="chip">faltan ' + c.dias + ' días</span>' : '') + '</div></div>';
+    (c.dias === 0 ? '<span class="chip">Se corre hoy</span>' :
+     c.dias > 0 ? '<span class="chip">faltan ' + c.dias + ' días</span>' : '') + '</div></div>';
 
   var datos = [];
   if (c.superficie) datos.push(c.superficie === 'cesped' ? 'Césped' : 'Arena');
