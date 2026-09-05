@@ -111,7 +111,8 @@ function volver() {
 function filaCarrera(c, tap) {
   var f = fecha(c.fecha);
   var pasada = c.estado === 'corrida' || c.estado === 'pasada';
-  var sub = [c.hipodromo, c.distancia ? c.distancia + ' m' : '', c.alias || ''].filter(Boolean).join(' · ');
+  var sub = [c.hipodromo, c.distancia ? c.distancia + ' m' : '', c.alias || '',
+             c.estado === 'pasada' ? 'ya corrida' : ''].filter(Boolean).join(' · ');
   return '<div class="race' + (pasada ? ' past' : '') + (tap ? ' tap' : '') + '"' +
     (tap ? ' onclick="verCarrera(\'' + c.id + '\')"' : '') + '>' +
     '<div class="day"><b>' + f.d + '</b><span>' + (f.dow || f.m) + '</span></div>' +
@@ -198,7 +199,8 @@ function pintaHoy() {
     h += '<div class="hero tap" onclick="verCarrera(\'' + prox.id + '\')">' +
       '<span class="grade">' + esc(prox.grado) + '</span>' +
       '<h1>' + esc(prox.nombre) + ' <span style="font-size:17px;color:var(--tx3);font-weight:400">›</span></h1>' +
-      '<p class="jp">' + esc([prox.nombre_jp, prox.hipodromo, prox.distancia + ' m'].filter(Boolean).join(' · ')) + '</p>' +
+      '<p class="jp">' + esc([prox.nombre_jp, prox.hipodromo,
+        prox.distancia ? prox.distancia + ' m' : ''].filter(Boolean).join(' · ')) + '</p>' +
       '<div class="cd"><div><b id="cd-d">–</b><span>días</span></div>' +
       '<div><b id="cd-h">–</b><span>horas</span></div>' +
       '<div><b id="cd-m">–</b><span>min</span></div></div>' +
@@ -247,9 +249,19 @@ function cuentaAtras(c) {
   var objetivo = Date.UTC(+c.fecha.slice(0,4), +c.fecha.slice(5,7) - 1, +c.fecha.slice(8,10),
                           +(c.hora_jst || '15:00').slice(0,2) - 9, +(c.hora_jst || '15:00').slice(3,5));
   function tick() {
-    var s = Math.max(0, Math.floor((objetivo - Date.now()) / 1000));
     var d = document.getElementById('cd-d');
     if (!d) { clearInterval(timerCuenta); return; }
+    var s = Math.floor((objetivo - Date.now()) / 1000);
+    if (s <= 0) {
+      // Ya ha salido (o es hoy y no sabemos la hora). Tres ceros no dicen
+      // nada; mejor decirlo con palabras.
+      var caja = d.closest('.cd');
+      if (caja) caja.outerHTML =
+        '<div class="chip" style="display:inline-block;margin-bottom:14px;font-weight:700">' +
+        'Se corre hoy</div>';
+      clearInterval(timerCuenta);
+      return;
+    }
     d.textContent = Math.floor(s / 86400);
     document.getElementById('cd-h').textContent = String(Math.floor(s % 86400 / 3600)).padStart(2, '0');
     document.getElementById('cd-m').textContent = String(Math.floor(s % 3600 / 60)).padStart(2, '0');
@@ -351,7 +363,7 @@ function fichaCorrida(c) {
     '<div class="rhead"><span class="g ' + esc(c.grado) + '">' + esc(c.grado) + '</span>' +
     '<h3>' + esc(c.nombre) + (c.alias ? ' · ' + esc(c.alias) : '') + '</h3></div>' +
     '<p class="rsub">' + esc([c.nombre_jp, f.d + ' ' + f.m + ' ' + f.anio, c.hipodromo,
-      c.distancia + ' m'].filter(Boolean).join(' · ')) + '</p>';
+      c.distancia ? c.distancia + ' m' : ''].filter(Boolean).join(' · ')) + '</p>';
 
   if (g.tiempo) {
     h += '<div class="stats spo"><div><b>' + esc(g.tiempo) + '</b><span>tiempo</span></div>' +
@@ -395,10 +407,20 @@ function fichaFutura(c) {
   var h = '<div class="hero"><span class="grade">' + esc(c.grado) + '</span>' +
     '<h1>' + esc(c.nombre) + '</h1>' +
     '<p class="jp">' + esc([c.nombre_jp, f.d + ' ' + f.m + ' ' + f.anio, c.hipodromo,
-      c.distancia + ' m'].filter(Boolean).join(' · ')) + '</p>' +
+      c.distancia ? c.distancia + ' m' : ''].filter(Boolean).join(' · ')) + '</p>' +
     '<div class="meta">' +
     (he ? '<span class="chip">' + esc(c.hora_jst) + ' JST · ' + he + ' España</span>' : '') +
     (c.dias != null ? '<span class="chip">faltan ' + c.dias + ' días</span>' : '') + '</div></div>';
+
+  var datos = [];
+  if (c.superficie) datos.push(c.superficie === 'cesped' ? 'Césped' : 'Arena');
+  if (c.sentido) datos.push('cuerda a ' + c.sentido);
+  if (c.edades) datos.push(c.edades);
+  if (c.premio) datos.push(c.premio + ' en premios');
+  if (datos.length) {
+    h += '<h2 class="sec">La carrera</h2><div class="meta" style="margin-bottom:14px">' +
+      datos.map(function (x) { return '<span class="chip">' + esc(x) + '</span>'; }).join('') + '</div>';
+  }
 
   if (fi.que_es) h += '<h2 class="sec">Qué es esta carrera</h2><p class="cron">' + esc(fi.que_es) + '</p>';
   if (fi.trazado) h += '<h2 class="sec">El recorrido</h2><p class="cron">' + esc(fi.trazado) + '</p>';
@@ -441,8 +463,13 @@ function fichaFutura(c) {
       }).join('') + '</div>';
   }
 
-  if (c.fuente) h += '<div class="src" style="border:0">Ficha de carrera: ' +
-    '<a href="' + esc(c.fuente) + '" target="_blank" rel="noopener">netkeiba</a></div>';
+  var enlace = c.fuente || c.url;
+  if (enlace) h += '<div class="src" style="border:0">Ficha oficial: ' +
+    '<a href="' + esc(enlace) + '" target="_blank" rel="noopener">verla en japanracing.jp</a></div>';
+  if (!fi.que_es && !lista.length && !datos.length) {
+    h += '<div class="empty">Los detalles de esta carrera aún no se han descargado.<br>' +
+      'Se rellenan solos: cada día se abren las fichas de las carreras más cercanas.</div>';
+  }
   return h;
 }
 
