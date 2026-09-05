@@ -1,6 +1,6 @@
 {
  "version": 1,
- "actualizado": "2026-09-05T14:54:31+00:00",
+ "actualizado": "2026-09-05T16:25:00+00:00",
  "noticias": [
   {
    "id": "a3f9c1",
@@ -1969,7 +1969,9 @@
     ]
    },
    "dias": -41,
-   "estado": "pasada"
+   "estado": "pasada",
+   "race_id": "202604020207",
+   "hora_jst": "15:45"
   },
   {
    "id": "852bb70020",
@@ -1994,7 +1996,9 @@
     ]
    },
    "dias": -41,
-   "estado": "pasada"
+   "estado": "pasada",
+   "race_id": "202607020207",
+   "hora_jst": "15:35"
   },
   {
    "id": "ee9b54dc7f",
@@ -2018,7 +2022,9 @@
     ]
    },
    "dias": -34,
-   "estado": "pasada"
+   "estado": "pasada",
+   "race_id": "202604020407",
+   "hora_jst": "15:45"
   },
   {
    "id": "46782834e1",
@@ -2043,7 +2049,9 @@
     ]
    },
    "dias": -34,
-   "estado": "pasada"
+   "estado": "pasada",
+   "race_id": "202601010411",
+   "hora_jst": "15:25"
   },
   {
    "id": "d3ec19a61f",
