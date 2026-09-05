@@ -15,11 +15,12 @@
    hace que el navegador tire la caché vieja y se quede con la nueva.
 */
 
-var VERSION = 'keiba-es-v2';
+var VERSION = 'keiba-es-v3';
 
 var ARMAZON = [
   './', './index.html', './estilos.css', './app.js', './datos.json',
-  './manifest.json', './iconos/icono-192.png', './iconos/icono-512.png'
+  './archivo.json', './manifest.json',
+  './iconos/icono-192.png', './iconos/icono-512.png'
 ];
 
 self.addEventListener('install', function (e) {
@@ -57,13 +58,15 @@ self.addEventListener('fetch', function (e) {
           var copia = r.clone();
           // datos.json se pide con ?v=... para saltarse la caché del
           // navegador; se guarda sin la coletilla para poder recuperarlo.
-          var clave = url.pathname.endsWith('datos.json') ? './datos.json' : req;
+          var clave = url.pathname.endsWith('datos.json') ? './datos.json'
+                    : url.pathname.endsWith('archivo.json') ? './archivo.json' : req;
           caches.open(VERSION).then(function (c) { c.put(clave, copia); });
         }
         return r;
       })
       .catch(function () {
-        var clave = url.pathname.endsWith('datos.json') ? './datos.json' : req;
+        var clave = url.pathname.endsWith('datos.json') ? './datos.json'
+                  : url.pathname.endsWith('archivo.json') ? './archivo.json' : req;
         return caches.match(clave).then(function (hit) {
           return hit || caches.match('./index.html');
         });

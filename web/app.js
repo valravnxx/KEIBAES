@@ -20,6 +20,7 @@ function cargarPrefs() {
   try {
     var g = localStorage.getItem('keiba-es');
     if (g) Object.assign(P, JSON.parse(g));
+    else P.nuevoAqui = true;   // primera vez en este dispositivo
   } catch (e) { /* modo privado o almacenamiento bloqueado: seguimos igual */ }
   document.body.classList.toggle('nospo', P.sinSpoilers);
   document.body.dataset.tema = P.tema || 'nocturno';
@@ -60,6 +61,23 @@ function horaEspanola(fechaISO, horaJST) {
 }
 
 function carrera(id) { return (D.carreras || []).find(function (c) { return c.id === id; }); }
+function jockey(n)   { return (D.jockeys  || []).find(function (j) { return j.nombre === n; }); }
+
+/** "Y. Take" y "Y.Take" son el mismo hombre. */
+function normJockey(n) {
+  return String(n || '').replace(/\s+/g, ' ').trim().replace(/\b([A-Z])\.\s+/g, '$1.');
+}
+
+function haceCuanto(iso) {
+  var t = Date.parse(iso);
+  if (isNaN(t)) return '';
+  var m = Math.floor((Date.now() - t) / 60000);
+  if (m < 2) return 'ahora mismo';
+  if (m < 60) return 'hace ' + m + ' min';
+  var h = Math.floor(m / 60);
+  if (h < 24) return 'hace ' + h + ' h';
+  return 'hace ' + Math.floor(h / 24) + ' días';
+}
 function caballo(n)  { return (D.caballos || []).find(function (c) { return c.nombre === n; }); }
 function sigue(n)    { return P.seguidos.indexOf(n) > -1; }
 
@@ -137,7 +155,8 @@ function tarjetaNoticia(n) {
 /* Vista de lectura: la noticia entera traducida. Solo tiene sentido porque
    esto es de uso personal — no se republica nada, se lee. */
 function leer(id) {
-  var n = (D.noticias || []).find(function (x) { return x.id === id; });
+  var n = (D.noticias || []).find(function (x) { return x.id === id; }) ||
+          (ARCHIVO.noticias || []).find(function (x) { return x.id === id; });
   if (!n) return;
   abrir('p-leer', 'Noticia', function () {
     document.getElementById('p-leer').innerHTML =
@@ -248,6 +267,39 @@ function pintaHoy() {
       return B - A;
     });
   }
+  // --- ¿corre hoy o mañana alguno de los tuyos?
+  var alerta = [];
+  (D.carreras || []).forEach(function (c) {
+    if (c.dias == null || c.dias < 0 || c.dias > 1) return;
+    var mios = (c.participantes || []).map(function (p) { return p.caballo; })
+      .filter(sigue);
+    (D.caballos || []).forEach(function (cb) {
+      if (sigue(cb.nombre) && cb.proxima === c.id && mios.indexOf(cb.nombre) < 0) {
+        mios.push(cb.nombre);
+      }
+    });
+    if (mios.length) alerta.push({ c: c, mios: mios });
+  });
+  if (alerta.length) {
+    h += '<h2 class="sec">Tus caballos</h2>' + alerta.map(function (a) {
+      return '<div class="aviso tap" onclick="verCarrera(\'' + a.c.id + '\')">' +
+        '<b>' + esc(a.mios.join(', ')) + '</b> corre ' +
+        (a.c.dias === 0 ? 'hoy' : 'mañana') + ' · ' + esc(a.c.nombre) +
+        (a.c.hora_jst ? ' · ' + horaEspanola(a.c.fecha, a.c.hora_jst) + ' hora española' : '') +
+        '</div>';
+    }).join('');
+  }
+
+  // --- este fin de semana (o los próximos 7 días)
+  var pronto = (D.carreras || []).filter(function (c) {
+    return c.dias != null && c.dias >= 0 && c.dias <= 7 &&
+           c.estado !== 'corrida' && c.estado !== 'pasada';
+  });
+  if (pronto.length > 1) {
+    h += '<h2 class="sec">Los próximos siete días <em>' + pronto.length + '</em></h2>' +
+      pronto.map(function (c) { return filaCarrera(c, true); }).join('');
+  }
+
   h += '<h2 class="sec">Noticias del día</h2>' +
        noticias.slice(0, 8).map(tarjetaNoticia).join('');
 
@@ -358,15 +410,51 @@ function listaCalendario() {
   return h;
 }
 
+var CAB = { modo: 'caballos', filtro: 'Todos' };
+
 function pintaCaballos() {
+  var modos = [['caballos', 'Caballos'], ['jockeys', 'Jockeys']];
+  var h = '<div class="filters">' + modos.map(function (m) {
+      return '<button class="f' + (CAB.modo === m[0] ? ' on' : '') +
+        '" onclick="cabModo(\'' + m[0] + '\')">' + m[1] + '</button>';
+    }).join('') + '</div>';
+
+  var filtros = CAB.modo === 'jockeys'
+    ? ['Todos', 'Siguiendo', 'Con G1']
+    : ['Todos', 'Siguiendo', 'Con G1', 'Corren pronto'];
+  h += '<div class="filters">' + filtros.map(function (t) {
+      return '<button class="f' + (CAB.filtro === t ? ' on' : '') +
+        '" onclick="cabFiltro(\'' + t + '\')">' + t + '</button>';
+    }).join('') + '</div><div id="cab-lista">' + listaCaballos() + '</div>';
+  document.getElementById('p-cab').innerHTML = h;
+}
+
+function cabModo(m) { CAB.modo = m; CAB.filtro = 'Todos'; pintaCaballos(); }
+function cabFiltro(f) { CAB.filtro = f; pintaCaballos(); }
+
+function listaCaballos() {
+  if (CAB.modo === 'jockeys') return listaJockeys();
+
   var cs = (D.caballos || []).slice();
+  if (CAB.filtro === 'Siguiendo') cs = cs.filter(function (c) { return sigue(c.nombre); });
+  else if (CAB.filtro === 'Con G1') cs = cs.filter(function (c) { return c.g1 > 0; });
+  else if (CAB.filtro === 'Corren pronto') {
+    cs = cs.filter(function (c) {
+      var p = c.proxima ? carrera(c.proxima) : null;
+      return p && p.dias != null && p.dias >= 0 && p.dias <= 14;
+    });
+  }
   cs.sort(function (a, b) { return (sigue(b.nombre) ? 1 : 0) - (sigue(a.nombre) ? 1 : 0); });
-  var h = cs.map(function (c) {
+  if (!cs.length) return '<div class="empty">Nada con ese filtro.</div>';
+
+  return '<div class="empty" style="padding:4px 0 12px;text-align:left">' + cs.length +
+    ' caballos</div>' + cs.slice(0, 200).map(function (c) {
     var prox = c.proxima ? carrera(c.proxima) : null;
+    var sub = [c.perfil, c.padre ? 'por ' + c.padre : '', c.jockey].filter(Boolean).join(' · ');
     return '<div class="horse tap" onclick="verCaballo(\'' + esc(c.nombre) + '\')">' +
       '<div class="silk" style="background:' + color(c.nombre) + '">' + esc(iniciales(c.nombre)) + '</div>' +
       '<div class="n"><b>' + esc(c.nombre) + '</b>' +
-      '<div class="sub">' + esc(c.perfil || '') + (c.jockey ? ' · ' + esc(c.jockey) : '') + '</div>' +
+      (sub ? '<div class="sub">' + esc(sub) + '</div>' : '') +
       (c.forma && c.forma.length ? '<div class="form">' + c.forma.map(function (p) {
         return '<i class="' + (p === 1 ? 'w' : p <= 3 ? 'p' : '') + '">' + p + '</i>';
       }).join('') + '</div>' : '') +
@@ -374,9 +462,93 @@ function pintaCaballos() {
         fecha(prox.fecha).d + ' ' + fecha(prox.fecha).m + '</div>' : '') +
       '</div>' + estrella(c.nombre) + '</div>';
   }).join('');
-  document.getElementById('p-cab').innerHTML = h +
-    '<div class="empty">La lista se llena sola: entra todo caballo que gane o coloque en una ' +
-    'carrera graduada, o que se repita en las noticias. La estrella marca a quién sigues.</div>';
+}
+
+function listaJockeys() {
+  var js = (D.jockeys || []).slice();
+  if (CAB.filtro === 'Siguiendo') js = js.filter(function (j) { return j.seguido; });
+  else if (CAB.filtro === 'Con G1') js = js.filter(function (j) { return j.g1 > 0; });
+  if (!js.length) return '<div class="empty">Todavía no hay jockeys registrados.<br>' +
+    'Salen de las clasificaciones, que se van descargando cada mañana.</div>';
+
+  return '<div class="empty" style="padding:4px 0 12px;text-align:left">' + js.length +
+    ' jockeys</div>' + js.slice(0, 120).map(function (j) {
+    var sub = [j.montas + ' montas registradas',
+               j.victorias ? j.victorias + ' victorias' : '',
+               j.g1 ? j.g1 + ' G1' : ''].filter(Boolean).join(' · ');
+    return '<div class="horse tap" onclick="verJockey(\'' + esc(j.nombre) + '\')">' +
+      '<div class="silk" style="background:' + color(j.nombre) + '">' + esc(iniciales(j.nombre)) + '</div>' +
+      '<div class="n"><b>' + esc(j.nombre) + '</b>' +
+      '<div class="sub">' + esc(sub) + '</div>' +
+      (j.proximas && j.proximas.length ? '<div class="next">Monta en <b>' +
+        j.proximas.length + '</b> carrera' + (j.proximas.length > 1 ? 's' : '') +
+        ' próxima' + (j.proximas.length > 1 ? 's' : '') + '</div>' : '') +
+      '</div>' + (j.seguido ? '<span class="star on"><svg viewBox="0 0 24 24">' +
+      '<path d="M12 3l2.6 5.6 6 .8-4.4 4.2 1.1 6-5.3-3-5.3 3 1.1-6L3.4 9.4l6-.8z"/></svg></span>' : '') +
+      '</div>';
+  }).join('');
+}
+
+/* ------------------------------------------------------- ficha de jockey */
+
+function verJockey(nombre) {
+  var j = jockey(nombre);
+  if (!j) return;
+  abrir('p-jockey', nombre, function () {
+    var h = '<div class="card" style="display:flex;gap:14px;align-items:center">' +
+      '<div class="silk" style="background:' + color(nombre) + ';width:56px;height:56px;font-size:19px">' +
+      esc(iniciales(nombre)) + '</div><div style="flex:1">' +
+      '<div style="font-size:21px;font-weight:800">' + esc(nombre) + '</div>' +
+      '<div style="font-size:12.5px;color:var(--tx3);margin-top:2px">jockey</div></div></div>';
+
+    h += '<div class="stats"><div><b>' + j.g1 + '</b><span>G1 ganados</span></div>' +
+      '<div><b>' + j.victorias + '</b><span>victorias</span></div>' +
+      '<div><b>' + j.montas + '</b><span>montas vistas</span></div></div>' +
+      '<div class="note">Estos números son solo de las carreras que esta app ha ' +
+      'registrado, no la temporada completa del jockey.</div>';
+
+    if ((j.proximas || []).length) {
+      h += '<h2 class="sec">Próximas montas</h2>' + j.proximas.map(function (m) {
+        var c = carrera(m.carrera);
+        if (!c) return '';
+        var f = fecha(c.fecha);
+        return '<div class="card tap" onclick="verCarrera(\'' + c.id + '\')" ' +
+          'style="display:flex;align-items:center;gap:11px">' +
+          '<div class="day" style="min-width:40px;text-align:center"><b style="font-size:19px;' +
+          'font-weight:800;display:block;line-height:1">' + f.d + '</b>' +
+          '<span style="font-size:9px;color:var(--tx3);text-transform:uppercase">' + f.m + '</span></div>' +
+          '<div style="flex:1"><b style="font-size:14.5px">' + esc(c.nombre) + '</b>' +
+          '<div style="font-size:12px;color:var(--tx3)">sobre ' + esc(m.caballo) + '</div></div>' +
+          '<span class="g ' + esc(c.grado) + '">' + esc(c.grado) + '</span></div>';
+      }).join('');
+    }
+
+    if ((j.historial || []).length) {
+      h += '<h2 class="sec">Últimos podios</h2>' + j.historial.map(function (x) {
+        var c = carrera(x.carrera);
+        if (!c) return '';
+        var f = fecha(x.fecha);
+        return '<div class="card tap" onclick="verCarrera(\'' + c.id + '\')" ' +
+          'style="display:flex;align-items:center;gap:11px">' +
+          '<span class="pos" style="width:24px;height:24px;border-radius:6px;background:' +
+          (x.pos === 1 ? 'var(--oro);color:#181207' : 'var(--card2);color:var(--tx2)') +
+          ';font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center">' +
+          x.pos + '</span><div style="flex:1"><b style="font-size:14px">' + esc(c.nombre) + '</b>' +
+          '<div style="font-size:11.5px;color:var(--tx3)">' + esc(x.caballo) + ' · ' +
+          f.d + ' ' + f.m + ' ' + f.anio + '</div></div>' +
+          '<span class="g ' + esc(c.grado) + '">' + esc(c.grado) + '</span></div>';
+      }).join('');
+    }
+
+    if ((j.caballos || []).length) {
+      h += '<h2 class="sec">Caballos que ha montado</h2>' +
+        j.caballos.map(function (n) {
+          return caballo(n) ? '<button class="chip2" onclick="verCaballo(\'' + esc(n) + '\')">' +
+            esc(n) + ' ›</button>' : '<span class="chip2" style="opacity:.6">' + esc(n) + '</span>';
+        }).join('');
+    }
+    document.getElementById('p-jockey').innerHTML = h;
+  });
 }
 
 function pintaResultados() {
@@ -573,8 +745,21 @@ function verCaballo(nombre) {
       esc(iniciales(nombre)) + '</div><div style="flex:1">' +
       '<div style="font-size:21px;font-weight:800">' + esc(nombre) + '</div>' +
       '<div style="font-size:12.5px;color:var(--tx3);margin-top:2px">' +
-      esc([c.perfil, c.jockey].filter(Boolean).join(' · ')) + '</div></div>' +
-      estrella(nombre) + '</div>';
+      esc([c.sexo, c.edad ? c.edad + ' años' : '', c.perfil].filter(Boolean).join(' · ')) +
+      '</div></div>' + estrella(nombre) + '</div>';
+
+    // Pedigrí: en hípica japonesa el padre es media conversación.
+    var pedi = [];
+    if (c.padre) pedi.push(['Padre', c.padre]);
+    if (c.madre) pedi.push(['Madre', c.madre]);
+    if (c.entrenador) pedi.push(['Entrenador', c.entrenador]);
+    if (c.ganancias) pedi.push(['Ganancias', '¥' + c.ganancias]);
+    if (pedi.length) {
+      h += '<div class="card fin" style="padding-top:14px">' + pedi.map(function (x) {
+        return '<div class="fr"><span class="jk" style="width:88px;flex:none">' + x[0] + '</span>' +
+          '<span class="hn">' + esc(x[1]) + '</span></div>';
+      }).join('') + '</div>';
+    }
 
     var n = (c.historial || []).length;
     if (n) {
@@ -590,6 +775,20 @@ function verCaballo(nombre) {
     }
 
     if (c.porque) h += '<h2 class="sec">Por qué seguirlo</h2><p class="cron">' + esc(c.porque) + '</p>';
+
+    // Jockeys que lo han montado, sacados de su propio historial.
+    var suyos = [];
+    (c.historial || []).forEach(function (x) {
+      var jn = normJockey(x.jockey);
+      if (jn && suyos.indexOf(jn) < 0) suyos.push(jn);
+    });
+    if (c.jockey) { var jj = normJockey(c.jockey); if (suyos.indexOf(jj) < 0) suyos.unshift(jj); }
+    if (suyos.length) {
+      h += '<h2 class="sec">Lo han montado</h2>' + suyos.map(function (jn) {
+        return jockey(jn) ? '<button class="chip2" onclick="verJockey(\'' + esc(jn) + '\')">' +
+          esc(jn) + ' ›</button>' : '<span class="chip2" style="opacity:.6">' + esc(jn) + '</span>';
+      }).join('');
+    }
 
     if (n) {
       h += '<h2 class="sec">Historial <em>' + n + ' registrada' + (n > 1 ? 's' : '') + '</em></h2>' +
@@ -638,9 +837,24 @@ function pintaPerfil() {
           '</b> · ' + esc(p.nombre) + '</div>' : '<div class="next">Sin carrera confirmada</div>') +
         '</div></div>';
     }).join('') +
-    '<button class="btn pri" onclick="descargarICS()">Añadir sus carreras a mi calendario</button>' +
-    '<div class="empty" style="padding:6px 20px 18px">Un archivo .ics en hora española. ' +
-    'El calendario del móvil hace el resto: sin permisos de notificación, sin servidor.</div>';
+    '<a class="btn pri" href="mis-carreras.ics" download="mis-carreras.ics">' +
+    'Añadir sus carreras a mi calendario</a>' +
+    '<div class="empty" style="padding:6px 20px 18px">Se genera solo cada mañana con todas ' +
+    'sus próximas citas, en hora española. Ábrelo una vez y el calendario del móvil ' +
+    'hace el resto.</div>';
+  }
+
+  var misJ = (D.jockeys || []).filter(function (j) { return j.seguido; });
+  if (misJ.length) {
+    h += '<h2 class="sec">Mis jockeys <em>' + misJ.length + '</em></h2>' +
+      misJ.map(function (j) {
+        return '<div class="horse tap" onclick="verJockey(\'' + esc(j.nombre) + '\')">' +
+          '<div class="silk" style="background:' + color(j.nombre) + '">' +
+          esc(iniciales(j.nombre)) + '</div><div class="n"><b>' + esc(j.nombre) + '</b>' +
+          '<div class="sub">' + j.victorias + ' victorias · ' + j.montas + ' montas</div>' +
+          ((j.proximas || []).length ? '<div class="next">Monta en <b>' + j.proximas.length +
+            '</b> carrera próxima</div>' : '') + '</div></div>';
+      }).join('');
   }
 
   h += '<div class="card tap" onclick="abrir(\'p-stats\',\'Estadísticas\')" style="display:flex;align-items:center;gap:12px">' +
@@ -768,34 +982,43 @@ function descargarICS() {
 
 /* -------------------------------------------------------- estadísticas */
 
+function barras(titulo, lista, unidad) {
+  if (!lista || !lista.length) return '';
+  var mx = Math.max.apply(null, lista.map(function (x) { return x.victorias || 0; }).concat([1]));
+  return '<h2 class="sec">' + titulo + '</h2><div class="card">' + lista.map(function (x, i) {
+    return '<div class="bar"><span class="rk">' + (i + 1) + '</span>' +
+      '<span class="nm">' + esc(x.nombre) + '</span>' +
+      '<span class="track"><span class="fill" style="width:' +
+      Math.round((x.victorias || 0) / mx * 100) + '%"></span></span>' +
+      '<span class="vl">' + (x.victorias || 0) + '</span></div>';
+  }).join('') + '</div>' +
+  (unidad ? '<div class="empty" style="padding:2px 0 10px;text-align:left">' + unidad + '</div>' : '');
+}
+
 function pintaStats() {
   var e = D.estadisticas || {};
   var mios = (D.caballos || []).filter(function (c) { return sigue(c.nombre); });
   var h = '';
 
   if (mios.length) {
-    var max = Math.max.apply(null, mios.map(function (c) { return c.victorias || 0; }).concat([1]));
     h += '<h2 class="sec">Mis caballos</h2><div class="kpi">' +
       '<div><b>' + mios.reduce(function (s, c) { return s + (c.g1 || 0); }, 0) + '</b><span>victorias en G1</span></div>' +
-      '<div><b>' + mios.length + '</b><span>caballos seguidos</span></div></div>' +
-      '<div class="card">' + mios.map(function (c, i) {
-        return '<div class="bar"><span class="rk">' + (i + 1) + '</span>' +
-          '<span class="nm">' + esc(c.nombre) + '</span>' +
-          '<span class="track"><span class="fill" style="width:' +
-          Math.round((c.victorias || 0) / max * 100) + '%"></span></span>' +
-          '<span class="vl">' + (c.g1 ? c.g1 + ' G1' : (c.victorias || 0) + ' v') + '</span></div>';
-      }).join('') + '</div>';
+      '<div><b>' + mios.reduce(function (s, c) { return s + (c.podios || 0); }, 0) + '</b><span>podios</span></div></div>' +
+      barras('Cómo van', mios.map(function (c) {
+        return { nombre: c.nombre, victorias: c.victorias || 0 };
+      }), '');
   }
 
-  if ((e.jockeys || []).length) {
-    var mx = Math.max.apply(null, e.jockeys.map(function (j) { return j.victorias; }));
-    h += '<h2 class="sec">Jockeys líderes</h2><div class="card">' + e.jockeys.map(function (j, i) {
-      return '<div class="bar"><span class="rk">' + (i + 1) + '</span>' +
-        '<span class="nm">' + esc(j.nombre) + '</span>' +
-        '<span class="track"><span class="fill" style="width:' +
-        Math.round(j.victorias / mx * 100) + '%"></span></span>' +
-        '<span class="vl">' + j.victorias + '</span></div>';
-    }).join('') + '</div>';
+  h += barras('Jockeys líderes', (e.jockeys || []).slice(0, 12), 'Victorias en la temporada, según la JRA.');
+  h += barras('Sementales líderes', (e.sementales || []).slice(0, 12),
+              'El mejor indicador de qué caballos dominarán dentro de dos años.');
+
+  // Los jockeys que la app ha visto de primera mano.
+  var vistos = (D.jockeys || []).filter(function (j) { return j.victorias > 0; }).slice(0, 10);
+  if (vistos.length) {
+    h += barras('En las carreras que sigo', vistos.map(function (j) {
+      return { nombre: j.nombre, victorias: j.victorias };
+    }), 'Contado solo con las clasificaciones descargadas.');
   }
 
   if ((e.records || []).length) {
@@ -807,18 +1030,39 @@ function pintaStats() {
   }
 
   document.getElementById('p-stats').innerHTML = h ||
-    '<div class="empty">Aún no hay estadísticas. Sigue a algún caballo para empezar.</div>';
+    '<div class="empty">Aún no hay estadísticas descargadas.</div>';
 }
 
 /* ------------------------------------------------------------- buscador */
 
+var ARCHIVO = { noticias: [] };
+var archivoPedido = false;
+
+/** El archivo de noticias viejas no viaja en la carga inicial: se pide solo
+    cuando abres el buscador. Así la app arranca ligera aunque el histórico
+    crezca a miles de noticias. */
+function cargarArchivo() {
+  if (archivoPedido) return;
+  archivoPedido = true;
+  fetch('archivo.json?v=' + (D.actualizado || ''))
+    .then(function (r) { return r.json(); })
+    .then(function (a) {
+      ARCHIVO = a || { noticias: [] };
+      // Si ya hay algo escrito, se repite la búsqueda con el archivo dentro.
+      var q = document.getElementById('q');
+      if (q && q.value.trim().length > 1) buscar(q.value);
+    })
+    .catch(function () {});
+}
+
 function pintaBuscar() {
+  cargarArchivo();
   document.getElementById('p-buscar').innerHTML =
     '<input class="srch" id="q" placeholder="Caballo, jockey, carrera o hipódromo" ' +
     'oninput="buscar(this.value)" autocomplete="off">' +
     '<div id="res"></div>' +
-    '<div class="empty" id="res-vacio">El buscador funciona sin conexión: ' +
-    'busca sobre los datos ya descargados.</div>';
+    '<div class="empty" id="res-vacio">Caballos, jockeys, carreras y noticias.<br>' +
+    'Funciona sin conexión, sobre lo ya descargado.</div>';
   setTimeout(function () { var q = document.getElementById('q'); if (q) q.focus(); }, 60);
 }
 
@@ -833,18 +1077,28 @@ function buscar(q) {
   vac.style.display = 'none';
 
   var hits = [];
+  (D.jockeys || []).forEach(function (j) {
+    if (norm(j.nombre).indexOf(q) > -1)
+      hits.push({ t: j.nombre, s: 'jockey · ' + j.victorias + ' victorias · ' + j.montas + ' montas',
+                  f: "verJockey('" + j.nombre + "')" });
+  });
   (D.caballos || []).forEach(function (c) {
-    if (norm(c.nombre + ' ' + (c.perfil || '') + ' ' + (c.jockey || '')).indexOf(q) > -1)
-      hits.push({ t: c.nombre, s: c.perfil || 'caballo', f: "verCaballo('" + c.nombre + "')" });
+    if (norm([c.nombre, c.perfil, c.jockey, c.padre, c.madre, c.entrenador]
+             .filter(Boolean).join(' ')).indexOf(q) > -1)
+      hits.push({ t: c.nombre, s: ['caballo', c.padre ? 'por ' + c.padre : '',
+                  c.victorias ? c.victorias + ' victorias' : ''].filter(Boolean).join(' · '),
+                  f: "verCaballo('" + c.nombre + "')" });
   });
   (D.carreras || []).forEach(function (c) {
     if (norm(c.nombre + ' ' + (c.alias || '') + ' ' + (c.hipodromo || '')).indexOf(q) > -1)
       hits.push({ t: c.nombre, s: c.grado + ' · ' + (c.hipodromo || '') + ' · ' + (c.fecha || ''),
                   f: "verCarrera('" + c.id + "')" });
   });
-  (D.noticias || []).forEach(function (n) {
-    if (norm(n.titular + ' ' + (n.resumen || '')).indexOf(q) > -1)
-      hits.push({ t: n.titular, s: 'noticia · ' + (n.fecha_texto || '').slice(0, 10), f: '' });
+  var fuentes = (D.noticias || []).concat(ARCHIVO.noticias || []);
+  fuentes.forEach(function (n) {
+    if (norm(n.titular + ' ' + (n.resumen || '') + ' ' + (n.texto || '')).indexOf(q) > -1)
+      hits.push({ t: n.titular, s: 'noticia · ' + (n.fecha_texto || '').slice(0, 10),
+                  f: n.texto ? "leer('" + n.id + "')" : '' });
   });
 
   if (!hits.length) { res.innerHTML = '<div class="empty">Sin resultados.</div>'; return; }
@@ -909,6 +1163,15 @@ function arrancar() {
     .then(function (r) { return r.json(); })
     .then(function (d) {
       D = d;
+      // La primera vez en un dispositivo, se heredan los caballos del
+      // repositorio: así la lista viaja contigo sin cuentas ni sincronización.
+      if (P.nuevoAqui && D.seguidos && (D.seguidos.caballos || []).length) {
+        P.seguidos = D.seguidos.caballos.slice();
+        delete P.nuevoAqui;
+        guardarPrefs();
+      }
+      var sync = document.getElementById('sync');
+      if (sync) sync.innerHTML = '<i class="dot"></i>' + (haceCuanto(D.actualizado) || 'al día');
       pintaHoy(); pintaCalendario(); pintaCaballos(); pintaResultados();
     })
     .catch(function () {
@@ -919,6 +1182,43 @@ function arrancar() {
 }
 
 arrancar();
+
+/* Tirar hacia abajo en la portada vuelve a pedir los datos. En una app
+   instalada no hay botón de recargar del navegador, así que sin esto la
+   única forma de refrescar era cerrarla del todo. */
+(function () {
+  var y0 = null, tirando = false;
+  var aviso = document.createElement('div');
+  aviso.className = 'refresco';
+  aviso.textContent = 'Suelta para actualizar';
+  document.body.appendChild(aviso);
+
+  document.addEventListener('touchstart', function (e) {
+    y0 = window.scrollY <= 0 ? e.touches[0].clientY : null;
+    tirando = false;
+  }, { passive: true });
+
+  document.addEventListener('touchmove', function (e) {
+    if (y0 == null) return;
+    var d = e.touches[0].clientY - y0;
+    if (d > 70 && window.scrollY <= 0) {
+      tirando = true;
+      aviso.classList.add('on');
+    }
+  }, { passive: true });
+
+  document.addEventListener('touchend', function () {
+    if (tirando) {
+      aviso.textContent = 'Actualizando…';
+      arrancar();
+      setTimeout(function () {
+        aviso.classList.remove('on');
+        aviso.textContent = 'Suelta para actualizar';
+      }, 1200);
+    }
+    y0 = null; tirando = false;
+  }, { passive: true });
+})();
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function () {
