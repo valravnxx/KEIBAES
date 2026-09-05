@@ -3,6 +3,9 @@ name: Publicar web
 on:
   push:
     branches: [main]
+  workflow_run:
+    workflows: ["Boletín diario"]
+    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -22,6 +25,8 @@ jobs:
       url: ${{ steps.despliegue.outputs.page_url }}
     steps:
       - uses: actions/checkout@v6
+        with:
+          ref: main
 
       - uses: actions/configure-pages@v5
 
