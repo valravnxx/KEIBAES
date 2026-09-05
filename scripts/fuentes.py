@@ -123,15 +123,22 @@ SEL_RESULTADO = SelectoresResultado()
 
 # --------------------------------------------------------------- vídeo
 
-YOUTUBE_CANAL_JRA = "UCf7Vv3aTa1zM0PL1_LKMHIQ"  # JRA Official — verificar
+# El canal oficial titula sus vídeos con un patrón fijo:
+#     2026 TAKARAZUKA KINEN (G1) | JRA Official
+# No se filtra por id de canal (habría que fiarse de un id copiado a mano):
+# se busca por título y se acepta solo si el canal que responde lleva "JRA".
+CANAL_ESPERADO = "JRA"
 
-def consulta_video(nombre_carrera: str, anio: int) -> str:
-    """
-    El canal oficial titula sus vídeos con un patrón fijo:
-        2026 TAKARAZUKA KINEN (G1) | JRA Official
-    Buscar por "<año> <NOMBRE> (G1)" acierta casi siempre.
-    """
-    return f"{anio} {nombre_carrera} JRA Official"
+def consulta_video(nombre_carrera: str, anio: int, grado: str = "G1") -> str:
+    return f"{anio} {nombre_carrera} ({grado}) JRA Official"
+
+
+def busqueda_youtube(nombre_carrera: str, anio: int, grado: str = "G1") -> str:
+    """Enlace de búsqueda en YouTube. Sin clave de API, sin permisos, sin nada:
+    cae en el vídeo oficial a un toque. Es el plan por defecto."""
+    from urllib.parse import quote_plus
+    return ("https://www.youtube.com/results?search_query="
+            + quote_plus(consulta_video(nombre_carrera, anio, grado)))
 
 
 # ------------------------------------------------------- estadísticas

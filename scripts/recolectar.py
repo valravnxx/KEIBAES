@@ -325,8 +325,44 @@ def completar_fichas(carreras: list[dict], maximo=60) -> int:
         if extra:
             c.update(extra)
             n += 1
+        if c.get("grado") == "G1":
+            vid = buscar_video(c["nombre"], c.get("anio", hoy[:4]), "G1")
+            if vid:
+                c["video_id"] = vid
     log(f"fichas completadas: {n}")
     return n
+
+
+def buscar_video(nombre: str, anio: int, grado: str = "G1") -> str:
+    """
+    Devuelve el identificador del vídeo oficial, o "" si no se puede saber.
+
+    Requiere YOUTUBE_API_KEY. Si no la hay, no pasa nada: la app enseña un
+    botón de búsqueda que lleva al mismo sitio en un toque. La clave solo
+    sirve para poder pintar la miniatura dentro de la app.
+
+    Solo se busca para los G1: son los que el canal oficial sube uno a uno.
+    """
+    import os
+    clave = os.environ.get("YOUTUBE_API_KEY", "")
+    if not clave or grado != "G1":
+        return ""
+    try:
+        r = requests.get("https://www.googleapis.com/youtube/v3/search",
+                         params={"part": "snippet", "type": "video",
+                                 "maxResults": 3, "key": clave,
+                                 "q": F.consulta_video(nombre, anio, grado)},
+                         timeout=F.TIMEOUT)
+        r.raise_for_status()
+        for item in r.json().get("items", []):
+            canal = item["snippet"].get("channelTitle", "")
+            titulo = item["snippet"].get("title", "")
+            # Solo se acepta si viene del canal de la JRA y el título cuadra.
+            if F.CANAL_ESPERADO.lower() in canal.lower() and str(anio) in titulo:
+                return item["id"]["videoId"]
+    except Exception as e:
+        log(f"vídeo de {nombre}: {e}")
+    return ""
 
 
 # --------------------------------------------------------------- resultados
