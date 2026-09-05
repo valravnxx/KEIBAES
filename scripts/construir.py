@@ -141,6 +141,21 @@ def main():
                 c.update(r)
                 break
 
+    # Limpieza: si el calendario se ha leído bien, las carreras que salieron
+    # de un calendario ANTERIOR y ya no aparecen se tiran. Así un arreglo en
+    # los nombres no deja duplicados zombis. Nunca se tira nada que tenga
+    # resultado, crónica o ficha escrita a mano.
+    frescas = {c["id"] for c in nuevo.get("calendario", [])}
+    if len(frescas) > 30:
+        antes = len(carreras)
+        carreras = {
+            k: c for k, c in carreras.items()
+            if k in frescas or c.get("llegada") or c.get("cronica")
+            or (c.get("ficha") or {}).get("que_es")
+        }
+        if antes != len(carreras):
+            print(f"· limpiadas {antes - len(carreras)} carreras obsoletas")
+
     carreras = list(carreras.values())
     for c in carreras:
         c["dias"] = dias_hasta(c.get("fecha", ""))

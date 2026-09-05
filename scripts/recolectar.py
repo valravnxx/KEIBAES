@@ -213,13 +213,20 @@ def recolectar_calendario(anio: int) -> list[dict]:
             continue
         fecha = f"{anio}-{m_f.group(1)}-{m_f.group(2)}"
 
-        clave = (nombre.lower(), fecha)
-        if clave in vistos:
+        # El identificador sale del nombre del fichero de la URL (0927sprinters),
+        # que es estable. Si saliera del nombre de la carrera, cualquier
+        # arreglo en el texto crearía una carrera "nueva" y quedaría la vieja
+        # de zombi para siempre.
+        slug = re.sub(r"\.html?$", "", url.rsplit("/", 1)[-1]).lower()
+        if not slug:
             continue
-        vistos.add(clave)
+        if slug in vistos:
+            continue
+        vistos.add(slug)
 
         carreras.append({
-            "id": id_de(f"{anio}{nombre.lower()}{fecha}"),
+            "id": id_de(f"{anio}-{slug}"),
+            "slug": slug,
             "nombre": nombre,
             "grado": grado,
             "fecha": fecha,
