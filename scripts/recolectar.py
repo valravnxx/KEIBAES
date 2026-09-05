@@ -6,17 +6,19 @@ No traduce ni interpreta: solo recoge. Así, si algo falla, sabes si el
 problema es de descarga o de proceso.
 
 Uso:
-    python scripts/recolectar.py                # normal
+    python scripts/recolectar.py                # todo
     python scripts/recolectar.py --debug        # además guarda el HTML crudo
     python scripts/recolectar.py --solo noticias
+    python scripts/recolectar.py --rapido       # topes altos: para la puesta a punto
 """
 
 import argparse
 import json
+import os
 import re
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta, date
 from hashlib import sha1
 from urllib.parse import urljoin
 from pathlib import Path
@@ -32,6 +34,11 @@ DATOS = RAIZ / "datos"
 DEBUG_DIR = DATOS / "debug"
 
 DEBUG = False
+
+# Cuenta de lo recogido por fuente. Es lo que permite avisar de que las
+# noticias llevan días muertas aunque el calendario funcione: mirar solo el
+# total escondía averías durante semanas.
+SALUD = {}
 
 
 def log(*a):
@@ -68,116 +75,168 @@ def id_de(texto: str) -> str:
     return sha1(texto.encode("utf-8")).hexdigest()[:10]
 
 
-# ----------------------------------------------------------------- noticias
+def datos_previos() -> dict:
+    p = RAIZ / "web" / "datos.json"
+    if p.exists():
+        try:
+            return json.loads(p.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+    return {}
+
+
+# ================================================================ noticias
+
+MESES_EN = {"jan": 1, "feb": 2, "mar": 3, "apr": 4, "may": 5, "jun": 6,
+            "jul": 7, "aug": 8, "sep": 9, "oct": 10, "nov": 11, "dec": 12}
+
+
+def fecha_noticia(texto: str) -> str:
+    """
+    netkeiba mezcla formatos: "4 hrs", "35 min", "05 Sep 2026 01:53".
+    Se normaliza todo a ISO para poder ordenar de verdad; con el texto
+    original, "4 hrs" se ordenaba antes que cualquier fecha con número.
+    """
+    t = limpiar(texto)
+    ahora = datetime.now(timezone.utc)
+
+    m = re.search(r"(\d+)\s*(min|hr|hour|day)", t, re.I)
+    if m:
+        n, unidad = int(m.group(1)), m.group(2).lower()
+        delta = (timedelta(minutes=n) if unidad == "min"
+                 else timedelta(days=n) if unidad == "day"
+                 else timedelta(hours=n))
+        return (ahora - delta).strftime("%Y-%m-%d %H:%M")
+
+    m = re.search(r"(\d{1,2})\s+([A-Za-z]{3})[a-z]*\s+(\d{4})(?:\s+(\d{1,2}):(\d{2}))?", t)
+    if m:
+        mes = MESES_EN.get(m.group(2).lower())
+        if mes:
+            return (f"{m.group(3)}-{mes:02d}-{int(m.group(1)):02d} "
+                    f"{int(m.group(4) or 0):02d}:{int(m.group(5) or 0):02d}")
+
+    m = re.search(r"(\d{4})[-/](\d{1,2})[-/](\d{1,2})", t)
+    if m:
+        return f"{m.group(1)}-{int(m.group(2)):02d}-{int(m.group(3)):02d} 00:00"
+
+    return ahora.strftime("%Y-%m-%d %H:%M")
+
 
 def cuerpo_noticia(url: str) -> str:
     """
-    Baja el artículo entero. Como esto es de uso personal y no se republica,
-    interesa el texto completo y no un extracto: la app se lee como un diario,
-    no como un agregador de titulares.
+    Baja el artículo entero.
+
+    La versión anterior solo miraba dentro de etiquetas <p>. netkeiba no
+    siempre las usa —a veces el artículo es un bloque de texto con saltos—,
+    así que devolvía vacío y la noticia se descartaba entera. Ahora prueba
+    primero con párrafos y, si no hay, parte el texto por saltos de línea.
     """
     sopa = bajar(url)
     if not sopa:
         return ""
-    def texto_de(nodo):
+
+    for basura in sopa.select("script, style, nav, aside, header, footer, "
+                              "figcaption, .Caption, .Banner, .Ad"):
+        basura.decompose()
+
+    def texto_de(nodo) -> str:
         if not nodo:
             return ""
-        # Fuera lo que nunca es cuerpo del artículo.
-        for basura in nodo.select("script, style, nav, aside, figcaption, .Caption"):
-            basura.decompose()
-        parrafos = [limpiar(x.get_text()) for x in nodo.find_all("p")]
-        return "\n\n".join(x for x in parrafos if len(x) > 60)[:6000]
+        parrafos = [limpiar(x.get_text(" ")) for x in nodo.find_all("p")]
+        parrafos = [x for x in parrafos if len(x) > 60]
+        if parrafos:
+            return "\n\n".join(parrafos)[:8000]
+        # Sin <p>: se parte el texto por saltos y se descarta lo corto,
+        # que es lo que separa el artículo de los menús y los pies de foto.
+        trozos = [limpiar(x) for x in nodo.get_text("\n").split("\n")]
+        return "\n\n".join(x for x in trozos if len(x) > 80)[:8000]
 
     mejor = texto_de(sopa.select_one(F.SEL_NOTICIAS.cuerpo_detalle))
-
     if len(mejor) < 250:
-        # Plan B: el bloque con MÁS TEXTO en párrafos largos. Contar párrafos
-        # no vale: una galería de fotos tiene muchos pies de foto cortos y
-        # ganaba la partida al artículo de verdad.
-        for bloque in sopa.find_all(["article", "div", "section"]):
+        for bloque in sopa.find_all(["article", "div", "section", "td"]):
             t = texto_de(bloque)
             if len(t) > len(mejor):
                 mejor = t
 
-    # Menos de 250 caracteres no es un artículo: son pies de foto o un teaser.
-    # Mejor no guardar nada que guardar dos frases sueltas haciéndolas pasar
-    # por la noticia entera.
     return mejor if len(mejor) >= 250 else ""
 
 
-def recolectar_noticias(limite=40, con_cuerpo=True, max_cuerpos=15) -> list[dict]:
-    sopa = bajar(F.NETKEIBA_NOTICIAS, "noticias")
+def listar_noticias(url: str, etiqueta: str) -> list[dict]:
+    sopa = bajar(url, etiqueta)
     if not sopa:
         return []
 
-    items = sopa.select(F.SEL_NOTICIAS.item)
-    if not items:
-        # Plan B: cualquier enlace a una ficha de noticia. Feo pero resistente.
-        log("Los selectores no encontraron nada; usando plan B por URL")
-        items = [a.parent for a in sopa.select('a[href*="news_detail"]')]
-
     salida, vistos = [], set()
-    for it in items[:limite]:
-        a = it.select_one('a[href*="news_detail"]') or it.select_one(F.SEL_NOTICIAS.enlace)
-        if not a:
-            continue
+    for a in sopa.select('a[href*="news_detail"]'):
         href = a.get("href", "")
-        if not href or href in vistos:
+        m = re.search(r"id=(\d+)", href)
+        if not m or m.group(1) in vistos:
             continue
-        vistos.add(href)
+        vistos.add(m.group(1))
 
-        if href.startswith("/"):
-            href = "https://en.netkeiba.com" + href
-
-        titular = limpiar(a.get_text()) or limpiar(it.get_text())[:120]
+        titular = limpiar(a.get_text(" "))
         if len(titular) < 12:
             continue
 
-        nodo_fecha = it.select_one(F.SEL_NOTICIAS.fecha)
-        fecha = limpiar(nodo_fecha.get_text()) if nodo_fecha else ""
-
+        # La fecha suele estar junto al enlace, no dentro.
+        contexto = a.parent.get_text(" ") if a.parent else ""
         salida.append({
-            "id": id_de(titular),
+            "id": "n" + m.group(1),
             "titular_en": titular,
-            "fecha_texto": fecha,
-            "url": href,
+            "fecha_texto": fecha_noticia(contexto),
+            "url": urljoin(url, href),
             "medio": "netkeiba",
+            "categoria": etiqueta,
         })
-
-    # Solo se baja el artículo de lo que no se ha visto antes: si ya está en
-    # web/datos.json, no se vuelve a pedir. Esto mantiene el número de
-    # peticiones bajo aunque el listado devuelva siempre 40 titulares.
-    if con_cuerpo:
-        conocidos = set()
-        prev = RAIZ / "web" / "datos.json"
-        if prev.exists():
-            try:
-                conocidos = {n["id"] for n in
-                             json.loads(prev.read_text(encoding="utf-8")).get("noticias", [])}
-            except Exception:
-                pass
-
-        pendientes = [n for n in salida if n["id"] not in conocidos][:max_cuerpos]
-        log(f"bajando el texto de {len(pendientes)} noticias nuevas")
-        for n in pendientes:
-            n["cuerpo_en"] = cuerpo_noticia(n["url"])
-
-    log(f"noticias: {len(salida)}")
     return salida
 
 
-# --------------------------------------------------------------- calendario
+def recolectar_noticias(max_cuerpos=14, categorias=True) -> list[dict]:
+    """
+    Portada + las cinco categorías. Antes solo se leía la portada, así que
+    los interruptores de Internacional, Cría y Jockeys de los ajustes no
+    hacían absolutamente nada.
+    """
+    todas, vistos = [], set()
+
+    for n in listar_noticias(F.NETKEIBA_NOTICIAS, "jra"):
+        if n["id"] not in vistos:
+            vistos.add(n["id"])
+            todas.append(n)
+
+    if categorias:
+        for num, etiqueta in F.NETKEIBA_CATEGORIAS.items():
+            for n in listar_noticias(F.url_categoria(num), etiqueta):
+                if n["id"] not in vistos:
+                    vistos.add(n["id"])
+                    todas.append(n)
+
+    conocidas = {n.get("id") for n in datos_previos().get("noticias", [])}
+    pendientes = [n for n in todas if n["id"] not in conocidas]
+    pendientes.sort(key=lambda n: n["fecha_texto"], reverse=True)
+    pendientes = pendientes[:max_cuerpos]
+
+    log(f"noticias en los listados: {len(todas)} · nuevas por leer: {len(pendientes)}")
+    con_texto = 0
+    for n in pendientes:
+        n["cuerpo_en"] = cuerpo_noticia(n["url"])
+        if n["cuerpo_en"]:
+            con_texto += 1
+    log(f"artículos con texto: {con_texto} de {len(pendientes)}")
+
+    SALUD["noticias_listadas"] = len(todas)
+    SALUD["noticias_con_texto"] = con_texto
+    return todas
+
+
+# ============================================================== calendario
 
 def recolectar_calendario(anio: int) -> list[dict]:
     """
     El calendario de la JRA es una rejilla semanal: cada fila de la tabla es
-    una SEMANA entera con varias carreras dentro. Recorrer filas perdía casi
-    todas las carreras y además mezclaba los grados (si en la semana había un
-    G1, se etiquetaban todas como G1).
-
-    Se recorren los enlaces, que es lo que de verdad representa una carrera.
-    El texto del enlace ya trae nombre y grado: "Kisaragi Sho (G3)".
-    Y la URL trae la fecha: .../2026/0208kisaragi.html
+    una SEMANA entera con varias carreras dentro. Se recorren los enlaces,
+    que es lo que de verdad representa una carrera. El texto del enlace trae
+    nombre y grado; la URL trae la fecha.
     """
     sopa = bajar(F.url_calendario(anio), f"calendario-{anio}")
     if not sopa:
@@ -187,68 +246,51 @@ def recolectar_calendario(anio: int) -> list[dict]:
     carreras, vistos = [], set()
 
     for a in sopa.select(F.SEL_CALENDARIO.enlace_carrera):
-        etiqueta = limpiar(a.get_text(" "))   # con espacio: sin él salía "Keisei HaiAutumn"
+        etiqueta = limpiar(a.get_text(" "))
         if not etiqueta:
             continue
-
         url = urljoin(base, a.get("href", ""))
 
-        # Grado: del propio nombre de la carrera, no de la fila.
-        m_g = re.search(r"\((J?-?(?:G|Jpn)\s?[123])\)\s*$", etiqueta)
-        if not m_g:
-            m_g = re.search(r"\((J?-?(?:G|Jpn)\s?[123])\)", etiqueta)
+        m_g = (re.search(r"\((J?-?(?:G|Jpn)\s?[123])\)\s*$", etiqueta)
+               or re.search(r"\((J?-?(?:G|Jpn)\s?[123])\)", etiqueta))
         if not m_g:
             continue
         grado = m_g.group(1).replace(" ", "")
 
-        # Nombre sin el grado pegado al final.
-        nombre = limpiar(etiqueta[:m_g.start()] or etiqueta)
-        nombre = re.sub(r"[\s,;·-]+$", "", nombre)
+        nombre = re.sub(r"[\s,;·-]+$", "", limpiar(etiqueta[:m_g.start()] or etiqueta))
         if not nombre:
             continue
 
-        # Fecha: los 4 dígitos del nombre del fichero son MMDD.
         m_f = re.search(r"/(\d{2})(\d{2})[a-z0-9_-]*\.html", url)
         if not m_f:
             continue
         fecha = f"{anio}-{m_f.group(1)}-{m_f.group(2)}"
 
-        # El identificador sale del nombre del fichero de la URL (0927sprinters),
-        # que es estable. Si saliera del nombre de la carrera, cualquier
-        # arreglo en el texto crearía una carrera "nueva" y quedaría la vieja
-        # de zombi para siempre.
+        # El identificador sale del nombre del fichero (0927sprinters), que es
+        # estable. Si saliera del nombre de la carrera, cualquier arreglo en el
+        # texto crearía una carrera "nueva" y la vieja quedaría de zombi.
         slug = re.sub(r"\.html?$", "", url.rsplit("/", 1)[-1]).lower()
-        if not slug:
-            continue
-        if slug in vistos:
+        if not slug or slug in vistos:
             continue
         vistos.add(slug)
 
-        carreras.append({
-            "id": id_de(f"{anio}-{slug}"),
-            "slug": slug,
-            "nombre": nombre,
-            "grado": grado,
-            "fecha": fecha,
-            "url": url,
-            "anio": anio,
-        })
+        carreras.append({"id": id_de(f"{anio}-{slug}"), "slug": slug,
+                         "nombre": nombre, "grado": grado, "fecha": fecha,
+                         "url": url, "anio": anio})
 
     carreras.sort(key=lambda c: c["fecha"])
-    grados = {}
+    reparto = {}
     for c in carreras:
-        grados[c["grado"]] = grados.get(c["grado"], 0) + 1
-    log(f"carreras del calendario {anio}: {len(carreras)} — {grados}")
+        reparto[c["grado"]] = reparto.get(c["grado"], 0) + 1
+    log(f"calendario {anio}: {len(carreras)} carreras — {reparto}")
     return carreras
 
 
 def detalle_carrera(url: str) -> dict:
     """
-    Abre la ficha de una carrera graduada y saca lo que el calendario no da:
-    hipódromo, distancia, superficie, premio y el ganador del año pasado.
-
-    Se lee por patrones de texto, no por selectores: si rediseñan la página
-    pero el contenido sigue diciendo "1200m, Turf", esto sigue funcionando.
+    Abre la ficha de una carrera y saca lo que el calendario no da. Se lee
+    por patrones de texto, no por selectores: si rediseñan la página pero
+    sigue diciendo "1200m, Turf", esto sigue funcionando.
     """
     sopa = bajar(url)
     if not sopa:
@@ -280,9 +322,6 @@ def detalle_carrera(url: str) -> dict:
     if premios:
         d["premio"] = "¥" + premios[0]
 
-    # Los ganadores se buscan trozo a trozo, no sobre todo el texto junto:
-    # sobre el texto entero la expresión se comía lo que venía detrás y
-    # salían cosas como "Lugal Maximum number of Starter".
     ganadores = []
     for trozo in sopa.find_all(string=re.compile(r"Winner\s*:")):
         m = re.search(F.RE_GANADOR, limpiar(str(trozo)))
@@ -298,26 +337,9 @@ def detalle_carrera(url: str) -> dict:
 
 
 def completar_fichas(carreras: list[dict], maximo=60) -> int:
-    """
-    Solo abre las fichas que faltan, y empieza por las carreras más cercanas
-    en el tiempo. Así el primer día se rellenan las que importan y el resto
-    va cayendo en días sucesivos, sin castigar a la web de la JRA.
-    """
-    hechas = {}
-    prev = RAIZ / "web" / "datos.json"
-    if prev.exists():
-        try:
-            for c in json.loads(prev.read_text(encoding="utf-8")).get("carreras", []):
-                if c.get("distancia"):
-                    hechas[c.get("id")] = c
-        except Exception:
-            pass
-
-    hoy = datetime.now(timezone.utc).date().isoformat()
-    pendientes = [c for c in carreras if c["id"] not in hechas and c.get("url")]
-    pendientes.sort(key=lambda c: abs((datetime.fromisoformat(c["fecha"]).date()
-                                       - datetime.fromisoformat(hoy).date()).days))
-
+    hoy = date.today()
+    pendientes = [c for c in carreras if not c.get("distancia") and c.get("url")]
+    pendientes.sort(key=lambda c: abs((date.fromisoformat(c["fecha"]) - hoy).days))
     log(f"fichas de carrera por abrir: {len(pendientes)} — abriendo {min(maximo, len(pendientes))}")
     n = 0
     for c in pendientes[:maximo]:
@@ -325,39 +347,34 @@ def completar_fichas(carreras: list[dict], maximo=60) -> int:
         if extra:
             c.update(extra)
             n += 1
-        if c.get("grado") == "G1":
-            vid = buscar_video(c["nombre"], c.get("anio", hoy[:4]), "G1")
+        if c.get("grado") == "G1" and not c.get("video_id"):
+            vid = buscar_video(c["nombre"], c.get("anio", hoy.year), "G1")
             if vid:
                 c["video_id"] = vid
     log(f"fichas completadas: {n}")
     return n
 
 
-def buscar_video(nombre: str, anio: int, grado: str = "G1") -> str:
-    """
-    Devuelve el identificador del vídeo oficial, o "" si no se puede saber.
+# =================================================================== vídeo
 
-    Requiere YOUTUBE_API_KEY. Si no la hay, no pasa nada: la app enseña un
-    botón de búsqueda que lleva al mismo sitio en un toque. La clave solo
-    sirve para poder pintar la miniatura dentro de la app.
-
-    Solo se busca para los G1: son los que el canal oficial sube uno a uno.
+def buscar_video(nombre: str, anio, grado: str = "G1") -> str:
     """
-    import os
+    Identificador del vídeo oficial, o "" si no se puede saber. Requiere
+    YOUTUBE_API_KEY; sin ella la app enseña un botón de búsqueda que lleva
+    al mismo sitio en un toque.
+    """
     clave = os.environ.get("YOUTUBE_API_KEY", "")
     if not clave or grado != "G1":
         return ""
     try:
         r = requests.get("https://www.googleapis.com/youtube/v3/search",
-                         params={"part": "snippet", "type": "video",
-                                 "maxResults": 3, "key": clave,
-                                 "q": F.consulta_video(nombre, anio, grado)},
+                         params={"part": "snippet", "type": "video", "maxResults": 3,
+                                 "key": clave, "q": F.consulta_video(nombre, anio, grado)},
                          timeout=F.TIMEOUT)
         r.raise_for_status()
         for item in r.json().get("items", []):
             canal = item["snippet"].get("channelTitle", "")
             titulo = item["snippet"].get("title", "")
-            # Solo se acepta si viene del canal de la JRA y el título cuadra.
             if F.CANAL_ESPERADO.lower() in canal.lower() and str(anio) in titulo:
                 return item["id"]["videoId"]
     except Exception as e:
@@ -365,18 +382,20 @@ def buscar_video(nombre: str, anio: int, grado: str = "G1") -> str:
     return ""
 
 
-# ------------------------------------------------- caballos y resultados
+# ================================================ tablas, cuadros y llegadas
 
 def _norm(t: str) -> str:
-    """Para comparar nombres de carrera entre la JRA y netkeiba."""
     return re.sub(r"[^a-z0-9]", "", (t or "").lower())
 
 
 def tabla_por_cabeceras(sopa) -> list[dict]:
     """
-    Lee la tabla más grande de la página usando los NOMBRES de las columnas.
-    Fijar índices de columna a mano era pedir que se rompiera al primer
-    rediseño; los títulos ("Horse Name", "Jockey") son mucho más estables.
+    Lee la tabla más grande usando los NOMBRES de las columnas. Fijar
+    índices a mano era pedir que se rompiera al primer rediseño; los
+    títulos ("Horse Name", "Jockey") son mucho más estables.
+
+    Devuelve además el identificador del caballo si su nombre es un enlace
+    a la ficha de netkeiba: sale gratis y evita tener que buscarlo luego.
     """
     mejor, mejor_filas = None, 0
     for tabla in sopa.find_all("table"):
@@ -392,9 +411,8 @@ def tabla_por_cabeceras(sopa) -> list[dict]:
         celdas = [limpiar(c.get_text()).lower() for c in fila.find_all(["th", "td"])]
         if not celdas:
             continue
-        # Dos pasadas. Primero coincidencia EXACTA, y solo después parcial:
-        # si no, "Horse Number" se llevaba la columna de "Horse Name" porque
-        # contiene la palabra "horse".
+        # Dos pasadas: primero coincidencia exacta y solo después parcial.
+        # Si no, "Horse Number" se llevaba la columna de "Horse Name".
         encontrado, usadas = {}, set()
         for exacta in (True, False):
             for campo, alias in F.COLUMNAS.items():
@@ -403,8 +421,8 @@ def tabla_por_cabeceras(sopa) -> list[dict]:
                 for j, texto in enumerate(celdas):
                     if j in usadas:
                         continue
-                    if any(a == texto for a in alias) if exacta else \
-                       any(a in texto for a in alias):
+                    if (any(a == texto for a in alias) if exacta
+                            else any(a in texto for a in alias)):
                         encontrado[campo] = j
                         usadas.add(j)
                         break
@@ -416,20 +434,28 @@ def tabla_por_cabeceras(sopa) -> list[dict]:
 
     salida = []
     for fila in filas[inicio:]:
-        celdas = [limpiar(c.get_text()) for c in fila.find_all("td")]
+        celdas = fila.find_all("td")
         if len(celdas) < 3:
             continue
+        textos = [limpiar(c.get_text()) for c in celdas]
         reg = {}
         for campo, j in mapa.items():
-            if j < len(celdas) and celdas[j]:
-                reg[campo] = celdas[j]
-        if reg.get("caballo"):
-            salida.append(reg)
+            if j < len(textos) and textos[j]:
+                reg[campo] = textos[j]
+        if not reg.get("caballo"):
+            continue
+        j = mapa.get("caballo")
+        if j is not None and j < len(celdas):
+            a = celdas[j].find("a", href=re.compile(r"/db/horse/(\d+)"))
+            if a:
+                m = re.search(r"/db/horse/(\d+)", a.get("href", ""))
+                if m:
+                    reg["horse_id"] = m.group(1)
+        salida.append(reg)
     return salida
 
 
 def race_ids_de_jornada(fecha_iso: str) -> dict:
-    """{nombre normalizado: {race_id, hora}} para todas las carreras de un día."""
     sopa = bajar(F.url_jornada(fecha_iso.replace("-", "")))
     if not sopa:
         return {}
@@ -453,47 +479,15 @@ def race_ids_de_jornada(fecha_iso: str) -> dict:
     return salida
 
 
-def precargar(carreras: list[dict]) -> None:
-    """
-    Copia sobre el calendario recién leído lo que ya se descargó otros días
-    (race_id, clasificación, inscritos, ficha...). Sin esto, cada ejecución
-    creería que no tiene nada y volvería a pedirlo todo desde cero.
-    """
-    prev = RAIZ / "web" / "datos.json"
-    if not prev.exists():
-        return
-    try:
-        antiguas = {c.get("id"): c for c in
-                    json.loads(prev.read_text(encoding="utf-8")).get("carreras", [])}
-    except Exception:
-        return
-    guardar = ("race_id", "hora_jst", "llegada", "participantes", "video_id",
-               "distancia", "superficie", "hipodromo", "sentido", "edades",
-               "premio", "ficha", "cronica", "destacado")
-    n = 0
-    for c in carreras:
-        vieja = antiguas.get(c["id"])
-        if not vieja:
-            continue
-        for campo in guardar:
-            if vieja.get(campo) and not c.get(campo):
-                c[campo] = vieja[campo]
-        n += 1
-    log(f"reaprovechado lo ya descargado de {n} carreras")
-
-
 def resolver_race_ids(carreras: list[dict], max_jornadas=14) -> int:
-    """
-    El calendario de la JRA no da race_id y netkeiba lo necesita. Se resuelve
-    por jornada: una sola petición por día sirve para todas las carreras
-    graduadas de ese día.
-    """
+    """El calendario de la JRA no da race_id y netkeiba lo necesita. Una
+    petición por jornada sirve para todas las graduadas de ese día."""
     pendientes = [c for c in carreras if not c.get("race_id") and c.get("fecha")]
     if not pendientes:
         return 0
-    hoy = datetime.now(timezone.utc).date()
+    hoy = date.today()
     fechas = sorted({c["fecha"] for c in pendientes},
-                    key=lambda f: abs((datetime.fromisoformat(f).date() - hoy).days))
+                    key=lambda f: abs((date.fromisoformat(f) - hoy).days))
 
     n = 0
     for fecha in fechas[:max_jornadas]:
@@ -506,7 +500,6 @@ def resolver_race_ids(carreras: list[dict], max_jornadas=14) -> int:
             clave = _norm(c["nombre"])
             dato = jornada.get(clave)
             if not dato:
-                # A veces netkeiba abrevia; se busca por coincidencia parcial.
                 for k, v in jornada.items():
                     if clave and (clave in k or k in clave):
                         dato = v
@@ -516,7 +509,7 @@ def resolver_race_ids(carreras: list[dict], max_jornadas=14) -> int:
                 if dato.get("hora_jst"):
                     c["hora_jst"] = dato["hora_jst"]
                 n += 1
-    log(f"race_id resueltos: {n} (en {min(len(fechas), max_jornadas)} jornadas)")
+    log(f"race_id resueltos: {n} (mirando {min(len(fechas), max_jornadas)} jornadas)")
     return n
 
 
@@ -529,14 +522,10 @@ def recolectar_resultado(race_id: str) -> list[dict]:
         pos = re.sub(r"\D", "", reg.get("puesto", ""))
         if not pos:
             continue
-        llegada.append({
-            "pos": int(pos),
-            "caballo": reg.get("caballo", ""),
-            "jockey": reg.get("jockey", ""),
-            "tiempo": reg.get("tiempo", ""),
-            "margen": reg.get("margen", ""),
-            "odds": reg.get("odds", ""),
-        })
+        llegada.append({"pos": int(pos), "caballo": reg.get("caballo", ""),
+                        "jockey": reg.get("jockey", ""), "tiempo": reg.get("tiempo", ""),
+                        "margen": reg.get("margen", ""), "odds": reg.get("odds", ""),
+                        "horse_id": reg.get("horse_id", "")})
     llegada.sort(key=lambda x: x["pos"])
     return llegada[:18]
 
@@ -545,26 +534,18 @@ def recolectar_participantes(race_id: str) -> list[dict]:
     sopa = bajar(F.url_inscripciones(race_id), f"inscritos-{race_id}")
     if not sopa:
         return []
-    fuera = []
-    for reg in tabla_por_cabeceras(sopa):
-        fuera.append({
-            "caballo": reg.get("caballo", ""),
-            "jockey": reg.get("jockey", ""),
-            "entrenador": reg.get("entrenador", ""),
-            "peso": reg.get("peso", ""),
-            "sexo_edad": reg.get("sexo_edad", ""),
-            "odds": reg.get("odds", ""),
-        })
-    return fuera[:20]
+    return [{"caballo": r.get("caballo", ""), "jockey": r.get("jockey", ""),
+             "entrenador": r.get("entrenador", ""), "peso": r.get("peso", ""),
+             "sexo_edad": r.get("sexo_edad", ""), "odds": r.get("odds", ""),
+             "horse_id": r.get("horse_id", "")}
+            for r in tabla_por_cabeceras(sopa)][:20]
 
 
 def completar_resultados(carreras: list[dict], maximo=12) -> int:
-    """Clasificaciones de lo ya corrido, empezando por lo más reciente."""
-    hoy = datetime.now(timezone.utc).date()
+    hoy = date.today()
     pendientes = [c for c in carreras
-                  if c.get("race_id") and not c.get("llegada")
-                  and c.get("fecha")
-                  and datetime.fromisoformat(c["fecha"]).date() < hoy]
+                  if c.get("race_id") and not c.get("llegada") and c.get("fecha")
+                  and date.fromisoformat(c["fecha"]) < hoy]
     pendientes.sort(key=lambda c: c["fecha"], reverse=True)
     n = 0
     for c in pendientes[:maximo]:
@@ -573,17 +554,17 @@ def completar_resultados(carreras: list[dict], maximo=12) -> int:
             c["llegada"] = llegada
             n += 1
     log(f"clasificaciones nuevas: {n} (quedaban {len(pendientes)})")
+    SALUD["clasificaciones_pendientes"] = max(0, len(pendientes) - n)
     return n
 
 
 def completar_participantes(carreras: list[dict], dias=12, maximo=8) -> int:
-    """Inscritos de lo que está a punto de correrse. Antes de eso no existen."""
-    hoy = datetime.now(timezone.utc).date()
+    hoy = date.today()
     proximas = []
     for c in carreras:
         if not c.get("race_id") or not c.get("fecha") or c.get("llegada"):
             continue
-        d = (datetime.fromisoformat(c["fecha"]).date() - hoy).days
+        d = (date.fromisoformat(c["fecha"]) - hoy).days
         if 0 <= d <= dias:
             proximas.append((d, c))
     proximas.sort(key=lambda x: x[0])
@@ -597,48 +578,200 @@ def completar_participantes(carreras: list[dict], dias=12, maximo=8) -> int:
     return n
 
 
-# -------------------------------------------------------------------- main
+# =============================================================== caballos
+
+def ficha_caballo(horse_id: str) -> dict:
+    """
+    Pedigrí, entrenador y ganancias. En hípica japonesa el padre de un
+    caballo es media conversación, así que esto es lo que convierte una
+    ficha en algo que se lee.
+    """
+    sopa = bajar(F.url_caballo(horse_id))
+    if not sopa:
+        return {}
+    txt = limpiar(sopa.get_text(" "))
+    d = {"horse_id": horse_id}
+
+    m = re.search(F.RE_PADRES, txt, re.I)
+    if m:
+        d["padre"] = limpiar(m.group(1))
+        d["madre"] = limpiar(m.group(2))
+    else:
+        m = re.search(r"Sire\s*[:：]?\s*([A-Za-z][A-Za-z'’\. -]{2,28})", txt)
+        if m:
+            d["padre"] = limpiar(m.group(1))
+
+    m = re.search(r"Trainer\s*[:：]?\s*([A-Za-z][A-Za-z'’\.\, -]{2,28})", txt)
+    if m:
+        d["entrenador"] = limpiar(m.group(1))
+
+    m = re.search(r"(?:Total\s+)?(?:Earnings|Prize)\s*[:：]?\s*([\d,]{5,})", txt, re.I)
+    if m:
+        d["ganancias"] = m.group(1)
+
+    m = re.search(r"\b(Colt|Filly|Horse|Mare|Gelding)\b\s*/?\s*(\d{1,2})?", txt)
+    if m:
+        sexos = {"colt": "potro", "filly": "potra", "horse": "macho",
+                 "mare": "yegua", "gelding": "castrado"}
+        d["sexo"] = sexos.get(m.group(1).lower(), "")
+        if m.group(2):
+            d["edad"] = int(m.group(2))
+    return d
+
+
+def completar_caballos(carreras: list[dict], maximo=25) -> int:
+    """Abre la ficha de netkeiba de los caballos que aparecen en carreras
+    recientes o próximas y de los que aún no sabemos nada."""
+    previos = {c.get("nombre"): c for c in datos_previos().get("caballos", [])}
+    ids, orden = {}, []
+    for c in carreras:
+        for x in (c.get("llegada", []) + c.get("participantes", [])):
+            nombre, hid = x.get("caballo"), x.get("horse_id")
+            if nombre and hid and nombre not in ids:
+                ids[nombre] = hid
+                orden.append(nombre)
+
+    pendientes = [n for n in orden if not (previos.get(n) or {}).get("padre")]
+    log(f"fichas de caballo por abrir: {len(pendientes)} — abriendo {min(maximo, len(pendientes))}")
+    fichas = {}
+    for nombre in pendientes[:maximo]:
+        d = ficha_caballo(ids[nombre])
+        if d and (d.get("padre") or d.get("entrenador")):
+            fichas[nombre] = d
+    log(f"fichas de caballo nuevas: {len(fichas)}")
+    SALUD["caballos_pendientes"] = max(0, len(pendientes) - len(fichas))
+    return fichas
+
+
+# ============================================================ estadísticas
+
+def recolectar_estadisticas(anio: int) -> dict:
+    """Jockeys y sementales líderes. La pantalla existía desde el principio
+    y nunca se había llenado."""
+    salida = {}
+
+    sopa = bajar(F.LEADING_JOCKEYS, "leading-jockeys")
+    if sopa:
+        jockeys = []
+        for reg in tabla_por_cabeceras(sopa):
+            nombre = reg.get("caballo") or reg.get("jockey")
+            victorias = re.sub(r"\D", "", reg.get("puesto", "") or "")
+            if nombre and victorias:
+                jockeys.append({"nombre": nombre, "victorias": int(victorias)})
+        if not jockeys:
+            # Plan B: filas de tabla con nombre + número grande.
+            for fila in sopa.select("table tr"):
+                celdas = [limpiar(c.get_text()) for c in fila.find_all("td")]
+                if len(celdas) < 3:
+                    continue
+                nombre = next((c for c in celdas if re.match(r"^[A-Za-z][A-Za-z'\. -]{3,}$", c)), "")
+                nums = [int(c) for c in celdas if c.isdigit()]
+                if nombre and nums:
+                    jockeys.append({"nombre": nombre, "victorias": max(nums)})
+        jockeys.sort(key=lambda j: j["victorias"], reverse=True)
+        if jockeys:
+            salida["jockeys"] = jockeys[:15]
+
+    sopa = bajar(F.LEADING_SIRES, "leading-sires")
+    if sopa:
+        sementales = []
+        for fila in sopa.select("table tr"):
+            celdas = [limpiar(c.get_text()) for c in fila.find_all("td")]
+            if len(celdas) < 3:
+                continue
+            nombre = next((c for c in celdas if re.match(r"^[A-Za-z][A-Za-z'\. -]{3,}$", c)), "")
+            nums = [int(c) for c in celdas if c.isdigit()]
+            if nombre and nums:
+                sementales.append({"nombre": nombre, "victorias": max(nums)})
+        sementales.sort(key=lambda s: s["victorias"], reverse=True)
+        if sementales:
+            salida["sementales"] = sementales[:15]
+
+    log(f"estadísticas: {len(salida.get('jockeys', []))} jockeys, "
+        f"{len(salida.get('sementales', []))} sementales")
+    SALUD["estadisticas"] = len(salida)
+    return salida
+
+
+# ================================================================ precarga
+
+def precargar(carreras: list[dict]) -> None:
+    """Copia sobre el calendario recién leído lo que ya se descargó otros
+    días. Sin esto, cada ejecución creería que no tiene nada."""
+    antiguas = {c.get("id"): c for c in datos_previos().get("carreras", [])}
+    guardar = ("race_id", "hora_jst", "llegada", "participantes", "video_id",
+               "distancia", "superficie", "hipodromo", "sentido", "edades",
+               "premio", "ficha", "cronica", "destacado", "titular_cronica")
+    n = 0
+    for c in carreras:
+        vieja = antiguas.get(c["id"])
+        if not vieja:
+            continue
+        for campo in guardar:
+            if vieja.get(campo) and not c.get(campo):
+                c[campo] = vieja[campo]
+        n += 1
+    log(f"reaprovechado lo ya descargado de {n} carreras")
+
+
+# ==================================================================== main
 
 def main():
     global DEBUG
     ap = argparse.ArgumentParser()
-    ap.add_argument("--debug", action="store_true",
-                    help="guarda el HTML descargado para ajustar selectores")
-    ap.add_argument("--solo", choices=["noticias", "calendario", "resultados"])
-    ap.add_argument("--race-id", action="append", default=[],
-                    help="resultado concreto a bajar (repetible)")
+    ap.add_argument("--debug", action="store_true")
+    ap.add_argument("--solo", choices=["noticias", "calendario", "estadisticas"])
+    ap.add_argument("--rapido", action="store_true",
+                    help="topes altos para la puesta a punto de los primeros días")
     args = ap.parse_args()
     DEBUG = args.debug
 
     DATOS.mkdir(parents=True, exist_ok=True)
-    anio = datetime.now(timezone.utc).year
-
+    hoy = date.today()
     crudo = {"generado": datetime.now(timezone.utc).isoformat(timespec="seconds")}
 
+    topes = dict(cuerpos=14, fichas=60, jornadas=14, resultados=12,
+                 inscritos=8, caballos=25)
+    if args.rapido:
+        topes = dict(cuerpos=25, fichas=140, jornadas=40, resultados=40,
+                     inscritos=14, caballos=60)
+
     if args.solo in (None, "noticias"):
-        crudo["noticias"] = recolectar_noticias()
+        crudo["noticias"] = recolectar_noticias(max_cuerpos=topes["cuerpos"])
+
     if args.solo in (None, "calendario"):
-        cal = recolectar_calendario(anio)
+        # Diciembre mira ya el año siguiente: si no, el 1 de enero la app
+        # amanece con el calendario vacío.
+        anios = [hoy.year] + ([hoy.year + 1] if hoy.month == 12 else [])
+        cal = []
+        for anio in anios:
+            cal += recolectar_calendario(anio)
         precargar(cal)
-        completar_fichas(cal)
-        resolver_race_ids(cal)
-        completar_participantes(cal)
-        completar_resultados(cal)
+        completar_fichas(cal, topes["fichas"])
+        resolver_race_ids(cal, topes["jornadas"])
+        completar_participantes(cal, maximo=topes["inscritos"])
+        completar_resultados(cal, topes["resultados"])
         crudo["calendario"] = cal
-    if args.solo == "resultados" and args.race_id:
-        crudo["resultados"] = [{"race_id": x, "llegada": recolectar_resultado(x)}
-                               for x in args.race_id]
+        crudo["fichas_caballo"] = completar_caballos(cal, topes["caballos"])
+        SALUD["carreras"] = len(cal)
 
-    destino = DATOS / "crudo.json"
-    destino.write_text(json.dumps(crudo, ensure_ascii=False, indent=1),
-                       encoding="utf-8")
-    log(f"escrito {destino}")
+    if args.solo in (None, "estadisticas"):
+        crudo["estadisticas"] = recolectar_estadisticas(hoy.year)
 
-    # Si no se ha recogido NADA, salir con error para que GitHub avise por correo.
-    # Es preferible enterarse tú a publicar un boletín vacío.
-    total = sum(len(v) for v in crudo.values() if isinstance(v, list))
-    if total == 0:
-        log("NO SE HA RECOGIDO NADA — probablemente han cambiado los selectores")
+    (DATOS / "crudo.json").write_text(json.dumps(crudo, ensure_ascii=False, indent=1),
+                                      encoding="utf-8")
+    log(f"escrito datos/crudo.json — salud: {SALUD}")
+
+    # Aviso POR FUENTE. Mirar solo el total escondía que las noticias
+    # llevaran días sin entrar mientras el calendario funcionaba.
+    fallos = []
+    if args.solo in (None, "noticias") and not SALUD.get("noticias_listadas"):
+        fallos.append("no se ha listado NINGUNA noticia")
+    if args.solo in (None, "calendario") and not SALUD.get("carreras"):
+        fallos.append("el calendario ha venido vacío")
+    if fallos:
+        for f in fallos:
+            log("AVISO: " + f)
         sys.exit(1)
 
 

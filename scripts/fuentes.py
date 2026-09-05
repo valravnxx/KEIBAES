@@ -158,6 +158,16 @@ def url_estadisticas_jra(anio: int) -> str:
     return f"https://japanracing.jp/_statistics/{anio}/s10.html"
 
 
+def url_caballo(horse_id: str) -> str:
+    """Ficha del caballo: pedigrí, entrenador, ganancias, historial."""
+    return f"https://en.netkeiba.com/db/horse/{horse_id}/"
+
+
+# El pedigrí se lee por patrón. En netkeiba el bloque suele venir como
+# "<padre> - <madre> (<abuelo materno>)" o con etiquetas Sire/Dam.
+RE_PADRES = r"([A-Z][A-Za-z'’\. -]{2,26})\s*[-–]\s*([A-Z][A-Za-z'’\. -]{2,26})\s*\("
+
+
 # ------------------------------------------------------------ hipódromos
 # Códigos de hipódromo dentro del race_id de netkeiba.
 # race_id = AAAA HH RR DD CC

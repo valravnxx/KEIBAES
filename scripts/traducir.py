@@ -77,14 +77,14 @@ el calendario japonés—. Este segundo párrafo es lo que diferencia una cróni
 de un marcador: si no tienes datos para escribirlo, dilo con un párrafo corto
 en vez de rellenar.
 
-CARRERA: {nombre} ({grado}) · {fecha} · {hipodromo} · {distancia} m
-ORDEN DE LLEGADA:
+CARRERA: {nombre} ({grado}) · {fecha} · {hipodromo} · {distancia} m {superficie}
+CONTEXTO DE LA PRUEBA: {contexto}
+GANADORES DE AÑOS ANTERIORES: {ganadores}
+ORDEN DE LLEGADA (puesto. caballo (jockey) tiempo margen cuota):
 {llegada}
-NOTA OFICIAL DE LA JRA (si la hay):
-{nota}
 
 Devuelve SOLO un objeto JSON, sin ```:
-{{"cronica": "párrafo 1\\n\\npárrafo 2", "titular": "...", "destacado": "una frase de 12 palabras"}}"""
+{{"cronica": "párrafo 1\\n\\npárrafo 2", "destacado": "una frase de 12 palabras como mucho"}}"""
 
 
 # ------------------------------------------------------------------ caché
@@ -209,18 +209,33 @@ def main():
             nuevas += 1
         guardar_cache(cache)   # se guarda a cada paso: un fallo no pierde el trabajo
 
-    for res in crudo.get("resultados", []):
+    # --- crónicas de las carreras ya corridas que aún no la tienen.
+    # Esto es lo que estaba escrito pero sin conectar: el prompt existía y
+    # la lista que le llegaba estaba siempre vacía, así que las carreras
+    # nuevas se quedaban en tabla de números.
+    pendientes = [c for c in crudo.get("calendario", [])
+                  if c.get("llegada") and not c.get("cronica")]
+    pendientes.sort(key=lambda c: c.get("fecha", ""), reverse=True)
+    tope = int(os.environ.get("MAX_CRONICAS", "10"))
+    print(f"· crónicas por escribir: {len(pendientes)} — escribiendo {min(tope, len(pendientes))}")
+
+    for c in pendientes[:tope]:
         llegada = "\n".join(
-            f"{x['pos']}. {x['caballo']} ({x['jockey']}) {x['tiempo']} {x['margen']} cuota {x['odds']}"
-            for x in res["llegada"][:6])
+            f"{x['pos']}. {x['caballo']} ({x.get('jockey','')}) "
+            f"{x.get('tiempo','')} {x.get('margen','')} cuota {x.get('odds','')}"
+            for x in c["llegada"][:8])
+        ficha = c.get("ficha") or {}
+        ganadores = ", ".join(f"{g[0]} {g[1]}" for g in ficha.get("ganadores", [])[:5]) or "(no disponible)"
+        contexto = " · ".join(x for x in [c.get("edades"), c.get("premio"),
+                                          ("cuerda a " + c["sentido"]) if c.get("sentido") else ""] if x)
         r = redactar(PROMPT_CRONICA.format(
-            nombre=res.get("nombre", ""), grado=res.get("grado", ""),
-            fecha=res.get("fecha", ""), hipodromo=res.get("hipodromo", ""),
-            distancia=res.get("distancia", ""), llegada=llegada,
-            nota=res.get("nota_jra", "(no disponible)")), cache)
-        if r:
-            res.update({"cronica": r.get("cronica", ""),
-                        "destacado": r.get("destacado", "")})
+            nombre=c.get("nombre", ""), grado=c.get("grado", ""), fecha=c.get("fecha", ""),
+            hipodromo=c.get("hipodromo", ""), distancia=c.get("distancia", ""),
+            superficie=c.get("superficie", ""), contexto=contexto or "(no disponible)",
+            ganadores=ganadores, llegada=llegada), cache)
+        if r and r.get("cronica"):
+            c["cronica"] = r["cronica"]
+            c["destacado"] = r.get("destacado", "")
             nuevas += 1
         guardar_cache(cache)
 
