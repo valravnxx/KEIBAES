@@ -1,6 +1,6 @@
 {
  "version": 1,
- "actualizado": "2026-09-05T14:50:16+00:00",
+ "actualizado": "2026-09-05T14:54:31+00:00",
  "noticias": [
   {
    "id": "a3f9c1",
@@ -52,7 +52,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0104nakayamakimpai.html",
    "anio": 2026,
    "dias": -244,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 2000,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "4 años en adelante",
+   "premio": "¥93,410,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Al Naseem"
+     ]
+    ]
+   }
   },
   {
    "id": "535c519e1a",
@@ -63,7 +77,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0104kyotokimpai.html",
    "anio": 2026,
    "dias": -244,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1600,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "4 años en adelante",
+   "premio": "¥93,410,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Sakura Toujours"
+     ]
+    ]
+   }
   },
   {
    "id": "5e43144365",
@@ -74,7 +102,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0111fairy.html",
    "anio": 2026,
    "dias": -237,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1600,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "3 años",
+   "premio": "¥82,260,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Erika Express"
+     ]
+    ]
+   }
   },
   {
    "id": "592b0844f3",
@@ -85,7 +127,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0112shinzan-kinen.html",
    "anio": 2026,
    "dias": -236,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1600,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "3 años",
+   "premio": "¥88,370,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Lila Emblem"
+     ]
+    ]
+   }
   },
   {
    "id": "03f4f1898e",
@@ -96,7 +152,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0118keisei.html",
    "anio": 2026,
    "dias": -230,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 2000,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "3 años",
+   "premio": "¥88,370,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Nishino Agent"
+     ]
+    ]
+   }
   },
   {
    "id": "6f1cb18e3b",
@@ -107,7 +177,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0118nikkei-shinshun.html",
    "anio": 2026,
    "dias": -230,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 2400,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "4 años en adelante",
+   "premio": "¥123,690,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Lord del Rey"
+     ]
+    ]
+   }
   },
   {
    "id": "c990173b77",
@@ -118,7 +202,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0124kokura-himba.html",
    "anio": 2026,
    "dias": -224,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 2000,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "4 años en adelante",
+   "premio": "¥82,260,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Verehrung"
+     ]
+    ]
+   }
   },
   {
    "id": "7aa5d456dd",
@@ -129,7 +227,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0125ajcc.html",
    "anio": 2026,
    "dias": -223,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 2200,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "4 años en adelante",
+   "premio": "¥135,240,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Danon Decile"
+     ]
+    ]
+   }
   },
   {
    "id": "754c55ce29",
@@ -140,7 +252,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0125procyon.html",
    "anio": 2026,
    "dias": -223,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1800,
+   "superficie": "arena",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "4 años en adelante",
+   "premio": "¥119,650,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "Sunday Funday"
+     ]
+    ]
+   }
   },
   {
    "id": "b2dd7f71d4",
@@ -176,7 +302,21 @@
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0201silkroad.html",
    "anio": 2026,
    "dias": -216,
-   "estado": "pasada"
+   "estado": "pasada",
+   "distancia": 1200,
+   "superficie": "cesped",
+   "hipodromo": "Nakayama",
+   "sentido": "derechas",
+   "edades": "4 años en adelante",
+   "premio": "¥88,370,000",
+   "ficha": {
+    "ganadores": [
+     [
+      "2025",
+      "A Shin Fencer"
+     ]
+    ]
+   }
   },
   {
    "id": "ea7fa5dcd1",
@@ -1928,7 +2068,9 @@
     ]
    },
    "dias": -28,
-   "estado": "pasada"
+   "estado": "pasada",
+   "race_id": "202601010511",
+   "hora_jst": "15:25"
   },
   {
    "id": "856ca809bd",
@@ -1953,7 +2095,9 @@
     ]
    },
    "dias": -27,
-   "estado": "pasada"
+   "estado": "pasada",
+   "race_id": "202604020607",
+   "hora_jst": "15:35"
   },
   {
    "id": "18d15b480b",
@@ -1978,7 +2122,9 @@
     ]
    },
    "dias": -27,
-   "estado": "pasada"
+   "estado": "pasada",
+   "race_id": "202607020607",
+   "hora_jst": "15:45"
   },
   {
    "id": "fa7b3488e9",
@@ -2003,7 +2149,9 @@
     ]
    },
    "dias": -20,
-   "estado": "pasada"
+   "estado": "pasada",
+   "race_id": "202607020807",
+   "hora_jst": "15:35"
   },
   {
    "id": "59b0177282",
@@ -2028,7 +2176,9 @@
     ]
    },
    "dias": -20,
-   "estado": "pasada"
+   "estado": "pasada",
+   "race_id": "202601010811",
+   "hora_jst": "15:45"
   },
   {
    "id": "605f09318f",
@@ -2053,7 +2203,9 @@
     ]
    },
    "dias": -13,
-   "estado": "pasada"
+   "estado": "pasada",
+   "race_id": "202604030207",
+   "hora_jst": "15:25"
   },
   {
    "id": "d8a4190187",
@@ -2078,7 +2230,9 @@
     ]
    },
    "dias": -13,
-   "estado": "pasada"
+   "estado": "pasada",
+   "race_id": "202601020211",
+   "hora_jst": "15:45"
   },
   {
    "id": "bb4f389995",
@@ -2103,7 +2257,9 @@
     ]
    },
    "dias": -6,
-   "estado": "pasada"
+   "estado": "pasada",
+   "race_id": "202604030408",
+   "hora_jst": "15:45"
   },
   {
    "id": "2801213804",
@@ -2128,7 +2284,9 @@
     ]
    },
    "dias": -6,
-   "estado": "pasada"
+   "estado": "pasada",
+   "race_id": "202607030407",
+   "hora_jst": "15:35"
   },
   {
    "id": "d5023f58cc",
@@ -2153,7 +2311,139 @@
     ]
    },
    "dias": 0,
-   "estado": "lejana"
+   "estado": "cuadro_cerrado",
+   "race_id": "202606040111",
+   "hora_jst": "15:45",
+   "participantes": [
+    {
+     "caballo": "Cruzeiro do Sul",
+     "jockey": "R.Kozaki",
+     "entrenador": "Y.TakahashiRitto",
+     "peso": "57.0",
+     "sexo_edad": "6H",
+     "odds": ""
+    },
+    {
+     "caballo": "Mina de Oro",
+     "jockey": "M.Michel",
+     "entrenador": "H.FujiwaraRitto",
+     "peso": "56.0",
+     "sexo_edad": "5H",
+     "odds": ""
+    },
+    {
+     "caballo": "Drop of Light",
+     "jockey": "Y.Iwata",
+     "entrenador": "Y.FukunagaRitto",
+     "peso": "56.5",
+     "sexo_edad": "7M",
+     "odds": ""
+    },
+    {
+     "caballo": "Forte Angelo",
+     "jockey": "D.Lane",
+     "entrenador": "Y.UeharaMiho",
+     "peso": "55.0",
+     "sexo_edad": "3C",
+     "odds": ""
+    },
+    {
+     "caballo": "Saai Roang",
+     "jockey": "T.Ono",
+     "entrenador": "N.HoriMiho",
+     "peso": "57.0",
+     "sexo_edad": "7G",
+     "odds": ""
+    },
+    {
+     "caballo": "Fandom",
+     "jockey": "K.Tosaki",
+     "entrenador": "T.TsujiMiho",
+     "peso": "57.0",
+     "sexo_edad": "4H",
+     "odds": ""
+    },
+    {
+     "caballo": "Ecoro Bloom",
+     "jockey": "Y.Take",
+     "entrenador": "Y.KatoMiho",
+     "peso": "58.0",
+     "sexo_edad": "5H",
+     "odds": ""
+    },
+    {
+     "caballo": "Piko Rose",
+     "jockey": "K.Miura",
+     "entrenador": "D.ItoMiho",
+     "peso": "53.0",
+     "sexo_edad": "4M",
+     "odds": ""
+    },
+    {
+     "caballo": "Reservation",
+     "jockey": "Y.Hara",
+     "entrenador": "T.MatsushitaRitto",
+     "peso": "55.0",
+     "sexo_edad": "3C",
+     "odds": ""
+    },
+    {
+     "caballo": "Valkyrie Birth",
+     "jockey": "C.Lemaire",
+     "entrenador": "H.TanakaMiho",
+     "peso": "55.5",
+     "sexo_edad": "4M",
+     "odds": ""
+    },
+    {
+     "caballo": "Cranford",
+     "jockey": "K.Kikuzawa",
+     "entrenador": "H.SugiyamaRitto",
+     "peso": "55.0",
+     "sexo_edad": "5M",
+     "odds": ""
+    },
+    {
+     "caballo": "Deal Maker",
+     "jockey": "T.Yokoyama",
+     "entrenador": "N.OwadaMiho",
+     "peso": "54.0",
+     "sexo_edad": "3C",
+     "odds": ""
+    },
+    {
+     "caballo": "Metal Speed",
+     "jockey": "H.Tanabe",
+     "entrenador": "M.SaitoMiho",
+     "peso": "55.0",
+     "sexo_edad": "6H",
+     "odds": ""
+    },
+    {
+     "caballo": "Lila Bonito",
+     "jockey": "G.Maruyama",
+     "entrenador": "N.SugaiRitto",
+     "peso": "54.0",
+     "sexo_edad": "5M",
+     "odds": ""
+    },
+    {
+     "caballo": "Theresa",
+     "jockey": "A.Tsumura",
+     "entrenador": "H.SugiyamaRitto",
+     "peso": "55.0",
+     "sexo_edad": "4M",
+     "odds": ""
+    },
+    {
+     "caballo": "La Quemada",
+     "jockey": "M.Sugihara",
+     "entrenador": "T.ChidaRitto",
+     "peso": "56.0",
+     "sexo_edad": "6H",
+     "odds": ""
+    }
+   ]
   },
   {
    "id": "7bf1d2fcf7",
@@ -2178,7 +2468,83 @@
     ]
    },
    "dias": 0,
-   "estado": "lejana"
+   "estado": "cuadro_cerrado",
+   "race_id": "202601020511",
+   "hora_jst": "15:20",
+   "participantes": [
+    {
+     "caballo": "Tengukaze",
+     "jockey": "H.Matoba",
+     "entrenador": "H.MatobaMiho",
+     "peso": "55.0",
+     "sexo_edad": "2C",
+     "odds": ""
+    },
+    {
+     "caballo": "Shonan Galleon",
+     "jockey": "K.Sameshima",
+     "entrenador": "S.KatoMiho",
+     "peso": "55.0",
+     "sexo_edad": "2C",
+     "odds": ""
+    },
+    {
+     "caballo": "Desert Spirit",
+     "jockey": "K.Yokoyama",
+     "entrenador": "D.HiraiwaMiho",
+     "peso": "55.0",
+     "sexo_edad": "2C",
+     "odds": ""
+    },
+    {
+     "caballo": "Cosmo Hanamizuki",
+     "jockey": "D.Sasaki",
+     "entrenador": "M.KikukawaMiho",
+     "peso": "55.0",
+     "sexo_edad": "2F",
+     "odds": ""
+    },
+    {
+     "caballo": "Random Number",
+     "jockey": "Y.Furukawa",
+     "entrenador": "Y.HashidaRitto",
+     "peso": "55.0",
+     "sexo_edad": "2C",
+     "odds": ""
+    },
+    {
+     "caballo": "Hayabusa Katsu O",
+     "jockey": "H.Yoshida",
+     "entrenador": "I.OkadaRitto",
+     "peso": "55.0",
+     "sexo_edad": "2C",
+     "odds": ""
+    },
+    {
+     "caballo": "Idomu",
+     "jockey": "H.Matsumoto",
+     "entrenador": "Y.TakahashiRitto",
+     "peso": "55.0",
+     "sexo_edad": "2C",
+     "odds": ""
+    },
+    {
+     "caballo": "Tenka Taihei",
+     "jockey": "Y.Tannai",
+     "entrenador": "J.OnoMiho",
+     "peso": "55.0",
+     "sexo_edad": "2C",
+     "odds": ""
+    },
+    {
+     "caballo": "Rose High School",
+     "jockey": "N.Furukawa",
+     "entrenador": "K.KozakiRitto",
+     "peso": "55.0",
+     "sexo_edad": "2F",
+     "odds": ""
+    }
+   ]
   },
   {
    "id": "3d828193dc",
@@ -2228,7 +2594,139 @@
     ]
    },
    "dias": 1,
-   "estado": "lejana"
+   "estado": "cuadro_cerrado",
+   "race_id": "202609040211",
+   "hora_jst": "15:30",
+   "participantes": [
+    {
+     "caballo": "Mama Cocha",
+     "jockey": "Y.Take",
+     "entrenador": "Y.IkeeRitto",
+     "peso": "56.0",
+     "sexo_edad": "7M",
+     "odds": ""
+    },
+    {
+     "caballo": "Craspedia",
+     "jockey": "R.Kozaki",
+     "entrenador": "H.KawashimaRitto",
+     "peso": "57.0",
+     "sexo_edad": "4H",
+     "odds": ""
+    },
+    {
+     "caballo": "Flicker Jab",
+     "jockey": "K.Matsuyama",
+     "entrenador": "S.NishizonoRitto",
+     "peso": "57.0",
+     "sexo_edad": "4H",
+     "odds": ""
+    },
+    {
+     "caballo": "Tinia",
+     "jockey": "K.Taguchi",
+     "entrenador": "Y.IkeeRitto",
+     "peso": "57.0",
+     "sexo_edad": "6H",
+     "odds": ""
+    },
+    {
+     "caballo": "Diamond Knot",
+     "jockey": "Y.Kawada",
+     "entrenador": "Y.FukunagaRitto",
+     "peso": "55.0",
+     "sexo_edad": "3C",
+     "odds": ""
+    },
+    {
+     "caballo": "Protoporos",
+     "jockey": "H.Kameda",
+     "entrenador": "M.NishimuraRitto",
+     "peso": "57.0",
+     "sexo_edad": "6H",
+     "odds": ""
+    },
+    {
+     "caballo": "Meisho Yozora",
+     "jockey": "S.Yoshimura",
+     "entrenador": "M.TakayanagiMiho",
+     "peso": "55.0",
+     "sexo_edad": "5M",
+     "odds": ""
+    },
+    {
+     "caballo": "Fast Network",
+     "jockey": "D.Lane",
+     "entrenador": "C.HYip",
+     "peso": "57.0",
+     "sexo_edad": "6G",
+     "odds": ""
+    },
+    {
+     "caballo": "Puro Magic",
+     "jockey": "M.Iwata",
+     "entrenador": "S.YasudaRitto",
+     "peso": "55.0",
+     "sexo_edad": "5M",
+     "odds": ""
+    },
+    {
+     "caballo": "Yabusame",
+     "jockey": "O.Tayama",
+     "entrenador": "M.IshibashiRitto",
+     "peso": "57.0",
+     "sexo_edad": "5H",
+     "odds": ""
+    },
+    {
+     "caballo": "Yoshino Easter",
+     "jockey": "H.Tanabe",
+     "entrenador": "H.NakaoRitto",
+     "peso": "57.0",
+     "sexo_edad": "8H",
+     "odds": ""
+    },
+    {
+     "caballo": "Red Mon Reve",
+     "jockey": "M.Sakai",
+     "entrenador": "M.EbinaMiho",
+     "peso": "57.0",
+     "sexo_edad": "7H",
+     "odds": ""
+    },
+    {
+     "caballo": "Karpuz Pelus",
+     "jockey": "A.Nishimura",
+     "entrenador": "K.IshizakaRitto",
+     "peso": "55.0",
+     "sexo_edad": "4M",
+     "odds": ""
+    },
+    {
+     "caballo": "Tamamo Black Tie",
+     "jockey": "H.Miyuki",
+     "entrenador": "K.TsunodaRitto",
+     "peso": "57.0",
+     "sexo_edad": "6H",
+     "odds": ""
+    },
+    {
+     "caballo": "Big Caesar",
+     "jockey": "M.Demuro",
+     "entrenador": "H.SugiyamaRitto",
+     "peso": "57.0",
+     "sexo_edad": "6H",
+     "odds": ""
+    },
+    {
+     "caballo": "Tamamo Icarus",
+     "jockey": "K.Ikezoe",
+     "entrenador": "K.FujiokaRitto",
+     "peso": "55.0",
+     "sexo_edad": "3C",
+     "odds": ""
+    }
+   ]
   },
   {
    "id": "61adb63463",
@@ -3401,6 +3899,30 @@
    "seguido": true
   },
   {
+   "nombre": "Flicker Jab",
+   "historial": [],
+   "forma": [],
+   "menciones": 1,
+   "jockey": "K.Matsuyama",
+   "perfil": "4H",
+   "proxima": "309558f7e4",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Puro Magic",
+   "historial": [],
+   "forma": [],
+   "menciones": 1,
+   "jockey": "M.Iwata",
+   "perfil": "5M",
+   "proxima": "309558f7e4",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
    "nombre": "Dream Core",
    "historial": [
     {
@@ -3468,6 +3990,474 @@
     3
    ],
    "menciones": 0,
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Cruzeiro do Sul",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "R.Kozaki",
+   "perfil": "6H",
+   "proxima": "d5023f58cc",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Mina de Oro",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "M.Michel",
+   "perfil": "5H",
+   "proxima": "d5023f58cc",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Drop of Light",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "Y.Iwata",
+   "perfil": "7M",
+   "proxima": "d5023f58cc",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Forte Angelo",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "D.Lane",
+   "perfil": "3C",
+   "proxima": "d5023f58cc",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Saai Roang",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "T.Ono",
+   "perfil": "7G",
+   "proxima": "d5023f58cc",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Fandom",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "K.Tosaki",
+   "perfil": "4H",
+   "proxima": "d5023f58cc",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Ecoro Bloom",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "Y.Take",
+   "perfil": "5H",
+   "proxima": "d5023f58cc",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Piko Rose",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "K.Miura",
+   "perfil": "4M",
+   "proxima": "d5023f58cc",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Reservation",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "Y.Hara",
+   "perfil": "3C",
+   "proxima": "d5023f58cc",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Valkyrie Birth",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "C.Lemaire",
+   "perfil": "4M",
+   "proxima": "d5023f58cc",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Cranford",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "K.Kikuzawa",
+   "perfil": "5M",
+   "proxima": "d5023f58cc",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Deal Maker",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "T.Yokoyama",
+   "perfil": "3C",
+   "proxima": "d5023f58cc",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Metal Speed",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "H.Tanabe",
+   "perfil": "6H",
+   "proxima": "d5023f58cc",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Lila Bonito",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "G.Maruyama",
+   "perfil": "5M",
+   "proxima": "d5023f58cc",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Theresa",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "A.Tsumura",
+   "perfil": "4M",
+   "proxima": "d5023f58cc",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "La Quemada",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "M.Sugihara",
+   "perfil": "6H",
+   "proxima": "d5023f58cc",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Tengukaze",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "H.Matoba",
+   "perfil": "2C",
+   "proxima": "7bf1d2fcf7",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Shonan Galleon",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "K.Sameshima",
+   "perfil": "2C",
+   "proxima": "7bf1d2fcf7",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Desert Spirit",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "K.Yokoyama",
+   "perfil": "2C",
+   "proxima": "7bf1d2fcf7",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Cosmo Hanamizuki",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "D.Sasaki",
+   "perfil": "2F",
+   "proxima": "7bf1d2fcf7",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Random Number",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "Y.Furukawa",
+   "perfil": "2C",
+   "proxima": "7bf1d2fcf7",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Hayabusa Katsu O",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "H.Yoshida",
+   "perfil": "2C",
+   "proxima": "7bf1d2fcf7",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Idomu",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "H.Matsumoto",
+   "perfil": "2C",
+   "proxima": "7bf1d2fcf7",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Tenka Taihei",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "Y.Tannai",
+   "perfil": "2C",
+   "proxima": "7bf1d2fcf7",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Rose High School",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "N.Furukawa",
+   "perfil": "2F",
+   "proxima": "7bf1d2fcf7",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Mama Cocha",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "Y.Take",
+   "perfil": "7M",
+   "proxima": "309558f7e4",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Craspedia",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "R.Kozaki",
+   "perfil": "4H",
+   "proxima": "309558f7e4",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Tinia",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "K.Taguchi",
+   "perfil": "6H",
+   "proxima": "309558f7e4",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Diamond Knot",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "Y.Kawada",
+   "perfil": "3C",
+   "proxima": "309558f7e4",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Protoporos",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "H.Kameda",
+   "perfil": "6H",
+   "proxima": "309558f7e4",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Meisho Yozora",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "S.Yoshimura",
+   "perfil": "5M",
+   "proxima": "309558f7e4",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Fast Network",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "D.Lane",
+   "perfil": "6G",
+   "proxima": "309558f7e4",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Yabusame",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "O.Tayama",
+   "perfil": "5H",
+   "proxima": "309558f7e4",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Yoshino Easter",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "H.Tanabe",
+   "perfil": "8H",
+   "proxima": "309558f7e4",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Red Mon Reve",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "M.Sakai",
+   "perfil": "7H",
+   "proxima": "309558f7e4",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Karpuz Pelus",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "A.Nishimura",
+   "perfil": "4M",
+   "proxima": "309558f7e4",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Tamamo Black Tie",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "H.Miyuki",
+   "perfil": "6H",
+   "proxima": "309558f7e4",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Big Caesar",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "M.Demuro",
+   "perfil": "6H",
+   "proxima": "309558f7e4",
+   "victorias": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Tamamo Icarus",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "K.Ikezoe",
+   "perfil": "3C",
+   "proxima": "309558f7e4",
    "victorias": 0,
    "g1": 0,
    "seguido": false
