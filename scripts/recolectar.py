@@ -187,7 +187,7 @@ def recolectar_calendario(anio: int) -> list[dict]:
     carreras, vistos = [], set()
 
     for a in sopa.select(F.SEL_CALENDARIO.enlace_carrera):
-        etiqueta = limpiar(a.get_text())
+        etiqueta = limpiar(a.get_text(" "))   # con espacio: sin él salía "Keisei HaiAutumn"
         if not etiqueta:
             continue
 
@@ -233,6 +233,93 @@ def recolectar_calendario(anio: int) -> list[dict]:
         grados[c["grado"]] = grados.get(c["grado"], 0) + 1
     log(f"carreras del calendario {anio}: {len(carreras)} — {grados}")
     return carreras
+
+
+def detalle_carrera(url: str) -> dict:
+    """
+    Abre la ficha de una carrera graduada y saca lo que el calendario no da:
+    hipódromo, distancia, superficie, premio y el ganador del año pasado.
+
+    Se lee por patrones de texto, no por selectores: si rediseñan la página
+    pero el contenido sigue diciendo "1200m, Turf", esto sigue funcionando.
+    """
+    sopa = bajar(url)
+    if not sopa:
+        return {}
+
+    txt = limpiar(sopa.get_text(" "))
+    d = {}
+
+    m = re.search(F.RE_DISTANCIA, txt, re.I)
+    if m:
+        d["distancia"] = int(m.group(1))
+        d["superficie"] = "cesped" if m.group(2).lower() == "turf" else "arena"
+
+    arriba = txt.upper()
+    for pista in F.PISTAS:
+        if pista in arriba:
+            d["hipodromo"] = pista.capitalize()
+            break
+
+    m = re.search(F.RE_SENTIDO, txt, re.I)
+    if m:
+        d["sentido"] = "derechas" if m.group(1).lower() == "right" else "izquierdas"
+
+    m = re.search(F.RE_EDADES, txt, re.I)
+    if m:
+        d["edades"] = (m.group(1) + " años en adelante") if m.group(1) else (m.group(2) + " años")
+
+    premios = re.findall(F.RE_PREMIO, txt)
+    if premios:
+        d["premio"] = "¥" + premios[0]
+
+    # Los ganadores se buscan trozo a trozo, no sobre todo el texto junto:
+    # sobre el texto entero la expresión se comía lo que venía detrás y
+    # salían cosas como "Lugal Maximum number of Starter".
+    ganadores = []
+    for trozo in sopa.find_all(string=re.compile(r"Winner\s*:")):
+        m = re.search(F.RE_GANADOR, limpiar(str(trozo)))
+        if not m:
+            continue
+        anio, nombre = m.group(1), limpiar(m.group(2))
+        if nombre and [anio, nombre] not in ganadores:
+            ganadores.append([anio, nombre])
+    if ganadores:
+        d.setdefault("ficha", {})["ganadores"] = ganadores[:8]
+
+    return d
+
+
+def completar_fichas(carreras: list[dict], maximo=60) -> int:
+    """
+    Solo abre las fichas que faltan, y empieza por las carreras más cercanas
+    en el tiempo. Así el primer día se rellenan las que importan y el resto
+    va cayendo en días sucesivos, sin castigar a la web de la JRA.
+    """
+    hechas = {}
+    prev = RAIZ / "web" / "datos.json"
+    if prev.exists():
+        try:
+            for c in json.loads(prev.read_text(encoding="utf-8")).get("carreras", []):
+                if c.get("distancia"):
+                    hechas[c.get("id")] = c
+        except Exception:
+            pass
+
+    hoy = datetime.now(timezone.utc).date().isoformat()
+    pendientes = [c for c in carreras if c["id"] not in hechas and c.get("url")]
+    pendientes.sort(key=lambda c: abs((datetime.fromisoformat(c["fecha"]).date()
+                                       - datetime.fromisoformat(hoy).date()).days))
+
+    log(f"fichas de carrera por abrir: {len(pendientes)} — abriendo {min(maximo, len(pendientes))}")
+    n = 0
+    for c in pendientes[:maximo]:
+        extra = detalle_carrera(c["url"])
+        if extra:
+            c.update(extra)
+            n += 1
+    log(f"fichas completadas: {n}")
+    return n
 
 
 # --------------------------------------------------------------- resultados
@@ -293,6 +380,7 @@ def main():
         crudo["noticias"] = recolectar_noticias()
     if args.solo in (None, "calendario"):
         crudo["calendario"] = recolectar_calendario(anio)
+        completar_fichas(crudo["calendario"])
     if args.solo in (None, "resultados") and args.race_id:
         crudo["resultados"] = [r for r in (recolectar_resultado(x)
                                            for x in args.race_id) if r]

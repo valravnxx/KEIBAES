@@ -75,6 +75,18 @@ class SelectoresCalendario:
 
 SEL_CALENDARIO = SelectoresCalendario()
 
+# La ficha de cada carrera graduada trae los datos buenos (hipódromo,
+# distancia, superficie, premio, ganador del año pasado). Se leen por
+# PATRÓN DE TEXTO y no por selector CSS: aguanta mucho mejor un rediseño.
+PISTAS = ("NAKAYAMA", "TOKYO", "KYOTO", "HANSHIN", "CHUKYO",
+          "SAPPORO", "HAKODATE", "FUKUSHIMA", "NIIGATA", "KOKURA")
+
+RE_DISTANCIA = r"(\d{3,4})\s*m\s*,\s*(Turf|Dirt)"
+RE_SENTIDO   = r"(right|left)\s*handed"
+RE_EDADES    = r"(\d)\s*yo\s*&\s*up|(\d)\s*yo\b"
+RE_PREMIO    = r"¥\s*([\d,]{7,})"
+RE_GANADOR   = r"(\d{4})\s*Winner\s*:\s*([A-Za-z][A-Za-z'’\. -]{2,30})"
+
 # Los grados se detectan por texto, no por clase: es más robusto ante
 # rediseños y funciona igual en ambos sitios.
 GRADOS = ("G1", "G2", "G3", "J-G1", "J-G2", "J-G3", "Jpn1", "Jpn2", "Jpn3")
