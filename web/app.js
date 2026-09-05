@@ -12,6 +12,7 @@ var HORA_ES = 'Europe/Madrid';
 var P = {
   seguidos: [],
   sinSpoilers: false,
+  tema: 'nocturno',
   categorias: { jra: true, internacional: true, cria: true, jockeys: true, nar: false }
 };
 
@@ -21,6 +22,7 @@ function cargarPrefs() {
     if (g) Object.assign(P, JSON.parse(g));
   } catch (e) { /* modo privado o almacenamiento bloqueado: seguimos igual */ }
   document.body.classList.toggle('nospo', P.sinSpoilers);
+  document.body.dataset.tema = P.tema || 'nocturno';
 }
 
 function guardarPrefs() {
@@ -108,7 +110,7 @@ function volver() {
 
 function filaCarrera(c, tap) {
   var f = fecha(c.fecha);
-  var pasada = c.estado === 'corrida';
+  var pasada = c.estado === 'corrida' || c.estado === 'pasada';
   var sub = [c.hipodromo, c.distancia ? c.distancia + ' m' : '', c.alias || ''].filter(Boolean).join(' · ');
   return '<div class="race' + (pasada ? ' past' : '') + (tap ? ' tap' : '') + '"' +
     (tap ? ' onclick="verCarrera(\'' + c.id + '\')"' : '') + '>' +
@@ -180,7 +182,13 @@ function alternar(e, nombre) {
 /* ------------------------------------------------------------- pantallas */
 
 function pintaHoy() {
-  var prox = (D.carreras || []).filter(function (c) { return c.estado !== 'corrida' && c.fecha; })[0];
+  // Próxima = la primera que aún no se ha corrido. Sin este filtro por días,
+  // el calendario anual hacía que la portada enseñara una carrera de enero
+  // con la cuenta atrás en negativo.
+  var prox = (D.carreras || []).filter(function (c) {
+    return c.fecha && c.estado !== 'corrida' && c.estado !== 'pasada' &&
+           (c.dias == null || c.dias >= 0);
+  })[0];
   var ultima = (D.carreras || []).filter(function (c) { return c.estado === 'corrida'; }).slice(-1)[0];
   var h = '';
 
@@ -526,8 +534,33 @@ function opcion(titulo, desc, activo, accion) {
     '<div class="sw' + (activo ? ' on' : '') + '" onclick="' + accion + '"></div></div>';
 }
 
+var TEMAS = [
+  { id: 'nocturno', nombre: 'Nocturno', bg: '#0d1117', c1: '#e0603f', c2: '#aab8c6', c3: '#28323e' },
+  { id: 'papel',    nombre: 'Papel',    bg: '#f2eee4', c1: '#b8342a', c2: '#4d5760', c3: '#ddd6c6' },
+  { id: 'turf',     nombre: 'Turf',     bg: '#0b1410', c1: '#d9a038', c2: '#adbcae', c3: '#25392e' }
+];
+
+function ponTema(id) {
+  P.tema = id;
+  document.body.dataset.tema = id;
+  guardarPrefs();
+  pintaAjustes();
+  var m = document.querySelector('meta[name="theme-color"]');
+  var t = TEMAS.find(function (x) { return x.id === id; });
+  if (m && t) m.setAttribute('content', t.bg);
+}
+
 function pintaAjustes() {
-  var h = '<h2 class="sec">Cómo ves las carreras</h2>' +
+  var h = '<h2 class="sec">Aspecto</h2><div class="temas">' +
+    TEMAS.map(function (t) {
+      return '<button class="tema' + (P.tema === t.id ? ' on' : '') + '" onclick="ponTema(\'' + t.id + '\')">' +
+        '<div class="mues" style="background:' + t.bg + '">' +
+        '<span class="b1" style="background:' + t.c1 + '"></span>' +
+        '<span class="b2" style="background:' + t.c2 + '"></span>' +
+        '<span class="b3" style="background:' + t.c3 + '"></span></div>' +
+        '<em>' + t.nombre + '</em></button>';
+    }).join('') + '</div>' +
+    '<h2 class="sec">Cómo ves las carreras</h2>' +
     opcion('Modo sin spoilers',
       'Las carreras japonesas se corren sobre las 08:40 de la mañana en España. Oculta ganadores y posiciones hasta que las toques.',
       P.sinSpoilers, 'ponSpoilers(this)') +
