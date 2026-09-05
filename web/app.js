@@ -165,19 +165,25 @@ function buscarVideo(c) {
     encodeURIComponent(fecha(c.fecha).anio + ' ' + c.nombre + ' (' + c.grado + ') JRA Official');
 }
 
-/** Qué enseñar cuando no tenemos miniatura:
-    · G1  → el canal oficial sube uno por carrera, así que se busca ahí
-    · resto → la JRA publica repetición de TODAS en su ficha oficial */
+/** Qué ofrecer cuando no tenemos la miniatura del vídeo.
+    Cada botón dice exactamente adónde lleva: la ficha de una carrera en
+    japanracing.jp es un ANUNCIO de la carrera, no tiene ni resultado ni
+    repetición, así que no se enlaza como si fuera vídeo. */
 function videoAlternativo(c) {
+  var b = '';
   if (c.grado === 'G1') {
-    return '<a class="btn pri" href="' + buscarVideo(c) + '" target="_blank" rel="noopener" ' +
-      'style="margin-bottom:12px">▶  Ver el vídeo en el canal de la JRA</a>';
+    // Verificado: el canal oficial sube un vídeo por cada G1.
+    b += '<a class="btn pri" href="' + buscarVideo(c) + '" target="_blank" rel="noopener">' +
+      '▶  Ver el vídeo en el canal de la JRA</a>';
+  } else {
+    b += '<a class="btn" href="' + buscarVideo(c) + '" target="_blank" rel="noopener">' +
+      '▶  Buscar la repetición en YouTube</a>';
   }
-  if (c.url || c.fuente) {
-    return '<a class="btn" href="' + esc(c.url || c.fuente) + '" target="_blank" rel="noopener" ' +
-      'style="margin-bottom:12px">▶  Ver la repetición en japanracing.jp</a>';
+  if (c.race_id) {
+    b += '<a class="btn" href="https://en.netkeiba.com/race/race_result.html?race_id=' +
+      esc(c.race_id) + '" target="_blank" rel="noopener">Ficha del resultado en netkeiba</a>';
   }
-  return '';
+  return b ? '<div style="margin-bottom:14px">' + b + '</div>' : '';
 }
 
 function video(id, etiqueta) {
@@ -547,9 +553,8 @@ function fichaFutura(c) {
       }).join('') + '</div>';
   }
 
-  var enlace = c.fuente || c.url;
-  if (enlace) h += '<div class="src" style="border:0">Ficha oficial: ' +
-    '<a href="' + esc(enlace) + '" target="_blank" rel="noopener">verla en japanracing.jp</a></div>';
+  if (c.url) h += '<div class="src" style="border:0">Datos de la carrera: ' +
+    '<a href="' + esc(c.url) + '" target="_blank" rel="noopener">japanracing.jp</a></div>';
   if (!fi.que_es && !lista.length && !datos.length) {
     h += '<div class="empty">Los detalles de esta carrera aún no se han descargado.<br>' +
       'Se rellenan solos: cada día se abren las fichas de las carreras más cercanas.</div>';
@@ -571,16 +576,24 @@ function verCaballo(nombre) {
       esc([c.perfil, c.jockey].filter(Boolean).join(' · ')) + '</div></div>' +
       estrella(nombre) + '</div>';
 
-    if (c.victorias != null) {
+    var n = (c.historial || []).length;
+    if (n) {
+      // "carreras vistas": son las que ESTA app ha registrado, no la carrera
+      // completa del caballo. Poner "carreras" a secas sería mentir.
       h += '<div class="stats"><div><b>' + (c.g1 || 0) + '</b><span>G1 ganados</span></div>' +
         '<div><b>' + (c.victorias || 0) + '</b><span>victorias</span></div>' +
-        '<div><b>' + (c.historial || []).length + '</b><span>carreras</span></div></div>';
+        '<div><b>' + n + '</b><span>carreras vistas</span></div></div>';
+    } else {
+      h += '<div class="note">Todavía no hay ninguna carrera suya registrada aquí. ' +
+        'Las clasificaciones se van descargando poco a poco —unas cuantas cada mañana—, ' +
+        'así que su historial se irá llenando solo.</div>';
     }
 
     if (c.porque) h += '<h2 class="sec">Por qué seguirlo</h2><p class="cron">' + esc(c.porque) + '</p>';
 
-    if ((c.historial || []).length) {
-      h += '<h2 class="sec">Historial</h2>' + c.historial.slice().reverse().map(function (x) {
+    if (n) {
+      h += '<h2 class="sec">Historial <em>' + n + ' registrada' + (n > 1 ? 's' : '') + '</em></h2>' +
+        c.historial.slice().reverse().map(function (x) {
         var r = carrera(x.carrera);
         if (!r) return '';
         var f = fecha(x.fecha);
