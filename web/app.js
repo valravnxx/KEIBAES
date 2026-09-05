@@ -158,6 +158,28 @@ function leer(id) {
   });
 }
 
+/** Enlace de búsqueda en el canal oficial. Sin clave de API no podemos saber
+    el identificador exacto del vídeo, pero esto cae en él a un toque. */
+function buscarVideo(c) {
+  return 'https://www.youtube.com/results?search_query=' +
+    encodeURIComponent(fecha(c.fecha).anio + ' ' + c.nombre + ' (' + c.grado + ') JRA Official');
+}
+
+/** Qué enseñar cuando no tenemos miniatura:
+    · G1  → el canal oficial sube uno por carrera, así que se busca ahí
+    · resto → la JRA publica repetición de TODAS en su ficha oficial */
+function videoAlternativo(c) {
+  if (c.grado === 'G1') {
+    return '<a class="btn pri" href="' + buscarVideo(c) + '" target="_blank" rel="noopener" ' +
+      'style="margin-bottom:12px">▶  Ver el vídeo en el canal de la JRA</a>';
+  }
+  if (c.url || c.fuente) {
+    return '<a class="btn" href="' + esc(c.url || c.fuente) + '" target="_blank" rel="noopener" ' +
+      'style="margin-bottom:12px">▶  Ver la repetición en japanracing.jp</a>';
+  }
+  return '';
+}
+
 function video(id, etiqueta) {
   if (!id) return '';
   return '<a class="vid" href="https://www.youtube.com/watch?v=' + esc(id) +
@@ -352,22 +374,27 @@ function pintaCaballos() {
 }
 
 function pintaResultados() {
-  var cs = (D.carreras || []).filter(function (c) { return c.estado === 'corrida'; }).reverse();
+  // Entran las que tienen resultado Y las que ya se corrieron aunque no
+  // tengamos su clasificación: de esas al menos hay repetición que ver.
+  var cs = (D.carreras || []).filter(function (c) {
+    return c.estado === 'corrida' || c.estado === 'pasada';
+  }).slice().sort(function (a, b) { return a.fecha < b.fecha ? 1 : -1; });
   var h = '<div class="spoiler-hint">Modo sin spoilers activo · toca para revelar</div>';
   var mes = '';
   cs.forEach(function (c) {
     var f = fecha(c.fecha), etiqueta = f.m + ' ' + f.anio;
     if (etiqueta !== mes) { mes = etiqueta; h += '<div class="month">' + esc(mes) + '</div>'; }
     var gana = (c.llegada || [])[0];
-    h += '<div class="card tap" onclick="verCarrera(\'' + c.id + '\')">' + video(c.video_id) +
+    h += '<div class="card tap" onclick="verCarrera(\'' + c.id + '\')">' +
+      (c.video_id ? video(c.video_id) : '') +
       '<div class="rhead"><span class="g ' + esc(c.grado) + '">' + esc(c.grado) + '</span>' +
       '<h3>' + esc(c.nombre) + '</h3></div>' +
       '<p class="rsub">' + f.d + ' ' + f.m + ' · ' + esc(c.hipodromo) + ' · ' + c.distancia + ' m' +
       (gana ? ' · <span class="spo">ganó ' + esc(gana.caballo) + '</span>' : '') + '</p></div>';
   });
-  document.getElementById('p-res').innerHTML = h +
+  document.getElementById('p-res').innerHTML = (h || '') +
     '<div class="empty">La JRA publica repetición de <b>todas</b> sus carreras en menos de 20 minutos.<br>' +
-    'Los G1 llegan además a su canal oficial de YouTube, que es lo que se enlaza aquí.</div>';
+    'Los G1 van además a su canal oficial de YouTube, que es lo que se enlaza aquí.</div>';
 }
 
 /* --------------------------------------------------------- ficha carrera */
@@ -376,8 +403,11 @@ function verCarrera(id) {
   var c = carrera(id);
   if (!c) return;
   abrir('p-carrera', c.nombre, function () {
+    // Una carrera ya corrida usa la ficha de resultado aunque no tengamos su
+    // clasificación: lo que interesa ahí es la repetición, no la cuenta atrás.
     document.getElementById('p-carrera').innerHTML =
-      c.estado === 'corrida' ? fichaCorrida(c) : fichaFutura(c);
+      (c.estado === 'corrida' || c.estado === 'pasada')
+        ? fichaCorrida(c) : fichaFutura(c);
   });
 }
 
@@ -388,7 +418,8 @@ function fichaCorrida(c) {
     return (!isNaN(y) && (isNaN(x) || y < x)) ? b : a;
   }, null);
 
-  var h = video(c.video_id, 'VER EN EL CANAL OFICIAL DE LA JRA') +
+  var h = (c.video_id ? video(c.video_id, 'VER EN EL CANAL OFICIAL DE LA JRA')
+                      : videoAlternativo(c)) +
     '<div class="rhead"><span class="g ' + esc(c.grado) + '">' + esc(c.grado) + '</span>' +
     '<h3>' + esc(c.nombre) + (c.alias ? ' · ' + esc(c.alias) : '') + '</h3></div>' +
     '<p class="rsub">' + esc([c.nombre_jp, f.d + ' ' + f.m + ' ' + f.anio, c.hipodromo,
@@ -427,6 +458,10 @@ function fichaCorrida(c) {
 
   if (c.fuente) h += '<div class="src" style="border:0">Fuente oficial: ' +
     '<a href="' + esc(c.fuente) + '" target="_blank" rel="noopener">ver</a></div>';
+  if (!c.cronica && !(c.llegada || []).length) {
+    h += '<div class="empty">De esta carrera todavía no tenemos la clasificación.<br>' +
+      'La repetición sí está disponible en el enlace de arriba.</div>';
+  }
   return h;
 }
 
