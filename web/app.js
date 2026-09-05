@@ -442,7 +442,8 @@ function fichaCorrida(c) {
     h += '<h2 class="sec">' + (favorita && favorita.odds ? 'El cuadro' : 'Orden de llegada') + '</h2>' +
       '<div class="card fin spo" style="padding-top:14px">' +
       c.llegada.map(function (x) {
-        return '<div class="fr p' + x.pos + '"><span class="pos">' + x.pos + '</span>' +
+        return '<div class="fr p' + x.pos + ' tap" onclick="verCaballo(\'' +
+          esc(x.caballo) + '\')"><span class="pos">' + x.pos + '</span>' +
           '<span class="hn">' + esc(x.caballo) + '</span>' +
           '<span class="jk">' + esc(x.jockey || '') + '</span>' +
           (favorita && favorita.odds ? '<span class="od' + (x === favorita ? ' fav' : '') + '">' +
@@ -498,12 +499,30 @@ function fichaFutura(c) {
       h += '<div class="note">Las inscripciones definitivas se publican la semana de la carrera. ' +
         'Hasta entonces esta lista sale de quién aparece en las noticias, no de un cuadro confirmado.</div>';
     }
-    h += lista.map(function (n) {
-      return '<div class="horse tap" onclick="verCaballo(\'' + esc(n) + '\')">' +
-        '<div class="silk" style="background:' + color(n) + '">' + esc(iniciales(n)) + '</div>' +
-        '<div class="n"><b>' + esc(n) + '</b></div>' +
-        '<span style="color:var(--tx3);font-size:18px;align-self:center">›</span></div>';
-    }).join('');
+    if ((c.participantes || []).length) {
+      // Cuadro confirmado: tabla compacta con el favorito marcado si ya hay
+      // mercado. Con 16 caballos es mucho más legible que 16 tarjetas.
+      var favP = c.participantes.reduce(function (a, b) {
+        var x = parseFloat(a && a.odds), y = parseFloat(b.odds);
+        return (!isNaN(y) && (isNaN(x) || y < x)) ? b : a;
+      }, null);
+      h += '<div class="card fin" style="padding-top:14px">' +
+        c.participantes.map(function (p, i) {
+          return '<div class="fr tap" onclick="verCaballo(\'' + esc(p.caballo) + '\')">' +
+            '<span class="pos">' + (i + 1) + '</span>' +
+            '<span class="hn">' + esc(p.caballo) + '</span>' +
+            '<span class="jk">' + esc(p.jockey || '') + '</span>' +
+            (p.odds ? '<span class="od' + (p === favP ? ' fav' : '') + '">' +
+              esc(p.odds) + '</span>' : '') + '</div>';
+        }).join('') + '</div>';
+    } else {
+      h += lista.map(function (n) {
+        return '<div class="horse tap" onclick="verCaballo(\'' + esc(n) + '\')">' +
+          '<div class="silk" style="background:' + color(n) + '">' + esc(iniciales(n)) + '</div>' +
+          '<div class="n"><b>' + esc(n) + '</b></div>' +
+          '<span style="color:var(--tx3);font-size:18px;align-self:center">›</span></div>';
+      }).join('');
+    }
   }
 
   h += '<h2 class="sec">Cuotas</h2>';
