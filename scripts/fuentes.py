@@ -67,10 +67,10 @@ def url_calendario(anio: int) -> str:
 
 @dataclass
 class SelectoresCalendario:
-    fila: str = "table tr"
-    # Dentro de la fila
-    celdas: str = "td"
-    enlace_carrera: str = "a"
+    # El calendario es una rejilla semanal: cada <tr> es UNA SEMANA con varias
+    # carreras dentro. Por eso no se recorren filas, se recorren enlaces:
+    # cada enlace a una ficha de carrera graduada es una carrera.
+    enlace_carrera: str = 'a[href*="graded/list/"]'
 
 
 SEL_CALENDARIO = SelectoresCalendario()

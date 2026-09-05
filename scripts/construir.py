@@ -35,9 +35,13 @@ def leer(p: Path, por_defecto):
 
 
 def estado_carrera(c: dict) -> str:
-    """lejana → se_acerca → cuadro_cerrado → con_mercado → corrida"""
+    """lejana → se_acerca → cuadro_cerrado → con_mercado → corrida
+       (y 'pasada': ya se corrió pero no tenemos su resultado)"""
     if c.get("llegada"):
         return "corrida"
+    d = dias_hasta(c.get("fecha", ""))
+    if d is not None and d < 0:
+        return "pasada"
     if c.get("participantes") and any(p.get("odds") for p in c["participantes"]):
         return "con_mercado"
     if c.get("participantes"):
@@ -139,8 +143,8 @@ def main():
 
     carreras = list(carreras.values())
     for c in carreras:
-        c["estado"] = estado_carrera(c)
         c["dias"] = dias_hasta(c.get("fecha", ""))
+        c["estado"] = estado_carrera(c)
     carreras.sort(key=lambda c: c.get("fecha") or "9999")
 
     seguidos = leer_seguidos()

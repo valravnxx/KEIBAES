@@ -18,6 +18,7 @@ import sys
 import time
 from datetime import datetime, timezone
 from hashlib import sha1
+from urllib.parse import urljoin
 from pathlib import Path
 
 import requests
@@ -78,15 +79,30 @@ def cuerpo_noticia(url: str) -> str:
     sopa = bajar(url)
     if not sopa:
         return ""
-    nodo = sopa.select_one(F.SEL_NOTICIAS.cuerpo_detalle)
-    if not nodo:
-        # Plan B: el bloque de párrafos más largo de la página.
-        bloques = sopa.find_all(["div", "article", "section"])
-        nodo = max(bloques, key=lambda b: len(b.find_all("p")), default=None)
-    if not nodo:
-        return ""
-    parrafos = [limpiar(p.get_text()) for p in nodo.find_all("p")]
-    return "\n\n".join(p for p in parrafos if len(p) > 40)[:6000]
+    def texto_de(nodo):
+        if not nodo:
+            return ""
+        # Fuera lo que nunca es cuerpo del artículo.
+        for basura in nodo.select("script, style, nav, aside, figcaption, .Caption"):
+            basura.decompose()
+        parrafos = [limpiar(x.get_text()) for x in nodo.find_all("p")]
+        return "\n\n".join(x for x in parrafos if len(x) > 60)[:6000]
+
+    mejor = texto_de(sopa.select_one(F.SEL_NOTICIAS.cuerpo_detalle))
+
+    if len(mejor) < 250:
+        # Plan B: el bloque con MÁS TEXTO en párrafos largos. Contar párrafos
+        # no vale: una galería de fotos tiene muchos pies de foto cortos y
+        # ganaba la partida al artículo de verdad.
+        for bloque in sopa.find_all(["article", "div", "section"]):
+            t = texto_de(bloque)
+            if len(t) > len(mejor):
+                mejor = t
+
+    # Menos de 250 caracteres no es un artículo: son pies de foto o un teaser.
+    # Mejor no guardar nada que guardar dos frases sueltas haciéndolas pasar
+    # por la noticia entera.
+    return mejor if len(mejor) >= 250 else ""
 
 
 def recolectar_noticias(limite=40, con_cuerpo=True, max_cuerpos=15) -> list[dict]:
@@ -153,32 +169,57 @@ def recolectar_noticias(limite=40, con_cuerpo=True, max_cuerpos=15) -> list[dict
 # --------------------------------------------------------------- calendario
 
 def recolectar_calendario(anio: int) -> list[dict]:
+    """
+    El calendario de la JRA es una rejilla semanal: cada fila de la tabla es
+    una SEMANA entera con varias carreras dentro. Recorrer filas perdía casi
+    todas las carreras y además mezclaba los grados (si en la semana había un
+    G1, se etiquetaban todas como G1).
+
+    Se recorren los enlaces, que es lo que de verdad representa una carrera.
+    El texto del enlace ya trae nombre y grado: "Kisaragi Sho (G3)".
+    Y la URL trae la fecha: .../2026/0208kisaragi.html
+    """
     sopa = bajar(F.url_calendario(anio), f"calendario-{anio}")
     if not sopa:
         return []
 
-    carreras = []
-    for fila in sopa.select(F.SEL_CALENDARIO.fila):
-        texto = limpiar(fila.get_text(" "))
-        grado = next((g for g in F.GRADOS if re.search(rf"\b{re.escape(g)}\b", texto)), None)
-        if not grado:
+    base = F.url_calendario(anio)
+    carreras, vistos = [], set()
+
+    for a in sopa.select(F.SEL_CALENDARIO.enlace_carrera):
+        etiqueta = limpiar(a.get_text())
+        if not etiqueta:
             continue
 
-        a = fila.select_one(F.SEL_CALENDARIO.enlace_carrera)
-        nombre = limpiar(a.get_text()) if a else ""
+        url = urljoin(base, a.get("href", ""))
+
+        # Grado: del propio nombre de la carrera, no de la fila.
+        m_g = re.search(r"\((J?-?(?:G|Jpn)\s?[123])\)\s*$", etiqueta)
+        if not m_g:
+            m_g = re.search(r"\((J?-?(?:G|Jpn)\s?[123])\)", etiqueta)
+        if not m_g:
+            continue
+        grado = m_g.group(1).replace(" ", "")
+
+        # Nombre sin el grado pegado al final.
+        nombre = limpiar(etiqueta[:m_g.start()] or etiqueta)
+        nombre = re.sub(r"[\s,;·-]+$", "", nombre)
         if not nombre:
             continue
 
-        url = a.get("href", "") if a else ""
-        if url.startswith("/"):
-            url = "https://japanracing.jp" + url
+        # Fecha: los 4 dígitos del nombre del fichero son MMDD.
+        m_f = re.search(r"/(\d{2})(\d{2})[a-z0-9_-]*\.html", url)
+        if not m_f:
+            continue
+        fecha = f"{anio}-{m_f.group(1)}-{m_f.group(2)}"
 
-        # La URL de la ficha lleva la fecha: .../2026/0927sprinters-stakes.html
-        m = re.search(r"/(\d{2})(\d{2})[a-z0-9-]*\.html", url)
-        fecha = f"{anio}-{m.group(1)}-{m.group(2)}" if m else ""
+        clave = (nombre.lower(), fecha)
+        if clave in vistos:
+            continue
+        vistos.add(clave)
 
         carreras.append({
-            "id": id_de(f"{anio}{nombre}"),
+            "id": id_de(f"{anio}{nombre.lower()}{fecha}"),
             "nombre": nombre,
             "grado": grado,
             "fecha": fecha,
@@ -186,15 +227,12 @@ def recolectar_calendario(anio: int) -> list[dict]:
             "anio": anio,
         })
 
-    # Quitar duplicados manteniendo el orden
-    unicas, vistos = [], set()
+    carreras.sort(key=lambda c: c["fecha"])
+    grados = {}
     for c in carreras:
-        if c["nombre"] not in vistos:
-            vistos.add(c["nombre"])
-            unicas.append(c)
-
-    log(f"carreras del calendario {anio}: {len(unicas)}")
-    return unicas
+        grados[c["grado"]] = grados.get(c["grado"], 0) + 1
+    log(f"carreras del calendario {anio}: {len(carreras)} — {grados}")
+    return carreras
 
 
 # --------------------------------------------------------------- resultados
