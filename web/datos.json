@@ -1,6 +1,6 @@
 {
  "version": 2,
- "actualizado": "2026-09-06T05:06:51+00:00",
+ "actualizado": "2026-09-06T09:27:37+00:00",
  "noticias": [
   {
    "id": "n4138",
@@ -32,6 +32,20 @@
    ]
   },
   {
+   "id": "n4067",
+   "titular_en": "Meisho Tabaru begins preparations for G1 Prix de l'Arc de Triomphe with first trackwork since returning to the stable 15 Aug 2026 00:10 International",
+   "fecha_texto": "2026-08-15 00:10",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4067",
+   "medio": "netkeiba",
+   "categoria": "internacional",
+   "titular": "Meisho Tabaru inicia su preparación para el G1 Prix de l'Arc de Triomphe con su primer entrenamiento en pista desde su regreso a la cuadra",
+   "resumen": "Meisho Tabaru ha realizado su primer entrenamiento cronometrado en el Ritto Training Center de cara a su objetivo en el G1 Prix de l'Arc de Triomphe. El entrenador Mamoru Ishibashi ha valorado positivamente las sensaciones del caballo y planea aumentar la carga de trabajo próximamente.",
+   "texto": "Meisho Tabaru inició las preparaciones para el G1 Prix de l'Arc de Triomphe, el prestigioso G1 francés, con su primer entrenamiento cronometrado desde su regreso a la cuadra el día 13.\n\nApareciendo en la pista de fibra de madera del Ritto Training Center poco después de la apertura de puertas bajo una ligera lluvia, el caballo marcó 6 furlongs en 86,3 segundos y un último furlong en 12,8, manteniendo un ritmo relajado durante todo el recorrido. El entrenador Mamoru Ishibashi se mostró animado por el entrenamiento y ya mira hacia el futuro, declarando: \"Aunque fue un tiempo lento, respondió a la sujeción en todo momento y se acopló con suavidad. Me gustaría empezar a aumentar la carga de trabajo a partir de aproximadamente la semana de después de la próxima\".",
+   "caballos": [
+    "Meisho Tabaru"
+   ]
+  },
+  {
    "id": "n4051",
    "titular_en": "Yutaka Take and Christophe Lemaire compete in Shergar Cup as Britain & Ireland claim team title 10 Aug 2026 19:39 International",
    "fecha_texto": "2026-08-10 19:39",
@@ -42,6 +56,21 @@
    "resumen": "Yutaka Take y Christophe Lemaire participaron en la Shergar Cup celebrada en Ascot, donde el equipo de Gran Bretaña e Irlanda se proclamó campeón. Take compitió para el Resto del Mundo y Lemaire lo hizo para el equipo de Europa.",
    "texto": "",
    "caballos": []
+  },
+  {
+   "id": "n4125",
+   "titular_en": "3 G1 Oka Sho winner Star Anise to partner Christophe Lemaire in G1 Sprinters Stakes 338 views",
+   "fecha_texto": "2026-09-06 09:25",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4125",
+   "medio": "netkeiba",
+   "categoria": "jockeys",
+   "titular": "La ganadora del G1 Oka Sho Star Anise formará pareja con Christophe Lemaire en el G1 Sprinters Stakes",
+   "resumen": "La yegua Star Anise, ganadora clásica, será montada por Christophe Lemaire en el próximo G1 Sprinters Stakes. La decisión fue anunciada por el grupo propietario Shadai Group.",
+   "texto": "",
+   "caballos": [
+    "Star Anise",
+    "Panja Tower"
+   ]
   },
   {
    "id": "n4126",
@@ -73,20 +102,20 @@
    ]
   },
   {
-   "id": "n4125",
-   "titular_en": "3 G1 Oka Sho winner Star Anise to partner Christophe Lemaire in G1 Sprinters Stakes 327 views",
-   "fecha_texto": "2026-09-05 19:00",
-   "url": "https://en.netkeiba.com/news/news_detail.html?id=4125",
+   "id": "n4145",
+   "titular_en": "Shonan Galleon dominates G3 Sapporo Nisai Stakes for Flightline's first JRA graded stakes victory 18 hrs",
+   "fecha_texto": "2026-09-05 15:25",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4145",
    "medio": "netkeiba",
-   "categoria": "jockeys",
-   "titular": "Star Anise, ganadora del G1 Oka Sho, será montada por Christophe Lemaire en el G1 Sprinters Stakes",
-   "resumen": "La ganadora clásica Star Anise cambiará de jockey para su próxima participación en el G1 Sprinters Stakes en Nakayama. El grupo de propietarios Shadai Group ha confirmado que Christophe Lemaire asumirá la monta.",
-   "texto": "",
+   "categoria": "cria",
+   "titular": "Shonan Galleon domina el G3 Sapporo Nisai Stakes y otorga a Flightline su primera victoria en carreras de grupo de la JRA",
+   "resumen": "Shonan Galleon se impuso por seis cuerpos en el G3 Sapporo Nisai Stakes en el Sapporo Racecourse. Este triunfo supone la primera victoria en una prueba de grupo de la JRA para la descendencia del semental Flightline.",
+   "texto": "Shonan Galleon, montado por Katsuma Sameshima, rodó segundo tras el ritmo inicial antes de tomar la cabeza y distanciarse para ganar la 61ª edición del G3 Sapporo Nisai Stakes -una carrera de grupo para potros de dos años que sirve de escaparate para futuras promesas clásicas- en el Sapporo Racecourse el día 5. Derrotó por seis cuerpos al tercer favorito, Cosmo Hanamizuki, que marcó el paso y luchó con coraje hasta el final. El tiempo ganador fue de 1 minuto y 50,3 segundos.\n\nCon este triunfo, el ejemplar amplió su imbatibilidad a dos victorias en sendas salidas, tras estrenarse con éxito en una carrera de debutantes. La victoria también supuso el primer triunfo en una prueba de grupo de la JRA -el organismo que regula las principales carreras del circuito central japonés- para su semental, Flightline.",
    "caballos": [
-    "Star Anise",
-    "Panja Tower"
-   ],
-   "reintentar": true
+    "Shonan Galleon",
+    "Cosmo Hanamizuki",
+    "Flightline"
+   ]
   },
   {
    "id": "n4144",
@@ -117,23 +146,6 @@
     "Cosmo Hanamizuki",
     "Desert Spirit"
    ]
-  },
-  {
-   "id": "n4145",
-   "titular_en": "Shonan Galleon dominates G3 Sapporo Nisai Stakes for Flightline's first JRA graded stakes victory 4 hrs",
-   "fecha_texto": "2026-09-05 15:00",
-   "url": "https://en.netkeiba.com/news/news_detail.html?id=4145",
-   "medio": "netkeiba",
-   "categoria": "cria",
-   "titular": "Shonan Galleon domina el G3 Sapporo Nisai Stakes y da a Flightline su primera victoria en carreras de grupo de la JRA",
-   "resumen": "Shonan Galleon se impuso con autoridad por seis cuerpos en el G3 Sapporo Nisai Stakes en el Sapporo Racecourse. Este triunfo supone la primera victoria de un hijo de Flightline en una prueba de grupo de la JRA —la máxima asociación hípica del país—.",
-   "texto": "",
-   "caballos": [
-    "Shonan Galleon",
-    "Flightline",
-    "Cosmo Hanamizuki"
-   ],
-   "reintentar": true
   },
   {
    "id": "n4143",
@@ -291,6 +303,32 @@
    ]
   },
   {
+   "id": "n4115",
+   "titular_en": "Mickaelle Michel returns to Japan after eight months for seven-week JRA stint 27 Aug 2026 21:55 Jockey",
+   "fecha_texto": "2026-08-27 21:55",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4115",
+   "medio": "netkeiba",
+   "categoria": "jockeys",
+   "titular": "Mickaelle Michel regresa a Japón tras ocho meses para una estancia de siete semanas en la JRA",
+   "resumen": "La jockey francesa Mickaelle Michel regresa a Japón tras obtener una licencia temporal de la JRA válida por siete semanas. Su regreso se produce tras cumplir los requisitos de victorias en G1 y su vinculación con el entrenador Yuichiro Nishida y el propietario Teruya Yoshida.",
+   "texto": "La Japan Racing Association emitió una licencia de jokineta de corta duración a la jockey Mickaelle Michel el día 26. La licencia tiene una vigencia de siete semanas, desde el día 29 hasta el 12 de octubre. Su entrenador designado es Yuichiro Nishida, mientras que su propietario contratado es Teruya Yoshida. Esto marcará su regreso a la JRA -el organismo principal de las carreras de caballos en Japón- por primera vez en un año y ocho meses, desde noviembre de 2024.\n\nMajor in May. La victoria cumplió con el requisito de elegibilidad para la licencia de corta duración de la JRA, consistente en \"ser un jockey que haya ganado una carrera de G1 -el máximo nivel de la escala gradual- incluida en la Parte I de las Normas Catalogación Internacionales durante el año en curso o los dos años anteriores\". En la mañana del día 26, participó en los entrenamientos de pista en el Miho Training Center por primera vez. La jockey Michel declaró con una sonrisa: \"Estoy absolutamente encantada de estar de vuelta. Tanto Miho como Ritto -los dos centros de entrenamiento oficiales de la JRA- tienen unas instalaciones maravillosas no sólo para los caballos, sino también para los jockeys\".",
+   "caballos": []
+  },
+  {
+   "id": "n4112",
+   "titular_en": "\"Gon-chan\" does it! Francisco Goncalves scores first NAR victory in Funabashi 26 Aug 2026 20:55 Jockey",
+   "fecha_texto": "2026-08-26 20:55",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4112",
+   "medio": "netkeiba",
+   "categoria": "jockeys",
+   "titular": "¡\"Gon-chan\" lo consigue! Francisco Goncalves firma su primera victoria en la NAR en Funabashi",
+   "resumen": "El jockey Francisco Goncalves logró su primera victoria en el circuito NAR al imponerse con Grazioso en el hipódromo de Funabashi. El brasileño, que ya compitió previamente bajo licencia temporal de la JRA -el organismo central de carreras-, suma este éxito a su trayectoria internacional.",
+   "texto": "Francisco Goncalves (36), que comenzó a montar bajo una licencia de corta duración en la reunión de Funabashi el día 24, consiguió su primera victoria en la NAR -el circuito de carreras de la asociación local de hipódromos- en su decimoquinta monta al guiar al quinto favorito Grazioso hacia la victoria en la 12ª carrera del día 25. \"Estoy muy feliz por ganar. Agradezco al entrenador Gen Hayashi y a todo el personal\", declaró con una sonrisa.\n\nNacido en Brasil, Goncalves debutó en 2006 y ha montado en toda Sudamérica, incluidos países como Argentina. Entre mayo y junio, también montó bajo una licencia temporal de la JRA -la entidad que gestiona las carreras centrales en Japón-, registrando 13 victorias y compitiendo en el G1 -máxima categoría de la escala gradual-. En la NAR, los jockeys tienen sus propias chaquetillas personalizadas, y Goncalves eligió un diseño con cuerpo rojo y dos listas azules en cada manga. \"Son las chaquetillas de un propietario que me ha dado la oportunidad de vivir muchas experiencias diferentes. También gané un G1 en Brasil con ellas, y siempre que las llevo puesto, algo bueno pasa\". En términos japoneses, son sus chaquetillas de la suerte.\n\n\"No me he marcado ningún objetivo en particular, pero me gustaría ganar tantas carreras como sea posible\", afirmó con ilusión, y ese propósito ya ha empezado a tomar forma. Su intérprete, Nicholas Hayashi, reveló entonces: \"Cuando estamos solos los dos, dice que va a ganar 50 carreras\", lo que provocó las risas de los presentes.\n\nEn la prueba principal del día 26, el Furioso Legend Cup, montará a Sisyphus. «No puedo creer que me hayan dado la oportunidad de correr en una carrera de grupo [carrera con escala de grados en Japón] tan pronto... Estoy muy agradecido. Haré todo lo posible para conseguir un buen resultado», declaró con una sonrisa. El alegre brasileño también hizo su propia petición: «Por favor, llamadme \"Gon-chan\"». Con su licencia de corta duración vigente hasta el 6 de noviembre, está dispuesto a aportar mucha energía a la pista y a calentar aún más el persistente calor estival.",
+   "caballos": [
+    "Grazioso"
+   ]
+  },
+  {
    "id": "n4103",
    "titular_en": "Summer Sale 2026 sets new records as six-day auction concludes 25 Aug 2026 00:16 Breeding & Sales",
    "fecha_texto": "2026-08-25 00:16",
@@ -399,6 +437,20 @@
    ]
   },
   {
+   "id": "n4088",
+   "titular_en": "Summer Sale 2026: \"Realize\" Yosuke Imafuku strikes again with 34 million JPY top price on Day Three 20 Aug 2026 23:02 Breeding & Sales",
+   "fecha_texto": "2026-08-20 23:02",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4088",
+   "medio": "netkeiba",
+   "categoria": "cria",
+   "titular": "Summer Sale 2026: Yosuke Imafuku golpea de nuevo con un precio máximo de 34 millones de yenes en la tercera jornada",
+   "resumen": "La tercera jornada del Summer Sale 2026 registró la venta de 193 yearlings y una facturación total de 1.5282 mil millones de yenes. Yosuke Imafuku, bajo el prefijo comercial \"Realize\", protagonizó la puja más alta del día por segunda jornada consecutiva.",
+   "texto": "El tercer día de la subasta de yearlings -potros de un año- Summer Sale 2026 se celebró el día 19 en el Hokkaido Market de Shin-Hidaka, Hokkaido.\n\nSe presentaron un total de 228 caballos, de los cuales 193 (118 potros y 75 potrancas) fueron vendidos, lo que arroja un porcentaje de ventas del 84,65% y una facturación total de 1.5282 mil millones de yenes (antes de impuestos, al igual que las cifras siguientes). El precio medio fue de aproximadamente 7,918 millones de yenes.\n\nTokubetsu, mientras que su hermana uterina de tres años, Sara Mischief, ha ganado dos veces en el circuito de carreras de NAR Hokkaido Racing -la asociación de carreras locales independientes de la JRA- y una vez en el distrito de NAR Southern Kanto, manteniéndose en activo. Por segundo día consecutivo, Yosuke Imafuku de \"",
+   "caballos": [
+    "Sara Mischief"
+   ]
+  },
+  {
    "id": "n4065",
    "titular_en": "Finger completes final domestic trackwork ahead of G1 Pacific Classic 14 Aug 2026 23:56 International",
    "fecha_texto": "2026-08-14 23:56",
@@ -430,6 +482,20 @@
    ]
   },
   {
+   "id": "n4061",
+   "titular_en": "Brazilian star Francisco Goncalves granted NAR short-term license, sets sights on 50 wins in Japan 13 Aug 2026 19:36 Jockey",
+   "fecha_texto": "2026-08-13 19:36",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4061",
+   "medio": "netkeiba",
+   "categoria": "jockeys",
+   "titular": "La estrella brasileña Francisco Goncalves recibe licencia temporal de la NAR y se fija la meta de 50 victorias en Japón",
+   "resumen": "El jockey brasileño Francisco Goncalves competirá en el circuito de la NAR -asociación que gestiona las carreras de ámbito regional en Japón- bajo la tutela del entrenador Takayuki Yamashita tras obtener una licencia temporal. El jinete, que ya cuenta con experiencia previa en la JRA -entidad organizadora de las carreras centrales en el país-, aspira a alcanzar las 50 victorias durante su estancia.",
+   "texto": "El brasileño Francisco Goncalves, de 36 años, recibirá una licencia de jesuita temporal por parte de la National Association of Racing (NAR) -organismo que regula las carreras de ámbito regional en Japón-, según se conoció el día 13 a través de fuentes cercanas al asunto. La licencia estará vigente desde el día 24 hasta el 6 de noviembre, y Goncalves tendrá su base en el Funabashi Racecourse bajo las órdenes del entrenador Takayuki Yamashita.\n\nJockeys. Este año, recibió una licencia temporal de la Japan Racing Association -entidad encargada de las carreras de máxima categoría centralizadas en el país- en abril y ganó siete carreras durante una única reunión en el Niigata Racecourse, finalizando segundo en la clasificación general de jockeys. También experimentó el mayor escenario hípico de Japón al montar a M's Begin en el G1\n\nConocido cariñosamente como \"Gon-chan\", se ganó rápidamente el cariño de los aficionados japoneses y de los profesionales de la hípica por igual. Cuenta con 14 victorias en la JRA en su haber.\n\nEl jockey Goncalves declaró: \"Estoy agradecido por seguir en Japón y me gustaría ganar tantas carreras como sea posible. Mi objetivo son 50 victorias\".",
+   "caballos": [
+    "M's Begin"
+   ]
+  },
+  {
    "id": "n4043",
    "titular_en": "Sixpence heads to France for G1 Prix Jacques Le Marois in top shape after strong final trackwork 07 Aug 2026 14:33 International",
    "fecha_texto": "2026-08-07 14:33",
@@ -442,6 +508,48 @@
    "caballos": [
     "Sixpence",
     "Danon Picture"
+   ]
+  },
+  {
+   "id": "n4006",
+   "titular_en": "Yamanin Ours arrives at Lex Stud ahead of a new career as stallion 27 Jul 2026 17:35 Breeding & Sales",
+   "fecha_texto": "2026-07-27 17:35",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4006",
+   "medio": "netkeiba",
+   "categoria": "cria",
+   "titular": "Yamanin Ours llega a Lex Stud para iniciar su carrera como semental",
+   "resumen": "Yamanin Ours ha ingresado en Lex Stud para comenzar su etapa como semental tras causar baja en la JRA. El caballo se retira con seis victorias en once carreras, incluyendo un triunfo en un stakes graduado -competición de máxima categoría-.",
+   "texto": "Yamanin Ours llegó a Lex Stud, situado en Shin Hidaka (Hokkaido), en la mañana del 24 de julio tras retirarse de la competición y ser dado de baja del registro de la JRA -la Asociación de Carreras de Japón- el 17 de julio. Se retira con un historial de seis victorias en once participaciones, incluidas dos en carreras de grupo.\n\nCuando era un potro de dos años, se dio a conocer con un debut sobresaliente en el Kokura Racecourse, al vencer en una prueba para debutantes sobre arena en 1.700 metros por una ventaja de 4,3 segundos. Aunque su trayectoria se vio interrumpida posteriormente por problemas en las extremidades, reapareció para encadenar cinco triunfos consecutivos, culminados con su primera victoria en stakes graduados en el -nombre de carrera omitido por el original- siendo un corceles de cuatro años en julio. Su peso en báscula de 584 kg aquel día supuso el segundo registro más pesado jamás anotado por un ganador de una prueba graduada de la JRA.\n\nTras confirmar que el traslado se completó sin incidencias, un representante de Lex Co., Ltd. declaró: \"Dado su volumen, nos preocupaban las consecuencias del largo viaje, pero nos alegra que haya llegado en magníficas condiciones. No solo cuenta con un tamaño y una capacidad atlética excepcionales, sino que su madre, -nombre omitido por el original-, ha dado cuatro corceles de la clase Open de la JRA -la categoría abierta superior dentro del sistema jerárquico japonés-, incluyéndole a él. La línea materna también ha dado numerosos corredores de primer nivel, lo que dota a su genealogía de un gran atractivo. Disponemos de margen suficiente antes de la próxima temporada de monta, por lo que garantizaremos que llegue plenamente preparado\". Sus honorarios de cubrición y los detalles de la cría se darán a conocer más adelante.",
+   "caballos": [
+    "Yamanin Ours"
+   ]
+  },
+  {
+   "id": "n4005",
+   "titular_en": "Jantar Mantar arrives at Shadai Stallion Station to begin his new career at stud 27 Jul 2026 17:30 Breeding & Sales",
+   "fecha_texto": "2026-07-27 17:30",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4005",
+   "medio": "netkeiba",
+   "categoria": "cria",
+   "titular": "Jantar Mantar llega a Shadai Stallion Station para comenzar su carrera como semental",
+   "resumen": "El campeón Jantar Mantar ha ingresado en Shadai Stallion Station en Hokkaido para iniciar su nueva etapa como semental. El hijo de Pal Mal -con cuatro victorias en G1 sobre la distancia de la milla- afronta así su retirada de la competición.",
+   "texto": "Y el galardón de la JRA -la Asociación de Carreras de Japón- al mejor potro de dos años de esa temporada, llegó a Shadai Stallion Station en Abira, Hokkaido, en la mañana del 24 de julio. Durante su trayectoria en las pistas, completó el hito notable de ganar todas las pruebas G1 abiertas para machos milleros de Japón, venciendo en el Asahi Hai Futurity Stakes -el campeonato de los dos años en la milla- y el NHK Mile Cup.\n\nSu registro definitivo quedó en 11 salidas entre Japón y Hong Kong, con seis victorias, dos segundos puestos y un tercer puesto, incluyendo cinco triunfos en carreras de Grado. Su última actuación tuvo lugar en el Champions Mile de esta primavera.\n\nTokutake, gerente de Shadai Stallion Station, confirmó la llegada sin incidencias del caballo y declaró: \"Como semental, nos alivia recibirlo en un estado de salud excelente y sin problemas físicos de importancia. En todo el mundo, los caballos con un rendimiento sobresaliente en la milla están muy valorados, por lo que su historial de cuatro victorias de G1 en una milla constituirá un argumento comercial fundamental al comenzar su carrera en la cría\".",
+   "caballos": [
+    "Jantar Mantar"
+   ]
+  },
+  {
+   "id": "n3979",
+   "titular_en": "Half-brother to four-time graded stakes winner Puro Magic tops opening day of Selection Sale 20 Jul 2026 23:19 Breeding & Sales",
+   "fecha_texto": "2026-07-20 23:19",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=3979",
+   "medio": "netkeiba",
+   "categoria": "cria",
+   "titular": "Un medio hermano del cuádruple ganador de stakes graduados Puro Magic encabeza la jornada inaugural del Selection Sale",
+   "resumen": "El Selection Sale, la subasta selecta de potros de un año en Japón, inauguró su edición el 20 de julio con un 90,57 % de ventas. El lote más cotizado fue un potro criado por Murata Stud, emparentado con el destacado Puro Magic.",
+   "texto": "Un medio hermano del cuádruple ganador de stakes graduados -pruebas de máxima categoría en el circuito- Puro Magic encabeza la jornada inaugural del Selection Sale\n\nEl Selection Sale, la subasta selecta de Japón para potros de un año, se celebró el 20 de julio en el Hokkaido Sales Complex en Shin Hidaka, Hokkaido.\n\nSe ofrecieron un total de 159 potros de un año que habían superado el proceso de inspección, y 144 caballos (106 potros y 38 potrancas) encontraron comprador. La subasta registró un porcentaje de ventas del 90,57 %, lo que generó unos ingresos totales de 2.940 millones de yenes (antes de impuestos), con un precio medio de aproximadamente 20,42 millones de yenes.\n\nMurata Stud, criador del potro, expresó su satisfacción y declaró: \"Atrajo mucha atención durante las inspecciones, pero nunca imaginamos que fuera a estar tan cotizado. Esperamos que pueda seguir los pasos de sus hermanos mayores\".",
+   "caballos": [
+    "Puro Magic"
    ]
   },
   {
@@ -3263,7 +3371,182 @@
     ]
    },
    "dias": 6,
-   "estado": "lejana"
+   "estado": "cuadro_cerrado",
+   "race_id": "202609040311",
+   "hora_jst": "15:45",
+   "participantes": [
+    {
+     "caballo": "Ask Doux Porte",
+     "jockey": "K.Maruta",
+     "entrenador": "T.UmedaRitto",
+     "peso": "",
+     "sexo_edad": "6H",
+     "odds": "",
+     "horse_id": ""
+    },
+    {
+     "caballo": "Kane Hula",
+     "jockey": "A.Tomita",
+     "entrenador": "Y.TakahashiRitto",
+     "peso": "",
+     "sexo_edad": "6H",
+     "odds": "",
+     "horse_id": ""
+    },
+    {
+     "caballo": "Kalamatianos",
+     "jockey": "Y.Iwata",
+     "entrenador": "T.OkumuraMiho",
+     "peso": "",
+     "sexo_edad": "4H",
+     "odds": "",
+     "horse_id": ""
+    },
+    {
+     "caballo": "Gaiamente",
+     "jockey": "Y.Kawada",
+     "entrenador": "N.SugaiRitto",
+     "peso": "",
+     "sexo_edad": "5H",
+     "odds": "",
+     "horse_id": ""
+    },
+    {
+     "caballo": "Grande Venus",
+     "jockey": "Y.Kawada",
+     "entrenador": "Y.TomomichiRitto",
+     "peso": "",
+     "sexo_edad": "6H",
+     "odds": "",
+     "horse_id": ""
+    },
+    {
+     "caballo": "Cosmo Buddleja",
+     "jockey": "S.Ishibashi",
+     "entrenador": "J.OnoMiho",
+     "peso": "",
+     "sexo_edad": "5H",
+     "odds": "",
+     "horse_id": ""
+    },
+    {
+     "caballo": "G T Adamant",
+     "jockey": "K.Matsuyama",
+     "entrenador": "H.UemuraRitto",
+     "peso": "",
+     "sexo_edad": "4H",
+     "odds": "",
+     "horse_id": ""
+    },
+    {
+     "caballo": "G T Darling",
+     "jockey": "H.Matsumoto",
+     "entrenador": "K.TanakaRitto",
+     "peso": "",
+     "sexo_edad": "4H",
+     "odds": "",
+     "horse_id": ""
+    },
+    {
+     "caballo": "Giovanni",
+     "jockey": "J.CrossCollet",
+     "entrenador": "H.SugiyamaRitto",
+     "peso": "",
+     "sexo_edad": "4H",
+     "odds": "",
+     "horse_id": ""
+    },
+    {
+     "caballo": "Scents Blood",
+     "jockey": "Y.Hara",
+     "entrenador": "T.SaitoRitto",
+     "peso": "",
+     "sexo_edad": "4H",
+     "odds": "",
+     "horse_id": ""
+    },
+    {
+     "caballo": "Tagano Dude",
+     "jockey": "R.Takasugi",
+     "entrenador": "T.MiyaRitto",
+     "peso": "",
+     "sexo_edad": "5H",
+     "odds": "",
+     "horse_id": ""
+    },
+    {
+     "caballo": "Total Clarity",
+     "jockey": "Y.Kokubun",
+     "entrenador": "M.IkezoeRitto",
+     "peso": "",
+     "sexo_edad": "4G",
+     "odds": "",
+     "horse_id": ""
+    },
+    {
+     "caballo": "Peace One Duc",
+     "jockey": "D.Sasaki",
+     "entrenador": "M.OtakeMiho",
+     "peso": "",
+     "sexo_edad": "5H",
+     "odds": "",
+     "horse_id": ""
+    },
+    {
+     "caballo": "Filius",
+     "jockey": "Y.Tannai",
+     "entrenador": "T.TezukaMiho",
+     "peso": "",
+     "sexo_edad": "4H",
+     "odds": "",
+     "horse_id": ""
+    },
+    {
+     "caballo": "Matenro Gale",
+     "jockey": "K.Yokoyama",
+     "entrenador": "K.NonakaRitto",
+     "peso": "",
+     "sexo_edad": "3C",
+     "odds": "",
+     "horse_id": ""
+    },
+    {
+     "caballo": "Matenro Sky",
+     "jockey": "N.Yokoyama",
+     "entrenador": "M.MatsunagaRitto",
+     "peso": "",
+     "sexo_edad": "7G",
+     "odds": "",
+     "horse_id": ""
+    },
+    {
+     "caballo": "Maglia Iridata",
+     "jockey": "R.Sakai",
+     "entrenador": "H.TanakaMiho",
+     "peso": "",
+     "sexo_edad": "4M",
+     "odds": "",
+     "horse_id": ""
+    },
+    {
+     "caballo": "Mikki Gold",
+     "jockey": "A.Nishimura",
+     "entrenador": "Y.IkeeRitto",
+     "peso": "",
+     "sexo_edad": "4G",
+     "odds": "",
+     "horse_id": ""
+    },
+    {
+     "caballo": "Lesedrama",
+     "jockey": "F.Matsuwaka",
+     "entrenador": "Y.TsujinoRitto",
+     "peso": "",
+     "sexo_edad": "4M",
+     "odds": "",
+     "horse_id": ""
+    }
+   ]
   },
   {
    "id": "fe28aeea48",
@@ -4386,7 +4669,7 @@
    "forma": [
     1
    ],
-   "menciones": 1,
+   "menciones": 2,
    "proxima": "arima2026",
    "victorias": 1,
    "podios": 1,
@@ -4495,6 +4778,19 @@
    "seguido": false
   },
   {
+   "nombre": "Puro Magic",
+   "historial": [],
+   "forma": [],
+   "menciones": 3,
+   "jockey": "M.Iwata",
+   "perfil": "5M",
+   "proxima": "309558f7e4",
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
    "nombre": "Finger",
    "historial": [],
    "forma": [],
@@ -4576,19 +4872,6 @@
    "seguido": false
   },
   {
-   "nombre": "Puro Magic",
-   "historial": [],
-   "forma": [],
-   "menciones": 2,
-   "jockey": "M.Iwata",
-   "perfil": "5M",
-   "proxima": "309558f7e4",
-   "victorias": 0,
-   "podios": 0,
-   "g1": 0,
-   "seguido": false
-  },
-  {
    "nombre": "Star Anise",
    "historial": [],
    "forma": [],
@@ -4653,6 +4936,9 @@
     5
    ],
    "menciones": 0,
+   "jockey": "R.Takasugi",
+   "perfil": "5H",
+   "proxima": "61adb63463",
    "victorias": 0,
    "podios": 0,
    "g1": 0,
@@ -5091,6 +5377,240 @@
    "podios": 0,
    "g1": 0,
    "seguido": false
+  },
+  {
+   "nombre": "Ask Doux Porte",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "K.Maruta",
+   "perfil": "6H",
+   "proxima": "61adb63463",
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Kane Hula",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "A.Tomita",
+   "perfil": "6H",
+   "proxima": "61adb63463",
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Kalamatianos",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "Y.Iwata",
+   "perfil": "4H",
+   "proxima": "61adb63463",
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Gaiamente",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "Y.Kawada",
+   "perfil": "5H",
+   "proxima": "61adb63463",
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Grande Venus",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "Y.Kawada",
+   "perfil": "6H",
+   "proxima": "61adb63463",
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Cosmo Buddleja",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "S.Ishibashi",
+   "perfil": "5H",
+   "proxima": "61adb63463",
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "G T Adamant",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "K.Matsuyama",
+   "perfil": "4H",
+   "proxima": "61adb63463",
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "G T Darling",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "H.Matsumoto",
+   "perfil": "4H",
+   "proxima": "61adb63463",
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Giovanni",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "J.CrossCollet",
+   "perfil": "4H",
+   "proxima": "61adb63463",
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Scents Blood",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "Y.Hara",
+   "perfil": "4H",
+   "proxima": "61adb63463",
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Total Clarity",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "Y.Kokubun",
+   "perfil": "4G",
+   "proxima": "61adb63463",
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Peace One Duc",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "D.Sasaki",
+   "perfil": "5H",
+   "proxima": "61adb63463",
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Filius",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "Y.Tannai",
+   "perfil": "4H",
+   "proxima": "61adb63463",
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Matenro Gale",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "K.Yokoyama",
+   "perfil": "3C",
+   "proxima": "61adb63463",
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Matenro Sky",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "N.Yokoyama",
+   "perfil": "7G",
+   "proxima": "61adb63463",
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Maglia Iridata",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "R.Sakai",
+   "perfil": "4M",
+   "proxima": "61adb63463",
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Mikki Gold",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "A.Nishimura",
+   "perfil": "4G",
+   "proxima": "61adb63463",
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Lesedrama",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "F.Matsuwaka",
+   "perfil": "4M",
+   "proxima": "61adb63463",
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "seguido": false
   }
  ],
  "jockeys": [
@@ -5233,7 +5753,13 @@
     "Tagano Dude"
    ],
    "historial": [],
-   "proximas": [],
+   "proximas": [
+    {
+     "carrera": "61adb63463",
+     "caballo": "Tagano Dude",
+     "fecha": "2026-09-12"
+    }
+   ],
    "pct": 0.0,
    "seguido": false
   },
@@ -5290,7 +5816,8 @@
    "podios": 0,
    "g1": 0,
    "caballos": [
-    "Drop of Light"
+    "Drop of Light",
+    "Kalamatianos"
    ],
    "historial": [],
    "proximas": [
@@ -5298,6 +5825,11 @@
      "carrera": "d5023f58cc",
      "caballo": "Drop of Light",
      "fecha": "2026-09-05"
+    },
+    {
+     "carrera": "61adb63463",
+     "caballo": "Kalamatianos",
+     "fecha": "2026-09-12"
     }
    ],
    "pct": 0,
@@ -5376,7 +5908,8 @@
    "podios": 0,
    "g1": 0,
    "caballos": [
-    "Reservation"
+    "Reservation",
+    "Scents Blood"
    ],
    "historial": [],
    "proximas": [
@@ -5384,6 +5917,11 @@
      "carrera": "d5023f58cc",
      "caballo": "Reservation",
      "fecha": "2026-09-05"
+    },
+    {
+     "carrera": "61adb63463",
+     "caballo": "Scents Blood",
+     "fecha": "2026-09-12"
     }
    ],
    "pct": 0,
@@ -5562,7 +6100,8 @@
    "podios": 0,
    "g1": 0,
    "caballos": [
-    "Desert Spirit"
+    "Desert Spirit",
+    "Matenro Gale"
    ],
    "historial": [],
    "proximas": [
@@ -5570,6 +6109,11 @@
      "carrera": "7bf1d2fcf7",
      "caballo": "Desert Spirit",
      "fecha": "2026-09-05"
+    },
+    {
+     "carrera": "61adb63463",
+     "caballo": "Matenro Gale",
+     "fecha": "2026-09-12"
     }
    ],
    "pct": 0,
@@ -5582,7 +6126,8 @@
    "podios": 0,
    "g1": 0,
    "caballos": [
-    "Cosmo Hanamizuki"
+    "Cosmo Hanamizuki",
+    "Peace One Duc"
    ],
    "historial": [],
    "proximas": [
@@ -5590,6 +6135,11 @@
      "carrera": "7bf1d2fcf7",
      "caballo": "Cosmo Hanamizuki",
      "fecha": "2026-09-05"
+    },
+    {
+     "carrera": "61adb63463",
+     "caballo": "Peace One Duc",
+     "fecha": "2026-09-12"
     }
    ],
    "pct": 0,
@@ -5642,7 +6192,8 @@
    "podios": 0,
    "g1": 0,
    "caballos": [
-    "Idomu"
+    "Idomu",
+    "G T Darling"
    ],
    "historial": [],
    "proximas": [
@@ -5650,6 +6201,11 @@
      "carrera": "7bf1d2fcf7",
      "caballo": "Idomu",
      "fecha": "2026-09-05"
+    },
+    {
+     "carrera": "61adb63463",
+     "caballo": "G T Darling",
+     "fecha": "2026-09-12"
     }
    ],
    "pct": 0,
@@ -5662,7 +6218,8 @@
    "podios": 0,
    "g1": 0,
    "caballos": [
-    "Tenka Taihei"
+    "Tenka Taihei",
+    "Filius"
    ],
    "historial": [],
    "proximas": [
@@ -5670,6 +6227,11 @@
      "carrera": "7bf1d2fcf7",
      "caballo": "Tenka Taihei",
      "fecha": "2026-09-05"
+    },
+    {
+     "carrera": "61adb63463",
+     "caballo": "Filius",
+     "fecha": "2026-09-12"
     }
    ],
    "pct": 0,
@@ -5702,7 +6264,8 @@
    "podios": 0,
    "g1": 0,
    "caballos": [
-    "Flicker Jab"
+    "Flicker Jab",
+    "G T Adamant"
    ],
    "historial": [],
    "proximas": [
@@ -5710,6 +6273,11 @@
      "carrera": "309558f7e4",
      "caballo": "Flicker Jab",
      "fecha": "2026-09-06"
+    },
+    {
+     "carrera": "61adb63463",
+     "caballo": "G T Adamant",
+     "fecha": "2026-09-12"
     }
    ],
    "pct": 0,
@@ -5742,7 +6310,9 @@
    "podios": 0,
    "g1": 0,
    "caballos": [
-    "Diamond Knot"
+    "Diamond Knot",
+    "Gaiamente",
+    "Grande Venus"
    ],
    "historial": [],
    "proximas": [
@@ -5750,6 +6320,16 @@
      "carrera": "309558f7e4",
      "caballo": "Diamond Knot",
      "fecha": "2026-09-06"
+    },
+    {
+     "carrera": "61adb63463",
+     "caballo": "Gaiamente",
+     "fecha": "2026-09-12"
+    },
+    {
+     "carrera": "61adb63463",
+     "caballo": "Grande Venus",
+     "fecha": "2026-09-12"
     }
    ],
    "pct": 0,
@@ -5862,7 +6442,8 @@
    "podios": 0,
    "g1": 0,
    "caballos": [
-    "Karpuz Pelus"
+    "Karpuz Pelus",
+    "Mikki Gold"
    ],
    "historial": [],
    "proximas": [
@@ -5870,6 +6451,11 @@
      "carrera": "309558f7e4",
      "caballo": "Karpuz Pelus",
      "fecha": "2026-09-06"
+    },
+    {
+     "carrera": "61adb63463",
+     "caballo": "Mikki Gold",
+     "fecha": "2026-09-12"
     }
    ],
    "pct": 0,
@@ -5930,6 +6516,166 @@
      "carrera": "309558f7e4",
      "caballo": "Tamamo Icarus",
      "fecha": "2026-09-06"
+    }
+   ],
+   "pct": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "K.Maruta",
+   "montas": 0,
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "caballos": [
+    "Ask Doux Porte"
+   ],
+   "historial": [],
+   "proximas": [
+    {
+     "carrera": "61adb63463",
+     "caballo": "Ask Doux Porte",
+     "fecha": "2026-09-12"
+    }
+   ],
+   "pct": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "A.Tomita",
+   "montas": 0,
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "caballos": [
+    "Kane Hula"
+   ],
+   "historial": [],
+   "proximas": [
+    {
+     "carrera": "61adb63463",
+     "caballo": "Kane Hula",
+     "fecha": "2026-09-12"
+    }
+   ],
+   "pct": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "S.Ishibashi",
+   "montas": 0,
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "caballos": [
+    "Cosmo Buddleja"
+   ],
+   "historial": [],
+   "proximas": [
+    {
+     "carrera": "61adb63463",
+     "caballo": "Cosmo Buddleja",
+     "fecha": "2026-09-12"
+    }
+   ],
+   "pct": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "J.CrossCollet",
+   "montas": 0,
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "caballos": [
+    "Giovanni"
+   ],
+   "historial": [],
+   "proximas": [
+    {
+     "carrera": "61adb63463",
+     "caballo": "Giovanni",
+     "fecha": "2026-09-12"
+    }
+   ],
+   "pct": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Y.Kokubun",
+   "montas": 0,
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "caballos": [
+    "Total Clarity"
+   ],
+   "historial": [],
+   "proximas": [
+    {
+     "carrera": "61adb63463",
+     "caballo": "Total Clarity",
+     "fecha": "2026-09-12"
+    }
+   ],
+   "pct": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "N.Yokoyama",
+   "montas": 0,
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "caballos": [
+    "Matenro Sky"
+   ],
+   "historial": [],
+   "proximas": [
+    {
+     "carrera": "61adb63463",
+     "caballo": "Matenro Sky",
+     "fecha": "2026-09-12"
+    }
+   ],
+   "pct": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "R.Sakai",
+   "montas": 0,
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "caballos": [
+    "Maglia Iridata"
+   ],
+   "historial": [],
+   "proximas": [
+    {
+     "carrera": "61adb63463",
+     "caballo": "Maglia Iridata",
+     "fecha": "2026-09-12"
+    }
+   ],
+   "pct": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "F.Matsuwaka",
+   "montas": 0,
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "caballos": [
+    "Lesedrama"
+   ],
+   "historial": [],
+   "proximas": [
+    {
+     "carrera": "61adb63463",
+     "caballo": "Lesedrama",
+     "fecha": "2026-09-12"
     }
    ],
    "pct": 0,
