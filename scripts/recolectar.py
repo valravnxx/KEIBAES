@@ -211,7 +211,10 @@ def recolectar_noticias(max_cuerpos=14, categorias=True) -> list[dict]:
                     vistos.add(n["id"])
                     todas.append(n)
 
-    conocidas = {n.get("id") for n in datos_previos().get("noticias", [])}
+    # Una noticia deja de ser "conocida" si su traducción quedó cortada:
+    # así se vuelve a bajar y a traducir en vez de arrastrar el error.
+    conocidas = {n.get("id") for n in datos_previos().get("noticias", [])
+                 if not n.get("reintentar")}
     pendientes = [n for n in todas if n["id"] not in conocidas]
     pendientes.sort(key=lambda n: n["fecha_texto"], reverse=True)
     pendientes = pendientes[:max_cuerpos]

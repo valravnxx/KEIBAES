@@ -65,6 +65,11 @@ def estado_carrera(c: dict) -> str:
     return "lejana"
 
 
+def parece_cortado(t: str) -> bool:
+    t = (t or "").strip()
+    return bool(t) and t[-1] not in '.!?»"\')…'
+
+
 def normaliza_jockey(n: str) -> str:
     """
     netkeiba escribe "Y.Take" y la JRA "Y. Take": sin unificarlos, el mismo
@@ -292,6 +297,20 @@ def main():
             noticias[n["id"]] = n
     noticias = sorted(noticias.values(),
                       key=lambda n: n.get("fecha_texto", ""), reverse=True)
+
+    # Limpieza de traducciones cortadas que ya estaban guardadas. Se marcan
+    # para que el recolector vuelva a intentarlas; mientras tanto la noticia
+    # se queda con su resumen, que sí está entero.
+    cortadas = 0
+    for n in noticias:
+        if parece_cortado(n.get("texto")):
+            n["texto"] = ""
+            n["reintentar"] = True
+            cortadas += 1
+        elif n.get("texto") and n.get("reintentar"):
+            n.pop("reintentar", None)
+    if cortadas:
+        print(f"· {cortadas} traducciones cortadas retiradas; se reintentarán")
 
     # --- carreras
     carreras = {c["id"]: c for c in anterior.get("carreras", [])}

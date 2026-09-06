@@ -18,6 +18,7 @@ Variables de entorno:
 
 import json
 import os
+import re
 import sys
 import time
 from hashlib import sha1
@@ -68,6 +69,21 @@ Devuelve SOLO un objeto JSON, sin ```:
 {{"titular": "...", "resumen": "...", "texto": "...", "caballos": ["..."], "categoria": "jra|nar|internacional|cria|jockeys"}}"""
 
 
+PROMPT_TROZO = """Continúa la traducción al español de esta MISMA noticia.
+
+Es un fragmento intermedio: no lo resumas, no lo introduzcas y no lo cierres.
+Tradúcelo entero y devuelve solo el texto, respetando los párrafos.
+
+Estas son las últimas frases ya traducidas, para que enlaces bien:
+«{cola}»
+
+FRAGMENTO A TRADUCIR:
+{cuerpo}
+
+Devuelve SOLO un objeto JSON, sin ```:
+{{"texto": "..."}}"""
+
+
 PROMPT_CRONICA = """Escribe la crónica de esta carrera en español, en DOS párrafos.
 
 Párrafo 1: qué pasó en la carrera (quién ganó, por cuánto, quién le siguió).
@@ -114,15 +130,23 @@ def pedir_gemini(prompt: str) -> str | None:
     cuerpo = {
         "system_instruction": {"parts": [{"text": SISTEMA}]},
         "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {"temperature": 0.4, "maxOutputTokens": 2400},
+        # 8192 en vez de 2400: con 2400, un artículo largo se quedaba sin
+        # presupuesto a mitad de la traducción y la noticia terminaba
+        # cortada, y encima en inglés.
+        "generationConfig": {"temperature": 0.4, "maxOutputTokens": 8192},
     }
     try:
-        r = requests.post(url, params={"key": GEMINI_KEY}, json=cuerpo, timeout=60)
+        r = requests.post(url, params={"key": GEMINI_KEY}, json=cuerpo, timeout=120)
         if r.status_code == 429:
             print("· Gemini: cuota agotada, paso a Groq")
             return None
         r.raise_for_status()
-        return r.json()["candidates"][0]["content"]["parts"][0]["text"]
+        cand = r.json()["candidates"][0]
+        if cand.get("finishReason") == "MAX_TOKENS":
+            # Se ha quedado sin sitio: lo que devuelva estará cortado.
+            print("· Gemini: respuesta cortada por longitud")
+            return None
+        return cand["content"]["parts"][0]["text"]
     except Exception as e:
         print(f"· Gemini falló: {e}")
         return None
@@ -138,15 +162,77 @@ def pedir_groq(prompt: str) -> str | None:
             json={"model": MODELO_GROQ,
                   "messages": [{"role": "system", "content": SISTEMA},
                                {"role": "user", "content": prompt}],
-                  "temperature": 0.4, "max_tokens": 2400},
-            timeout=60)
+                  "temperature": 0.4, "max_tokens": 8000},
+            timeout=120)
         r.raise_for_status()
-        return r.json()["choices"][0]["message"]["content"]
+        eleccion = r.json()["choices"][0]
+        if eleccion.get("finish_reason") == "length":
+            print("· Groq: respuesta cortada por longitud")
+            return None
+        return eleccion["message"]["content"]
     except Exception as e:
         print(f"· Groq falló: {e}")
         return None
     finally:
         time.sleep(2.5)  # los 8k TPM de Groq no perdonan las ráfagas
+
+
+TROZO = 1500   # caracteres de original por llamada
+
+
+def partir(texto: str, tam=TROZO) -> list[str]:
+    """
+    Parte el artículo por párrafos sin cortar ninguno.
+
+    Traducir un artículo largo de una sentada era lo que lo dejaba a medias:
+    por muy alto que pongas el tope, siempre habrá uno más largo. Troceando,
+    ninguna llamada se acerca al límite y el texto llega entero.
+    """
+    parrafos = [p for p in texto.split("\n\n") if p.strip()]
+
+    # Un párrafo más largo que el trozo se parte por frases. Sin esto, un
+    # artículo que viniera en un solo bloque no tenía por dónde cortarse y
+    # el reintento no podía hacer nada.
+    sueltos = []
+    for par in parrafos:
+        if len(par) <= tam:
+            sueltos.append(par)
+            continue
+        frases = re.split(r"(?<=[\.\?!])\s+", par)
+        acum = ""
+        for fr in frases:
+            if acum and len(acum) + len(fr) > tam:
+                sueltos.append(acum)
+                acum = fr
+            else:
+                acum = (acum + " " + fr).strip() if acum else fr
+        if acum:
+            sueltos.append(acum)
+
+    trozos, actual = [], ""
+    for par in sueltos:
+        if actual and len(actual) + len(par) > tam:
+            trozos.append(actual)
+            actual = par
+        else:
+            actual = (actual + "\n\n" + par) if actual else par
+    if actual:
+        trozos.append(actual)
+    return trozos or [texto]
+
+
+def parece_cortado(t: str) -> bool:
+    """
+    Un texto que termina sin puntuación de cierre casi siempre es una
+    respuesta truncada. Mejor quedarse con el resumen que publicar media
+    frase —y encima a medio traducir, como pasaba.
+    """
+    t = (t or "").strip()
+    if not t:
+        return False
+    if t[-1] in '.!?»"\')…':
+        return False
+    return True
 
 
 def extraer_json(texto: str) -> dict | None:
@@ -181,6 +267,69 @@ def redactar(prompt: str, cache: dict) -> dict | None:
     return None
 
 
+def traducir_trozo(cola: str, cuerpo: str, cache: dict, profundidad=0) -> str:
+    """
+    Traduce un fragmento. Si vuelve cortado o vacío, lo parte en dos y lo
+    intenta otra vez: así un tropiezo en una parte no se lleva por delante
+    el artículo entero.
+    """
+    r = redactar(PROMPT_TROZO.format(cola=cola or "(es el principio)", cuerpo=cuerpo), cache)
+    t = ((r or {}).get("texto") or "").strip()
+    if t and not parece_cortado(t):
+        return t
+
+    # Se sigue partiendo por la mitad hasta que el trozo le quepa al
+    # traductor. No hay un tamaño "seguro" fijo: depende del artículo y del
+    # modelo del día, así que se adapta en vez de adivinarlo.
+    if profundidad >= 4 or len(cuerpo) < 250:
+        return ""
+
+    mitad = partir(cuerpo, max(200, len(cuerpo) // 2))
+    if len(mitad) < 2:
+        return ""
+    partes = []
+    for trozo in mitad:
+        anterior = " ".join((partes[-1] if partes else cola).split()[-25:])
+        sub = traducir_trozo(anterior, trozo, cache, profundidad + 1)
+        if not sub:
+            return ""
+        partes.append(sub)
+    return "\n\n".join(partes)
+
+
+def traducir_cuerpo(titular: str, cuerpo: str, cache: dict):
+    """
+    Devuelve (metadatos, texto, completo).
+
+    Trocear es lo que garantiza que el artículo llegue entero: por muy alto
+    que pongas el tope de salida, siempre habrá un artículo más largo. Con
+    trozos de 2000 caracteres ninguna llamada se acerca al límite.
+    """
+    trozos = partir(cuerpo)
+    r = redactar(PROMPT_NOTICIA.format(titular=titular, cuerpo=trozos[0]), cache)
+    if not r:
+        return None, "", False
+
+    primero = (r.get("texto") or "").strip()
+    if parece_cortado(primero):
+        primero = traducir_trozo("", trozos[0], cache, 1)
+    if not primero:
+        return r, "", False
+
+    partes = [primero]
+    for extra in trozos[1:]:
+        cola = " ".join(partes[-1].split()[-25:])
+        sub = traducir_trozo(cola, extra, cache)
+        if not sub:
+            return r, "", False
+        partes.append(sub)
+        guardar_cache(cache)
+
+    if len(trozos) > 1:
+        print(f"·   «{titular[:34]}» traducida en {len(partes)} trozos")
+    return r, "\n\n".join(partes), True
+
+
 # -------------------------------------------------------------------- main
 
 def main():
@@ -198,16 +347,24 @@ def main():
             # Sin artículo no hay nada que traducir más allá del titular:
             # se salta en vez de inventar contenido.
             continue
-        r = redactar(PROMPT_NOTICIA.format(titular=n["titular_en"], cuerpo=cuerpo), cache)
-        if r:
-            n.update({"titular": r.get("titular", n["titular_en"]),
-                      "resumen": r.get("resumen", ""),
-                      "texto": r.get("texto", ""),
-                      "caballos": r.get("caballos", []),
-                      "categoria": r.get("categoria", "jra")})
-            n.pop("cuerpo_en", None)     # el inglés ya no hace falta
-            nuevas += 1
-        guardar_cache(cache)   # se guarda a cada paso: un fallo no pierde el trabajo
+        meta, texto, completo = traducir_cuerpo(n["titular_en"], cuerpo, cache)
+        if meta is None:
+            guardar_cache(cache)
+            continue
+
+        if not completo:
+            print(f"·   «{n['titular_en'][:38]}» no se ha podido traducir entera "
+                  f"— me quedo con el resumen")
+            texto = ""
+
+        n.update({"titular": meta.get("titular", n["titular_en"]),
+                  "resumen": meta.get("resumen", ""),
+                  "texto": texto,
+                  "caballos": meta.get("caballos", []),
+                  "categoria": meta.get("categoria", n.get("categoria", "jra"))})
+        n.pop("cuerpo_en", None)     # el inglés ya no hace falta
+        nuevas += 1
+        guardar_cache(cache)
 
     # --- crónicas de las carreras ya corridas que aún no la tienen.
     # Esto es lo que estaba escrito pero sin conectar: el prompt existía y
@@ -233,7 +390,7 @@ def main():
             hipodromo=c.get("hipodromo", ""), distancia=c.get("distancia", ""),
             superficie=c.get("superficie", ""), contexto=contexto or "(no disponible)",
             ganadores=ganadores, llegada=llegada), cache)
-        if r and r.get("cronica"):
+        if r and r.get("cronica") and not parece_cortado(r["cronica"]):
             c["cronica"] = r["cronica"]
             c["destacado"] = r.get("destacado", "")
             nuevas += 1
