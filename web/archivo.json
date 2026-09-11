@@ -1,6 +1,94 @@
 {
  "noticias": [
   {
+   "id": "n4088",
+   "titular_en": "Summer Sale 2026: \"Realize\" Yosuke Imafuku strikes again with 34 million JPY top price on Day Three 20 Aug 2026 23:02 Breeding & Sales",
+   "fecha_texto": "2026-08-20 23:02",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4088",
+   "medio": "netkeiba",
+   "categoria": "cria",
+   "titular": "Summer Sale 2026: Yosuke Imafuku golpea de nuevo con un precio máximo de 34 millones de yenes en la tercera jornada",
+   "resumen": "La tercera jornada del Summer Sale 2026 registró la venta de 193 yearlings y una facturación total de 1.5282 mil millones de yenes. Yosuke Imafuku, bajo el prefijo comercial \"Realize\", protagonizó la puja más alta del día por segunda jornada consecutiva.",
+   "texto": "El tercer día de la subasta de yearlings -potros de un año- Summer Sale 2026 se celebró el día 19 en el Hokkaido Market de Shin-Hidaka, Hokkaido.\n\nSe presentaron un total de 228 caballos, de los cuales 193 (118 potros y 75 potrancas) fueron vendidos, lo que arroja un porcentaje de ventas del 84,65% y una facturación total de 1.5282 mil millones de yenes (antes de impuestos, al igual que las cifras siguientes). El precio medio fue de aproximadamente 7,918 millones de yenes.\n\nTokubetsu, mientras que su hermana uterina de tres años, Sara Mischief, ha ganado dos veces en el circuito de carreras de NAR Hokkaido Racing -la asociación de carreras locales independientes de la JRA- y una vez en el distrito de NAR Southern Kanto, manteniéndose en activo. Por segundo día consecutivo, Yosuke Imafuku de \"",
+   "caballos": [
+    "Sara Mischief"
+   ]
+  },
+  {
+   "id": "n4065",
+   "titular_en": "Finger completes final domestic trackwork ahead of G1 Pacific Classic 14 Aug 2026 23:56 International",
+   "fecha_texto": "2026-08-14 23:56",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4065",
+   "medio": "netkeiba",
+   "categoria": "internacional",
+   "titular": "Finger completa su último entrenamiento nacional antes del G1 Pacific Classic",
+   "resumen": "Finger ha completado en el Miho Training Center su última sesión de trabajo en Japón previa a su participación en el G1 Pacific Classic en Del Mar. Su entorno destaca su buen estado físico y mental de cara a este primer desplazamiento al extranjero.",
+   "texto": "Finger completó su último entrenamiento en suelo nacional el día 13 de cara al G1 Pacific Classic -la prestigiosa prueba sobre arena que se disputa en Estados Unidos- que se celebrará el día 22 en el hipódromo de Del Mar.\n\nEn la pista de fibra de madera del Miho Training Center, Finger persiguió a su compañero de cuadra Satono Beats antes de emparejarse por el interior, marcando un tiempo de 6 furlongs en 83,2 segundos y un último furlong en 11,9. El cuidador Yamazaki se mostró satisfecho con el trabajo y declaró: \"pusimos a otro caballo para que le marcara el ritmo y no someterle a demasiada presión, dejándole sacar el hocico al frente en la meta. Fue un buen entrenamiento y se encuentra bien de ánimo, tanto física como mentalmente\". En cuanto al viaje, añadió: \"no ha mostrado ningún problema en los traslados en vano, pero este será su primer desplazamiento al extranjero, así que queremos ser prudentes\".",
+   "caballos": [
+    "Finger",
+    "Satono Beats"
+   ]
+  },
+  {
+   "id": "n4064",
+   "titular_en": "Sixpence and Strauss step up preparations for G1 Prix Jacques Le Marois as favourite Bow Echo retires 13 Aug 2026 19:54 International",
+   "fecha_texto": "2026-08-13 19:54",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4064",
+   "medio": "netkeiba",
+   "categoria": "internacional",
+   "titular": "Sixpence y Strauss intensifican su preparación para el G1 Prix Jacques Le Marois mientras se retira el favorito Bow Echo",
+   "resumen": "Sixpence y Strauss avanzan en sus entrenamientos con vistas al G1 Prix Jacques Le Marois en Francia. Por su parte, el favorito indiscutible Bow Echo se ha retirado de forma repentina debido a una lesión.",
+   "texto": "Sixpence y Strauss intensifican su preparación para el G1 Prix Jacques Le Marois -la prueba de velocidad y milla insignia de Deauville-.\n\nSixpence (caballo, 5 años) completó su ejercicio preliminar junto a Strauss en la mañana del día 12, hora de Japón, antes de que cada uno trabajara por separado en la pista de arena y en el polytrack.\n\nEl cuidador de Sixpence, Takano, declaró: \"Se notó un poco rígido, probablemente porque le habíamos exigido un entrenamiento serio el día anterior, así que me centré en relajarlo. Cogió el bicho por sí mismo en la recta y corrió con buena disposición, así que empieza a parecerse mucho más a un caballo de carreras\".\n\nEl cuidador de Strauss, Seto, también se mostró satisfecho y señaló: \"Estuvo centrado en mis indicaciones. Se acopló bien y su estado tiene buena pinta\".\n\nMientras tanto, Bow Echo (potro, 3 años, Gran Bretaña), que había sido considerado el gran favorito tras ganar sus seis salidas desde su debut, se ha visto obligado a una retirada repentina debido a una lesión.",
+   "caballos": [
+    "Sixpence",
+    "Strauss",
+    "Bow Echo"
+   ]
+  },
+  {
+   "id": "n4061",
+   "titular_en": "Brazilian star Francisco Goncalves granted NAR short-term license, sets sights on 50 wins in Japan 13 Aug 2026 19:36 Jockey",
+   "fecha_texto": "2026-08-13 19:36",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4061",
+   "medio": "netkeiba",
+   "categoria": "jockeys",
+   "titular": "La estrella brasileña Francisco Goncalves recibe licencia temporal de la NAR y se fija la meta de 50 victorias en Japón",
+   "resumen": "El jockey brasileño Francisco Goncalves competirá en el circuito de la NAR -asociación que gestiona las carreras de ámbito regional en Japón- bajo la tutela del entrenador Takayuki Yamashita tras obtener una licencia temporal. El jinete, que ya cuenta con experiencia previa en la JRA -entidad organizadora de las carreras centrales en el país-, aspira a alcanzar las 50 victorias durante su estancia.",
+   "texto": "El brasileño Francisco Goncalves, de 36 años, recibirá una licencia de jesuita temporal por parte de la National Association of Racing (NAR) -organismo que regula las carreras de ámbito regional en Japón-, según se conoció el día 13 a través de fuentes cercanas al asunto. La licencia estará vigente desde el día 24 hasta el 6 de noviembre, y Goncalves tendrá su base en el Funabashi Racecourse bajo las órdenes del entrenador Takayuki Yamashita.\n\nJockeys. Este año, recibió una licencia temporal de la Japan Racing Association -entidad encargada de las carreras de máxima categoría centralizadas en el país- en abril y ganó siete carreras durante una única reunión en el Niigata Racecourse, finalizando segundo en la clasificación general de jockeys. También experimentó el mayor escenario hípico de Japón al montar a M's Begin en el G1\n\nConocido cariñosamente como \"Gon-chan\", se ganó rápidamente el cariño de los aficionados japoneses y de los profesionales de la hípica por igual. Cuenta con 14 victorias en la JRA en su haber.\n\nEl jockey Goncalves declaró: \"Estoy agradecido por seguir en Japón y me gustaría ganar tantas carreras como sea posible. Mi objetivo son 50 victorias\".",
+   "caballos": [
+    "M's Begin"
+   ]
+  },
+  {
+   "id": "n4043",
+   "titular_en": "Sixpence heads to France for G1 Prix Jacques Le Marois in top shape after strong final trackwork 07 Aug 2026 14:33 International",
+   "fecha_texto": "2026-08-07 14:33",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4043",
+   "medio": "netkeiba",
+   "categoria": "internacional",
+   "titular": "Sixpence viaja a Francia para el G1 Prix Jacques Le Marois en plena forma tras un fuerte entrenamiento final",
+   "resumen": "Sixpence ha completado su último entrenamiento en Japón antes de viajar a Francia para disputar el G1 Prix Jacques Le Marois. El preparador Hiroyasu Tanaka se ha mostrado satisfecho con el estado del caballo de cinco años de cara a su primer desplazamiento al extranjero.",
+   "texto": "Sixpence viaja a Francia para el G1 Prix Jacques Le Marois en plena forma tras un fuerte entrenamiento final\n\nSixpence -un caballo de cinco años- completó el día 6 su último entrenamiento en suelo nacional de cara al G1 Prix Jacques Le Marois. En la pista de fibra de madera del Miho Training Center, siguió a Danon Picture a casi tres cuerpos antes de distanciarse por dos cuerpos al llegar a la meta. Marcó un rápido tiempo de 65,5 segundos en los cinco furlongs, con un último furlong de 11,1 segundos.\n\n\"Ha mostrado mucha capacidad atlética y se ha visto muy bien. Se desplazaba con agilidad\", declaró el entrenador Hiroyasu Tanaka. Será la primera experiencia en el extranjero para Sixpence, pero Tanaka considera que una estancia fuera del país podría convenirle. \"No lleva especialmente bien los cambios de entorno, pero una vez que se adapta, es capaz de completar buenos entrenamientos, así que creo que estar fuera le irá bien. No sabemos cuántos entrenamientos podremos hacer una vez allí, por lo que hemos trabajado para afinarlo un poco más. Ha realizado entrenamientos muy buenos\", afirmó con satisfacción.",
+   "caballos": [
+    "Sixpence",
+    "Danon Picture"
+   ]
+  },
+  {
+   "id": "n4006",
+   "titular_en": "Yamanin Ours arrives at Lex Stud ahead of a new career as stallion 27 Jul 2026 17:35 Breeding & Sales",
+   "fecha_texto": "2026-07-27 17:35",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4006",
+   "medio": "netkeiba",
+   "categoria": "cria",
+   "titular": "Yamanin Ours llega a Lex Stud para iniciar su carrera como semental",
+   "resumen": "Yamanin Ours ha ingresado en Lex Stud para comenzar su etapa como semental tras causar baja en la JRA. El caballo se retira con seis victorias en once carreras, incluyendo un triunfo en un stakes graduado -competición de máxima categoría-.",
+   "texto": "Yamanin Ours llegó a Lex Stud, situado en Shin Hidaka (Hokkaido), en la mañana del 24 de julio tras retirarse de la competición y ser dado de baja del registro de la JRA -la Asociación de Carreras de Japón- el 17 de julio. Se retira con un historial de seis victorias en once participaciones, incluidas dos en carreras de grupo.\n\nCuando era un potro de dos años, se dio a conocer con un debut sobresaliente en el Kokura Racecourse, al vencer en una prueba para debutantes sobre arena en 1.700 metros por una ventaja de 4,3 segundos. Aunque su trayectoria se vio interrumpida posteriormente por problemas en las extremidades, reapareció para encadenar cinco triunfos consecutivos, culminados con su primera victoria en stakes graduados en el -nombre de carrera omitido por el original- siendo un corceles de cuatro años en julio. Su peso en báscula de 584 kg aquel día supuso el segundo registro más pesado jamás anotado por un ganador de una prueba graduada de la JRA.\n\nTras confirmar que el traslado se completó sin incidencias, un representante de Lex Co., Ltd. declaró: \"Dado su volumen, nos preocupaban las consecuencias del largo viaje, pero nos alegra que haya llegado en magníficas condiciones. No solo cuenta con un tamaño y una capacidad atlética excepcionales, sino que su madre, -nombre omitido por el original-, ha dado cuatro corceles de la clase Open de la JRA -la categoría abierta superior dentro del sistema jerárquico japonés-, incluyéndole a él. La línea materna también ha dado numerosos corredores de primer nivel, lo que dota a su genealogía de un gran atractivo. Disponemos de margen suficiente antes de la próxima temporada de monta, por lo que garantizaremos que llegue plenamente preparado\". Sus honorarios de cubrición y los detalles de la cría se darán a conocer más adelante.",
+   "caballos": [
+    "Yamanin Ours"
+   ]
+  },
+  {
    "id": "n4005",
    "titular_en": "Jantar Mantar arrives at Shadai Stallion Station to begin his new career at stud 27 Jul 2026 17:30 Breeding & Sales",
    "fecha_texto": "2026-07-27 17:30",
