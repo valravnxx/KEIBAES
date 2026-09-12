@@ -1,6 +1,36 @@
 {
  "noticias": [
   {
+   "id": "n4090",
+   "titular_en": "Summer Sale 2026: Awesome Queen 2025 tops Day Four at 41 million JPY 21 Aug 2026 20:51 Breeding & Sales",
+   "fecha_texto": "2026-08-21 20:51",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4090",
+   "medio": "netkeiba",
+   "categoria": "cria",
+   "titular": "Summer Sale 2026: Awesome Queen 2025 alcanza el precio más alto del cuarto día con 41 millones de yenes",
+   "resumen": "La cuarta jornada de la Summer Sale 2026 registró una tasa de venta del 86,22% con un volumen total de 1.710 millones de yenes. El semental principal de la sesión fue el producto de Awesome Queen, adquirido por Seihou Tanaka por 41 millones de yenes.",
+   "texto": "El cuarto día de la Summer Sale 2026, la subasta de potros de un año -Thoroughbred Yearling Sale-, se celebró el día 20 en el Hokkaido Market de Shin-Hidaka, Hokkaido.\n\nSe presentaron un total de 225 caballos, de los cuales se vendieron 194 (121 potros y 73 yeguas), lo que supuso una tasa de venta del 86,22% y unas ventas totales de 1.710 millones de yenes (antes de impuestos, como se indica a continuación). El precio medio fue de 8.814.433 yenes.\n\nEl precio más alto de la jornada lo marcó el potro de Awesome Queen (por Epanephros), nacido el 19 de febrero. Criado por Iwami Bokujo Co., Ltd. de Niikappu, pertenece a la familia de su medio hermano God Baroque, segundo en el Hyogo Junior Grand Prix del año pasado y ganador este año del doblete del circuito NAR en Hokkaido -el organismo que regula las carreras locales del circuito secundario japonés-, el Hokuto Hai y el Hokkai Yushun. Seihou Tanaka, vinculado al prefijo «Taisei», se hizo con el potro por 41 millones de yenes.",
+   "caballos": [
+    "Awesome Queen",
+    "Epanephros",
+    "God Baroque"
+   ]
+  },
+  {
+   "id": "n4089",
+   "titular_en": "\"She proved she could do it\": Dokofukukaze overcomes one-eyed handicap to win at second start 20 Aug 2026 23:09 NAR",
+   "fecha_texto": "2026-08-20 23:09",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4089",
+   "medio": "netkeiba",
+   "categoria": "nar",
+   "titular": "«Demostró que podía hacerlo»: Dokofukukaze supera el hándicap de un solo ojo y gana en su segunda salida",
+   "resumen": "La potranca de dos años Dokofukukaze logró su primera victoria en su segunda participación en el circuito NAR -asociación de carreras locales de ámbito regional-, a pesar de haber nacido con microftalmia en el ojo izquierdo. La yegua se impuso por seis cuerpos bajo la monta de Shuma Niihara ante una grada entregada.",
+   "texto": "«Demostró que podía hacerlo»: Dokofukukaze supera el hándicap de un solo ojo y gana en su segunda salida\n\nNacida con microftalmia y sin visión en el ojo izquierdo, la potranca de dos años Dokofukukaze consiguió la primera victoria de su carrera en apenas su segunda salida. Tras superar su hándicap para asegurar el triunfo, fue recibida con cálidos aplausos por los aficionados.\n\nCorrió en quinta posición en los primeros compases antes de recortar distancias con los líderes en la recta opuesta y lanzar su ataque por el exterior absoluto al afrontar la curva final. Al estirar su zancada en la recta de llegada, se hizo con el liderato a 200 metros para el final y se distanció de sus rivales para ganar por seis cuerpos. Una numerosa multitud con toallas naranjas en apoyo de Dokofukukaze se congregó frente a la tribuna, creando un ambiente más propio de una carrera de grupo -pruebas de máxima categoría del circuito-.\n\nEl jockey Shuma Niihara, que ha montado a Dokofukukaze desde su debut, sonrió y declaró: «Ganó porque hoy supo desenvolverse en la arena». Al explicar por qué la llevó hacia el exterior absoluto, señaló: «Fue para evitar la arena. En la recta opuesta no importa realmente qué trazada elijas. Quería sacarla donde pudiera correr cómoda, hacerla concentrarse en las curvas y luego volver a llevarla hacia fuera en la recta». Reveló que la táctica estuvo diseñada específicamente para Dokofukukaze, que se había asustado al recibir arena en la cara en su anterior salida. «¡Me sorprendió que mejorara tanto!», afirmó, visiblemente impresionado por su evolución. «Si puede correr como lo hizo hoy, sigo creyendo que puede ganar más carreras».\n\nDokofukukaze ya había atraído a un numeroso grupo de seguidores antes de su debut, especialmente en las redes sociales y a través del canal de YouTube «Kata-me no Thoroughbred Fuku-chan PERFECT DAYS», que ha documentado su trayectoria.",
+   "caballos": [
+    "Dokofukukaze"
+   ]
+  },
+  {
    "id": "n4088",
    "titular_en": "Summer Sale 2026: \"Realize\" Yosuke Imafuku strikes again with 34 million JPY top price on Day Three 20 Aug 2026 23:02 Breeding & Sales",
    "fecha_texto": "2026-08-20 23:02",
