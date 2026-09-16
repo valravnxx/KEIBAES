@@ -1,6 +1,6 @@
 {
  "version": 2,
- "actualizado": "2026-09-15T10:06:40+00:00",
+ "actualizado": "2026-09-16T09:58:28+00:00",
  "noticias": [
   {
    "id": "n4184",
@@ -885,17 +885,18 @@
    ]
   },
   {
-   "id": "a3f9c1",
+   "id": "n4137",
+   "titular_en": "Flicker Jab chases slim Summer Sprint Series hope with G2 Centaur Stakes victory 03 Sep 2026 19:46",
    "fecha_texto": "2026-09-03 19:46",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4137",
+   "medio": "netkeiba",
    "categoria": "jra",
-   "titular": "Flicker Jab persigue una opción mínima en la Serie Sprint de Verano",
-   "resumen": "El velocista llega al último asalto de la serie necesitando resultado ajeno: la corona depende tanto de su carrera como de dónde acaben sus rivales directos en la tabla.",
+   "titular": "Flicker Jab persigue una reducida opción en las Summer Sprint Series con la victoria en el Centaur Stakes (G2)",
+   "resumen": "Flicker Jab aspira al título de las Summer Sprint Series tras una sólida preparación en el Ritto Training Center. El caballo afronta el Centaur Stakes (G2) con el objetivo de consolidar su estado de forma antes de dar el salto a la máxima categoría.",
+   "texto": "Las opciones pueden ser escasas, pero Flicker Jab todavía tiene un camino hacia un regreso estelar y hacia el título de las Summer Sprint Series -el circuito estival de velocidad de la JRA- en el Centaur Stakes (G2).<br><br>El ganador completó su último entrenamiento en la pista de pendiente del Ritto Training Center. A pesar del calor extremo continuado, ha sido preparado con esmero y, tras someterse a una carga de trabajo sólida en la pista de pendiente la semana pasada, el entrenador Shota Nishizono declaró que esta vez «se limitaría a dejarle estirar al final». Aun así, Flicker Jab mostró una potencia y aceleración impresionantes para un caballo que reaparece tras dos meses de descanso, cubriendo cuatro furlongs en 54,0 segundos con parciales de 38,7 y 12,2 mientras iba cómodo en la mano. Parece estar plenamente preparado.<br><br>«Tuvo buenas sensaciones durante todo el recorrido y su movimiento al final también fue muy bueno. En comparación con el año pasado, su cuerpo se ha desarrollado y tiene más músculo. Siempre ha sido un caballo que rinde bien durante el verano, pero esta vez vuelve a estar en un estado de forma excelente», afirmó el entrenador con confianza tras el entrenamiento. Sin embargo, su progreso no se ha limitado al desarrollo físico. El equipo también ha incorporado trabajo en la pista de arena durante esta preparación en un esfuerzo por ayudarle a asentarse mentalmente. «Se ha vuelto más tranquilo y está aprendiendo a desconectar y concentrarse. Eso ha facilitado su entrenamiento», señaló Nishizono.<br><br>El objetivo definitivo es, por supuesto, una carrera de G1 -la máxima categoría de la escala gradual-. Antes de eso, sin embargo, hay un reto que debe superar: la pronunciada recta de llegada en cuesta. Flicker Jab terminó sexto en el Sprinters Stakes (G1) -una de las pruebas de velocidad más importantes del calendario de la JRA- en el Nakayama Racecourse. No obstante, su entrenador sigue convencido de que la pendiente no será un problema. «Ha obtenido sus mejores resultados en pistas llanas, pero siempre se mueve así de bien en la pista de pendiente durante los entrenamientos, y no se quedó lejos de los caballos de cabeza en el Sprinters Stakes. Tiene un físico fuerte y mucha potencia. La cuesta no será un problema», afirmó con firmeza.<br><br>Flicker Jab persigue una victoria en las Summer Sprint Series, un título que requiere sumar puntos en pruebas estivales específicas y que solo puede alcanzar si sus rivales directos pinchan. Perseguirá su tercera victoria consecutiva en carreras de stakes -competiciones principales del circuito gradual- y depositará sus esperanzas en un estrecho camino hacia la corona. Después, con el impulso ganado, centrará su mirada en el escenario del G1.",
    "caballos": [
     "Flicker Jab"
-   ],
-   "url": "https://en.netkeiba.com/news/news_top.html",
-   "medio": "netkeiba",
-   "texto": "Flicker Jab afronta el último asalto de la Serie Sprint de Verano con la corona todavía a su alcance, aunque no dependiendo solo de sí mismo.\n\nLa serie —una clasificación por puntos que recorre las pruebas cortas del calendario estival japonés— llega a su cierre con la tabla apretada. Para el velocista, ganar no basta: necesita además que sus rivales directos no sumen por encima de él.\n\nSu entrenador se mostró satisfecho con el estado del caballo en los últimos trabajos, aunque reconoció que la combinación de resultados necesaria es exigente."
+   ]
   }
  ],
  "hay_archivo": 38,
@@ -908,7 +909,7 @@
    "fecha": "2026-01-04",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0104nakayamakimpai.html",
    "anio": 2026,
-   "dias": -254,
+   "dias": -255,
    "estado": "pasada",
    "distancia": 2000,
    "superficie": "cesped",
@@ -933,7 +934,7 @@
    "fecha": "2026-01-04",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0104kyotokimpai.html",
    "anio": 2026,
-   "dias": -254,
+   "dias": -255,
    "estado": "pasada",
    "distancia": 1600,
    "superficie": "cesped",
@@ -958,7 +959,7 @@
    "fecha": "2026-01-11",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0111fairy.html",
    "anio": 2026,
-   "dias": -247,
+   "dias": -248,
    "estado": "pasada",
    "distancia": 1600,
    "superficie": "cesped",
@@ -983,7 +984,7 @@
    "fecha": "2026-01-12",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0112shinzan-kinen.html",
    "anio": 2026,
-   "dias": -246,
+   "dias": -247,
    "estado": "pasada",
    "distancia": 1600,
    "superficie": "cesped",
@@ -1008,7 +1009,7 @@
    "fecha": "2026-01-18",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0118keisei.html",
    "anio": 2026,
-   "dias": -240,
+   "dias": -241,
    "estado": "pasada",
    "distancia": 2000,
    "superficie": "cesped",
@@ -1033,7 +1034,7 @@
    "fecha": "2026-01-18",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0118nikkei-shinshun.html",
    "anio": 2026,
-   "dias": -240,
+   "dias": -241,
    "estado": "pasada",
    "distancia": 2400,
    "superficie": "cesped",
@@ -1058,7 +1059,7 @@
    "fecha": "2026-01-24",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0124kokura-himba.html",
    "anio": 2026,
-   "dias": -234,
+   "dias": -235,
    "estado": "pasada",
    "distancia": 2000,
    "superficie": "cesped",
@@ -1083,7 +1084,7 @@
    "fecha": "2026-01-25",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0125ajcc.html",
    "anio": 2026,
-   "dias": -233,
+   "dias": -234,
    "estado": "pasada",
    "distancia": 2200,
    "superficie": "cesped",
@@ -1108,7 +1109,7 @@
    "fecha": "2026-01-25",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0125procyon.html",
    "anio": 2026,
-   "dias": -233,
+   "dias": -234,
    "estado": "pasada",
    "distancia": 1800,
    "superficie": "arena",
@@ -1133,7 +1134,7 @@
    "fecha": "2026-02-01",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0201negishi.html",
    "anio": 2026,
-   "dias": -226,
+   "dias": -227,
    "estado": "pasada",
    "distancia": 1400,
    "superficie": "arena",
@@ -1158,7 +1159,7 @@
    "fecha": "2026-02-01",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0201silkroad.html",
    "anio": 2026,
-   "dias": -226,
+   "dias": -227,
    "estado": "pasada",
    "distancia": 1200,
    "superficie": "cesped",
@@ -1183,7 +1184,7 @@
    "fecha": "2026-02-08",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0208kisaragi.html",
    "anio": 2026,
-   "dias": -219,
+   "dias": -220,
    "estado": "pasada",
    "distancia": 1800,
    "superficie": "cesped",
@@ -1208,7 +1209,7 @@
    "fecha": "2026-02-08",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0208tokyo-shimbun.html",
    "anio": 2026,
-   "dias": -219,
+   "dias": -220,
    "estado": "pasada",
    "distancia": 1600,
    "superficie": "cesped",
@@ -1233,7 +1234,7 @@
    "fecha": "2026-02-14",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0214queen.html",
    "anio": 2026,
-   "dias": -213,
+   "dias": -214,
    "estado": "pasada",
    "distancia": 1600,
    "superficie": "cesped",
@@ -1258,7 +1259,7 @@
    "fecha": "2026-02-15",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0215kyodonews.html",
    "anio": 2026,
-   "dias": -212,
+   "dias": -213,
    "estado": "pasada",
    "distancia": 1800,
    "superficie": "cesped",
@@ -1283,7 +1284,7 @@
    "fecha": "2026-02-15",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0215kyoto-kinen.html",
    "anio": 2026,
-   "dias": -212,
+   "dias": -213,
    "estado": "pasada",
    "distancia": 2200,
    "superficie": "cesped",
@@ -1308,7 +1309,7 @@
    "fecha": "2026-02-21",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0221diamond.html",
    "anio": 2026,
-   "dias": -206,
+   "dias": -207,
    "estado": "pasada",
    "distancia": 3400,
    "superficie": "cesped",
@@ -1333,7 +1334,7 @@
    "fecha": "2026-02-21",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0221hankyu.html",
    "anio": 2026,
-   "dias": -206,
+   "dias": -207,
    "estado": "pasada",
    "distancia": 1400,
    "superficie": "cesped",
@@ -1358,7 +1359,7 @@
    "fecha": "2026-02-22",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0222february.html",
    "anio": 2026,
-   "dias": -205,
+   "dias": -206,
    "estado": "pasada",
    "distancia": 1600,
    "superficie": "arena",
@@ -1383,7 +1384,7 @@
    "fecha": "2026-02-22",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0222kokura-daishoten.html",
    "anio": 2026,
-   "dias": -205,
+   "dias": -206,
    "estado": "pasada",
    "distancia": 1800,
    "superficie": "cesped",
@@ -1408,7 +1409,7 @@
    "fecha": "2026-02-28",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0228ocean.html",
    "anio": 2026,
-   "dias": -199,
+   "dias": -200,
    "estado": "pasada",
    "distancia": 1200,
    "superficie": "cesped",
@@ -1433,7 +1434,7 @@
    "fecha": "2026-03-01",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0301nakayama-kinen.html",
    "anio": 2026,
-   "dias": -198,
+   "dias": -199,
    "estado": "pasada",
    "distancia": 1800,
    "superficie": "cesped",
@@ -1458,7 +1459,7 @@
    "fecha": "2026-03-01",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0301tulip.html",
    "anio": 2026,
-   "dias": -198,
+   "dias": -199,
    "estado": "pasada",
    "distancia": 1600,
    "superficie": "cesped",
@@ -1483,7 +1484,7 @@
    "fecha": "2026-03-07",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0307nakayama-himba.html",
    "anio": 2026,
-   "dias": -192,
+   "dias": -193,
    "estado": "pasada",
    "distancia": 1800,
    "superficie": "cesped",
@@ -1508,7 +1509,7 @@
    "fecha": "2026-03-07",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0307fillies.html",
    "anio": 2026,
-   "dias": -192,
+   "dias": -193,
    "estado": "pasada",
    "distancia": 1400,
    "superficie": "cesped",
@@ -1533,7 +1534,7 @@
    "fecha": "2026-03-08",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0308yayoi.html",
    "anio": 2026,
-   "dias": -191,
+   "dias": -192,
    "estado": "pasada",
    "distancia": 2000,
    "superficie": "cesped",
@@ -1558,7 +1559,7 @@
    "fecha": "2026-03-15",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0315spring.html",
    "anio": 2026,
-   "dias": -184,
+   "dias": -185,
    "estado": "pasada",
    "distancia": 1800,
    "superficie": "cesped",
@@ -1583,7 +1584,7 @@
    "fecha": "2026-03-15",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0315kinko.html",
    "anio": 2026,
-   "dias": -184,
+   "dias": -185,
    "estado": "pasada",
    "distancia": 2000,
    "superficie": "cesped",
@@ -1608,7 +1609,7 @@
    "fecha": "2026-03-21",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0321flower.html",
    "anio": 2026,
-   "dias": -178,
+   "dias": -179,
    "estado": "pasada",
    "distancia": 1800,
    "superficie": "cesped",
@@ -1633,7 +1634,7 @@
    "fecha": "2026-03-21",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0321falcon.html",
    "anio": 2026,
-   "dias": -178,
+   "dias": -179,
    "estado": "pasada",
    "distancia": 1400,
    "superficie": "cesped",
@@ -1658,7 +1659,7 @@
    "fecha": "2026-03-22",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0322hanshin-daishoten.html",
    "anio": 2026,
-   "dias": -177,
+   "dias": -178,
    "estado": "pasada",
    "distancia": 3000,
    "superficie": "cesped",
@@ -1683,7 +1684,7 @@
    "fecha": "2026-03-22",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0322aichi.html",
    "anio": 2026,
-   "dias": -177,
+   "dias": -178,
    "estado": "pasada",
    "distancia": 1400,
    "superficie": "cesped",
@@ -1708,7 +1709,7 @@
    "fecha": "2026-03-28",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0328nikkei.html",
    "anio": 2026,
-   "dias": -171,
+   "dias": -172,
    "estado": "pasada",
    "distancia": 2500,
    "superficie": "cesped",
@@ -1733,7 +1734,7 @@
    "fecha": "2026-03-28",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0328mainichi.html",
    "anio": 2026,
-   "dias": -171,
+   "dias": -172,
    "estado": "pasada",
    "distancia": 1800,
    "superficie": "cesped",
@@ -1758,7 +1759,7 @@
    "fecha": "2026-03-29",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0329march.html",
    "anio": 2026,
-   "dias": -170,
+   "dias": -171,
    "estado": "pasada",
    "distancia": 1800,
    "superficie": "arena",
@@ -1783,7 +1784,7 @@
    "fecha": "2026-03-29",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0329takamatsunomiya.html",
    "anio": 2026,
-   "dias": -170,
+   "dias": -171,
    "estado": "pasada",
    "distancia": 1200,
    "superficie": "cesped",
@@ -1808,7 +1809,7 @@
    "fecha": "2026-04-04",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0404lord-derby.html",
    "anio": 2026,
-   "dias": -164,
+   "dias": -165,
    "estado": "pasada",
    "distancia": 1600,
    "superficie": "cesped",
@@ -1833,7 +1834,7 @@
    "fecha": "2026-04-04",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0404churchill.html",
    "anio": 2026,
-   "dias": -164,
+   "dias": -165,
    "estado": "pasada",
    "distancia": 1600,
    "superficie": "cesped",
@@ -1858,7 +1859,7 @@
    "fecha": "2026-04-05",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0405osaka.html",
    "anio": 2026,
-   "dias": -163,
+   "dias": -164,
    "estado": "pasada",
    "distancia": 2000,
    "superficie": "cesped",
@@ -1883,7 +1884,7 @@
    "fecha": "2026-04-11",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0411newzealand.html",
    "anio": 2026,
-   "dias": -157,
+   "dias": -158,
    "estado": "pasada",
    "distancia": 1600,
    "superficie": "cesped",
@@ -1908,7 +1909,7 @@
    "fecha": "2026-04-11",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0411hanshin-himba.html",
    "anio": 2026,
-   "dias": -157,
+   "dias": -158,
    "estado": "pasada",
    "distancia": 1600,
    "superficie": "cesped",
@@ -1933,7 +1934,7 @@
    "fecha": "2026-04-12",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0412oka.html",
    "anio": 2026,
-   "dias": -156,
+   "dias": -157,
    "estado": "pasada",
    "distancia": 1600,
    "superficie": "cesped",
@@ -1958,7 +1959,7 @@
    "fecha": "2026-04-18",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0418antares.html",
    "anio": 2026,
-   "dias": -150,
+   "dias": -151,
    "estado": "pasada",
    "distancia": 1800,
    "superficie": "arena",
@@ -1983,7 +1984,7 @@
    "fecha": "2026-04-19",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0419satsuki.html",
    "anio": 2026,
-   "dias": -149,
+   "dias": -150,
    "estado": "pasada",
    "distancia": 2000,
    "superficie": "cesped",
@@ -2008,7 +2009,7 @@
    "fecha": "2026-04-19",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0419fukushima-himba.html",
    "anio": 2026,
-   "dias": -149,
+   "dias": -150,
    "estado": "pasada",
    "distancia": 1800,
    "superficie": "cesped",
@@ -2033,7 +2034,7 @@
    "fecha": "2026-04-25",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0425aoba.html",
    "anio": 2026,
-   "dias": -143,
+   "dias": -144,
    "estado": "pasada",
    "distancia": 2400,
    "superficie": "cesped",
@@ -2058,7 +2059,7 @@
    "fecha": "2026-04-26",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0426flora.html",
    "anio": 2026,
-   "dias": -142,
+   "dias": -143,
    "estado": "pasada",
    "distancia": 2000,
    "superficie": "cesped",
@@ -2083,7 +2084,7 @@
    "fecha": "2026-04-26",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0426yomiuri-milers.html",
    "anio": 2026,
-   "dias": -142,
+   "dias": -143,
    "estado": "pasada",
    "distancia": 1600,
    "superficie": "cesped",
@@ -2108,7 +2109,7 @@
    "fecha": "2026-05-02",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0502keio-hai.html",
    "anio": 2026,
-   "dias": -136,
+   "dias": -137,
    "estado": "pasada",
    "distancia": 1400,
    "superficie": "cesped",
@@ -2133,7 +2134,7 @@
    "fecha": "2026-05-02",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0502unicorn.html",
    "anio": 2026,
-   "dias": -136,
+   "dias": -137,
    "estado": "pasada",
    "distancia": 1900,
    "superficie": "arena",
@@ -2158,7 +2159,7 @@
    "fecha": "2026-05-03",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0503tenno-spring.html",
    "anio": 2026,
-   "dias": -135,
+   "dias": -136,
    "estado": "pasada",
    "distancia": 3200,
    "superficie": "cesped",
@@ -2183,7 +2184,7 @@
    "fecha": "2026-05-09",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0509epsom.html",
    "anio": 2026,
-   "dias": -129,
+   "dias": -130,
    "estado": "pasada",
    "distancia": 1800,
    "superficie": "cesped",
@@ -2210,7 +2211,7 @@
    "fecha": "2026-05-09",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0509kyoto-shimbun.html",
    "anio": 2026,
-   "dias": -129,
+   "dias": -130,
    "estado": "pasada",
    "distancia": 2200,
    "superficie": "cesped",
@@ -2237,7 +2238,7 @@
    "fecha": "2026-05-10",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0510nhk-mile.html",
    "anio": 2026,
-   "dias": -128,
+   "dias": -129,
    "estado": "pasada",
    "distancia": 1600,
    "superficie": "cesped",
@@ -2264,7 +2265,7 @@
    "fecha": "2026-05-16",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0516niigata-daishoten.html",
    "anio": 2026,
-   "dias": -122,
+   "dias": -123,
    "estado": "pasada",
    "distancia": 2000,
    "superficie": "cesped",
@@ -2291,7 +2292,7 @@
    "fecha": "2026-05-17",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0517victoria.html",
    "anio": 2026,
-   "dias": -121,
+   "dias": -122,
    "estado": "pasada",
    "distancia": 1600,
    "superficie": "cesped",
@@ -2318,7 +2319,7 @@
    "fecha": "2026-05-23",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0523heian.html",
    "anio": 2026,
-   "dias": -115,
+   "dias": -116,
    "estado": "pasada",
    "distancia": 1900,
    "superficie": "arena",
@@ -2379,7 +2380,7 @@
     }
    ],
    "fuente": "https://japanracing.jp/_news2026/260524.html",
-   "dias": -114
+   "dias": -115
   },
   {
    "id": "4349342559",
@@ -2389,7 +2390,7 @@
    "fecha": "2026-05-24",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0524oaks.html",
    "anio": 2026,
-   "dias": -114,
+   "dias": -115,
    "estado": "pasada",
    "distancia": 2400,
    "superficie": "cesped",
@@ -2416,7 +2417,7 @@
    "fecha": "2026-05-30",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0530aoi.html",
    "anio": 2026,
-   "dias": -108,
+   "dias": -109,
    "estado": "pasada",
    "distancia": 1200,
    "superficie": "cesped",
@@ -2443,7 +2444,7 @@
    "fecha": "2026-05-31",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0531derby.html",
    "anio": 2026,
-   "dias": -107,
+   "dias": -108,
    "estado": "pasada",
    "distancia": 2400,
    "superficie": "cesped",
@@ -2470,7 +2471,7 @@
    "fecha": "2026-05-31",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0531meguro.html",
    "anio": 2026,
-   "dias": -107,
+   "dias": -108,
    "estado": "pasada",
    "distancia": 2500,
    "superficie": "cesped",
@@ -2511,7 +2512,7 @@
      ]
     ]
    },
-   "dias": -100,
+   "dias": -101,
    "estado": "pasada",
    "race_id": "202605030211",
    "hora_jst": "15:40"
@@ -2538,7 +2539,7 @@
      ]
     ]
    },
-   "dias": -94,
+   "dias": -95,
    "estado": "pasada",
    "race_id": "202602010111",
    "hora_jst": "15:45"
@@ -2600,7 +2601,7 @@
     }
    ],
    "fuente": "https://japanracing.jp/_news2026/pdf/260614.pdf",
-   "dias": -93
+   "dias": -94
   },
   {
    "id": "ca3501615c",
@@ -2624,7 +2625,7 @@
      ]
     ]
    },
-   "dias": -93,
+   "dias": -94,
    "estado": "pasada",
    "race_id": "202609030411",
    "hora_jst": "15:40"
@@ -2651,7 +2652,7 @@
      ]
     ]
    },
-   "dias": -86,
+   "dias": -87,
    "estado": "pasada",
    "race_id": "202605030611",
    "hora_jst": "15:45"
@@ -2678,7 +2679,7 @@
      ]
     ]
    },
-   "dias": -86,
+   "dias": -87,
    "estado": "pasada",
    "race_id": "202609030611",
    "hora_jst": "15:30"
@@ -2705,7 +2706,7 @@
      ]
     ]
    },
-   "dias": -79,
+   "dias": -80,
    "estado": "pasada",
    "race_id": "202603020211",
    "hora_jst": "15:45"
@@ -2732,7 +2733,7 @@
      ]
     ]
    },
-   "dias": -79,
+   "dias": -80,
    "estado": "pasada",
    "race_id": "202602010611",
    "hora_jst": "15:20"
@@ -2759,7 +2760,7 @@
      ]
     ]
    },
-   "dias": -72,
+   "dias": -73,
    "estado": "pasada",
    "race_id": "202610020411",
    "hora_jst": "15:45"
@@ -2786,7 +2787,7 @@
      ]
     ]
    },
-   "dias": -65,
+   "dias": -66,
    "estado": "pasada",
    "race_id": "202603020611",
    "hora_jst": "15:45"
@@ -2813,7 +2814,7 @@
      ]
     ]
    },
-   "dias": -58,
+   "dias": -59,
    "estado": "pasada",
    "race_id": "202610020811",
    "hora_jst": "15:45"
@@ -2840,7 +2841,7 @@
      ]
     ]
    },
-   "dias": -58,
+   "dias": -59,
    "estado": "pasada",
    "race_id": "202602011211",
    "hora_jst": "15:20"
@@ -2867,7 +2868,7 @@
      ]
     ]
    },
-   "dias": -51,
+   "dias": -52,
    "estado": "pasada",
    "race_id": "202604020207",
    "hora_jst": "15:45"
@@ -2894,7 +2895,7 @@
      ]
     ]
    },
-   "dias": -51,
+   "dias": -52,
    "estado": "pasada",
    "race_id": "202607020207",
    "hora_jst": "15:35"
@@ -2920,7 +2921,7 @@
      ]
     ]
    },
-   "dias": -44,
+   "dias": -45,
    "estado": "pasada",
    "race_id": "202604020407",
    "hora_jst": "15:45"
@@ -2947,7 +2948,7 @@
      ]
     ]
    },
-   "dias": -44,
+   "dias": -45,
    "estado": "pasada",
    "race_id": "202601010411",
    "hora_jst": "15:25"
@@ -2974,7 +2975,7 @@
      ]
     ]
    },
-   "dias": -38,
+   "dias": -39,
    "estado": "pasada",
    "race_id": "202601010511",
    "hora_jst": "15:25"
@@ -3001,7 +3002,7 @@
      ]
     ]
    },
-   "dias": -37,
+   "dias": -38,
    "estado": "pasada",
    "race_id": "202604020607",
    "hora_jst": "15:35"
@@ -3028,7 +3029,7 @@
      ]
     ]
    },
-   "dias": -37,
+   "dias": -38,
    "estado": "pasada",
    "race_id": "202607020607",
    "hora_jst": "15:45"
@@ -3055,7 +3056,7 @@
      ]
     ]
    },
-   "dias": -30,
+   "dias": -31,
    "estado": "pasada",
    "race_id": "202607020807",
    "hora_jst": "15:35"
@@ -3082,7 +3083,7 @@
      ]
     ]
    },
-   "dias": -30,
+   "dias": -31,
    "estado": "pasada",
    "race_id": "202601010811",
    "hora_jst": "15:45"
@@ -3109,7 +3110,7 @@
      ]
     ]
    },
-   "dias": -23,
+   "dias": -24,
    "estado": "pasada",
    "race_id": "202604030207",
    "hora_jst": "15:25"
@@ -3136,7 +3137,7 @@
      ]
     ]
    },
-   "dias": -23,
+   "dias": -24,
    "estado": "pasada",
    "race_id": "202601020211",
    "hora_jst": "15:45"
@@ -3163,7 +3164,7 @@
      ]
     ]
    },
-   "dias": -16,
+   "dias": -17,
    "estado": "pasada",
    "race_id": "202604030408",
    "hora_jst": "15:45"
@@ -3190,7 +3191,7 @@
      ]
     ]
    },
-   "dias": -16,
+   "dias": -17,
    "estado": "pasada",
    "race_id": "202607030407",
    "hora_jst": "15:35"
@@ -3217,7 +3218,7 @@
      ]
     ]
    },
-   "dias": -10,
+   "dias": -11,
    "estado": "pasada",
    "race_id": "202606040111",
    "hora_jst": "15:45",
@@ -3390,7 +3391,7 @@
      ]
     ]
    },
-   "dias": -10,
+   "dias": -11,
    "estado": "pasada",
    "race_id": "202601020511",
    "hora_jst": "15:20",
@@ -3500,7 +3501,7 @@
      ]
     ]
    },
-   "dias": -9,
+   "dias": -10,
    "estado": "pasada"
   },
   {
@@ -3525,7 +3526,7 @@
      ]
     ]
    },
-   "dias": -9,
+   "dias": -10,
    "estado": "pasada",
    "race_id": "202609040211",
    "hora_jst": "15:30",
@@ -3698,7 +3699,7 @@
      ]
     ]
    },
-   "dias": -3,
+   "dias": -4,
    "estado": "pasada",
    "race_id": "202609040311",
    "hora_jst": "15:45",
@@ -3871,7 +3872,7 @@
      ]
     ]
    },
-   "dias": -2,
+   "dias": -3,
    "estado": "pasada"
   },
   {
@@ -3896,7 +3897,7 @@
      ]
     ]
    },
-   "dias": -2,
+   "dias": -3,
    "estado": "pasada"
   },
   {
@@ -3921,14 +3922,14 @@
      ]
     ]
    },
-   "dias": 5,
+   "dias": 4,
    "estado": "cuadro_cerrado",
    "race_id": "202606040611",
    "hora_jst": "15:45",
    "participantes": [
     {
      "caballo": "Ask Doux Porte",
-     "jockey": "--",
+     "jockey": "Y.Iwata",
      "entrenador": "T.UmedaRitto",
      "peso": "57.0",
      "sexo_edad": "6H",
@@ -4027,7 +4028,7 @@
     },
     {
      "caballo": "Wide Emperor",
-     "jockey": "M.Kobayashi",
+     "jockey": "C.Lemaire",
      "entrenador": "K.FujiokaRitto",
      "peso": "57.0",
      "sexo_edad": "8H",
@@ -4067,7 +4068,7 @@
      ]
     ]
    },
-   "dias": 6,
+   "dias": 5,
    "estado": "lejana"
   },
   {
@@ -4092,7 +4093,7 @@
      ]
     ]
    },
-   "dias": 11,
+   "dias": 10,
    "estado": "lejana"
   },
   {
@@ -4150,7 +4151,7 @@
    "participantes": [],
    "llegada": [],
    "fuente": "https://en.netkeiba.com/library/detail.html?no=233",
-   "dias": 12
+   "dias": 11
   },
   {
    "id": "2c37c4d487",
@@ -4174,7 +4175,7 @@
      ]
     ]
    },
-   "dias": 12,
+   "dias": 11,
    "estado": "cuadro_cerrado",
    "race_id": "202606040911",
    "hora_jst": "15:40",
@@ -4383,7 +4384,7 @@
      ]
     ]
    },
-   "dias": 19,
+   "dias": 18,
    "estado": "lejana"
   },
   {
@@ -4408,7 +4409,7 @@
      ]
     ]
    },
-   "dias": 19,
+   "dias": 18,
    "estado": "lejana"
   },
   {
@@ -4433,7 +4434,7 @@
      ]
     ]
    },
-   "dias": 25,
+   "dias": 24,
    "estado": "lejana"
   },
   {
@@ -4458,7 +4459,7 @@
      ]
     ]
    },
-   "dias": 26,
+   "dias": 25,
    "estado": "lejana"
   },
   {
@@ -4483,7 +4484,7 @@
      ]
     ]
    },
-   "dias": 27,
+   "dias": 26,
    "estado": "lejana"
   },
   {
@@ -4508,7 +4509,7 @@
      ]
     ]
    },
-   "dias": 32,
+   "dias": 31,
    "estado": "lejana"
   },
   {
@@ -4526,7 +4527,7 @@
    "ficha": {
     "que_es": "Tercera y última pata de la triple corona femenina japonesa."
    },
-   "dias": 33
+   "dias": 32
   },
   {
    "id": "0133728f9c",
@@ -4550,7 +4551,7 @@
      ]
     ]
    },
-   "dias": 33,
+   "dias": 32,
    "estado": "lejana"
   },
   {
@@ -4575,7 +4576,7 @@
      ]
     ]
    },
-   "dias": 39,
+   "dias": 38,
    "estado": "lejana"
   },
   {
@@ -4600,7 +4601,7 @@
      ]
     ]
    },
-   "dias": 40,
+   "dias": 39,
    "estado": "lejana"
   },
   {
@@ -4625,7 +4626,7 @@
      ]
     ]
    },
-   "dias": 46,
+   "dias": 45,
    "estado": "lejana"
   },
   {
@@ -4650,7 +4651,7 @@
      ]
     ]
    },
-   "dias": 47,
+   "dias": 46,
    "estado": "lejana"
   },
   {
@@ -4675,7 +4676,7 @@
      ]
     ]
    },
-   "dias": 53,
+   "dias": 52,
    "estado": "lejana"
   },
   {
@@ -4700,7 +4701,7 @@
      ]
     ]
    },
-   "dias": 54,
+   "dias": 53,
    "estado": "lejana"
   },
   {
@@ -4725,7 +4726,7 @@
      ]
     ]
    },
-   "dias": 54,
+   "dias": 53,
    "estado": "lejana"
   },
   {
@@ -4750,7 +4751,7 @@
      ]
     ]
    },
-   "dias": 60,
+   "dias": 59,
    "estado": "lejana"
   },
   {
@@ -4775,7 +4776,7 @@
      ]
     ]
    },
-   "dias": 60,
+   "dias": 59,
    "estado": "lejana"
   },
   {
@@ -4800,7 +4801,7 @@
      ]
     ]
    },
-   "dias": 61,
+   "dias": 60,
    "estado": "lejana"
   },
   {
@@ -4825,7 +4826,7 @@
      ]
     ]
    },
-   "dias": 67,
+   "dias": 66,
    "estado": "lejana"
   },
   {
@@ -4850,7 +4851,7 @@
      ]
     ]
    },
-   "dias": 68,
+   "dias": 67,
    "estado": "lejana"
   },
   {
@@ -4875,7 +4876,7 @@
      ]
     ]
    },
-   "dias": 69,
+   "dias": 68,
    "estado": "lejana"
   },
   {
@@ -4900,7 +4901,7 @@
      ]
     ]
    },
-   "dias": 74,
+   "dias": 73,
    "estado": "lejana"
   },
   {
@@ -4915,7 +4916,7 @@
    "ficha": {
     "que_es": "Invitación internacional. La carrera con la que Japón se mide al resto del mundo en casa."
    },
-   "dias": 75
+   "dias": 74
   },
   {
    "id": "1c928af2dc",
@@ -4939,7 +4940,7 @@
      ]
     ]
    },
-   "dias": 75,
+   "dias": 74,
    "estado": "lejana"
   },
   {
@@ -4964,7 +4965,7 @@
      ]
     ]
    },
-   "dias": 75,
+   "dias": 74,
    "estado": "lejana"
   },
   {
@@ -4989,7 +4990,7 @@
      ]
     ]
    },
-   "dias": 81,
+   "dias": 80,
    "estado": "lejana"
   },
   {
@@ -5014,7 +5015,7 @@
      ]
     ]
    },
-   "dias": 81,
+   "dias": 80,
    "estado": "lejana"
   },
   {
@@ -5025,7 +5026,7 @@
    "fecha": "2026-12-06",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1206champions.html",
    "anio": 2026,
-   "dias": 82,
+   "dias": 81,
    "estado": "lejana",
    "distancia": 1800,
    "superficie": "arena",
@@ -5050,7 +5051,7 @@
    "fecha": "2026-12-12",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1212chunichi.html",
    "anio": 2026,
-   "dias": 88,
+   "dias": 87,
    "estado": "lejana",
    "distancia": 2000,
    "superficie": "cesped",
@@ -5075,7 +5076,7 @@
    "fecha": "2026-12-13",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1213capella.html",
    "anio": 2026,
-   "dias": 89,
+   "dias": 88,
    "estado": "lejana",
    "distancia": 1200,
    "superficie": "arena",
@@ -5100,7 +5101,7 @@
    "fecha": "2026-12-13",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1213juvenile.html",
    "anio": 2026,
-   "dias": 89,
+   "dias": 88,
    "estado": "lejana",
    "distancia": 1600,
    "superficie": "cesped",
@@ -5125,7 +5126,7 @@
    "fecha": "2026-12-19",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1219turquoise.html",
    "anio": 2026,
-   "dias": 95,
+   "dias": 94,
    "estado": "lejana",
    "distancia": 1600,
    "superficie": "cesped",
@@ -5150,7 +5151,7 @@
    "fecha": "2026-12-20",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1220futurity.html",
    "anio": 2026,
-   "dias": 96,
+   "dias": 95,
    "estado": "lejana",
    "distancia": 1600,
    "superficie": "cesped",
@@ -5175,7 +5176,7 @@
    "fecha": "2026-12-26",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1226hopeful.html",
    "anio": 2026,
-   "dias": 102,
+   "dias": 101,
    "estado": "lejana",
    "distancia": 2000,
    "superficie": "cesped",
@@ -5200,7 +5201,7 @@
    "fecha": "2026-12-26",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1226hanshin.html",
    "anio": 2026,
-   "dias": 102,
+   "dias": 101,
    "estado": "lejana",
    "distancia": 1400,
    "superficie": "cesped",
@@ -5232,7 +5233,7 @@
    "ficha": {
     "que_es": "El otro Grand Prix: cuadro votado por los aficionados y cierre del año. La carrera más vista del calendario japonés."
    },
-   "dias": 103
+   "dias": 102
   },
   {
    "id": "3dac49e093",
@@ -5242,7 +5243,7 @@
    "fecha": "2026-12-27",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1227arima.html",
    "anio": 2026,
-   "dias": 103,
+   "dias": 102,
    "estado": "lejana",
    "distancia": 2500,
    "superficie": "cesped",
@@ -6361,7 +6362,7 @@
    "historial": [],
    "forma": [],
    "menciones": 0,
-   "jockey": "--",
+   "jockey": "Y.Iwata",
    "perfil": "6H",
    "proxima": "cb622df92f",
    "victorias": 0,
@@ -6478,7 +6479,7 @@
    "historial": [],
    "forma": [],
    "menciones": 0,
-   "jockey": "M.Kobayashi",
+   "jockey": "C.Lemaire",
    "perfil": "8H",
    "proxima": "cb622df92f",
    "victorias": 0,
@@ -6875,6 +6876,7 @@
    "g1": 0,
    "caballos": [
     "Drop of Light",
+    "Ask Doux Porte",
     "Pair Pollux"
    ],
    "historial": [],
@@ -6883,6 +6885,11 @@
      "carrera": "d5023f58cc",
      "caballo": "Drop of Light",
      "fecha": "2026-09-05"
+    },
+    {
+     "carrera": "cb622df92f",
+     "caballo": "Ask Doux Porte",
+     "fecha": "2026-09-20"
     },
     {
      "carrera": "2c37c4d487",
@@ -6994,6 +7001,7 @@
    "caballos": [
     "Valkyrie Birth",
     "Kalamatianos",
+    "Wide Emperor",
     "Star Anise"
    ],
    "historial": [],
@@ -7007,6 +7015,11 @@
      "carrera": "61adb63463",
      "caballo": "Kalamatianos",
      "fecha": "2026-09-12"
+    },
+    {
+     "carrera": "cb622df92f",
+     "caballo": "Wide Emperor",
+     "fecha": "2026-09-20"
     },
     {
      "carrera": "2c37c4d487",
@@ -7754,13 +7767,32 @@
    "seguido": false
   },
   {
+   "nombre": "M.Muto",
+   "montas": 0,
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "caballos": [
+    "Ethelfleda"
+   ],
+   "historial": [],
+   "proximas": [
+    {
+     "carrera": "cb622df92f",
+     "caballo": "Ethelfleda",
+     "fecha": "2026-09-20"
+    }
+   ],
+   "pct": 0,
+   "seguido": false
+  },
+  {
    "nombre": "--",
    "montas": 0,
    "victorias": 0,
    "podios": 0,
    "g1": 0,
    "caballos": [
-    "Ask Doux Porte",
     "Cosmo Buddleja",
     "Craspedia",
     "June Blair",
@@ -7770,11 +7802,6 @@
    ],
    "historial": [],
    "proximas": [
-    {
-     "carrera": "cb622df92f",
-     "caballo": "Ask Doux Porte",
-     "fecha": "2026-09-20"
-    },
     {
      "carrera": "cb622df92f",
      "caballo": "Cosmo Buddleja",
@@ -7810,26 +7837,6 @@
    "seguido": false
   },
   {
-   "nombre": "M.Muto",
-   "montas": 0,
-   "victorias": 0,
-   "podios": 0,
-   "g1": 0,
-   "caballos": [
-    "Ethelfleda"
-   ],
-   "historial": [],
-   "proximas": [
-    {
-     "carrera": "cb622df92f",
-     "caballo": "Ethelfleda",
-     "fecha": "2026-09-20"
-    }
-   ],
-   "pct": 0,
-   "seguido": false
-  },
-  {
    "nombre": "H.Uchida",
    "montas": 0,
    "victorias": 0,
@@ -7843,26 +7850,6 @@
     {
      "carrera": "cb622df92f",
      "caballo": "Seiun Platina",
-     "fecha": "2026-09-20"
-    }
-   ],
-   "pct": 0,
-   "seguido": false
-  },
-  {
-   "nombre": "M.Kobayashi",
-   "montas": 0,
-   "victorias": 0,
-   "podios": 0,
-   "g1": 0,
-   "caballos": [
-    "Wide Emperor"
-   ],
-   "historial": [],
-   "proximas": [
-    {
-     "carrera": "cb622df92f",
-     "caballo": "Wide Emperor",
      "fecha": "2026-09-20"
     }
    ],
