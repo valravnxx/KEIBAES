@@ -1259,5 +1259,27 @@
    "Faust Rasen"
   ],
   "categoria": "jockeys"
+ },
+ "18968a45fc442904": {
+  "titular": "Forever Young logra una cómoda victoria en el G1 Jockey Club Gold Cup",
+  "resumen": "Forever Young se impuso con autoridad en el G1 Jockey Club Gold Cup bajo la monta de Ryusei Sakai. Este triunfo supone la cuarta victoria de máximo nivel en el extranjero para un caballo entrenado en Japón, un récord histórico.",
+  "texto": "Forever Young se impuso con facilidad en el G1 Jockey Club Gold Cup -una prueba de máxima categoría internacional-, logrando la cuarta victoria en un G1 fuera de Japón para un caballo entrenado en el país -un récord histórico para la hípica nacional-, bajo la monta del jinete Ryusei Sakai, partiendo como favorito indiscutible en las apuestas. Tras una salida algo complicada, se colocó en segunda posición dentro de un lote compuesto por cuatro participantes. Tomó la primera posición al llegar a la curva final y se distanció del resto para ganar sin oposición. El tiempo empleado en cubrir la distancia fue de 2:01.23.\n\n[Segundo clasificado] (potro de 4 años, criado en EE. UU.) terminó en segunda posición, mientras que el segundo favorito, Baeza (potro de 4 años, criado en EE. UU.), cruzó la meta en tercer lugar.\n\nEsta supone para [Nombre del caballo] la cuarta victoria en un G1 en el extranjero, la cifra más alta registrada por cualquier ejemplar entrenado en Japón. Tras reaparecer con victoria en su primera salida del otoño, el ejemplar adquiere un valioso impulso de cara a defender su corona en el G1 Breeders' Cup Classic -la prestigiosa prueba norteamericana de fin de temporada-.",
+  "caballos": [
+   "Forever Young",
+   "Baeza"
+  ],
+  "categoria": "internacional"
+ },
+ "2beeab21e302e1c8": {
+  "titular": "Rainbow Flight, hija de Flightline, debutará en Nakayama el sábado",
+  "resumen": "Rainbow Flight, potranca descendiente del semental Flightline, debutará este sábado en una prueba sobre 1,800 metros en el hipódromo de Nakayama. Su preparador, Toru Hayashi, y el jinete Akihide Tsumura han mostrado su satisfacción tras su último entrenamiento matinal en el centro de Miho.",
+  "texto": "Rainbow Flight, hija de Flightline, debutará en el quinto rincón de la jornada -una carrera para debutantes de dos años en la que los potros y potrancas compiten sin victorias previas- sobre 1,800 metros en hierba en el hipódromo de Nakayama este sábado. Cuatro productos del semental de primera temporada han debutado en lo que va de año, registrando tres victorias y tres segundos puestos en seis salidas, con los seis clasificados entre los dos primeros.\n\nPara su último entrenamiento, Rainbow Flight galopó junto a otros dos ejemplares en la pista de fibra de madera del centro de entrenamiento de Miho con el jinete Akihide Tsumura a los lomos. A pesar de la lluvia persistente, se estiró desde el centro del trío por la recta final por iniciativa propia, marcando 82.0 segundos para los seis furlongs, con un parcial final de tres furlongs de 37.0 y un remate final de 11.6 segundos. Terminó en paralelo con Mikuni Inspire y tres cuerpos por delante de Donna Lee. El entrenador Toru Hayashi declaró: \"Puedo notar que tiene calidad y una forma de correr ligera. Si es posible, preferiría que el estado de la pista fuera bueno\". Su jinete también se mostró satisfecho con lo presenciado, al señalar: \"Es ligera de movimientos, tiene buena espalda y su tranco es muy correcto. La respuesta en los metros finales también es buena\".",
+  "caballos": [
+   "Rainbow Flight",
+   "Flightline",
+   "Mikuni Inspire",
+   "Donna Lee"
+  ],
+  "categoria": "cria"
  }
 }
