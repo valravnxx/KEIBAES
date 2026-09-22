@@ -1,6 +1,53 @@
 {
  "noticias": [
   {
+   "id": "n4149",
+   "titular_en": "Master Soarer with Takuya Ono claims first graded stakes victory in G2 Shion Stakes 19 hrs",
+   "fecha_texto": "2026-09-06 15:14",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4149",
+   "medio": "netkeiba",
+   "categoria": "jra",
+   "titular": "Master Soarer y Takuya Ono logran su primera victoria de graded stakes en el G2 Shion Stakes",
+   "resumen": "Master Soarer se impuso con Takuya Ono en el G2 Shion Stakes disputado en el hipódromo de Nakayama. La potranca superó a Something Sweet por medio cuerpo para conseguir su primer triunfo en carreras de grupo -las pruebas del máximo nivel en el calendario selectivo japonés-.",
+   "texto": "Master Soarer, una potranca de tres años montada por Takuya Ono, se alzó con la undécima edición del G2 Shion Stakes en el Nakayama Racecourse el día 6. Situada en el grupo intermedio, barrió al pelotón por el exterior en la recta para derrotar por medio cuerpo a la cuarta favorita, Something Sweet, que había tomado brevemente la iniciativa por los palos. El tiempo ganador fue de 2 minutos y 3.5 segundos.\n\nEn su primera salida desde febrero -cuando finalizó cuarta en el Queen Cup-, resolvió con éxito tanto su debut en la distancia de 2.000 metros como su primera carrera en sentido giro a derechas para conseguir su primer triunfo en un graded stakes -carrera con máxima catalogación oficial- ante un lote exigente. Master Soarer, junto con la segunda clasificada Something Sweet y la tercera Dream Core, obtuvo el derecho de inscripción preferente -una vía de acceso directa a las grandes citas clásicas- para el G1 Shuka Sho, el último tramo de la Triple Corona femenina japonesa.",
+   "caballos": [
+    "Master Soarer",
+    "Something Sweet",
+    "Dream Core"
+   ]
+  },
+  {
+   "id": "n4148",
+   "titular_en": "Diktaean with Takayuki Yano retains G2 Korea Cup crown as Japan extends winning streak to four 19 hrs",
+   "fecha_texto": "2026-09-06 15:14",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4148",
+   "medio": "netkeiba",
+   "categoria": "internacional",
+   "titular": "Diktaean con Takayuki Yano revalida la corona en el G2 Korea Cup y Japón amplía a cuatro su racha de victorias",
+   "resumen": "El caballo japonés Diktaean se impuso en el G2 Korea Cup disputado en el hipódromo de Seúl, revalidando el título conseguido el año anterior. Con esta victoria, la representación nipona encadena cuatro triunfos consecutivos en esta prueba internacional.",
+   "texto": "Diktaean, un caballo castrado de ocho años procedente de Japón y montado por Takayuki Yano, defendió con éxito su título en el G2 Korea Cup -una de las pruebas internacionales de referencia en la región- en el Seoul Racecourse de Corea del Sur el día 6. El tiempo ganador fue de 1 minuto y 51.7 segundos.\n\nEl ejemplar salió lento y se situó en la parte trasera del grupo en los primeros compases, pero protagonizó una rápida progresión para situarse en segunda posición al aproximarse a la recta final. A continuación, superó a Crown Pride, un caballo de seis años también procedente de Japón que había liderado la carrera desde el frente, para lograr una victoria decisiva.\n\nCrown Pride terminó a seis cuerpos en la segunda posición, con una amplia diferencia más atrás hasta Amazing Khan, un representante de cuatro años de Corea del Sur, que fue tercero.\n\nDiktaean revalidó su título en el Korea Cup tras su victoria del año pasado, mientras que Japón amplió su racha de victorias en la carrera a cuatro años consecutivos.",
+   "caballos": [
+    "Diktaean",
+    "Crown Pride",
+    "Amazing Khan"
+   ]
+  },
+  {
+   "id": "n4147",
+   "titular_en": "Dragon Welds with Keita Tosaki claims G3 Korea Sprint as Japanese duo dominate Seoul 19 hrs",
+   "fecha_texto": "2026-09-06 15:14",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4147",
+   "medio": "netkeiba",
+   "categoria": "internacional",
+   "titular": "Dragon Welds con Keita Tosaki se impone en el G3 Korea Sprint y el dueto japonés domina Seúl",
+   "resumen": "El potro japonés Dragon Welds se adjudicó el G3 Korea Sprint en el hipódromo de Seúl bajo la monta de Keita Tosaki. La delegación japonesa dominó la prueba con un doblete en cabeza y Dragon Welds extendió su racha victoriosa a cuatro carreras.",
+   "texto": "Dragon Welds, un potro de cuatro años procedente de Japón y montado por Keita Tosaki, se adjudicó el G3 Korea Sprint en el Seoul Racecourse de Corea del Sur el pasado día 6. El tiempo ganador fue de 1 minuto y 10.7 segundos.\n\nLa carrera estuvo liderada por el también japonés American Stage, con Dragon Welds rodando en segundo o tercer lugar. Ambos caballos japoneses se perfilaron como los principales contendientes en la recta final, donde Dragon Welds se despegó para asegurar la victoria. Vincero\n\nDragon Welds amplió su racha de victorias a cuatro tras imponerse en el Hatsuharu Stakes, el Chiba Stakes, el Tokyo Sprint -una prueba de velocidad del circuito nacional (NAR)- y ahora el Korea Sprint, logrando además su primer título de stakes de grado fuera del país.",
+   "caballos": [
+    "Dragon Welds",
+    "American Stage"
+   ]
+  },
+  {
    "id": "n4125",
    "titular_en": "3 G1 Oka Sho winner Star Anise to partner Christophe Lemaire in G1 Sprinters Stakes 338 views",
    "fecha_texto": "2026-09-06 09:25",
