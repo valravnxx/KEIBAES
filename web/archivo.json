@@ -1,6 +1,22 @@
 {
  "noticias": [
   {
+   "id": "n4147",
+   "titular_en": "Dragon Welds with Keita Tosaki claims G3 Korea Sprint as Japanese duo dominate Seoul 06 Sep 2026 23:38 International",
+   "fecha_texto": "2026-09-06 23:38",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4147",
+   "medio": "netkeiba",
+   "categoria": "internacional",
+   "titular": "Dragon Welds y Keita Tosaki se impone en el G3 Korea Sprint en el doblete japonés en Seúl",
+   "resumen": "El potro japonés Dragon Welds, montado por Keita Tosaki, se adjudicó el G3 Korea Sprint en el hipódromo de Seúl. La delegación japonesa dominó la prueba con un doblete en el que también participó American Stage.",
+   "texto": "Dragon Welds y Keita Tosaki se impone en el G3 Korea Sprint en el doblete japonés en Seúl\n\nDragon Welds, un potro de cuatro años procedente de Japón y montado por Keita Tosaki, se impuso en el G3 Korea Sprint en el hipódromo de Seúl, en Corea del Sur, el día 6. El tiempo ganador fue de 1 minuto y 10.7 segundos.\n\nLa carrera estuvo liderada por el también representante japonés American Stage, con Dragon Welds rodando en segunda o tercera posición. Ambos caballos japoneses se consolidaron como los principales contendientes en la recta final, donde Dragon Welds se distanció para asegurar la victoria.\n\nDragon Welds amplió su racha de victorias a cuatro tras imponerse en el Hatsuharu Stakes, el Chiba Stakes, el Tokyo Sprint y ahora el Korea Sprint, logrando además su primer título de carreras de grupo en el extranjero.",
+   "caballos": [
+    "Dragon Welds",
+    "American Stage",
+    "Vincero"
+   ]
+  },
+  {
    "id": "n4149",
    "titular_en": "Master Soarer with Takuya Ono claims first graded stakes victory in G2 Shion Stakes 19 hrs",
    "fecha_texto": "2026-09-06 15:14",
