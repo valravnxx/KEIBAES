@@ -1,17 +1,81 @@
 {
  "noticias": [
   {
+   "id": "n4161",
+   "titular_en": "Exceed poised for breakout autumn as Equinox's full sister 4 hrs",
+   "fecha_texto": "2026-09-08 05:39",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4161",
+   "medio": "netkeiba",
+   "categoria": "cria",
+   "titular": "Exceed se prepara para un otoño de consagración como hermana de padre y madre de Equinox",
+   "resumen": "La potranca Exceed, hermana de mayor categoría de Equinox, encara la campaña de otoño tras un periodo de descanso. Su entorno ha cuidado la preparación en Miho de cara a su reaparición.",
+   "texto": "La muy considerada Exceed está lista para erigirse en uno de los nombres principales del otoño. Su árbol genealógico no podría ser más distinguido: su hermano de padre y madre es Equinox, ganador de seis pruebas de G1 -la máxima categoría de la escala gradual- y coronado como mejor caballo del mundo. Aunque no pudo llegar a la fase clásica de primavera -el circuito de la JRA exclusivo para potrancas y potros de tres años-, ya ha mostrado claros indicios de su propio potencial al ganar dos de sus tres primeras salidas, con su única derrota en el tercer puesto del G3 Artemis Stakes.\n\nTras vencer en la Carnation Cup, una carrera de la categoría de una victoria -sistema de clasificación por triunfos acumulados en Japón- en Tokio en mayo, los responsables resistieron la tentación de forzar y en su lugar le dieron un descanso adecuado. Regresó a Miho a principios de agosto y desde entonces ha sido puesta a punto con cuidado durante aproximadamente un mes de cara a su campaña de otoño.\n\n«Como reaparece tras un descanso prolongado, nos hemos tomado nuestro tiempo con la preparación», declaró el asistente Ota. «Su tono muscular y su pelaje tienen buen aspecto, y no hubo señales de que el calor del verano le hubiese afectado. Se ha fortalecido desde la primavera».\n\nEsta progresiva puesta a punto continuó en su entrenamiento fuerte a una semana de la carrera, cuando trabajó emparejada en la pista de pendiente de Miho con un caballo adulto de clase abierta -la división superior del hándicap y la competición japonesa-.\n\nSituada en cabeza, cubrió cuatro furlongs en 53,8 segundos, con parciales de 39,6 y 12,3, y terminó en paridad.\n\n«El tiempo fue exactamente el que habíamos planeado y la impresión del jinete fue positiva también», indicó Ota. «Esperamos que pueda dar otro buen paso adelante a partir de aquí».\n\ncomenzó su racha dominante en el otoño de su temporada de tres años. Ahora su hermana de padre y madre intentará hacer de esta la campaña en la que su propio talento florezca de verdad.",
+   "caballos": [
+    "Exceed",
+    "Equinox"
+   ]
+  },
+  {
    "id": "n4159",
-   "titular_en": "Forever Young sharp in final domestic trackwork ahead of G1 Jockey Club Gold Cup 15 hrs",
-   "fecha_texto": "2026-09-07 18:39",
+   "titular_en": "Forever Young sharp in final domestic trackwork ahead of G1 Jockey Club Gold Cup 08 Sep 2026 02:50 International",
+   "fecha_texto": "2026-09-08 02:50",
    "url": "https://en.netkeiba.com/news/news_detail.html?id=4159",
    "medio": "netkeiba",
    "categoria": "internacional",
-   "titular": "Forever Young se muestra nítido en su último entrenamiento en Japón antes del G1 Jockey Club Gold Cup",
-   "resumen": "Forever Young completó su último entrenamiento en Japón de cara a su próxima participación en Estados Unidos. El caballo se desplazará con un grado de preparación superior al del año pasado.",
-   "texto": "El caballo de cinco años, que aspira a defender su título en el G1 Breeders' Cup Classic en Keeneland el 31 de octubre, completó su último entrenamiento en Japón el día 5 de cara a su carrera de preparación, el G1 Jockey Club Gold Cup en Belmont Park el 18. Montado por el jockey Ryusei Sakai, galopó en solitario en la pista de viruta de madera del Ritto Training Center.\n\nRespondiendo a las órdenes de su jinete, se estiró con potencia y marcó un tiempo de seis furlongs en 1:21.0, con los últimos tres furlongs en 35,8 segundos y el último furlong en 11,0 segundos.\n\nSu jinete habitual, Sakai, declaró: \"Todo ha ido sobre ruedas. Probablemente estaba al 60 por ciento de su preparación para su carrera de preparación el año pasado, pero esta vez deberíamos poder llevarlo allí en torno al 80 por ciento\".",
+   "titular": "Forever Young muestra finura en su último entrenamiento en Japón antes del G1 Jockey Club Gold Cup",
+   "resumen": "El caballo de cinco años Forever Young completó su último entrenamiento en el Ritto Training Center antes de viajar a Estados Unidos. El ejemplar, dirigido por Ryusei Sakai, marcó un registro de 1:21.0 en seis furlongs de cara al G1 Jockey Club Gold Cup -una carrera preparatoria de Grado 1 en Belmont Park-.",
+   "texto": "El caballo de cinco años -una edad en la que los ejemplares se encuentran en plena madurez deportiva dentro del sistema de competición japonés-, que aspira a defender su título en el G1 Breeders' Cup Classic en Keeneland el próximo 31 de octubre, completó su último entrenamiento en territorio nacional el día 5 de cara a su carrera de preparación, el G1 Jockey Club Gold Cup en Belmont Park el día 18.\n\nRendido bajo la monta del jockey Ryusei Sakai, trabajó en solitario en la pista de fibra de madera del Ritto Training Center. En respuesta a las indicaciones de su jinete, se estiró con potencia y marcó un tiempo de seis furlongs en 1:21.0, con los últimos tres furlongs en 35,8 segundos y el último furlong en 11,0 segundos.\n\nSu jinete habitual, Sakai, declaró: \"Todo ha ido sobre ruedas. Probablemente estaba al 60 por ciento de su preparación para su carrera previa del año pasado, pero esta vez deberíamos poder llevarlo allí en torno al 80 por ciento\".",
    "caballos": [
     "Forever Young"
+   ]
+  },
+  {
+   "id": "n4157",
+   "titular_en": "Three graded stakes highlight this weekend's racing at Nakayama and Hanshin 08 Sep 2026 02:37",
+   "fecha_texto": "2026-09-08 02:37",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4157",
+   "medio": "netkeiba",
+   "categoria": "jra",
+   "titular": "Tres carreras de grupo centran la competición de este fin de semana en Nakayama y Hanshin",
+   "resumen": "Los hipódromos de Nakayama y Hanshin albergan tres pruebas de grupo este fin de semana. La competición incluye la participación de potros y potrancas de tres y cuatro años destacados en el circuito nacional.",
+   "texto": "La competición hípica de este fin de semana se celebrará en los hipódromos de Nakayama y Hanshin, con tres carreras de grupo -las pruebas del circuito selectivo de la JRA- en el calendario.\n\nEl domingo 13 se disputará el St Lite Kinen (G2) en el hipódromo de Nakayama. Going to Sky, un potro de tres años que ganó el\n\nse celebrará en el hipódromo de Hanshin. Entre los participantes previstos se encuentran la potranca invicta de tres años Monroe Walk, vencedora en sus tres actuaciones, Exceed, hermana entera de\n\nse celebrará en el hipódromo de Hanshin. Está prevista la participación de Giovanni, que buscará de nuevo su primera victoria en una carrera de grupo, junto a Matenro\n\ny Maglia Iridata, una potranca de cuatro años que encadena tres triunfos consecutivos.",
+   "caballos": [
+    "Going to Sky",
+    "Monroe Walk",
+    "Exceed",
+    "Giovanni",
+    "Matenro",
+    "Maglia Iridata"
+   ]
+  },
+  {
+   "id": "n4154",
+   "titular_en": "\"I'm really happy.\" Mirai Iwata claims 2026 Summer Jockey Series title 08 Sep 2026 02:07 Jockey",
+   "fecha_texto": "2026-09-08 02:07",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4154",
+   "medio": "netkeiba",
+   "categoria": "jockeys",
+   "titular": "Mirai Iwata se adjudica las Summer Jockey Series de 2026",
+   "resumen": "El jockey Mirai Iwata ha conquistado el título de las Summer Jockey Series de 2026 tras sumar tres victorias en las pruebas puntuables. El piloto de 26 años logró una ventaja de cinco puntos sobre Kohei Matsuyama para alzarse con su primer trofeo en este circuito estival.",
+   "texto": "El jockey Mirai Iwata, de 26 años, se impuso en las Summer Jockey Series de 2026 -un circuito estival de pruebas disputadas en varios hipódromos de la Japan Racing Association-, que constaban de 15 carreras -pruebas seleccionadas del calendario de verano-, y obtuvo un premio en metálico de un millón de yenes, además de galardones valorados en 300.000 yenes. Participó en siete de las carreras designadas y firmó tres victorias, la última de ellas a lomos de Zoroastro.\n\nSus tres triunfos le reportaron 40 puntos, lo que le otorgó una ventaja de cinco sobre el segundo clasificado, Kohei Matsuyama, y aseguró su primer título en las Summer Jockey Series. «En la última prueba quería ganar y asegurar el título con una victoria, pero terminé segundo. Aun así, ya sabía que había ganado el campeonato, así que estoy muy contento». Al reflexionar sobre el torneo, añadió: «Me dieron oportunidades de montar a caballos muy buenos durante la temporada de carreras estivales, y creo que eso condujo a estos resultados».\n\n«Quiero mantener este estado de forma, seguir sano y continuar dando resultados semana tras semana para poder recibir más oportunidades de montar buenos caballos», declaró Iwata con una sonrisa, comprometiéndose a consolidar su éxito.",
+   "caballos": [
+    "Zoroastro"
+   ]
+  },
+  {
+   "id": "n4153",
+   "titular_en": "\"Very Very Maru,\" Japanese horses complete Korea Cup and Korea Sprint double 08 Sep 2026 02:00 JRA",
+   "fecha_texto": "2026-09-08 02:00",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4153",
+   "medio": "netkeiba",
+   "categoria": "internacional",
+   "titular": "«Very Very Maru»: los caballos japoneses hacen doblete en la Korea Cup y el Korea Sprint",
+   "resumen": "Los representantes japoneses se impusieron tanto en la Korea Cup como en el Korea Sprint celebradas en Corea del Selatan. Los jockeys Takayuki Yano y Keita Tosaki firmaron la victoria en sus respectivas pruebas.",
+   "texto": ", que había tomado el liderato a falta de un furlong -aproximadamente 200 metros-, para defender con éxito su título. El jockey Takayuki Yano declaró: «Sabía que los caballos japoneses habían ganado ediciones consecutivas de esta carrera antes. Estoy aliviado de que hayamos podido ofrecer el resultado».\n\nEl Korea Sprint también cayó del lado de Japón con la victoria de Dragon Welds, que superó a American Stage -el encargado de marcar el ritmo-. El jockey Keita Tosaki lo celebró diciendo «Very Very Maru», combinando su popular muletilla «Very Very» con la palabra coreana «mal», que significa caballo. «Pude plantear la carrera exactamente como la había imaginado», afirmó tras otra victoria japonesa memorable.",
+   "caballos": [
+    "Very Very Maru",
+    "Dragon Welds",
+    "American Stage"
    ]
   },
   {
