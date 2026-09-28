@@ -1,6 +1,34 @@
 {
  "noticias": [
   {
+   "id": "n4160",
+   "titular_en": "Basse Terre looks to rebound from Derby heartbreak in autumn return 08 Sep 2026 13:39",
+   "fecha_texto": "2026-09-08 13:39",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4160",
+   "medio": "netkeiba",
+   "categoria": "jra",
+   "titular": "Basse Terre busca resarcirse del varapalo del Derby en su reaparición otoñal",
+   "resumen": "Basse Terre inicia su campaña de otoño con la vista puesta en el Kikuka Sho tras su derrota en el Derby. El potro ha mostrado una notable evolución física y madurez durante el verano.",
+   "texto": "La corona se le escapó de las manos en los últimos metros. Tras sufrir un varapalo en el Derby -la prueba reina para potros de tres años-, Basse Terre comienza ahora su campaña de otoño con el objetivo de coger impulso hacia el último Clásico de la temporada.\n\nEn el Derby, el lote se contentó con conservar energía en los primeros compases. Al detectar el ritmo lento, Yuga Kawada movió ficha en la recta opuesta. En respuesta a la indicación del jinete ganador del Derby, Basse Terre, que marchaba último en la primera curva, avanzó hasta la segunda posición. Con los últimos cinco furlongs recorridos de forma continuada en el rango de los 11 segundos, la carrera se convirtió en una exigente prueba de resistencia, pero él siguió respondiendo bajo presión. Finalmente fue superado por el exterior en los compases finales, aun así el entrenador Saito se mostró optimista. \"Incluso con el ritmo lento, el jinete lo condujo muy bien y creo que fue un buen Derby\".\n\nBasse Terre ha continuado desarrollándose de manera significativa desde la primavera. \"Ganó el G2 -carrera de segundo grado del circuito selectivo-, pero en ese momento todavía sentía que le quedaba mucho por dar\", declaró Saito. \"Su presencia general mejoró antes del G1 -la máxima categoría de la escala competitiva-, y físicamente también empezó a tener un aspecto bastante diferente. Ha superado el verano sin contratiempos y ha seguido madurando\".\n\nDesde su debut, casi todo su trabajo serio se había realizado en la pista de viruta de madera de Ritto -centro de entrenamiento de la JRA-, salvo en una ocasión antes del Derby. Sin embargo, desde su regreso a la cuadra en esta ocasión, también se ha estado ejercitando en la pista de pendiente.\n\n«En primavera, su acción todavía no era estable y, cuando lo subíamos a la pendiente, su movimiento se volvía descoordinado», señaló Saito. «Ahora su equilibrio ha mejorado y se mueve mucho mejor». Esos cambios no han hecho más que aumentar las expectativas de cara a una campaña de otoño en la que su entorno confía en que pueda darle la vuelta a la situación.\n\nEn su entrenamiento fuerte a una semana de la carrera, Basse Terre trabajó en un grupo de tres caballos en la pista de fibra de madera de Ritto, con Kawada en la silla, junto a Scents Blood, un ejemplar de la categoría abierta de 4 años, y Kitasan Hanabira, un caballo de 4 años del grupo de dos victorias (sistema de clases por ganancias acumuladas). Por el interior, remató con fuerza y cubrió las seis furlongs (1.200 metros) en 83,6 segundos, con parciales de 36,8 y 11,3. Terminó a la par de Scents Blood y un cuello por delante de Kitasan Hanabira.\n\n«El tiempo total fue algo lento, pero vino desde atrás de los demás y se movió correctamente hasta la meta», afirmó Saito con satisfacción.\n\nUn margen de cinco semanas entre carreras hasta otra prueba importante no es ninguna novedad para un caballo que siguió un camino similar en la primavera. Ahora, en su primera salida del otoño, el tercer clasificado del Derby buscará demostrar que ha dado un nuevo paso adelante.",
+   "caballos": [
+    "Basse Terre"
+   ]
+  },
+  {
+   "id": "n4164",
+   "titular_en": "Satono Reve retired after back-to-back Takamatsunomiya Kinen wins 3 hrs",
+   "fecha_texto": "2026-09-08 06:39",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4164",
+   "medio": "netkeiba",
+   "categoria": "cria",
+   "titular": "Satono Reve se retira tras sus victorias consecutivas en el Takamatsunomiya Kinen",
+   "resumen": "El velocista Satono Reve, ganador de dos ediciones del Takamatsunomiya Kinen, ha sido retirado de la competición tras su campaña estival en Gran Bretaña. El caballo de siete años iniciará su carrera como semental en la Shadai Stallion Station.",
+   "texto": "vencedor en 2025 y 2026, ha sido retirado de la competición, según anunció el entrenador Noriyuki Hori el 7 de septiembre. El ejemplar de 7 años ingresará previsiblemente como semental en la Shadai Stallion Station. Pasó el verano compitiendo en Gran Bretaña, siendo su noveno puesto en las City of York Stakes el 22 de agosto la última participación de su carrera.\n\nregresó a Japón el día 6 tras pasar cuatro meses en Gran Bretaña. Actualmente se encuentra pasando la cuarentena de importación en la JRA Horse Racing School -el centro de formación e instalaciones ecuestres de la Asociación Japonesa de Carreras- y está previsto que se desplace a la Shadai Stallion Station el día 17, donde comenzará su etapa como semental.\n\n\"Con la comprensión del propietario, pudimos plantear su campaña según lo que le convenía al caballo y, como resultado\n\nsuperó con seguridad todos esos retos. Desde su viaje a Gran Bretaña pudo disputar tres carreras de forma consecutiva, y solo tengo palabras de agradecimiento hacia él por seguir dando lo mejor de sí mismo\".\n\n\"No pudimos lograr una victoria de G1 -máxima categoría de la escala gradual- en el extranjero, y como equipo somos muy conscientes de que aún tenemos margen de mejora. Aun así, ha sido una experiencia incalculable y estamos decididos a aplicar lo aprendido en el futuro\".",
+   "caballos": [
+    "Satono Reve"
+   ]
+  },
+  {
    "id": "n4162",
    "titular_en": "Admire Terra to team with Cristian Demuro for Prix de l'Arc de Triomphe 4 hrs",
    "fecha_texto": "2026-09-08 05:39",
@@ -12,6 +40,21 @@
    "texto": "",
    "caballos": [
     "Admire Terra"
+   ]
+  },
+  {
+   "id": "n4161",
+   "titular_en": "Exceed poised for breakout autumn as Equinox's full sister 4 hrs",
+   "fecha_texto": "2026-09-08 05:39",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4161",
+   "medio": "netkeiba",
+   "categoria": "cria",
+   "titular": "Exceed se prepara para un otoño de consagración como hermana de padre y madre de Equinox",
+   "resumen": "La potranca Exceed, hermana de mayor categoría de Equinox, encara la campaña de otoño tras un periodo de descanso. Su entorno ha cuidado la preparación en Miho de cara a su reaparición.",
+   "texto": "La muy considerada Exceed está lista para erigirse en uno de los nombres principales del otoño. Su árbol genealógico no podría ser más distinguido: su hermano de padre y madre es Equinox, ganador de seis pruebas de G1 -la máxima categoría de la escala gradual- y coronado como mejor caballo del mundo. Aunque no pudo llegar a la fase clásica de primavera -el circuito de la JRA exclusivo para potrancas y potros de tres años-, ya ha mostrado claros indicios de su propio potencial al ganar dos de sus tres primeras salidas, con su única derrota en el tercer puesto del G3 Artemis Stakes.\n\nTras vencer en la Carnation Cup, una carrera de la categoría de una victoria -sistema de clasificación por triunfos acumulados en Japón- en Tokio en mayo, los responsables resistieron la tentación de forzar y en su lugar le dieron un descanso adecuado. Regresó a Miho a principios de agosto y desde entonces ha sido puesta a punto con cuidado durante aproximadamente un mes de cara a su campaña de otoño.\n\n«Como reaparece tras un descanso prolongado, nos hemos tomado nuestro tiempo con la preparación», declaró el asistente Ota. «Su tono muscular y su pelaje tienen buen aspecto, y no hubo señales de que el calor del verano le hubiese afectado. Se ha fortalecido desde la primavera».\n\nEsta progresiva puesta a punto continuó en su entrenamiento fuerte a una semana de la carrera, cuando trabajó emparejada en la pista de pendiente de Miho con un caballo adulto de clase abierta -la división superior del hándicap y la competición japonesa-.\n\nSituada en cabeza, cubrió cuatro furlongs en 53,8 segundos, con parciales de 39,6 y 12,3, y terminó en paridad.\n\n«El tiempo fue exactamente el que habíamos planeado y la impresión del jinete fue positiva también», indicó Ota. «Esperamos que pueda dar otro buen paso adelante a partir de aquí».\n\ncomenzó su racha dominante en el otoño de su temporada de tres años. Ahora su hermana de padre y madre intentará hacer de esta la campaña en la que su propio talento florezca de verdad.",
+   "caballos": [
+    "Exceed",
+    "Equinox"
    ]
   },
   {
