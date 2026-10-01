@@ -1,6 +1,50 @@
 {
  "noticias": [
   {
+   "id": "n4178",
+   "titular_en": "Trainer Hiroki Koga set for first graded stakes challenge with Elliptic Curve in G2 St Lite Kinen 19 hrs",
+   "fecha_texto": "2026-09-11 14:18",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4178",
+   "medio": "netkeiba",
+   "categoria": "jra",
+   "titular": "El entrenador Hiroki Koga afronta su primer desafío de grado con Elliptic Curve en el G2 St Lite Kinen",
+   "resumen": "El preparador Hiroki Koga se enfrenta a su primera participación en una prueba de grupo con Elliptic Curve en el G2 St Lite Kinen -prueba preparatoria para el Kikuka Sho, el St. Leger japonés-. El caballo llega tras ganar en 2.400 metros en el hipódromo de Tokyo contra ejemplares de edad madura.",
+   "texto": "El entrenador Hiroki Koga, que presenta a Elliptic Curve en el G2 St Lite Kinen -prueba preparatoria para el Kikuka Sho, el St. Leger japonés-, abrió su cuadra únicamente en julio de este año, por lo que esta constituye su primera participación en una carrera de grado -máxima categoría de la escala competitiva-. \"Es un gran privilegio que se me confíe un caballo de este calibre tan poco tiempo después de abrir mi cuadra. Solo puedo expresar mi agradecimiento al propietario y a todos los implicados\", declaró Koga.\n\nHagiwara -fallecido debido a una enfermedad en mayo-, antes de pasar a la cuadra de Masahiro Otake y recalar finalmente bajo la tutela de Koga. Al habérsele confiado el ejemplar a pesar de no mantener una relación especialmente estrecha con el propietario, Koga señaló con determinación: \"Quiero estar a la altura de sus expectativas. Deseo lograr un resultado que ojalá nos permita llegar al G1\".\n\nAunque Koga no ha dispuesto de mucho tiempo para trabajar con Elliptic Curve, ya ha reconocido el considerable potencial del animal. \"Considero que su fondo y su sólida capacidad cardiovascular se cuentan entre sus mayores virtudes. Tiene mucho potencial\", indicó el preparador. Su segunda victoria profesional llegó en su salida anterior sobre 2.400 metros en hierba en el hipódromo de Tokyo. A partir de la sólida actuación que firmó frente a caballos de edad madura, Koga afirmó con seguridad: \"Pienso que posee la capacidad para desenvolverse en distancias largas\".\n\n«A medida que el nivel de los rivales aumenta, la cuestión es cuánto podrá mostrarnos». Con la última clásica de la temporada en mente, esta carrera servirá como una prueba importante tanto para el caballo como para el entrenador. Pleno de expectativas hacia su talentoso ejemplar, el joven preparador afrontará su debut en una prueba de grupo en el gran escenario.",
+   "caballos": [
+    "Elliptic Curve"
+   ]
+  },
+  {
+   "id": "n4177",
+   "titular_en": "Going to Sky begins autumn campaign in G2 St Lite Kinen seeking redemption for narrow Japanese Derby defeat 19 hrs",
+   "fecha_texto": "2026-09-11 14:18",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4177",
+   "medio": "netkeiba",
+   "categoria": "jra",
+   "titular": "Going to Sky inicia su campaña de otoño en el G2 St Lite Kinen en busca de redención tras su ajustada derrota en el Japanese Derby",
+   "resumen": "Going to Sky comenzará su campaña de otoño en el G2 St Lite Kinen para enmendar su derrota en primavera y apuntar al último título clásico de la temporada. El potro ha mostrado una buena evolución física en verano y superó sin problemas el test matinal en el Miho Training Center.",
+   "texto": "",
+   "caballos": [
+    "Going to Sky",
+    "Mad",
+    "Giallorosso"
+   ]
+  },
+  {
+   "id": "n4168",
+   "titular_en": "Kalamatianos sharp in final trackwork ahead of G3 Challenge Cup, seeking to bounce back from Tanabata Sho seventh 10 Sep 2026 18:34",
+   "fecha_texto": "2026-09-10 18:34",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4168",
+   "medio": "netkeiba",
+   "categoria": "jra",
+   "titular": "Kalamatianos muestra agilidad en su último entrenamiento de cara al G3 Challenge Cup en busca de la recuperación",
+   "resumen": "Kalamatianos ha completado un rápido ensayo en el Miho Training Center de cara al G3 Challenge Cup -una prueba de grupo tres que se disputa en el circuito nipón-. El preparador Takeshi Okumura ha mostrado su satisfacción con el estado del caballo tras su séptimo puesto en el Tanabata Sho.",
+   "texto": "Kalamatianos se mostró ágil el día 9 en la pista de viruta de madera del Miho Training Center en su preparación para el G3 Challenge Cup -una prueba de grupo tres del circuito japonés-. Trabajando con comodidad por iniciativa propia, marcó un tiempo de 83.1 segundos para las seis furlongs, con un parcial de 37.2 en las últimas tres furlongs y de 11.6 en el último tramo. «El tiempo fue un poco más rápido de lo previsto, pero lo tomo como una señal de que está en buena forma», declaró el entrenador Takeshi Okumura. Su estado ha seguido mejorando con cada entrenamiento y Okumura asentía con satisfacción ante sus progresos: «La semana pasada me preocupaba un poco su respiración, pero hoy ha estado muy bien».\n\nKalamatianos reapareció en el Nakayama Kimpai -una prueba de grupo tres que abre el calendario anual de la JRA- en su primera salida de la temporada, antes de mostrar su categoría con un segundo puesto en el Niigata Daishoten. Sus dos últimos resultados han estado por debajo de las expectativas, pero no cabe duda de que ha seguido mejorando. El preparador señaló: «Ha madurado con cada salida desde finales del año pasado y se ha vuelto capaz de hacer muchas cosas diferentes», indicando que el caballo se acerca de forma constante al punto álgido de su desarrollo. Y añadió: «Espero que pueda seguir la ruta principal en otoño». Kalamatianos buscará utilizar esta carrera como trampolín hacia cotas más altas.",
+   "caballos": [
+    "Kalamatianos"
+   ]
+  },
+  {
    "id": "n4171",
    "titular_en": "Monroe Walk heads to G2 Rose Stakes unbeaten in three starts, seeking first graded stakes title 23 hrs",
    "fecha_texto": "2026-09-10 10:38",
@@ -26,6 +70,52 @@
    "texto": "Taisei Vogue, que afrontará su primera salida en seis meses y medio, se ejercitó en solitario en la pista de pendiente del Ritto Training Center de cara al Rose Stakes (-una carrera de Grado 2 perteneciente al circuito de la JRA, la asociación que organiza las principales carreras de caballos en Japón-).\n\nTras haber completado un entrenamiento intenso en la pista de virutas de madera una semana antes, en el que marcó un tiempo de 6 furlongs en 76,4 segundos, su última sesión se mantuvo deliberadamente ligera. A pesar de ello, galopó con fluidez por la pendiente sin mostrar signos de tensión y se mostró preparada para su retorno a la competición.\n\n\"Dado que le dimos un entrenamiento fuerte la semana pasada, esta semana lo hemos mantenido suave. Todo ha ido según lo previsto y ha evolucionado con fluidez. Ha crecido de altura y ya no cambia constantemente de tranco. Ha madurado de verdad. Está en buena forma y siempre hemos creído que es una yegua de media distancia. Queremos que logre un buen resultado aquí\", declaró el entrenador Takeshi Matsushita, expresando sus expectativas.\n\nEsta será una reaparición importante mientras fija sus objetivos en el Shuka Sho (-el último tramo de la Triple Corona femenina japonesa-). \"Es el tipo de yegua que produce un fuerte cambio de ritmo en el tramo final independientemente de cómo se desarrolle la carrera\". Tras haberse desarrollado durante el verano, Taisei Vogue buscará mostrar su progreso y volver a hacerse notar en el Hanshin Racecourse, donde ya ha conseguido una victoria en una prueba de grupo (-carreras de máximo nivel llamadas graded stakes en el sistema japonés-).",
    "caballos": [
     "Taisei Vogue"
+   ]
+  },
+  {
+   "id": "n4174",
+   "titular_en": "Deep Monster set to return in G2 Kyoto Daishoten with Suguru Hamanaka, targeting back-to-back victories 23 hrs",
+   "fecha_texto": "2026-09-10 10:38",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4174",
+   "medio": "netkeiba",
+   "categoria": "internacional",
+   "titular": "Deep Monster reaparecerá en el G2 Kyoto Daishoten con Suguru Hamanaka en busca de su segunda victoria consecutiva",
+   "resumen": "El veterano Deep Monster reaparecerá en el G2 Kyoto Daishoten el próximo 4 de octubre bajo la monta de Suguru Hamanaka. Tras esta prueba en el hipódromo de Kioto, el caballo tiene previsto viajar a Estados Unidos para disputar el G1 Breeders' Cup Turf.",
+   "texto": "Deep Monster, un caballo castrado de ocho años que no compite desde su tercer puesto en el Hong Kong Champions & Chater Cup el pasado mes de mayo, tiene previsto reaparecer en el G2 Kyoto Daishoten (4 de octubre, Kyoto Racecourse, hierba 2400m), donde se reencontrará con el jockey Suguru Hamanaka. Sus propietarios, DMM Banusy, anunciaron estos planes en su sitio web oficial el día 9.\n\nEl ejemplar consiguió su ansiada primera victoria en una carrera de grado -las pruebas de la escala máxima en Japón- en la edición del año pasado de esta misma carrera junto a Hamanaka y regresará ahora a un recorrido que ya conoce con el objetivo de lograr dos triunfos consecutivos.\n\nTras esta prueba, está previsto que viaje para disputar el G1 Breeders' Cup Turf (31 de octubre, Keeneland, Estados Unidos, hierba 2400m). Tom Marquand, quien le guió hasta la victoria en el Qatar Amir' കലാ Trophy, se encargará de montarle en esa ocasión.",
+   "caballos": [
+    "Deep Monster"
+   ]
+  },
+  {
+   "id": "n4173",
+   "titular_en": "Audacia showing clear signs of growth ahead of G2 St Lite Kinen, seeking second graded stakes victory 23 hrs",
+   "fecha_texto": "2026-09-10 10:38",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4173",
+   "medio": "netkeiba",
+   "categoria": "jra",
+   "titular": "Audacia muestra claros signos de evolución de cara al G2 St Lite Kinen en busca de su segunda victoria en carreras de grados",
+   "resumen": "Audacia prepara su reaparición en el G2 St Lite Kinen mostrando una clara evolución física y mental tras el verano. El jinete Akihide Tsumura y el entrenador Tezuka se muestran satisfechos con el trabajo realizado en el Miho Training Center.",
+   "texto": "Both jockey and trainer have seen clear signs of improvement in Audacia. Making his first start since finishing 11th in the G1 Tokyo Yushun, el Derby japonés, Audacia worked in a three-horse gallop on the Miho Training Center woodchip track ahead of the G2 St Lite Kinen. With jockey Akihide Tsumura aboard, he chased two stablemates before taking the inside route in the stretch and drawing alongside Cosmo Nahema and Piece.\n\nHe clocked 6F in 86.3 seconds, with the final three furlongs in 37.6 and the last furlong in 11.7. Although the time itself was not particularly eye-catching, Tsumura was satisfied, saying, \"We gave him a strong workout last week, so the instruction was simply to work up alongside them from the rear. He was able to finish well.\" Although he finished behind his two stablemates in his workout a week earlier, he was pushed hard to record a personal best of 6F in 81.7 seconds on the woodchip track, showing clear development after the summer break.\n\n\"He has really matured. He has become more relaxed mentally and is now able to settle even at a slower canter,\" Tsumura said, expressing his confidence in the horse's progress. Trainer Tezuka also nodded in agreement, saying, \"He has never been the type to show a lot in his workouts, but he is improving in his own way.\"\n\nLa estrategia para la carrera pasa por aprovechar su fortaleza mediante un esfuerzo prolongado. El preparador se mostró tajante al afirmar: \"Los 2200 metros del Nakayama Racecourse le van bien. El lote es fuerte, pero ya sabe lo que es ganar en el circuito de carreras de grados superiores [Nota: carreras *graded*], por lo que no desentonará\". En el mismo escenario de Nakayama donde logró su primera victoria en pruebas de grado, Audacia intentará hacer valer su inconfundible estamina y su prolongada potencia en los metros finales para sumar su segundo título de esta categoría.",
+   "caballos": [
+    "Audacia",
+    "Cosmo Nahema",
+    "Piece"
+   ]
+  },
+  {
+   "id": "n4172",
+   "titular_en": "Basse Terre ready to show improvement in G2 St Lite Kinen ahead of Japanese Derby rematch 23 hrs",
+   "fecha_texto": "2026-09-10 10:38",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4172",
+   "medio": "netkeiba",
+   "categoria": "jra",
+   "titular": "Basse Terre listo para mostrar su mejoría en el G2 St Lite Kinen de cara a la revancha del Japanese Derby",
+   "resumen": "Basse Terre afronta su reaparición otoñal en el G2 St Lite Kinen tras completar su último entrenamiento en el Ritto Training Center. El potro busca mostrar su evolución física y mental antes de encarar sus próximos objetivos de máxima categoría.",
+   "texto": "Basse Terre ready to show improvement in G2 St Lite Kinen ahead of Japanese Derby rematch\n\nBasse Terre completó su último entrenamiento en un galope de tres caballos en la pista de fibra del Ritto Training Center el día 9, de cara al G2 St Lite Kinen -una de las pruebas preparatorias clave para los clásicos-. Aunque terminó por detrás de sus dos compañeros de cuadra, no hubo señales de preocupación por parte del equipo. Habiendo madurado tanto física como mentalmente durante el descanso estival, buscará mostrar su progreso en esta carrera de preparación antes de dirigirse hacia el G1.\n\nBasse Terre, que se quedó a las puertas de un resultado mejor tras terminar tercero en el Tokyo Yushun, el Japanese Derby -, comenzará su campaña de otoño en el G2 St Lite Kinen. En su último entrenamiento en la pista de fibra, el jockey Hato Kameda estuvo a lomos del caballo, mientras que Yuga Kawada será el encargado de pilotarlo en la carrera. Trabajó en un galope de tres caballos mientras perseguía a Yamanin Shura y Noir. Al pedirle un cambio de ritmo, marcó 6 furlongs en 83.3 segundos, con los últimos tres furlongs en 38.6 y el último furlong en 12.0. Terminó a dos cuerpos de Yamanin Shura y a tres cuerpos de Noir.\n\nSaito no mostró preocupación alguna al declarar: \"No quería forzarle más con estas malas condiciones de la pista, ya que podría haber tenido un efecto adverso. Su movimiento no está todavía al nivel previo al Tokyo Yushun, el Japanese Derby -, pero su respiración fue suficientemente buena y creo que ha sido un entrenamiento sólido para una carrera de preparación\".\n\nCon la pista oscura bajo los nubarrones, su estructura más musculosa tras un verano de desarrollo brillaba bajo los focos. \"Ha ganado unos 15 kg durante este periodo. Nunca esperé que un caballo tan pequeño creciera tanto\", declaró el entrenador con sorpresa. Su rutina de entrenamiento también ha cambiado. Desde su debut, se le había preparado casi exclusivamente en la pista de viruta, salvo en el periodo previo al , pero recientemente ha empezado a utilizar la pista de pendiente los días que trabaja las salidas. \"A medida que se ha desarrollado, el equilibrio entre su cuarto trasero y su tren delantero ha mejorado, y ha empezado a correr bien también en la pista de pendiente\". Ahora ha evolucionado lo suficiente como para recortar la diferencia de 0,1 segundos respecto al caballo que terminó por delante de él en el .\n\n\"En primavera, su forma de correr fue algo tosca debido a la forma en que aceptaba el bocado, pero ese problema se ha ido resolviendo gradualmente\". Basse Terre cuenta con un balance positivo en Nakayama Racecourse tras ganar el , pero esta será la primera vez que corra en el trazado de la pista exterior. \"Es un recorrido complicado, por lo que debería ser una buena prueba de cómo acepta el bocado\", afirmó el entrenador, expresando sus expectativas ante la versión mejorada de Basse Terre. Se encuentra en una categoría diferente al alinearse en este lote, y el tercer clasificado del buscará hacerse notar desde el primer paso de su campaña de otoño.",
+   "caballos": [
+    "Basse Terre",
+    "Yamanin Shura",
+    "Noir"
    ]
   },
   {
