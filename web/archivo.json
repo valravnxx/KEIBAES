@@ -1,6 +1,56 @@
 {
  "noticias": [
   {
+   "id": "n4187",
+   "titular_en": "Shizunai Agricultural High School Yearlings Sold at September Sale 56 min",
+   "fecha_texto": "2026-09-15 09:07",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4187",
+   "medio": "netkeiba",
+   "categoria": "cria",
+   "titular": "Yearlings del Shizunai Agricultural High School vendidos en el September Sale",
+   "resumen": "Dos potros de un año criados por el instituto agrícola Shizunai salieron a subasta en el September Sale. Este centro educativo público es el único de Japón dedicado a la cría de purasangres.",
+   "texto": "Dos yearlings -potros de un año- criados por el Hokkaido Shizunai Agricultural High School pasaron por el ring en el September Sale, una subasta de yearlings purasangres celebrada el 14 de septiembre en el Hokkaido Sales Complex en Shinhidaka.\n\nFue adquirido por 2,5 millones de yenes, sin impuestos, por Naonori Hasegawa de Tokio. La potranca de 2025 hija de Atsuko, por -\n\nEl Hokkaido Shizunai Agricultural High School es el único instituto público de Japón que cría purasangres. Los estudiantes matriculados en el programa equino dentro de su Departamento de Ciencias de la Producción obtienen experiencia práctica en la industria, y muchos continúan sus carreras como profesionales ecuestres tras graduarse.\n\nEl centro ha criado varios caballos de carreras exitosos a lo largo de los años, incluyendo a Yume Roman, ganador de tres carreras de la JRA -Japan Racing Association, la entidad organizadora de las carreras centrales en Japón-, y Go Go Hyuga, vencedor del Komagatake Tokubetsu -una carrera condicional del calendario japonés-. También crió a Santur One, ganador del Masuda Yushun de 2002.\n\nPara los alumnos, ver a los caballos que ayudaron a criar entrar en el ring de ventas ofrece una conexión directa y poco común entre la educación y la industria de la cría de purasangres en Japón.",
+   "caballos": [
+    "Yume Roman",
+    "Go Go Hyuga",
+    "Santur One",
+    "Atsuko"
+   ]
+  },
+  {
+   "id": "n4186",
+   "titular_en": "Three graded stakes races highlight two-racecourse JRA weekend, with Lovcen, Regaleira and Forever Young set for major challenges 17 hrs",
+   "fecha_texto": "2026-09-14 17:03",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4186",
+   "medio": "netkeiba",
+   "categoria": "jra",
+   "titular": "Tres carreras de grados destacan en el fin de semana de la JRA con dos hipódromos, con Lovcen, Regaleira y Forever Young listos para grandes retos",
+   "resumen": "La actividad de la JRA se reparte este fin de semana entre los hipódromos de Nakayama y Hanshin con la disputa de tres carreras de grados -competiciones de máxima categoría en Japón-. Lovcen, Regaleira y Forever Young figuran entre los principales atractivos de las convocatorias.",
+   "texto": "Three graded stakes races highlight two-racecourse JRA weekend, with Lovcen, Regaleira and Forever Young set for major challenges\n\nThis week’s JRA action will be held at two racecourses, Nakayama and Hanshin. Three graded stakes races -competiciones del circuito principal japonés- are scheduled.\n\nwill be held at Hanshin Racecourse, with Lovcen (Colt, 3yo), winner of the spring Double\n\nwinner Congestus (Colt, 3yo), and Altramuz (Colt, 3yo), who finished sixth in the G1\n\nwill be held at Nakayama Racecourse on Sunday, September 20th. Among the entries are\n\n(Horse, 5yo), who is aiming to win the G1 BC Classic for the second straight year, is set to compete. Betting on the race will also be available in Japan.",
+   "caballos": [
+    "Lovcen",
+    "Regaleira",
+    "Forever Young",
+    "Congestus",
+    "Altramuz"
+   ]
+  },
+  {
+   "id": "n4185",
+   "titular_en": "Mickaelle Michel ends nearly seven-year wait for JRA win with back-to-back victories at Nakayama 17 hrs",
+   "fecha_texto": "2026-09-14 17:03",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4185",
+   "medio": "netkeiba",
+   "categoria": "jockeys",
+   "titular": "Mickaelle Michel pone fin a una espera de casi siete años sin ganar en la JRA con dos victorias consecutivas en Nakayama",
+   "resumen": "La jockey francesa Mickaelle Michel logró su primera victoria en la JRA -la Japan Racing Association, la principal organización de carreras del país- bajo licencia de corta duración en Nakayama. Inmediatamente después, sumó un segundo triunfo consecutivo en la siguiente carrera.",
+   "texto": "Mickaelle Michel pone fin a una espera de casi siete años sin ganar en la JRA con dos victorias consecutivas en Nakayama\n\nMickaelle Michel (31), procedente de Francia, guió al favorito Slow Boogie hacia la victoria en la 5ª carrera del hipódromo de Nakayama el día 13 para conseguir su primer triunfo en la JRA -la Japan Racing Association, la principal organización de carreras del país- bajo una licencia de corta duración. Fue su segunda victoria en la JRA en casi siete años, tras la anterior lograda a lomos de [caballo] en la 10ª carrera del hipódromo de Sapporo el 25 de agosto de 2019.\n\nPero no terminó ahí. Con la emoción de su primera victoria aún reciente, continuó imponiéndose en la siguiente 6ª carrera a bordo del octavo favorito Haute Qualite, completando un notable doblete consecutivo.\n\nLa jockey Michel se mostró eufórica y declaró: \"Fue realmente bueno. Estoy muy aliviada. Siento que voy a llorar\".",
+   "caballos": [
+    "Slow Boogie",
+    "Haute Qualite"
+   ]
+  },
+  {
    "id": "n4182",
    "titular_en": "Monroe Walk cruises to unbeaten fourth straight victory in G2 Rose Stakes, securing first graded stakes title 23 hrs",
    "fecha_texto": "2026-09-13 11:36",
@@ -32,6 +82,22 @@
     "Savoire Faire",
     "Audacia",
     "Going to Sky"
+   ]
+  },
+  {
+   "id": "n4183",
+   "titular_en": "Monroe Walk dominates G2 Rose Stakes to remain unbeaten in four starts, with Tosaki saying, \"I'm glad and relieved we could win a graded stakes\" 23 hrs",
+   "fecha_texto": "2026-09-13 11:36",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4183",
+   "medio": "netkeiba",
+   "categoria": "jra",
+   "titular": "Monroe Walk domina el Rose Stakes (G2) y se mantiene invicta en cuatro carreras; Tosaki declara: «Me alegra y alivia haber ganado una prueba de grupo»",
+   "resumen": "Monroe Walk se impuso con claridad en el Rose Stakes (G2) para conservar su condición de invicta en cuatro actuaciones. Con esta victoria, la potranca aseguró una plaza prioritaria para el Shuka Sho -el último tramo de la Triple Corona femenina-.",
+   "texto": "Monroe Walk, salida en apuestas como favorita indiscutible, corrió en segunda posición antes de distanciarse con fuerza por la recta de llegada para ganar el Rose Stakes (G2) por tres cuerpos de ventaja. La potranca aseguró su primera victoria en una carrera de grupo -las pruebas del circuito selectivo con máxima catalogación oficial- manteniendo su imbatibilidad en cuatro presentaciones. La tercera favorita, Enne, terminó segunda, mientras que la segunda favorita, Exceed, ocupó el tercer lugar. Las tres primeras clasificadas obtuvieron plazas prioritarias de inscripción para el Shuka Sho, el último tramo de la Triple Corona femenina.\n\nEl jinete Keita Tosaki, que se reencontraba con Monroe Walk por primera vez en tres carreras y la condujo a la victoria, declaró en una entrevista: «Era la primera vez que la montaba en una temporada, pero demostró un rendimiento tan sólido que me alegro de haber tenido altas expectativas en ella. Pudimos correr a su propio ritmo, se acopló bien y mostró paciencia. Tenía reservas de sobra en la recta y respondió de inmediato cuando le pedí acelerar. Una vez más, sentí que posee un instinto de competición excelente. Desde su debut mostraba buena acción y elasticidad en su tranco, pero ha evolucionado aún más durante el verano. Estoy muy feliz y aliviado de que haya podido ganar una carrera de grupo mientras prolongaba su racha de triunfos».",
+   "caballos": [
+    "Monroe Walk",
+    "Enne",
+    "Exceed"
    ]
   },
   {
