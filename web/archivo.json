@@ -1,6 +1,23 @@
 {
  "noticias": [
   {
+   "id": "n4199",
+   "titular_en": "Rainbow Flight, daughter of Flightline, set to make her debut at Nakayama on Saturday 20 hrs",
+   "fecha_texto": "2026-09-18 13:29",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4199",
+   "medio": "netkeiba",
+   "categoria": "cria",
+   "titular": "Rainbow Flight, hija de Flightline, debutará en Nakayama el sábado",
+   "resumen": "Rainbow Flight, potranca descendiente del semental Flightline, debutará este sábado en una prueba sobre 1,800 metros en el hipódromo de Nakayama. Su preparador, Toru Hayashi, y el jinete Akihide Tsumura han mostrado su satisfacción tras su último entrenamiento matinal en el centro de Miho.",
+   "texto": "Rainbow Flight, hija de Flightline, debutará en el quinto rincón de la jornada -una carrera para debutantes de dos años en la que los potros y potrancas compiten sin victorias previas- sobre 1,800 metros en hierba en el hipódromo de Nakayama este sábado. Cuatro productos del semental de primera temporada han debutado en lo que va de año, registrando tres victorias y tres segundos puestos en seis salidas, con los seis clasificados entre los dos primeros.\n\nPara su último entrenamiento, Rainbow Flight galopó junto a otros dos ejemplares en la pista de fibra de madera del centro de entrenamiento de Miho con el jinete Akihide Tsumura a los lomos. A pesar de la lluvia persistente, se estiró desde el centro del trío por la recta final por iniciativa propia, marcando 82.0 segundos para los seis furlongs, con un parcial final de tres furlongs de 37.0 y un remate final de 11.6 segundos. Terminó en paralelo con Mikuni Inspire y tres cuerpos por delante de Donna Lee. El entrenador Toru Hayashi declaró: \"Puedo notar que tiene calidad y una forma de correr ligera. Si es posible, preferiría que el estado de la pista fuera bueno\". Su jinete también se mostró satisfecho con lo presenciado, al señalar: \"Es ligera de movimientos, tiene buena espalda y su tranco es muy correcto. La respuesta en los metros finales también es buena\".",
+   "caballos": [
+    "Rainbow Flight",
+    "Flightline",
+    "Mikuni Inspire",
+    "Donna Lee"
+   ]
+  },
+  {
    "id": "n4196",
    "titular_en": "Lovcen sharp and impressive in final trackwork ahead of G2 Kobe Shimbun Hai, showing flawless preparation for his next major challenge 1 hrs",
    "fecha_texto": "2026-09-17 08:58",
@@ -42,6 +59,35 @@
    "texto": "Forever Young realizó un entrenamiento en la pista de arena de Belmont Park el día 15 (hora local) de cara al G1 Jockey Club Gold Cup -una prueba de máxima categoría para caballos de edad-. Con Ryusei Sakai en la silla, completó un galope en solitario sobre cinco furlongs en 62,17 segundos.\n\nEl jinete Sakai declaró: \"No me preocupaba especialmente el sorteo de cajones, pero creo que salir por fuera es preferible. Su entrenamiento también ha sido muy bueno. Si puede correr como lo hace normalmente, creo que el resultado vendrá solo\". La participación se redujo a cinco corredores después de que dos caballos fueran retirados tras el sorteo de cajones.",
    "caballos": [
     "Forever Young"
+   ]
+  },
+  {
+   "id": "n4198",
+   "titular_en": "Congestus ready to bounce back from Japanese Derby defeat and take on the favourites in G2 Kobe Shimbun Hai 1 hrs",
+   "fecha_texto": "2026-09-17 08:58",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4198",
+   "medio": "netkeiba",
+   "categoria": "jra",
+   "titular": "Congestus listo para resarcirse de su derrota en el Japanese Derby y medirse a los favoritos en el G2 Kobe Shimbun Hai",
+   "resumen": "Congestus completó su último entrenamiento en el Ritto Training Center de cara al G2 Kobe Shimbun Hai. El preparador Tomokazu Takano valora positivamente su estado tras el noveno puesto en el Japanese Derby.",
+   "texto": "Congestus put in an energetic final workout on the slope course at Ritto Training Center on the 16th. He is ready to take out his disappointment from finishing ninth in the G1 Japanese Derby, el Derby japonés, had his final workout on the slope course. He climbed the hill with plenty of energy and sharpness, clocking 55.8 seconds for four furlongs, with splits of 40.9 and 13.0 seconds, while finishing with plenty in reserve. Trainer Tomokazu Takano gave him a passing grade, saying, \"The track was in poor condition, so we didn't push him, but he was still able to run well under the circumstances.\"\n\nfor his third straight victory. He suffered his first defeat when stepping up to the G1 Japanese Derby, el Derby japonés last time out, finishing ninth, but there was no reason to be overly discouraged, as he was only 0.4 seconds behind the winner despite encountering traffic trouble when he was boxed in during the stretch. \"He showed more ability than his finishing position suggests,\" said his trainer, who remains positive. \"His overall qualities, including his size and how easy he is to ride, have gradually been improving,\" he added, clearly pleased with the progress.\n\nwill be a valuable prep, but the trainer is looking forward to the challenge, saying with a smile, \"He's the type who can race efficiently, so I don't think the distance will be a problem. I'm looking forward to it.\" Congestus is fully prepared to shake up the pecking order.",
+   "caballos": [
+    "Congestus"
+   ]
+  },
+  {
+   "id": "n4197",
+   "titular_en": "Cosmo Kuranda set for G2 All Comers return after finishing fourth in G1 Takarazuka Kinen, trainer confident ahead of rain-softened conditions 1 hrs",
+   "fecha_texto": "2026-09-17 08:58",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4197",
+   "medio": "netkeiba",
+   "categoria": "jra",
+   "titular": "Cosmo Kuranda apunta al G2 All Comers tras su cuarto puesto en el G1 Takarazuka Kinen; su preparador confía en el terreno pesado",
+   "resumen": "Cosmo Kuranda se prepara para reaparecer en el G2 All Comers tras su cuarto puesto en el G1 Takarazuka Kinen. Su preparador, Shizuya Kato, se muestra optimista ante la previsión de lluvia y el estado del terreno.",
+   "texto": "Cosmo Kuranda se prepara para su reaparición en el G2 All Comers tras finalizar cuarto en el G1 Takarazuka Kinen -una de las grandes pruebas de la categoría máxima en Japón-. El ejemplar completó su último entrenamiento en la pista de pendiente del Miho Training Center bajo la monta de Takeshi Yokoyama.\n\nTomando como referencia a su compañero de cuadra Furstin -situado dos cuerpos y medio por delante-, el caballo concluyó el ejercicio sin llegar a alcanzarle. Su tiempo total fue de 53.6 segundos para los cuatro furlongs, con un parcial final de 12.5 segundos tras pasar los primeros en 39.0. El preparador Shizuya Kato se mostró confiado sobre su estado: \"No le hemos exigido demasiado hoy y tampoco llevaba orejeras. El jockey también ha dicho que el punto de forma es el adecuado\".\n\nLas previsiones meteorológicas anuncian lluvia para el fin de semana, pero el preparador valoró positivamente la perspectiva de un terreno más blando: \"Una pista blanda es en realidad mejor para nuestro caballo. También fue favorable que lloviera justo antes del G1 Takarazuka Kinen\". A pesar de tratarse de su primera participación en tres meses, Kato también se muestra animado por su evolución: \"Da la sensación de que está entrando en una etapa de auténtico desarrollo\". Con el objetivo pendiente de conseguir su primera victoria en un G1 -máxima escala de la competición-, el equipo afronta la cita con buenas expectativas.",
+   "caballos": [
+    "Cosmo Kuranda",
+    "Furstin"
    ]
   },
   {
