@@ -1,6 +1,51 @@
 {
  "noticias": [
   {
+   "id": "n4202",
+   "titular_en": "Meisho Gekirin springs major upset in G2 All Comers, with Tanabe saying, \"I thought the rain was a blessing\" 20 Sep 2026 22:44",
+   "fecha_texto": "2026-09-20 22:44",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4202",
+   "medio": "netkeiba",
+   "categoria": "jra",
+   "titular": "Meisho Gekirin da la sorpresa en el G2 All Comers y Tanabe declara: \"Pensé que la lluvia era una bendición\"",
+   "resumen": "Meisho Gekirin protagonizó una gran sorpresa al imponerse de punta a punta en el G2 All Comers, una prueba de grupo preparatoria del circuito nacional. Su jinete, Hironobu Tanabe, señaló que el estado de la pista favoreció las opciones del ejemplar, que venía de foguearse en obstáculos.",
+   "texto": "Meisho Gekirin protagonizó una gran sorpresa en el G2 All Comers -una prueba de grupo del circuito principal-, imponiéndose de punta a punta para lograr su primera victoria en carreras con escala de grados.\n\nEl ejemplar arrancó bien y tomó rápidamente el comando, estableciendo un ritmo cómodo en la vanguardia. Resistió la tremenda carga final de [Caballo 2], que partió como sexto favorito y concluyó segundo, mientras que [Caballo 3], tercer favorito, ocupó el tercer puesto. Esto dio lugar a un resultado sorpresivo en el que la combinada de tres aciertos (trifecta) pagó 383.690 yenes.\n\nEl jinete Hironobu Tanabe declaró: \"Tomó la cabeza con facilidad, así que decidí dejarle correr delante. Se le notaba cómodo al encarar la curva final y yo solo esperaba que aguantara el paso. Habíamos hablado con el equipo sobre la posibilidad de que le beneficiara una carrera que no se decidiera por pura velocidad, así que pensé que la lluvia era una bendición. Parece haber mejorado desde que entrena en vallas. Creo que ese trabajo adicional le ha ayudado positivamente a dar un salto de calidad\".\n\nEl ganador había estado compitiendo en pruebas de obstáculos antes de este compromiso y, en una notable gesta, regresó a las carreras lisas tras dos salidas en saltos, logrando su primera victoria de grupo en su tercera participación de vuelta en el turf liso.",
+   "caballos": [
+    "Meisho Gekirin"
+   ]
+  },
+  {
+   "id": "n4201",
+   "titular_en": "Meisho Gekirin and Hironobu Tanabe hold on by a nose to spring upset in G2 All Comers 21 hrs",
+   "fecha_texto": "2026-09-20 13:40",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4201",
+   "medio": "netkeiba",
+   "categoria": "jra",
+   "titular": "Meisho Gekirin y Hironobu Tanabe aguantan por un hocico para dar la sorpresa en el G2 All Comers",
+   "resumen": "Meisho Gekirin se impuso por un hocico en el G2 All Comers tras liderar la prueba desde la salida con Hironobu Tanabe. El ganador, que partía en las apuestas como el noveno favorito, resistió el ataque final de Justin Palth.",
+   "texto": "",
+   "caballos": [
+    "Meisho Gekirin",
+    "Justin Palth",
+    "Voulezvous"
+   ]
+  },
+  {
+   "id": "n4200",
+   "titular_en": "Forever Young cruises to victory in G1 Jockey Club Gold Cup for record fourth overseas G1 win by a Japanese-trained horse 12 hrs",
+   "fecha_texto": "2026-09-18 21:29",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4200",
+   "medio": "netkeiba",
+   "categoria": "internacional",
+   "titular": "Forever Young logra una cómoda victoria en el G1 Jockey Club Gold Cup",
+   "resumen": "Forever Young se impuso con autoridad en el G1 Jockey Club Gold Cup bajo la monta de Ryusei Sakai. Este triunfo supone la cuarta victoria de máximo nivel en el extranjero para un caballo entrenado en Japón, un récord histórico.",
+   "texto": "Forever Young se impuso con facilidad en el G1 Jockey Club Gold Cup -una prueba de máxima categoría internacional-, logrando la cuarta victoria en un G1 fuera de Japón para un caballo entrenado en el país -un récord histórico para la hípica nacional-, bajo la monta del jinete Ryusei Sakai, partiendo como favorito indiscutible en las apuestas. Tras una salida algo complicada, se colocó en segunda posición dentro de un lote compuesto por cuatro participantes. Tomó la primera posición al llegar a la curva final y se distanció del resto para ganar sin oposición. El tiempo empleado en cubrir la distancia fue de 2:01.23.\n\n[Segundo clasificado] (potro de 4 años, criado en EE. UU.) terminó en segunda posición, mientras que el segundo favorito, Baeza (potro de 4 años, criado en EE. UU.), cruzó la meta en tercer lugar.\n\nEsta supone para [Nombre del caballo] la cuarta victoria en un G1 en el extranjero, la cifra más alta registrada por cualquier ejemplar entrenado en Japón. Tras reaparecer con victoria en su primera salida del otoño, el ejemplar adquiere un valioso impulso de cara a defender su corona en el G1 Breeders' Cup Classic -la prestigiosa prueba norteamericana de fin de temporada-.",
+   "caballos": [
+    "Forever Young",
+    "Baeza"
+   ]
+  },
+  {
    "id": "n4199",
    "titular_en": "Rainbow Flight, daughter of Flightline, set to make her debut at Nakayama on Saturday 20 hrs",
    "fecha_texto": "2026-09-18 13:29",
