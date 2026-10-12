@@ -1,6 +1,51 @@
 {
  "noticias": [
   {
+   "id": "n4219",
+   "titular_en": "Tokyo and Kyoto meets begin this week, with G2 Mainichi Okan, Kyoto Daishoten and Prix de l'Arc de Triomphe highlighting the action 18 hrs",
+   "fecha_texto": "2026-09-28 17:21",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4219",
+   "medio": "netkeiba",
+   "categoria": "internacional",
+   "titular": "Comienzan esta semana las reuniones de Tokio y Kioto, destacando el G2 Mainichi Okan, el Kyoto Daishoten y el Prix de l'Arc de Triomphe",
+   "resumen": "Los hipódromos de Tokio y Kioto inauguran sus reuniones esta semana con carreras de Grado. La atención internacional se centra también en el Prix de l'Arc de Triomphe en Francia y en las pruebas del circuito NAR -la asociación de carreras locales que opera al margen de la JRA-.",
+   "texto": "Las reuniones de Tokio y Kioto comienzan esta semana, con dos carreras de grupo -pruebas del circuito principal de galardones- en el calendario.\n\n(Horse, 5yo), and Danon Cima (Colt, 4yo), who has finished third in three consecutive graded stakes races.\n\nwill be held at ParisLongchamp Racecourse in France on Sunday the 4th, with Japan sending\n\n(Horse, 5yo), who finished third in the Tenno Sho (Spring). Domestic betting will also be available.\n\nIn the NAR -el circuito de carreras de ámbito local gestionado por autoridades regionales, independiente de la JRA-, the Jpn 2 Nippon TV Hai will be held at Funabashi Racecourse on Wednesday the 30th, with Teio Sho winner\n\n(Horse, 5yo), who has won that race two years in a row, among those set to compete. On Thursday the 1st, the Jpn 3 Marine Cup will also be held at Funabashi Racecourse, with Tamamo Freesia (3yo filly) among those expected to line up as she targets her second graded stakes victory.",
+   "caballos": [
+    "Danon Cima",
+    "Tamamo Freesia"
+   ]
+  },
+  {
+   "id": "n4216",
+   "titular_en": "\"Puro Magic gave me everything down the stretch,\" says Iwata after leading 9th favourite to first G1 victory in Sprinters Stakes 27 Sep 2026 20:27",
+   "fecha_texto": "2026-09-27 20:27",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4216",
+   "medio": "netkeiba",
+   "categoria": "jockeys",
+   "titular": "«Puro Magic me dio todo en la recta», declara Iwata tras llevar al noveno favorito a su primera victoria de G1 en el Sprinters Stakes",
+   "resumen": "Puro Magic se impuso en el Sprinters Stakes -carrera de máxima categoría del circuito japonés- a pesar de las exigentes condiciones de la pista. El jinete Yasunari Iwata logró así su primer triunfo de G1 en dos años.",
+   "texto": "«Puro Magic me dio todo en la recta», declaró Iwata tras llevar al noveno favorito a su primera victoria de G1 en el Sprinters Stakes -la prueba de velocidad más importante del calendario de la JRA-. A pesar de las exigentes condiciones en una pista ligeramente pesada, que dejó tiempos más lentos, la yegua salió con fuerza para tomar la cabeza y aguantó hasta la meta. El jinete, quinto favorito -en las apuestas de la jornada- con Arma Veloce, señaló en un tono aliviado durante su entrevista: «Me gustaría agradecer al propietario por permitirme montarla en carreras consecutivas. Cuando la monto, no sale especialmente rápida, pero llegó a la cabeza con su aceleración natural. Se acopló mejor que la vez anterior, y en la recta solo esperaba que de algún modo resistiera». La victoria supuso el primer triunfo de G1 de Iwata en dos años. «Había pasado mucho tiempo desde que gané, así que estoy muy contento con la victoria. He recibido una sanción -suspensión por infracción en antena-, así que no podré montar la semana que viene ni la siguiente, pero espero volver y demostrar a todos cuánto he mejorado», afirmó, prometiendo regresar con más fuerza.",
+   "caballos": [
+    "Puro Magic",
+    "Arma Veloce"
+   ]
+  },
+  {
+   "id": "n4215",
+   "titular_en": "Puro Magic holds on to win G1 Sprinters Stakes by a neck for first major title, with World's End second 27 Sep 2026 20:21",
+   "fecha_texto": "2026-09-27 20:21",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4215",
+   "medio": "netkeiba",
+   "categoria": "jra",
+   "titular": "Puro Magic resiste para ganar el G1 Sprinters Stakes por un pescuezo y logra su primer título importante, con World's End segundo",
+   "resumen": "Puro Magic se impuso en el G1 Sprinters Stakes bajo la monta de Mirai Iwata y consiguió su primera victoria de máxima categoría. El segundo puesto fue para World's End en una llegada ajustada.",
+   "texto": "Puro Magic resiste para ganar el G1 Sprinters Stakes -la prueba de velocidad más importante del otoño en Nakayama- por un pescuezo y logra su primer título importante, con World's End segundo\n\n(Mare, 5yo), ridden by jockey Mirai Iwata, who went straight to the lead and held on all the way down the stretch. She finished a neck ahead of 5th favourite\n\n(Horse, 5yo), who prevailed in a close battle for second. The winning time was 1:09.2.\n\nto claim the Summer Sprint Series title. She once again showed her speed to full effect in this major race, earning her first G1 title. The victory also marked trainer Shogo Yasuda's 200th JRA career win -la máxima autoridad hípica del país-.",
+   "caballos": [
+    "Puro Magic",
+    "World's End"
+   ]
+  },
+  {
    "id": "n4218",
    "titular_en": "\"I just trusted Walzer Schall and let him do the rest,\" says Saito after winning G3 Sirius Stakes 26 Sep 2026 20:50",
    "fecha_texto": "2026-09-26 20:50",
