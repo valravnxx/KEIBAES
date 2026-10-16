@@ -1,6 +1,54 @@
 {
  "noticias": [
   {
+   "id": "n4244",
+   "titular_en": "Seiun Hades edges Ho O Biscuits by a nose to win G2 Mainichi Okan and earn G1 Tenno Sho (Autumn) berth 22 hrs",
+   "fecha_texto": "2026-10-04 14:14",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4244",
+   "medio": "netkeiba",
+   "categoria": "jra",
+   "titular": "Seiun Hades se impone por una nariz a Ho O Biscuits en el G2 Mainichi Okan y logra billete para el G1 Tenno Sho (Autumn)",
+   "resumen": "Seiun Hades venció por un estrecho margen en el G2 Mainichi Okan tras una disputada llegada. Con esta victoria, el ejemplar asegura su participación en el G1 Tenno Sho (Autumn).",
+   "texto": "Seiun Hades se impone por una nariz a Ho O Biscuits para ganar el G2 Mainichi Okan y conseguir una plaza para el G1 Tenno Sho (Autumn), el prestigioso 2.000 metros de otoño para caballos sénior.\n\nEl caballo de 7 años, montado por Hideaki Miyuki, avanzó desde una posición adelantada para destacar por poco justo antes de la meta y derrotar al noveno favorito por una nariz, después de que este hubiera liderado gran parte de la carrera. El tiempo ganador fue de 1:45.5.\n\nReadiness (potro de 4 años), el séptimo favorito, terminó tercero, a cuerpo y cuarto. El favorito [falta dato en el original]. En su debut otoñal aquí, se impuso en un final emocionante para lograr su tercera victoria en carreras de grupo (las llamadas *graded stakes* en el sistema japonés), tras sus triunfos en el [falta dato en el original].",
+   "caballos": [
+    "Seiun Hades",
+    "Ho O Biscuits",
+    "Readiness"
+   ]
+  },
+  {
+   "id": "n4243",
+   "titular_en": "\"I'm glad we could finally win,\" says Kanta Taguchi after Ecoro Dinos springs major upset in G2 Kyoto Daishoten 22 hrs",
+   "fecha_texto": "2026-10-04 14:14",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4243",
+   "medio": "netkeiba",
+   "categoria": "jockeys",
+   "titular": "«Me alegro de que por fin hayamos podido ganar», dice Kanta Taguchi tras la gran sorpresa de Ecoro Dinos en el Kyoto Daishoten (Gr. 2)",
+   "resumen": "Ecoro Dinos dio la sorpresa como undécimo favorito al imponerse en el Kyoto Daishoten (Gr. 2). El triunfo supuso la primera victoria en una prueba de grupo de la JRA para el jockey Kanta Taguchi.",
+   "texto": "«Me alegro de que por fin hayamos podido ganar», dice Kanta Taguchi tras la gran sorpresa de Ecoro Dinos en el Kyoto Daishoten (Gr. 2)\n\nEl undécimo favorito Ecoro Dinos firmó un remate brillante tras tomar la cabeza al girar hacia la recta de meta para conseguir su primera victoria en una carrera de grupo en el Kyoto Daishoten (Gr. 2, una prueba fundamental en el otoño nipón). Para el jockey Kanta Taguchi, supuso su ansiado primer triunfo en un grupo de la JRA -la Japan Racing Association, la entidad principal de las carreras en Japón- en su cuarto año como jockey. Ecoro Dinos es hijo de Kizuna, que ganó esta misma carrera hace 10 años, completando así un memorable doblete de padre e hijo. El octavo favorito, Satono Glanz, que buscaba victorias consecutivas, terminó cuarto, mientras que T O Royal, ganador del Tenno Sho (Spring) (Gr. 1, una de las pruebas de máxima categoría), finalizó decimocuarto.\n\nTaguchi, que celebró su primer título en la JRA, inclinó la cabeza y declaró: «En primer lugar, me gustaría agradecer al propietario y al entrenador que me hayan dado la oportunidad de montar a Ecoro Dinos». Y añadió: «Me había costado conseguir una victoria, así que estoy muy contento de que por fin hayamos podido lograrlo. Hiroki Matsumoto, que ha estado compitiendo a mi lado, y Seina Imamura y Yamato Tsunoda, que me felicitaron al volver, me dijeron «Enhorabuena», y supuso un enorme alivio».\n\n«El entrenador me dijo que lo montara sin ideas preconcebidas». Como era una carrera de larga distancia, me centró en mantener un buen ritmo. Estuvo un poco ansioso hasta la primera curva, pero se relajó a partir de la recta de atrás y gestionó bien la bajada, lo que creo que le ayudó a rematar con fuerza. Yo solo le animaba al final, esperando que de algún modo siguiera luchando», recordó Taguchi.\n\nLa victoria otorgó a Ecoro Dinos el acceso prioritario al Tenno Sho (Autumn) de Grado 1 (la prueba estelar de otoño sobre 2.000 metros), que se disputará el 1 de noviembre en el Tokyo Racecourse. Aunque aún no se ha decidido su próximo objetivo, las expectativas son altas para que el caballo de cuatro años dé un nuevo paso al frente. Taguchi le otorgó su total respaldo al señalar: «Tiene una gran capacidad cardiovascular y puede mantener un buen remate durante mucho tiempo, así que creo que es capaz de competir a un alto nivel si logra mostrar sus puntos fuertes». Y añadió con determinación: «Hoy he podido ganar mi primera carrera de Grado (las pruebas de la escala principal japonesa), pero en el futuro quiero seguir ganando más carreras de Grado».",
+   "caballos": [
+    "Ecoro Dinos",
+    "Kizuna",
+    "Satono Glanz",
+    "T O Royal"
+   ]
+  },
+  {
+   "id": "n4242",
+   "titular_en": "Ecoro Dinos springs major upset in G2 Kyoto Daishoten for first graded stakes victory and G1 Tenno Sho (Autumn) berth 22 hrs",
+   "fecha_texto": "2026-10-04 14:14",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4242",
+   "medio": "netkeiba",
+   "categoria": "jra",
+   "titular": "Ecoro Dinos da la sorpresa en el G2 Kyoto Daishoten y logra su primera victoria en stakes de grupo",
+   "resumen": "El undécimo favorito Ecoro Dinos se impuso este 4 de octubre en el G2 Kyoto Daishoten, celebrado en el hipódromo de Kioto. Con esta victoria, el potro de cuatro años consigue su primer triunfo en carreras de grupo -las pruebas que forman la élite del galope japonés- y un pase directo al G1 Tenno Sho (Autumn).",
+   "texto": "Ecoro Dinos da la sorpresa en el G2 Kyoto Daishoten para lograr su primera victoria en stakes de grupo y una plaza para el G1 Tenno Sho (Autumn).\n\nEl G2 Kyoto Daishoten, celebrado en el Kyoto Racecourse el 4 de octubre, fue ganado por el undécimo favorito Ecoro Dinos (potro de 4 años), montado por Kanta Taguchi, que tomó la cabeza desde la segunda posición y resistió para derrotar por tres cuartos de cuerpo al octavo favorito -cuyo nombre no figura en el original-, el cual remató con fuerza desde una posición adelantada. El tiempo ganador fue de 2:24.0.\n\n-Un tercer caballo sin nombre en el texto original- (yegua de 5 años), la segunda favorita, terminó tercera, a un cuello de distancia. El favorito Danon Cima (potro de 4 años) finalizó noveno.\n\nEcoro Dinos afrontaba la prueba tras dos actuaciones discretas en el G3 Niigata Daishoten y el G3 Tanabata Sho. Saliendo esta vez como undécimo favorito, protagonizó un notable giro de guion para conseguir su primera victoria en stakes de grupo -categoría que agrupa a los grandes premios del circuito oficial- y asegurar la prioridad de inscripción para el G1 Tenno Sho (Autumn). La victoria supuso además el primer triunfo de Kanta Taguchi en una carrera de grupo de la JRA -la Asociación Hípica de Japón, organizadora de las principales carreras del país-.",
+   "caballos": [
+    "Ecoro Dinos",
+    "Danon Cima"
+   ]
+  },
+  {
    "id": "n4240",
    "titular_en": "Val Camonica with Christophe Lemaire romps to seven-length victory in Tokyo Newcomers, clocking 1:46.5 for 1,800m 21 hrs",
    "fecha_texto": "2026-10-03 14:06",
@@ -15,6 +63,18 @@
     "Hishi Horizon",
     "Century Sky"
    ]
+  },
+  {
+   "id": "n4241",
+   "titular_en": "Former trainer Sakae Kunieda begins \"Second Chapter\" as stable helper, rejoining former apprentice Takeshi Okumura's yard 21 hrs",
+   "fecha_texto": "2026-10-03 14:06",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4241",
+   "medio": "netkeiba",
+   "categoria": "jra",
+   "titular": "El exentrenador Sakae Kunieda comienza su «segundo capítulo» como mozo de cuadra y se reincorpora a la caballería de su antiguo aprendiz Takeshi Okumura",
+   "resumen": "El exentrenador Sakae Kunieda, de 71 años, retomará sus funciones como mozo de cuadra a partir del 14 de octubre. Kunieda trabajará en la caballería dirigida por Takeshi Okumura, antiguo aprendiz suyo.",
+   "texto": "El «segundo capítulo» de la vida del exentrenador Sakae Kunieda como mozo de cuadra ha comenzado. Kunieda, de 71 años, que concluyó su labor como ayudante de preparación en la cuadra de Shigeyuki Kojima a finales de agosto, retomará sus funciones como mozo en la caballería de Takeshi Okumura a partir del 14 de octubre, según se dio a conocer el 3 de octubre.\n\nEl entrenador Takeshi Okumura trabajó como asistente de preparación en la cuadra de Kunieda a partir de 2003 antes de obtener su licencia de entrenador de la JRA en 2014. Kunieda aceptó sin dudar la petición de su antiguo discípulo, con quien compartió muchos años tanto de éxitos como de dificultades. Okumura explicó cómo se gestó el acuerdo: «Fui yo quien se puso en contacto con él. Uno de los miembros del personal de nuestra cuadra se lesionó y la verdad es que ahora mismo no hay ayudantes disponibles, así que estábamos en una situación en la que no sabíamos cuándo podríamos encontrar a alguien. Kunieda-san acababa de dejar de trabajar como ayudante, así que me sentía un poco mal por pedírselo, pero no encontrábamos a nadie ni tras buscar durante varias semanas. Así que decidí llamarle como último recurso, y él dijo: \"Estoy por aquí sin hacer nada...\" (risas). Fue entonces cuando se dio cuenta de que le estaba preguntando para ser ayudante. Dijo: \"Claro, cuando me necesites, cuando te venga bien\". También tenía algunas cosas de las que ocuparse, así que hicimos varios ajustes y decidimos que empezaría a mediados de este mes. Estoy muy agradecido». Cuando se le preguntó si la cuadra podría atraer repentinamente una gran atención mediática, Okumura sonrió y advirtió en tono de broma a la prensa: «Simplemente no arméis demasiado alboroto».",
+   "caballos": []
   },
   {
    "id": "n4239",
@@ -64,34 +124,33 @@
   },
   {
    "id": "n4235",
-   "titular_en": "Admire Terra ready for G1 Prix de l'Arc de Triomphe, with Tomomichi confident his stamina and speed will suit Longchamp 19 hrs",
-   "fecha_texto": "2026-10-01 16:05",
+   "titular_en": "Admire Terra ready for G1 Prix de l'Arc de Triomphe, with Tomomichi confident his stamina and speed will suit Longchamp 02 Oct 2026 00:52 International",
+   "fecha_texto": "2026-10-02 00:52",
    "url": "https://en.netkeiba.com/news/news_detail.html?id=4235",
    "medio": "netkeiba",
    "categoria": "internacional",
    "titular": "Admire Terra listo para el G1 Prix de l'Arc de Triomphe, con Tomomichi confiado en que su fondo y velocidad se adaptarán a Longchamp",
-   "resumen": "El preparador Yasuo Tomomichi confía en las opciones de Admire Terra para el prestigioso G1 Prix de l'Arc de Triomphe en Longchamp. El jockey Christophe Soumillon pilotará al ejemplar japonés tras galopar con él en Chantilly de cara a la cita sobre 2.400 metros.",
-   "texto": "Admire Terra se encuentra preparado para afrontar el G1 Prix de l'Arc de Triomphe -la carrera de máxima categoría sobre 2.400 metros que se disputa en el hipódromo francés de ParisLongchamp-, tras ejercitarse este 30 de septiembre en las instalaciones de entrenamiento de Chantilly de cara a la prueba que se celebrará el 4 de octubre.\n\nEl preparador Yasuo Tomomichi busca su primera victoria en la prestigiosa prueba francesa, tras haber participado anteriormente con Wagnerian en 2019 y Deep Bond en 2022. \"Basándonos en nuestra experiencia de los dos intentos anteriores, quería traer un caballo que se adaptara a la pista francesa. Sus puntos fuertes son su fondo y su capacidad para mantener un remate fuerte en largas distancias. Creo que esas características se adaptarán a Longchamp\", declaró para explicar su decisión de afrontar la carrera.\n\nSe pronostica buen terreno para el día de la carrera, pero Tomomichi expresó confianza en la capacidad de adaptación del animal al señalar: \"Es diferente al terreno firme de Japón. Viendo el G1 Kikuka Sho -el St. Leger japonés-, demostró que puede correr bien incluso con algo de humedad\".\n\nChristophe Soumillon, quien también le montó en un entrenamiento en Francia, transmitió una impresión positiva. El jockey, vencedor del G1 Prix de l'Arc de Triomphe en 2020 y 2023, afirmó: \"Se movió bien y se adaptó perfectamente a la pista. Tiene una forma de galopar muy equilibrada y creo que está en su mejor momento de forma\", mostrando su confianza tanto en el estado del caballo como en su adaptación al terreno. Añadió con determinación: \"Gané mi primer G1 en Japón, así que quiero devolver algo a la hípica japonesa. Si podemos ganar, creo que sería un momento mágico\".",
+   "resumen": "Admire Terra se encuentra preparado en Chantilly para disputar el G1 Prix de l'Arc de Triomphe sobre 2.400 metros. Su entrenador, Yasutoshi Tomomichi, y el jockey Yuga Kawada confían en que las cualidades del caballo se adapten al trazado francés de ParisLongchamp.",
+   "texto": "Admire Terra se encuentra preparado para disputar el G1 Prix de l'Arc de Triomphe -la máxima prueba de galope en Francia-, que se celebrará el 4 de octubre en ParisLongchamp sobre una distancia de 2.400 metros en hierba, tras ejercitarse el 30 de septiembre en las instalaciones de entrenamiento de Chantilly.\n\nEl entrenador Yasutoshi Tomomichi busca su primera victoria en esta prueba tras haber presentado anteriormente a Makahiki en 2016 y a Al Ain en 2019. \"Basándome en nuestra experiencia de los dos intentos anteriores, quería traer un caballo que se adaptara a la pista francesa. Sus fortalezas son su fondo y su capacidad para mantener un remate fuerte en larga distancia. Pienso que esas características se adaptarán a Longchamp\", declaró al explicar su decisión de afrontar la carrera.\n\nSe pronostica terreno bueno para el día de la carrera, pero Tomomichi expresó confianza en la capacidad de adaptación del caballo al señalar: \"Es diferente al terreno bueno en Japón. Al observar el G1 Kikuka Sho -el St. Leger japonés-, vi que podía correr bien incluso cuando el suelo estaba algo blando, así que creo que se adaptará\".\n\nYuga Kawada, que también lo montó en un entrenamiento en Francia, dejó una impresión positiva. El jinete, que ganó el Prix de l'Opéra en 2020 y 2023, afirmó: \"Se movió bien y se adaptó perfectamente a la pista. Tiene una forma de galopar muy equilibrada y creo que está en su mejor momento de forma\", expresando confianza tanto en el estado del caballo como en su adaptación al terreno. Añadió con determinación: \"Gané mi primer G1 en Japón, así que quiero devolverle algo a la hípica japonesa. Si podemos ganar, creo que sería un momento mágico\".",
    "caballos": [
     "Admire Terra",
-    "Wagnerian",
-    "Deep Bond"
+    "Makahiki",
+    "Al Ain"
    ]
   },
   {
    "id": "n4233",
-   "titular_en": "Ten years later, the story comes full circle as Yasuo Tomomichi takes Admire Terra to G1 Prix de l'Arc de Triomphe 19 hrs",
-   "fecha_texto": "2026-10-01 16:05",
+   "titular_en": "Ten years later, the story comes full circle as Yasuo Tomomichi takes Admire Terra to G1 Prix de l'Arc de Triomphe 02 Oct 2026 00:40 International",
+   "fecha_texto": "2026-10-02 00:40",
    "url": "https://en.netkeiba.com/news/news_detail.html?id=4233",
    "medio": "netkeiba",
    "categoria": "internacional",
    "titular": "Diez años después, la historia cierra el círculo con Yasuo Tomomichi llevando a Admire Terra al G1 Prix de l'Arc de Triomphe",
-   "resumen": "Diez años después de su anterior intento, el entrenador Yasuo Tomomichi regresa al G1 Prix de l'Arc de Triomphe con Admire Terra. En esta ocasión, el preparador confía en las aptitudes específicas del caballo para la prueba y contará con el jockey Christian Demuro.",
-   "texto": "The story comes full circle after 10 years. In 2016, while on his way to Haneda Airport to travel to France for the G1 Prix de l'Arc de Triomphe, trainer Yasuo Tomomichi watched a race from the airport lounge. The winner on the screen was Admire Daytona. \"Before the plane departed, I called Chairman Riichi Kondo, who has since passed away, and he told me, 'Do your best in the Prix de l'Arc de Triomphe as well,'\" Tomomichi recalled nostalgically. This year, he is taking on the challenge with Admire Terra.\n\nBased on his two previous experiences, Tomomichi describes the race as \"almost a different sport, because the times and the track conditions are completely different.\" He selected Admire Terra not based on raw ability alone, noting, \"Last time with Makahiki, I took the strongest horse, but this time I'm taking the horse I think is best suited to the race.\"\n\nSome might question the decision after his defeat in the Kobe Shimbun Hai -una de las pruebas preparatorias clásicas-, but Tomomichi said firmly, \"The pace didn't suit him in his first start over 2,000 meters in a while.\" He added, \"The heavy going and the distance suit him, and I also like the fact that stamina is required. We also have the most reassuring jockey possible in France, so I really want to achieve a good result.\" With accomplished rider Christian Demuro, who has won two races at the meeting over the past 10 years, taking the mount, hopes are high.\n\nThe late Riichi Kondo was also active as an owner in France, but this will be the first time a member of the Admire family has challenged the Prix de l'Arc de Triomphe.\n\n, que dio a Tomomichi su primer título de G1 en el Tenno Sho (Spring, el Gran Premio de Primavera) de 2008, a Francia para su siguiente salida se contempló en su día, pero la idea se descartó después de que el caballo sufriera una contusión en el casco. «El propietario, que también corrió caballos allí, quería asumir el reto. En ese sentido, tiene aún más significado ir allí con un hijo de [Nombre del caballo]», señaló Tomomichi con un gesto afirmativo. Intentará devolver la muestra de gratitud al benefactor que confió en él desde los primeros días de su carrera como preparador en el mayor escenario de todos.\n\nEn su 25º año como preparador, Tomomichi ha consolidado una prestigiosa cuadra en el Ritto Training Center con 25 títulos de G1, incluidas dos victorias en el extranjero. Lidera a todos los entrenadores en activo con tres victorias en el [Nombre de la carrera] y se ha establecido como una de las figuras principales en las carreras de media distancia en hierba. El Prix de l'[Nombre de la carrera] sigue siendo un desafío formidable para los caballos entrenados en Japón, cuyos intentos se remontan a Speed Symboli en 1969 y no han logrado superar un segundo puesto. «Ha sido tan difícil de ganar que siento el peso de la carrera aún más. Es una prueba muy complicada, pero también queremos ser los primeros en ganarla», afirmó el veterano preparador con evidente determinación. En su tercer intento, volverá a darlo todo ante el reto, cargando con las expectativas de los aficionados, las aspiraciones de larga data del propietario y su propia resolución.",
+   "resumen": "El entrenador Yasuo Tomomichi regresa al G1 Prix de l'Arc de Triomphe con Admire Terra una década después de su anterior intento. Confía en las aptitudes del caballo para el terreno pesado y en la experiencia del jockey Christian Demuro.",
+   "texto": "Diez años después, la historia cierra el círculo tras una década. En 2016, de camino al aeropuerto de Haneda para viajar a Francia para el G1 Prix de l'Arc de Triomphe -el prestigioso campeonato europeo sobre 2.400 metros-, el entrenador Yasuo Tomomichi vio una carrera desde la sala del aeropuerto. El ganador en la pantalla fue Satono Diamond -uno de los mejores potros de su generación en Japón-. \"Antes de que despegara el avión, llamé al presidente Riichi Kondo, que ya ha fallecido, y me dijo: 'Haz tu mejor esfuerzo también en el Prix de l'Arc de Triomphe'\", recordó Tomomichi con nostalgia. Este año, afronta el reto con Admire Terra.\n\nBasándose en sus dos experiencias anteriores, Tomomichi describe la carrera como \"casi un deporte diferente, porque los tiempos y el estado de la pista son completamente diferentes\". Seleccionó a Admire Terra con una estrategia distinta a la de 2016 con Satono Diamond. \"En aquel entonces, llevé al caballo más fuerte, pero esta vez llevo al caballo que creo que se adapta mejor a la carrera\".\n\nAlgunos cuestionan el rendimiento reciente de Admire Terra, pero Tomomichi afirmó con firmeza: \"El ritmo no le convenía en su primera salida sobre 2.000 metros en mucho tiempo\". Añadió: \"El terreno pesado y la distancia le van bien, y también me gusta el hecho de que se requiera resistencia. Además, tenemos al jockey más tranquilizador posible en Francia, así que tengo muchas ganas de lograr un buen resultado\". Con el experimentado jinete Christian Demuro, que ha ganado dos carreras en la reunión -el fin de semana del Arco- en los últimos 10 años, a los lomos, las expectativas son altas.\n\nEl difunto Riichi Kondo también estuvo activo como propietario en Francia, pero esta será la primera vez que un miembro de la familia Admire participe en el G1 Prix de l'Arc de Triomphe.\n\n, que dio a Tomomichi su primer título de G1 en el Tenno Sho (Spring, el 31.º Tenno Sho de primavera), a Francia para su siguiente salida se barajó en su día, pero la idea se desestimó después de que el caballo sufriera una contusión en el casco. «El propietario, que también corrió caballos allí, quería asumir el reto. En ese sentido, tiene aún más significado ir allí con el hijo de Admire Moon», señaló Tomomichi con un gesto afirmativo. Buscará devolver la deuda de gratitud al mecenas que depositó su confianza en él desde los primeros días de su carrera como entrenador en el mayor escenario de todos.\n\nEn su 25.º año como entrenador, Tomomichi ha consolidado una prestigiosa cuadra en el Ritto Training Center con 25 títulos de G1, incluidas dos victorias en el extranjero. Encabeza a todos los entrenadores en activo con tres triunfos en el Tokyo Yushun (el Derby japonés) y se ha establecido como una de las figuras principales en las carreras de media distancia en hierba. El Prix de l'Arc de Triomphe ha sido un desafío formidable para los caballos entrenados en Japón, cuyos intentos se remontan a Speed Symboli en 1969 sin lograr superar un segundo puesto. «Ha sido tan difícil de ganar que siento el peso de la carrera aún más. Es una prueba muy difícil, pero también queremos ser los primeros en ganarla», declaró el veterano preparador con evidente determinación. En su tercer intento, volverá a darlo todo ante el reto, cargando con las expectativas de los aficionados, las aspiraciones de larga data del propietario y su propia determinación.",
    "caballos": [
     "Admire Terra",
-    "Admire Daytona",
-    "Makahiki"
+    "Satono Diamond"
    ]
   },
   {
