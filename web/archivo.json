@@ -1,6 +1,69 @@
 {
  "noticias": [
   {
+   "id": "n4265",
+   "titular_en": "Off Trail shows further improvement ahead of G2 Swan Stakes as he targets second straight victory 17 hrs",
+   "fecha_texto": "2026-10-09 18:09",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4265",
+   "medio": "netkeiba",
+   "categoria": "jra",
+   "titular": "Off Trail muestra una nueva mejoría antes del G2 Swan Stakes en busca de su segunda victoria consecutiva",
+   "resumen": "Off Trail ha completado su preparación en el Ritto Training Center para defender su corona en el G2 Swan Stakes -una prueba preparatoria de la JRA para la milla y el sprint-. El caballo busca su segundo triunfo consecutivo tras mostrar su madurez y nivel competitivo en la élite durante el verano.",
+   "texto": "",
+   "caballos": [
+    "Off Trail"
+   ]
+  },
+  {
+   "id": "n4264",
+   "titular_en": "Nishino Ti Amo looks to reverse recent fortunes in G2 Ireland Trophy ahead of G1 Queen Elizabeth II Cup 17 hrs",
+   "fecha_texto": "2026-10-09 18:09",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4264",
+   "medio": "netkeiba",
+   "categoria": "jra",
+   "titular": "Nishino Ti Amo busca revertir su dinámica reciente en el G2 Ireland Trophy antes del G1 Queen Elizabeth II Cup",
+   "resumen": "Nishino Ti Amo competirá en el G2 Ireland Trophy con el objetivo de recuperar su mejor versión tras resultados discretos recientes. La yegua completó un entrenamiento satisfactorio en el Miho Training Center de cara a sus próximos compromisos de máximo nivel.",
+   "texto": "",
+   "caballos": [
+    "Nishino Ti Amo"
+   ]
+  },
+  {
+   "id": "n4263",
+   "titular_en": "Cutie Bond, well-bred half-sister to Danon Beluga and Bond Girl, set for highly anticipated debut at Kyoto 17 hrs",
+   "fecha_texto": "2026-10-09 18:09",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4263",
+   "medio": "netkeiba",
+   "categoria": "cria",
+   "titular": "Cutie Bond, hermana de gran origen de Danon Beluga y Bond Girl, preparada para su muy esperada debut en Kyoto",
+   "resumen": "La potranca de dos años Cutie Bond debutará este sábado en una prueba de 1,600 metros en hierba en el hipódromo de Kyoto. El entrenador Yuichi Fukunaga se ha mostrado satisfecho con sus últimas series de entrenamiento en el centro de Ritto.",
+   "texto": "Cutie Bond, una prometedora potranca de impresionante árbol genealógico, se dispone a debutar. Cutie Bond, una potranca de dos años hija de Epine A Et, realizará su primera salida en la quinta carrera del sábado en el Kyoto Racecourse -el hipódromo de Kyoto-, un concurso sobre 1,600 metros en hierba. En su entrenamiento de hace una semana, con el entrenador Yuichi Fukunaga a lomos, terminó por delante en un galope de tres caballos en la pista de fibra del Ritto Training Center -el centro de entrenamiento de Ritto-. Esta semana, terminó a la par con su compañero de trabajo por iniciativa propia, marcando 6 furlongs en 87.6 segundos, con los tres últimos furlongs en 36.5 y un incisivo último furlong en 11.2. Fukunaga se mostró satisfecho con su esfuerzo, declarando: \"El tiempo total no fue especialmente rápido, pero mostró un buen cambio de ritmo al final. Le doy un aprobado. Se mueve bien y tiene una buena acción adecuada para la hierba\".\n\nElla es hermana por parte de madre de Danon Beluga, que terminó segundo en el G1 Dubai Turf de 2023 -una de las carreras de máximo nivel del calendario internacional de Grupo 1- y compitió cerca de la élite en pruebas de G1, así como de Bond Girl. \"Tiene un temperamental tranquilo y es fácil de montar. Sale razonablemente bien también. Pienso que puede mostrar de lo que es capaz desde su misma primera salida\", dijo Fukunaga, haciendo de este un debut digno de atención.",
+   "caballos": [
+    "Cutie Bond",
+    "Danon Beluga",
+    "Bond Girl",
+    "Epine A Et"
+   ]
+  },
+  {
+   "id": "n4261",
+   "titular_en": "Silver Ratio avenges Tokyo Derby defeat with brilliant victory in Jpn1 Japan Dirt Classic, securing second graded stakes title 08 Oct 2026 23:22",
+   "fecha_texto": "2026-10-08 23:22",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4261",
+   "medio": "netkeiba",
+   "categoria": "nar",
+   "titular": "Silver Ratio se venga de la derrota en el Tokyo Derby con una brillante victoria en el Jpn1 Japan Dirt Classic",
+   "resumen": "Silver Ratio se impuso con claridad en el Jpn1 Japan Dirt Classic para vengar su anterior derrota en el Tokyo Derby. La victoria le otorga el último título de la Triple Corona de la arena para potros de tres años -la serie nacional de carreras de tierra batida-, además de una plaza preferente para el Jpn1 JBC Classic.",
+   "texto": "",
+   "caballos": [
+    "Silver Ratio",
+    "Wonder Dean",
+    "Coeli Vento",
+    "Finger",
+    "Itterasshai"
+   ]
+  },
+  {
    "id": "n4260",
    "titular_en": "Win Marvel returns to action in G2 Swan Stakes after one-year absence, trainer Fukayama says, \"We're ready\" 21 hrs",
    "fecha_texto": "2026-10-08 14:52",
