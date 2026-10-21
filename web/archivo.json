@@ -1,6 +1,21 @@
 {
  "noticias": [
   {
+   "id": "n4267",
+   "titular_en": "Agordino produces powerful late charge to win G3 Saudi Arabia Royal Cup by a neck for first graded stakes victory 10 Oct 2026 17:05",
+   "fecha_texto": "2026-10-10 17:05",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4267",
+   "medio": "netkeiba",
+   "categoria": "jra",
+   "titular": "Agordino produce un potente ataque final para ganar el G3 Saudi Arabia Royal Cup por un cuello y logra su primera victoria en carreras de grupo",
+   "resumen": "El potro de dos años Agordino se impuso este 10 de octubre en el Tokyo Racecourse en el G3 Saudi Arabia Royal Cup -una prueba de grupo para juveniles-. Con esta victoria, el hijo de un semental que logra su primer triunfo de grupo en la JRA consigue su primer éxito en el circuito selectivo.",
+   "texto": "",
+   "caballos": [
+    "Agordino",
+    "Satono Hakumai"
+   ]
+  },
+  {
    "id": "n4265",
    "titular_en": "Off Trail shows further improvement ahead of G2 Swan Stakes as he targets second straight victory 17 hrs",
    "fecha_texto": "2026-10-09 18:09",
@@ -47,14 +62,14 @@
   },
   {
    "id": "n4261",
-   "titular_en": "Silver Ratio avenges Tokyo Derby defeat with brilliant victory in Jpn1 Japan Dirt Classic, securing second graded stakes title 08 Oct 2026 23:22",
+   "titular_en": "Silver Ratio avenges Tokyo Derby defeat with brilliant victory in Jpn1 Japan Dirt Classic, securing second graded stakes title 08 Oct 2026 23:22 NAR",
    "fecha_texto": "2026-10-08 23:22",
    "url": "https://en.netkeiba.com/news/news_detail.html?id=4261",
    "medio": "netkeiba",
    "categoria": "nar",
-   "titular": "Silver Ratio se venga de la derrota en el Tokyo Derby con una brillante victoria en el Jpn1 Japan Dirt Classic",
-   "resumen": "Silver Ratio se impuso con claridad en el Jpn1 Japan Dirt Classic para vengar su anterior derrota en el Tokyo Derby. La victoria le otorga el último título de la Triple Corona de la arena para potros de tres años -la serie nacional de carreras de tierra batida-, además de una plaza preferente para el Jpn1 JBC Classic.",
-   "texto": "",
+   "titular": "Silver Ratio se venga de la derrota en el Tokyo Derby con una brillante victoria en el Jpn1 Japan Dirt Classic y logra su segundo título de grado",
+   "resumen": "Silver Ratio se impuso con claridad en el Jpn1 Japan Dirt Classic para vengar su segundo puesto en el Tokyo Derby. La victoria le otorga la última corona de la Triple Corona de la arena para potros de tres años -el circuito de tres pruebas principales para la generación en superficies de arena- y el pase preferente para el Jpn1 JBC Classic.",
+   "texto": "Silver Ratio avenges Tokyo Derby defeat with brilliant victory in Jpn1 Japan Dirt Classic, securing second graded stakes title\n\nA stunning reversal was seen in the Jpn1 Japan Dirt Classic. Second favourite Silver Ratio surged clear from the outside in the stretch to avenge his runner-up finish in the Tokyo Derby -la prueba clave del circuito de Oi-. The victory marked his second graded stakes win and secured the final crown of the three-year-old Dirt Triple Crown -el circuito de tres carreras máximas para potros en la arena-, as well as priority entry to the 26th Jpn1 JBC Classic (Nov. 3, NAR Kanazawa Racecourse). Third favourite Wonder Dean finished second, while sixth favourite Coeli Vento was third, with JRA runners -ejemplos entrenados bajo el paraguas de la Japan Racing Association- sweeping the top three positions. Fifth favourite Finger, who was bidding to claim the Triple Crown, finished out of the placings.\n\nA breathtaking turn of foot saw an explosion down the stretch at Oi Racecourse. As if mocking his rivals battling for the lead, Silver Ratio swept past them all in one devastating burst, finally putting his disappointment from the Tokyo Derby behind him.\n\nThe battle for the lead unfolded as expected. Finger broke sharply from the gate, with Itterasshai coming from the outside to challenge, and the two quickly opened up a gap on the field from the early stages. Silver Ratio settled comfortably off the pace before launching his decisive move.\n\no, por su parte, se colocó con paciencia antepenúltimo por el exterior para reservar energía. Se acercó a los líderes al aproximarse a la cuarta curva antes de lanzar su ataque por el exterior en la recta hacia Wonder Dean, que había tomado el cabeza. Superó a ese rival sin esfuerzo justo después de los últimos 100 metros y fue aflojado por el jockey Takeshi\n\nyama. \"Estaba muy feliz por recibir la monta y, dado que se me había confiado un papel tan importante, estaba decidido a conseguir el resultado cueste lo que cueste\", declaró entusiasmado. También montó al potro en su entrenamiento final para establecer una conexión. \"Sentí que no sería bueno apresurarle pronto y también me habían hablado de sus manías desde Iwata, así que me aseguré de mantener su ritmo\". A pesar de verse arrastrado por el ritmo rápido, su plan funcionó a la perfección. \"Su respuesta alrededor de la tercera y cuarta curva fue buena, así que sentí que los alcanzaría\", afirmó con satisfacción.\n\no completó un doblete de padre e hijo en la prueba, anteriormente conocida como el Japan Dirt Derby (el Derby de la Arena de Japón), después de que su semental\n\nla ganara en 2018. Para el entrenador Kenji Nonaka, supuso su primera visita al podio desde 2014, cuando\n\nn. \"Todo el personal trabajó increíblemente duro, utilizando la decepción de no haber podido ganar el Tokyo Derby como motivación. Estoy muy feliz de haber podido lograr el resultado\", señaló visiblemente emocionado.\n\nEl próximo objetivo del potro aún no se ha decidido, pero Nonaka ya mira al futuro. «Nuestras opciones se han ampliado y queremos ir carrera a carrera sin dejar de aspirar a lo más alto». En una generación de tres años llena de talento, este caballo de fuerte final ofreció una actuación decisiva en la última gran prueba de la temporada.",
    "caballos": [
     "Silver Ratio",
     "Wonder Dean",
