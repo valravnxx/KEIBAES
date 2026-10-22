@@ -1,6 +1,52 @@
 {
  "noticias": [
   {
+   "id": "n4271",
+   "titular_en": "Diamond Knot edges Suzu Khalom by a nose to win G2 Swan Stakes and secure G1 Mile Championship berth 13 Oct 2026 02:11",
+   "fecha_texto": "2026-10-13 02:11",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4271",
+   "medio": "netkeiba",
+   "categoria": "jra",
+   "titular": "Diamond Knot se impone a Suzu Khalom por una nariz en el G2 Swan Stakes y asegura una plaza para el G1 Mile Championship",
+   "resumen": "El potro de tres años Diamond Knot ganó por una nariz el G2 Swan Stakes en el Kyoto Racecourse bajo la monta de Takeshi Yokoyama. Con esta victoria, el ejemplar obtuvo el acceso prioritario al G1 Mile Championship -la gran prueba de la milla de otoño-.",
+   "texto": "El G2 Swan Stakes -prueba preparatoria de la categoría Grado 2- se disputó en el Kyoto Racecourse el día 12, con el segundo favorito Diamond Knot (potro de 3 años), montado por el jockey Takeshi Yokoyama, tomándose la cabeza tras encontrar hueco por el interior en la recta. Contuvo una furiosa carga final del octavo favorito Suzu Khalom (caballo de 6 años), que había corrido penúltimo, para vencer por una nariz. El tiempo ganador fue de 1:19.2.\n\nDiamond Knot venía de ceder sobre 1.200 metros, pero se recuperó de forma sobresaliente sobre 1.400 metros, distancia en la que ya sumaba dos victorias en carreras de Grado -pruebas del circuito selectivo-. Con este triunfo, Diamond Knot aseguró además la entrada prioritaria al G1 Mile Championship -la gran prueba de la milla de otoño-.",
+   "caballos": [
+    "Diamond Knot",
+    "Suzu Khalom"
+   ]
+  },
+  {
+   "id": "n4270",
+   "titular_en": "\"I'm just glad she could win,\" says Yuga Kawada after Japanese Oaks winner Kamunyak claims G2 Ireland Trophy 11 Oct 2026 19:31",
+   "fecha_texto": "2026-10-11 19:31",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4270",
+   "medio": "netkeiba",
+   "categoria": "jockeys",
+   "titular": "\"Me alegro de que haya podido ganar\", dice Yuga Kawada tras la victoria de la ganadora del Yushun Himba (Japanese Oaks) Kamunyak en el Ireland Trophy (G2)",
+   "resumen": "La yegua Kamunyak se impuso en el Ireland Trophy de G2 tras superar a Jocelyn en los metros finales. El jinete Yuga Kawada sumó así su sexta victoria de grado en la JRA del año.",
+   "texto": "",
+   "caballos": [
+    "Kamunyak",
+    "Jocelyn",
+    "Diamond Knot"
+   ]
+  },
+  {
+   "id": "n4269",
+   "titular_en": "Kamunyak returns to winning form in G2 Ireland Trophy to secure G1 Queen Elizabeth II Cup berth 11 Oct 2026 19:17",
+   "fecha_texto": "2026-10-11 19:17",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4269",
+   "medio": "netkeiba",
+   "categoria": "jra",
+   "titular": "Kamunyak recupera la senda de la victoria en el G2 Ireland Trophy y asegura su plaza para el G1 Queen Elizabeth II Cup",
+   "resumen": "Kamunyak se impuso en el G2 Ireland Trophy en el Tokyo Racecourse bajo la monta de Yuga Kawada. Con este triunfo, la yegua de cuatro años obtuvo el pase prioritario para el G1 Queen Elizabeth II Cup, una de las pruebas reinas del calendario otoñal.",
+   "texto": "Kamunyak returns to winning form in G2 Ireland Trophy to secure G1 Queen Elizabeth II Cup berth\n\nThe second running of the G2 Ireland Trophy -segunda edición de esta prueba de escala Grado 2- was held at Tokyo Racecourse on the 11th, with favourite Kamunyak (Filly, 4yo), ridden by jockey Yuga Kawada, coming from mid-pack to sweep past her rivals from the outside in the stretch. She defeated fourth favourite Jocelyn (Filly, 4yo), who had briefly taken the lead, by half a length. The winning time was 1:44.4.\n\nPing up in distance this time, she demonstrated the class of a G1 winner -categoría máxima del sistema gradual-. With this victory, Kamunyak secured priority entry to the G1 Queen Elizabeth II Cup -el trascendental 2200 metros para yeguas de 3 años en adelante-.",
+   "caballos": [
+    "Kamunyak",
+    "Jocelyn"
+   ]
+  },
+  {
    "id": "n4267",
    "titular_en": "Agordino produces powerful late charge to win G3 Saudi Arabia Royal Cup by a neck for first graded stakes victory 10 Oct 2026 17:05",
    "fecha_texto": "2026-10-10 17:05",
