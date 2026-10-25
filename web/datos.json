@@ -1,6 +1,6 @@
 {
  "version": 2,
- "actualizado": "2026-10-24T09:33:19+00:00",
+ "actualizado": "2026-10-25T09:49:56+00:00",
  "noticias": [
   {
    "id": "n4289",
@@ -354,6 +354,36 @@
    ]
   },
   {
+   "id": "n4327",
+   "titular_en": "Deep Monster completes what is effectively his final workout 24 Oct 2026 17:20",
+   "fecha_texto": "2026-10-24 17:20",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4327",
+   "medio": "netkeiba",
+   "categoria": "internacional",
+   "titular": "Deep Monster completa su entrenamiento final de cara al Breeders' Cup",
+   "resumen": "Los caballos japoneses inscritos en las carreras de G1 del Breeders' Cup saltaron a la pista para ejercitarse en Keeneland. Deep Monster completó su última sesión importante con buenas sensaciones de cara a la cita estadounidense.",
+   "texto": "El día 24, hora local, los caballos japoneses preparados para competir en las carreras de G1 del Breeders' Cup —el festival internacional de carreras que se celebra en Estados Unidos— (31 de octubre, Keeneland, EE. UU.) saltaron a la pista para entrenarse.\n\n(5yo, Horse), que aspira a convertirse en el segundo caballo de la historia en ganar el Breeders' Cup Classic de forma consecutiva; American Stage (4yo, Horse); Ask Ikigomi (3yo, Colt);\n\n(8yo, Horse), que tiene programado correr en el Breeders' Cup Turf. Completó el que fue efectivamente su último entrenamiento importante, realizando un esfuerzo intenso.\n\n\"Me gustó cómo se sintió. No pareció tirar demasiado durante el entrenamiento, su trancada fue fluida y amplia, y respondió bien al final. Creo que corrió muy bien. Su respiración era buena y se recuperó bien tras el entrenamiento, por lo que no parece mostrar signos de fatiga. Pienso que está en buena forma\".\n\n\"La sesión de hoy estaba planeada como su entrenamiento más exigente. Durante la semana de la carrera, probablemente le daremos un entrenamiento suave en la pista de hierba\".",
+   "caballos": [
+    "Deep Monster",
+    "American Stage",
+    "Ask Ikigomi"
+   ]
+  },
+  {
+   "id": "n4322",
+   "titular_en": "Costa Nova retires after back-to-back G1 February Stakes victories and will begin stud career 24 Oct 2026 00:36",
+   "fecha_texto": "2026-10-24 00:36",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4322",
+   "medio": "netkeiba",
+   "categoria": "cria",
+   "titular": "Costa Nova se retira tras sus victorias consecutivas en las February Stakes de G1 y comenzará su carrera como semental",
+   "resumen": "Costa Nova, ganador de las February Stakes de G1 en 2025 y 2026, ha sido retirado de la competición tras sufrir una fractura en mayo. El caballo iniciará su etapa como semental en Shadai Group tras acumular ocho victorias en 15 carreras.",
+   "texto": "Costa Nova, vencedor en 2025 y 2026 de las February Stakes de G1 -el prestigioso G1 sobre arena del circuito de la JRA-, ha sido retirado de la competición y entrará en la seguera, según anunció el 22 el grupo de propietarios Shadai Group.\n\nEl caballo finalizó cuarto en el Kashiwa Kinen en mayo, y tras la carrera se le descubrió una fractura en la extremidad anterior izquierda. Actualmente continúa con ejercicio en cinta de correr en Northern Farm Kuko, en Hokkaido, pero se espera que lleve más tiempo poder avanzar hacia un entrenamiento más intenso. Tras determinar que sería difícil devolverle al nivel requerido para competir al máximo en busca de una tercera victoria consecutiva el próximo año, se tomó la decisión de retirarle tras mantener conversaciones con el entrenador Tetsuya Kimura y los veterinarios.\n\nEn 2025 se impuso formando pareja por primera vez con Rachel King. Este año, con Christophe Lemaire a los mandos, protagonizó un potente final para asegurar la victoria y convertirse en el tercer caballo de la historia en ganar la prueba en años consecutivos. Se retira con un historial de ocho victorias en 15 salidas a pista, incluyendo tres triunfos en carreras de Grado.",
+   "caballos": [
+    "Costa Nova"
+   ]
+  },
+  {
    "id": "n4326",
    "titular_en": "Katsu Matsuwaka, veteran farrier behind Lovcen, shares insights into the Triple Crown contender's remarkable hooves 17 hrs",
    "fecha_texto": "2026-10-23 16:30",
@@ -414,6 +444,20 @@
    ]
   },
   {
+   "id": "n4320",
+   "titular_en": "Lovcen peaks ahead of G1 Kikuka Sho and historic Triple Crown 23 Oct 2026 02:51",
+   "fecha_texto": "2026-10-23 02:51",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4320",
+   "medio": "netkeiba",
+   "categoria": "jra",
+   "titular": "Lovcen se perfila ante el G1 Kikuka Sho y la histórica Triple Corona",
+   "resumen": "Lovcen busca convertirse en el noveno potro de la historia en completar la Triple Corona japonesa -el ciclo de tres G1 para potros de tres años-. El ejemplar completó un entrenamiento en el Ritto Training Center mostrando un estado óptimo de forma.",
+   "texto": "",
+   "caballos": [
+    "Lovcen"
+   ]
+  },
+  {
    "id": "n4321",
    "titular_en": "Lovcen impresses in final trackwork as Double Crown winner eyes historic Triple Crown in G1 Kikuka Sho 15 hrs",
    "fecha_texto": "2026-10-22 19:01",
@@ -471,6 +515,35 @@
    "texto": "Congestus muestra una forma mejorada de cara al G1 Kikuka Sho -el St. Leger japonés-, \"Está en una condición diferente a su anterior salida\"\n\nEl 21, trabajó en la pista de pendiente del Ritto Training Center, completando dos ascensiones a la colina según la rutina habitual del entrenador Tomokazu Takano.\n\nMarcó 54.3-39.2-12.2 en los cuatro furlongs, ascendiendo con zancadas potentes a pesar de ir por su propio impulso. Takano se mostró satisfecho con el entrenamiento y declaró: \"Se movió extremadamente bien. Sinceramente, creo que está en una condición diferente a su anterior salida\", insinuando una posible recuperación.\n\nCongestus mostró una zancada potente a la vez que se mantuvo relajado durante el entrenamiento. Su entrenador también señaló su idoneidad para una prueba de mayor distancia, al afirmar: \"No es un caballo que se altere y tiene la capacidad de correr una carrera usando solo la energía que necesita. No me preocupa la mayor distancia\". En primavera, la pérdida de peso corporal de una carrera a otra había sido un motivo de preocupación, pero Takano señaló que eso no ha sido un problema durante la actual preparación. \"No ha estado perdiendo peso hasta ahora, así que tal vez su constitución se haya vuelto más fuerte\". El dotado potro ha progresado notablemente y buscará brillar una vez más en Kyoto.",
    "caballos": [
     "Congestus"
+   ]
+  },
+  {
+   "id": "n4316",
+   "titular_en": "Northern Farm Mix Sale foal session generates 6.06 billion JPY, with Kitasan Black colt Plainchant 2026 topping the sale 22 Oct 2026 04:46 Breeding & Sales",
+   "fecha_texto": "2026-10-22 04:46",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4316",
+   "medio": "netkeiba",
+   "categoria": "cria",
+   "titular": "La sesión de potros de la Northern Farm Mix Sale recauda 6.060 millones de yenes y el macho hijo de Kitasan Black y Plainchant 2026 encabeza la subasta",
+   "resumen": "La sesión de potros de la Northern Farm Mix Sale alcanzó una recaudación de 6.060,5 millones de yenes con una tasa de ventas del 94,6%. El precio más alto lo marcó un macho descendiente de Kitasan Black y Plainchant 2026.",
+   "texto": "",
+   "caballos": [
+    "Kitasan Black",
+    "Plainchant 2026"
+   ]
+  },
+  {
+   "id": "n4315",
+   "titular_en": "Northern Farm Mix Sale generates 1.52 billion JPY as Mikki Twinkle tops broodmare session at 120 million JPY 22 Oct 2026 04:39 Breeding & Sales",
+   "fecha_texto": "2026-10-22 04:39",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4315",
+   "medio": "netkeiba",
+   "categoria": "cria",
+   "titular": "La Northern Farm Mix Sale recauda 1.520 millones de yenes y Mikki Twinkle lidera el segmento de yeguas nodrizas con 120 millones de yenes",
+   "resumen": "La sesión de yeguas nodrizas de la Northern Farm Mix Sale alcanzó una facturación total de 1.519,9 millones de yenes antes de impuestos. Mikki Twinkle fue el lote más caro de la jornada al ser adquirida por 120 millones de yenes.",
+   "texto": "La sesión de yeguas nodrizas de la Northern Farm Mix Sale se celebró el día 20 en Northern Horse Park, situado en Tomakomai, Hokkaido. Se sacaron a subasta un total de 137 yeguas, entre las que se incluían ejemplares tanto en gestación como yeguas vacías que aún no habían sido cubiertas, de las cuales se vendieron 113. La subasta registró un porcentaje de ventas del 82,5% y una recaudación total de 1.519,9 millones de yenes antes de impuestos.\n\nEl precio más alto de la sesión lo marcó Mikki Twinkle, una yegua que aún no había sido cubierta y que fue adquirida por Shimoyashiki Bokujo, procedente de Shinhidaka, Hokkaido. Durante su etapa en los hipódromos, estuvo bajo la tutela del entrenador Mitsumasa Nakauchida y firmó tres victorias y tres segundos puestos en sus 13 actuaciones. Se impuso en una carrera de maiden -prueba para caballos que aún no han ganado- sobre 2.000 metros en hierba antes de ser segunda en el [Nombre de carrera omitido en original] Sho en su segunda salida a pista. A pesar de estar más de un año apartada de la competición en un momento dado, demostró su calidad tras su regreso al encadenar los triunfos en el Tsuchiyu Onsen Tokubetsu y el Nishio Tokubetsu -carreras del sistema de competición condicional japonés-. Su última participación tuvo lugar en junio de este año, cuando acabó sexta en el Tarumizu Stakes.\n\nPor su parte, [Nombre de caballo omitido en original], fue adquirida por 62 millones de yenes por Masaaki Kumeta, propietario conocido por utilizar el prefijo \"Logi\".\n\nTras la subasta, Shunsuke Yoshida, vicepresidente de Northern Farm, valoró la sesión: «Cada año, muchas yeguas concluyen sus carreras en las pistas y regresan a la granja. Son yeguas que preferiríamos conservar, pero hemos tenido que tomar decisiones difíciles y seleccionarlas a su pesar para mantener un número constante de potros. Me complace que los compradores hayan reconocido su valor. Seguiremos organizando una subasta a la que los compradores quieran asistir».",
+   "caballos": [
+    "Mikki Twinkle"
    ]
   },
   {
@@ -813,81 +886,9 @@
     "Something Sweet",
     "R Prost"
    ]
-  },
-  {
-   "id": "n4288",
-   "titular_en": "Monroe Walk's racing intelligence in focus as G1 Shuka Sho contenders prepare for Kyoto 14 hrs",
-   "fecha_texto": "2026-10-14 19:52",
-   "url": "https://en.netkeiba.com/news/news_detail.html?id=4288",
-   "medio": "netkeiba",
-   "categoria": "jra",
-   "titular": "La inteligencia táctica de Monroe Walk en el punto de mira de cara al G1 Shuka Sho en Kyoto",
-   "resumen": "Monroe Walk llega invicta y con gran versatilidad al G1 Shuka Sho en Kyoto, un enfrentamiento clave de la temporada. Su jinete habitual será Keita Tosaki, quien buscará su primer título en esta prueba.",
-   "texto": "Monroe Walk ha ido dejando huella en la escena hípica de Hokkaido -una de las regiones de cría y entrenamiento más importantes de Japón-, y su inteligencia en la pista será un factor clave a seguir. A continuación se detallan algunos de los principales contendientes que se espera formen parte de la salida en el G1 Shuka Sho, el último tramo de la Triple Corona potrancas.-\n\nMonroe Walk (potranca de 3 años) ha ganado sus cuatro salidas hasta la fecha, logrando victorias contundentes al escaparse de sus rivales en cada carrera. Su versatilidad es especialmente notable: puede manejar las explosivas llegadas típicas de la pista exterior, así como utilizar su inteligencia táctica con gran efectividad en la pista interior. El aumento de distancia tampoco debería plantear ningún problema. Su objetivo será capturar su quinta victoria consecutiva y su primer título de G1 -la máxima categoría de la competición hípica-, con Keita Tosaki tomando las riendas.\n\nEn contraste con Monroe Walk, que se formó al margen del circuito clásico principal -las pruebas que forman la tradicional ruta de selección de potrancas-, Dream Core (potranca de 3 años) siguió la ruta tradicional a través de las pruebas de primavera.\n\n, pero terminó segunda sin margen entre ellas tras tomar el camino exterior del lote en una actuación autoritaria. Fue una derrota que apenas mermó su reputación. Dado su agudo cambio de velocidad, su último octavo puesto en el Shion Stakes (prueba preparatoria hacia la G1) puede atribuirse al terreno pesado, que le impidió mostrar su mejor versión. Con un firme más seco que le permita desplegar sus virtudes, podría recuperarse sin problemas. Christophe Lemaire estará en la silla.\n\nEntre las demás aspirantes se encuentran Garavogue (potranca de 3 años), que ha sido segunda en sus dos apariciones en G1 (máxima categoría de la escala gradual), Enne (potranca de 3 años), que registró el remate más rápido en el\n\n(potranca de 3 años), La Belle Scene (potranca de 3 años), una potranca en progresión que ha dado pasos importantes durante el verano, y Sweet Happiness (potranca de 3 años), que cuenta con un historial contrastado en el Kyoto Racecourse. Estas potrancas buscarán brillar en la histórica ciudad de Kioto mientras las hojas de otoño comienzan a teñir el paisaje. La salida de la carrera está programada para las 15:30, hora local japonesa.",
-   "caballos": [
-    "Monroe Walk",
-    "Dream Core"
-   ]
-  },
-  {
-   "id": "n4287",
-   "titular_en": "Mejiro Komyo 2025 filly tops Day One of Hokkaido Autumn Sale at 16.5 million JPY 15 hrs",
-   "fecha_texto": "2026-10-14 18:52",
-   "url": "https://en.netkeiba.com/news/news_detail.html?id=4287",
-   "medio": "netkeiba",
-   "categoria": "cria",
-   "titular": "La potranca de Mejiro Komyo de 2025 encabeza la primera jornada del Hokkaido Autumn Sale por 16,5 millones de yenes",
-   "resumen": "La primera jornada del Thoroughbred Yearling Autumn Sale en Hokkaido registró unas ventas totales de 442,5 millones de yenes con un porcentaje de venta del 80%. Una potranca descendiente de Mejiro Komyo fue la puja más alta del día al alcanzar los 16,5 millones de yenes.",
-   "texto": "The first day of the Thoroughbred Yearling Autumn Sale was held on Oct. 13 at Hokkaido Market in Shinhidaka, Hokkaido.\n\nA total of 160 horses were offered, with 128 sold (62 colts and 77 fillies) for a combined 442.5 million JPY (before tax: same below). The sale rate was 80%, with an average price of 3.457 million JPY.\n\nLa sesión estuvo liderada por una potranca nacida en 2025 e hija de Mejiro Komyo -semental relevante en la cría japonesa-, cuya madre es una yegua ganadora del Kujukuri Tokubetsu -carrera condicional del circuito nacional-. Las pujas comenzaron en 4 millones de JPY y varios compradores entraron en la competición, incluidas ofertas por vía telemática. Finalmente, la empresa E.V.I Co., Ltd., procedente de la prefectura de Kioto, se hizo con la potranca por 16,5 millones de JPY (impuestos no incluidos).",
-   "caballos": [
-    "Mejiro Komyo"
-   ]
-  },
-  {
-   "id": "n4286",
-   "titular_en": "Netkeiba's original AI recommends three leading contenders for G1 Shuka Sho 15 hrs",
-   "fecha_texto": "2026-10-14 18:52",
-   "url": "https://en.netkeiba.com/news/news_detail.html?id=4286",
-   "medio": "netkeiba",
-   "categoria": "jra",
-   "titular": "La inteligencia artificial de Netkeiba recomienda tres principales contendientes para el G1 Shuka Sho",
-   "resumen": "La inteligencia artificial de Netkeiba selecciona a tres favoritas para la disputa del G1 Shuka Sho. Entre ellas destaca Garavogue, que busca resarcirse tras diversos contratiempos en su trayectoria.",
-   "texto": "",
-   "caballos": [
-    "Garavogue"
-   ]
-  },
-  {
-   "id": "n4285",
-   "titular_en": "Ho O Monopoly, 200 million JPY unbeaten colt, set to take next step in Listed Ivy Stakes 15 hrs",
-   "fecha_texto": "2026-10-14 18:52",
-   "url": "https://en.netkeiba.com/news/news_detail.html?id=4285",
-   "medio": "netkeiba",
-   "categoria": "cria",
-   "titular": "Ho O Monopoly, potro invicto de 200 millones de yenes, preparado para dar el siguiente paso en las Ivy Stakes (carrera con lista de ganadores)",
-   "resumen": "El potro invicto Ho O Monopoly, adquirido por 200 millones de yenes, continuará su trayectoria en las Ivy Stakes. El ejemplar de la cuadra de Yasuo Tomomichi debutó con victoria en Niigata Racecourse.",
-   "texto": "",
-   "caballos": [
-    "Ho O Monopoly"
-   ]
-  },
-  {
-   "id": "n4284",
-   "titular_en": "Trovatore shows sharp form in final preparations ahead of G2 Fuji Stakes 15 hrs",
-   "fecha_texto": "2026-10-14 18:52",
-   "url": "https://en.netkeiba.com/news/news_detail.html?id=4284",
-   "medio": "netkeiba",
-   "categoria": "jra",
-   "titular": "Trovatore muestra un estado afilado en los preparativos finales para el G2 Fuji Stakes",
-   "resumen": "Trovatore completó su entrenamiento a una semana del G2 Fuji Stakes mostrando buenas sensaciones en el Miho Training Center. El entrenador Yuichi Shikato confirmó que el caballo se encuentra en el punto de forma adecuado.",
-   "texto": "Trovatore trabajó junto a Batard en la pista de fibra de madera del Miho Training Center el 7 de octubre, en un entrenamiento a una semana vista del G2 Fuji Stakes -una prueba de grupo 2 preparatoria para la élite de la milla-. Se mostró relajado durante todo el ejercicio, marcando 86,7 segundos para los seis furlongs, con 37.4 segundos para los tres últimos furlongs y 11,3 segundos para el furlong final. Terminó emparejado con su compañero sin ser exigido.\n\n\"Se movió bien. Sus apoyos fueron buenos y está debidamente afinado a una semana de la carrera. Ya no le cuesta tanto arrancar\", declaró el entrenador Yuichi Shikato. El 4 de octubre, Trovatore se desplazó con agilidad por la pista de cuesta del Miho Training Center. \"Está bien, sin cambios en su condición. Tiene el físico justo y necesario\", añadió Shikato, indicando que el caballo está prácticamente a punto para la carrera.",
-   "caballos": [
-    "Trovatore",
-    "Batard"
-   ]
   }
  ],
- "hay_archivo": 165,
+ "hay_archivo": 170,
  "carreras": [
   {
    "id": "a05b821064",
@@ -897,7 +898,7 @@
    "fecha": "2026-01-04",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0104nakayamakimpai.html",
    "anio": 2026,
-   "dias": -293,
+   "dias": -294,
    "estado": "pasada",
    "distancia": 2000,
    "superficie": "cesped",
@@ -922,7 +923,7 @@
    "fecha": "2026-01-04",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0104kyotokimpai.html",
    "anio": 2026,
-   "dias": -293,
+   "dias": -294,
    "estado": "pasada",
    "distancia": 1600,
    "superficie": "cesped",
@@ -947,7 +948,7 @@
    "fecha": "2026-01-11",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0111fairy.html",
    "anio": 2026,
-   "dias": -286,
+   "dias": -287,
    "estado": "pasada",
    "distancia": 1600,
    "superficie": "cesped",
@@ -972,7 +973,7 @@
    "fecha": "2026-01-12",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0112shinzan-kinen.html",
    "anio": 2026,
-   "dias": -285,
+   "dias": -286,
    "estado": "pasada",
    "distancia": 1600,
    "superficie": "cesped",
@@ -997,7 +998,7 @@
    "fecha": "2026-01-18",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0118keisei.html",
    "anio": 2026,
-   "dias": -279,
+   "dias": -280,
    "estado": "pasada",
    "distancia": 2000,
    "superficie": "cesped",
@@ -1022,7 +1023,7 @@
    "fecha": "2026-01-18",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0118nikkei-shinshun.html",
    "anio": 2026,
-   "dias": -279,
+   "dias": -280,
    "estado": "pasada",
    "distancia": 2400,
    "superficie": "cesped",
@@ -1047,7 +1048,7 @@
    "fecha": "2026-01-24",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0124kokura-himba.html",
    "anio": 2026,
-   "dias": -273,
+   "dias": -274,
    "estado": "pasada",
    "distancia": 2000,
    "superficie": "cesped",
@@ -1072,7 +1073,7 @@
    "fecha": "2026-01-25",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0125ajcc.html",
    "anio": 2026,
-   "dias": -272,
+   "dias": -273,
    "estado": "pasada",
    "distancia": 2200,
    "superficie": "cesped",
@@ -1097,7 +1098,7 @@
    "fecha": "2026-01-25",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0125procyon.html",
    "anio": 2026,
-   "dias": -272,
+   "dias": -273,
    "estado": "pasada",
    "distancia": 1800,
    "superficie": "arena",
@@ -1122,7 +1123,7 @@
    "fecha": "2026-02-01",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0201negishi.html",
    "anio": 2026,
-   "dias": -265,
+   "dias": -266,
    "estado": "pasada",
    "distancia": 1400,
    "superficie": "arena",
@@ -1147,7 +1148,7 @@
    "fecha": "2026-02-01",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0201silkroad.html",
    "anio": 2026,
-   "dias": -265,
+   "dias": -266,
    "estado": "pasada",
    "distancia": 1200,
    "superficie": "cesped",
@@ -1172,7 +1173,7 @@
    "fecha": "2026-02-08",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0208kisaragi.html",
    "anio": 2026,
-   "dias": -258,
+   "dias": -259,
    "estado": "pasada",
    "distancia": 1800,
    "superficie": "cesped",
@@ -1197,7 +1198,7 @@
    "fecha": "2026-02-08",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0208tokyo-shimbun.html",
    "anio": 2026,
-   "dias": -258,
+   "dias": -259,
    "estado": "pasada",
    "distancia": 1600,
    "superficie": "cesped",
@@ -1222,7 +1223,7 @@
    "fecha": "2026-02-14",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0214queen.html",
    "anio": 2026,
-   "dias": -252,
+   "dias": -253,
    "estado": "pasada",
    "distancia": 1600,
    "superficie": "cesped",
@@ -1247,7 +1248,7 @@
    "fecha": "2026-02-15",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0215kyodonews.html",
    "anio": 2026,
-   "dias": -251,
+   "dias": -252,
    "estado": "pasada",
    "distancia": 1800,
    "superficie": "cesped",
@@ -1272,7 +1273,7 @@
    "fecha": "2026-02-15",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0215kyoto-kinen.html",
    "anio": 2026,
-   "dias": -251,
+   "dias": -252,
    "estado": "pasada",
    "distancia": 2200,
    "superficie": "cesped",
@@ -1297,7 +1298,7 @@
    "fecha": "2026-02-21",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0221diamond.html",
    "anio": 2026,
-   "dias": -245,
+   "dias": -246,
    "estado": "pasada",
    "distancia": 3400,
    "superficie": "cesped",
@@ -1322,7 +1323,7 @@
    "fecha": "2026-02-21",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0221hankyu.html",
    "anio": 2026,
-   "dias": -245,
+   "dias": -246,
    "estado": "pasada",
    "distancia": 1400,
    "superficie": "cesped",
@@ -1347,7 +1348,7 @@
    "fecha": "2026-02-22",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0222february.html",
    "anio": 2026,
-   "dias": -244,
+   "dias": -245,
    "estado": "pasada",
    "distancia": 1600,
    "superficie": "arena",
@@ -1372,7 +1373,7 @@
    "fecha": "2026-02-22",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0222kokura-daishoten.html",
    "anio": 2026,
-   "dias": -244,
+   "dias": -245,
    "estado": "pasada",
    "distancia": 1800,
    "superficie": "cesped",
@@ -1397,7 +1398,7 @@
    "fecha": "2026-02-28",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0228ocean.html",
    "anio": 2026,
-   "dias": -238,
+   "dias": -239,
    "estado": "pasada",
    "distancia": 1200,
    "superficie": "cesped",
@@ -1422,7 +1423,7 @@
    "fecha": "2026-03-01",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0301nakayama-kinen.html",
    "anio": 2026,
-   "dias": -237,
+   "dias": -238,
    "estado": "pasada",
    "distancia": 1800,
    "superficie": "cesped",
@@ -1447,7 +1448,7 @@
    "fecha": "2026-03-01",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0301tulip.html",
    "anio": 2026,
-   "dias": -237,
+   "dias": -238,
    "estado": "pasada",
    "distancia": 1600,
    "superficie": "cesped",
@@ -1472,7 +1473,7 @@
    "fecha": "2026-03-07",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0307nakayama-himba.html",
    "anio": 2026,
-   "dias": -231,
+   "dias": -232,
    "estado": "pasada",
    "distancia": 1800,
    "superficie": "cesped",
@@ -1497,7 +1498,7 @@
    "fecha": "2026-03-07",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0307fillies.html",
    "anio": 2026,
-   "dias": -231,
+   "dias": -232,
    "estado": "pasada",
    "distancia": 1400,
    "superficie": "cesped",
@@ -1522,7 +1523,7 @@
    "fecha": "2026-03-08",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0308yayoi.html",
    "anio": 2026,
-   "dias": -230,
+   "dias": -231,
    "estado": "pasada",
    "distancia": 2000,
    "superficie": "cesped",
@@ -1547,7 +1548,7 @@
    "fecha": "2026-03-15",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0315spring.html",
    "anio": 2026,
-   "dias": -223,
+   "dias": -224,
    "estado": "pasada",
    "distancia": 1800,
    "superficie": "cesped",
@@ -1572,7 +1573,7 @@
    "fecha": "2026-03-15",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0315kinko.html",
    "anio": 2026,
-   "dias": -223,
+   "dias": -224,
    "estado": "pasada",
    "distancia": 2000,
    "superficie": "cesped",
@@ -1597,7 +1598,7 @@
    "fecha": "2026-03-21",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0321flower.html",
    "anio": 2026,
-   "dias": -217,
+   "dias": -218,
    "estado": "pasada",
    "distancia": 1800,
    "superficie": "cesped",
@@ -1622,7 +1623,7 @@
    "fecha": "2026-03-21",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0321falcon.html",
    "anio": 2026,
-   "dias": -217,
+   "dias": -218,
    "estado": "pasada",
    "distancia": 1400,
    "superficie": "cesped",
@@ -1647,7 +1648,7 @@
    "fecha": "2026-03-22",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0322hanshin-daishoten.html",
    "anio": 2026,
-   "dias": -216,
+   "dias": -217,
    "estado": "pasada",
    "distancia": 3000,
    "superficie": "cesped",
@@ -1672,7 +1673,7 @@
    "fecha": "2026-03-22",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0322aichi.html",
    "anio": 2026,
-   "dias": -216,
+   "dias": -217,
    "estado": "pasada",
    "distancia": 1400,
    "superficie": "cesped",
@@ -1697,7 +1698,7 @@
    "fecha": "2026-03-28",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0328nikkei.html",
    "anio": 2026,
-   "dias": -210,
+   "dias": -211,
    "estado": "pasada",
    "distancia": 2500,
    "superficie": "cesped",
@@ -1722,7 +1723,7 @@
    "fecha": "2026-03-28",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0328mainichi.html",
    "anio": 2026,
-   "dias": -210,
+   "dias": -211,
    "estado": "pasada",
    "distancia": 1800,
    "superficie": "cesped",
@@ -1747,7 +1748,7 @@
    "fecha": "2026-03-29",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0329march.html",
    "anio": 2026,
-   "dias": -209,
+   "dias": -210,
    "estado": "pasada",
    "distancia": 1800,
    "superficie": "arena",
@@ -1772,7 +1773,7 @@
    "fecha": "2026-03-29",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0329takamatsunomiya.html",
    "anio": 2026,
-   "dias": -209,
+   "dias": -210,
    "estado": "pasada",
    "distancia": 1200,
    "superficie": "cesped",
@@ -1797,7 +1798,7 @@
    "fecha": "2026-04-04",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0404lord-derby.html",
    "anio": 2026,
-   "dias": -203,
+   "dias": -204,
    "estado": "pasada",
    "distancia": 1600,
    "superficie": "cesped",
@@ -1822,7 +1823,7 @@
    "fecha": "2026-04-04",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0404churchill.html",
    "anio": 2026,
-   "dias": -203,
+   "dias": -204,
    "estado": "pasada",
    "distancia": 1600,
    "superficie": "cesped",
@@ -1847,7 +1848,7 @@
    "fecha": "2026-04-05",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0405osaka.html",
    "anio": 2026,
-   "dias": -202,
+   "dias": -203,
    "estado": "pasada",
    "distancia": 2000,
    "superficie": "cesped",
@@ -1872,7 +1873,7 @@
    "fecha": "2026-04-11",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0411newzealand.html",
    "anio": 2026,
-   "dias": -196,
+   "dias": -197,
    "estado": "pasada",
    "distancia": 1600,
    "superficie": "cesped",
@@ -1897,7 +1898,7 @@
    "fecha": "2026-04-11",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0411hanshin-himba.html",
    "anio": 2026,
-   "dias": -196,
+   "dias": -197,
    "estado": "pasada",
    "distancia": 1600,
    "superficie": "cesped",
@@ -1922,7 +1923,7 @@
    "fecha": "2026-04-12",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0412oka.html",
    "anio": 2026,
-   "dias": -195,
+   "dias": -196,
    "estado": "pasada",
    "distancia": 1600,
    "superficie": "cesped",
@@ -1947,7 +1948,7 @@
    "fecha": "2026-04-18",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0418antares.html",
    "anio": 2026,
-   "dias": -189,
+   "dias": -190,
    "estado": "pasada",
    "distancia": 1800,
    "superficie": "arena",
@@ -1972,7 +1973,7 @@
    "fecha": "2026-04-19",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0419satsuki.html",
    "anio": 2026,
-   "dias": -188,
+   "dias": -189,
    "estado": "pasada",
    "distancia": 2000,
    "superficie": "cesped",
@@ -1997,7 +1998,7 @@
    "fecha": "2026-04-19",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0419fukushima-himba.html",
    "anio": 2026,
-   "dias": -188,
+   "dias": -189,
    "estado": "pasada",
    "distancia": 1800,
    "superficie": "cesped",
@@ -2022,7 +2023,7 @@
    "fecha": "2026-04-25",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0425aoba.html",
    "anio": 2026,
-   "dias": -182,
+   "dias": -183,
    "estado": "pasada",
    "distancia": 2400,
    "superficie": "cesped",
@@ -2047,7 +2048,7 @@
    "fecha": "2026-04-26",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0426flora.html",
    "anio": 2026,
-   "dias": -181,
+   "dias": -182,
    "estado": "pasada",
    "distancia": 2000,
    "superficie": "cesped",
@@ -2072,7 +2073,7 @@
    "fecha": "2026-04-26",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0426yomiuri-milers.html",
    "anio": 2026,
-   "dias": -181,
+   "dias": -182,
    "estado": "pasada",
    "distancia": 1600,
    "superficie": "cesped",
@@ -2097,7 +2098,7 @@
    "fecha": "2026-05-02",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0502keio-hai.html",
    "anio": 2026,
-   "dias": -175,
+   "dias": -176,
    "estado": "pasada",
    "distancia": 1400,
    "superficie": "cesped",
@@ -2122,7 +2123,7 @@
    "fecha": "2026-05-02",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0502unicorn.html",
    "anio": 2026,
-   "dias": -175,
+   "dias": -176,
    "estado": "pasada",
    "distancia": 1900,
    "superficie": "arena",
@@ -2147,7 +2148,7 @@
    "fecha": "2026-05-03",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0503tenno-spring.html",
    "anio": 2026,
-   "dias": -174,
+   "dias": -175,
    "estado": "pasada",
    "distancia": 3200,
    "superficie": "cesped",
@@ -2172,7 +2173,7 @@
    "fecha": "2026-05-09",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0509epsom.html",
    "anio": 2026,
-   "dias": -168,
+   "dias": -169,
    "estado": "pasada",
    "distancia": 1800,
    "superficie": "cesped",
@@ -2199,7 +2200,7 @@
    "fecha": "2026-05-09",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0509kyoto-shimbun.html",
    "anio": 2026,
-   "dias": -168,
+   "dias": -169,
    "estado": "pasada",
    "distancia": 2200,
    "superficie": "cesped",
@@ -2226,7 +2227,7 @@
    "fecha": "2026-05-10",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0510nhk-mile.html",
    "anio": 2026,
-   "dias": -167,
+   "dias": -168,
    "estado": "pasada",
    "distancia": 1600,
    "superficie": "cesped",
@@ -2253,7 +2254,7 @@
    "fecha": "2026-05-16",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0516niigata-daishoten.html",
    "anio": 2026,
-   "dias": -161,
+   "dias": -162,
    "estado": "pasada",
    "distancia": 2000,
    "superficie": "cesped",
@@ -2280,7 +2281,7 @@
    "fecha": "2026-05-17",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0517victoria.html",
    "anio": 2026,
-   "dias": -160,
+   "dias": -161,
    "estado": "pasada",
    "distancia": 1600,
    "superficie": "cesped",
@@ -2307,7 +2308,7 @@
    "fecha": "2026-05-23",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0523heian.html",
    "anio": 2026,
-   "dias": -154,
+   "dias": -155,
    "estado": "pasada",
    "distancia": 1900,
    "superficie": "arena",
@@ -2368,7 +2369,7 @@
     }
    ],
    "fuente": "https://japanracing.jp/_news2026/260524.html",
-   "dias": -153
+   "dias": -154
   },
   {
    "id": "4349342559",
@@ -2378,7 +2379,7 @@
    "fecha": "2026-05-24",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0524oaks.html",
    "anio": 2026,
-   "dias": -153,
+   "dias": -154,
    "estado": "pasada",
    "distancia": 2400,
    "superficie": "cesped",
@@ -2405,7 +2406,7 @@
    "fecha": "2026-05-30",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0530aoi.html",
    "anio": 2026,
-   "dias": -147,
+   "dias": -148,
    "estado": "pasada",
    "distancia": 1200,
    "superficie": "cesped",
@@ -2432,7 +2433,7 @@
    "fecha": "2026-05-31",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0531derby.html",
    "anio": 2026,
-   "dias": -146,
+   "dias": -147,
    "estado": "pasada",
    "distancia": 2400,
    "superficie": "cesped",
@@ -2459,7 +2460,7 @@
    "fecha": "2026-05-31",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/0531meguro.html",
    "anio": 2026,
-   "dias": -146,
+   "dias": -147,
    "estado": "pasada",
    "distancia": 2500,
    "superficie": "cesped",
@@ -2500,7 +2501,7 @@
      ]
     ]
    },
-   "dias": -139,
+   "dias": -140,
    "estado": "pasada",
    "race_id": "202605030211",
    "hora_jst": "15:40"
@@ -2527,7 +2528,7 @@
      ]
     ]
    },
-   "dias": -133,
+   "dias": -134,
    "estado": "pasada",
    "race_id": "202602010111",
    "hora_jst": "15:45"
@@ -2589,7 +2590,7 @@
     }
    ],
    "fuente": "https://japanracing.jp/_news2026/pdf/260614.pdf",
-   "dias": -132
+   "dias": -133
   },
   {
    "id": "ca3501615c",
@@ -2613,7 +2614,7 @@
      ]
     ]
    },
-   "dias": -132,
+   "dias": -133,
    "estado": "pasada",
    "race_id": "202609030411",
    "hora_jst": "15:40"
@@ -2640,7 +2641,7 @@
      ]
     ]
    },
-   "dias": -125,
+   "dias": -126,
    "estado": "pasada",
    "race_id": "202605030611",
    "hora_jst": "15:45"
@@ -2667,7 +2668,7 @@
      ]
     ]
    },
-   "dias": -125,
+   "dias": -126,
    "estado": "pasada",
    "race_id": "202609030611",
    "hora_jst": "15:30"
@@ -2694,7 +2695,7 @@
      ]
     ]
    },
-   "dias": -118,
+   "dias": -119,
    "estado": "pasada",
    "race_id": "202603020211",
    "hora_jst": "15:45"
@@ -2721,7 +2722,7 @@
      ]
     ]
    },
-   "dias": -118,
+   "dias": -119,
    "estado": "pasada",
    "race_id": "202602010611",
    "hora_jst": "15:20"
@@ -2748,7 +2749,7 @@
      ]
     ]
    },
-   "dias": -111,
+   "dias": -112,
    "estado": "pasada",
    "race_id": "202610020411",
    "hora_jst": "15:45"
@@ -2775,7 +2776,7 @@
      ]
     ]
    },
-   "dias": -104,
+   "dias": -105,
    "estado": "pasada",
    "race_id": "202603020611",
    "hora_jst": "15:45"
@@ -2802,7 +2803,7 @@
      ]
     ]
    },
-   "dias": -97,
+   "dias": -98,
    "estado": "pasada",
    "race_id": "202610020811",
    "hora_jst": "15:45"
@@ -2829,7 +2830,7 @@
      ]
     ]
    },
-   "dias": -97,
+   "dias": -98,
    "estado": "pasada",
    "race_id": "202602011211",
    "hora_jst": "15:20"
@@ -2856,7 +2857,7 @@
      ]
     ]
    },
-   "dias": -90,
+   "dias": -91,
    "estado": "pasada",
    "race_id": "202604020207",
    "hora_jst": "15:45"
@@ -2883,7 +2884,7 @@
      ]
     ]
    },
-   "dias": -90,
+   "dias": -91,
    "estado": "pasada",
    "race_id": "202607020207",
    "hora_jst": "15:35"
@@ -2909,7 +2910,7 @@
      ]
     ]
    },
-   "dias": -83,
+   "dias": -84,
    "estado": "pasada",
    "race_id": "202604020407",
    "hora_jst": "15:45"
@@ -2936,7 +2937,7 @@
      ]
     ]
    },
-   "dias": -83,
+   "dias": -84,
    "estado": "pasada",
    "race_id": "202601010411",
    "hora_jst": "15:25"
@@ -2963,7 +2964,7 @@
      ]
     ]
    },
-   "dias": -77,
+   "dias": -78,
    "estado": "pasada",
    "race_id": "202601010511",
    "hora_jst": "15:25"
@@ -2990,7 +2991,7 @@
      ]
     ]
    },
-   "dias": -76,
+   "dias": -77,
    "estado": "pasada",
    "race_id": "202604020607",
    "hora_jst": "15:35"
@@ -3017,7 +3018,7 @@
      ]
     ]
    },
-   "dias": -76,
+   "dias": -77,
    "estado": "pasada",
    "race_id": "202607020607",
    "hora_jst": "15:45"
@@ -3044,7 +3045,7 @@
      ]
     ]
    },
-   "dias": -69,
+   "dias": -70,
    "estado": "pasada",
    "race_id": "202607020807",
    "hora_jst": "15:35"
@@ -3071,7 +3072,7 @@
      ]
     ]
    },
-   "dias": -69,
+   "dias": -70,
    "estado": "pasada",
    "race_id": "202601010811",
    "hora_jst": "15:45"
@@ -3098,7 +3099,7 @@
      ]
     ]
    },
-   "dias": -62,
+   "dias": -63,
    "estado": "pasada",
    "race_id": "202604030207",
    "hora_jst": "15:25"
@@ -3125,7 +3126,7 @@
      ]
     ]
    },
-   "dias": -62,
+   "dias": -63,
    "estado": "pasada",
    "race_id": "202601020211",
    "hora_jst": "15:45"
@@ -3152,7 +3153,7 @@
      ]
     ]
    },
-   "dias": -55,
+   "dias": -56,
    "estado": "pasada",
    "race_id": "202604030408",
    "hora_jst": "15:45"
@@ -3179,7 +3180,7 @@
      ]
     ]
    },
-   "dias": -55,
+   "dias": -56,
    "estado": "pasada",
    "race_id": "202607030407",
    "hora_jst": "15:35"
@@ -3206,7 +3207,7 @@
      ]
     ]
    },
-   "dias": -49,
+   "dias": -50,
    "estado": "pasada",
    "race_id": "202606040111",
    "hora_jst": "15:45",
@@ -3379,7 +3380,7 @@
      ]
     ]
    },
-   "dias": -49,
+   "dias": -50,
    "estado": "pasada",
    "race_id": "202601020511",
    "hora_jst": "15:20",
@@ -3489,7 +3490,7 @@
      ]
     ]
    },
-   "dias": -48,
+   "dias": -49,
    "estado": "pasada"
   },
   {
@@ -3514,7 +3515,7 @@
      ]
     ]
    },
-   "dias": -48,
+   "dias": -49,
    "estado": "pasada",
    "race_id": "202609040211",
    "hora_jst": "15:30",
@@ -3687,7 +3688,7 @@
      ]
     ]
    },
-   "dias": -42,
+   "dias": -43,
    "estado": "pasada",
    "race_id": "202609040311",
    "hora_jst": "15:45",
@@ -3860,7 +3861,7 @@
      ]
     ]
    },
-   "dias": -41,
+   "dias": -42,
    "estado": "pasada"
   },
   {
@@ -3885,7 +3886,7 @@
      ]
     ]
    },
-   "dias": -41,
+   "dias": -42,
    "estado": "pasada"
   },
   {
@@ -3910,7 +3911,7 @@
      ]
     ]
    },
-   "dias": -34,
+   "dias": -35,
    "estado": "pasada",
    "race_id": "202606040611",
    "hora_jst": "15:45",
@@ -4056,7 +4057,7 @@
      ]
     ]
    },
-   "dias": -33,
+   "dias": -34,
    "estado": "pasada"
   },
   {
@@ -4081,7 +4082,7 @@
      ]
     ]
    },
-   "dias": -28,
+   "dias": -29,
    "estado": "pasada",
    "race_id": "202609040811",
    "hora_jst": "15:45",
@@ -4287,7 +4288,7 @@
    "participantes": [],
    "llegada": [],
    "fuente": "https://en.netkeiba.com/library/detail.html?no=233",
-   "dias": -27
+   "dias": -28
   },
   {
    "id": "2c37c4d487",
@@ -4311,7 +4312,7 @@
      ]
     ]
    },
-   "dias": -27,
+   "dias": -28,
    "estado": "pasada",
    "race_id": "202606040911",
    "hora_jst": "15:40",
@@ -4484,7 +4485,7 @@
      ]
     ]
    },
-   "dias": -20,
+   "dias": -21,
    "estado": "pasada",
    "race_id": "202605040211",
    "hora_jst": "15:45",
@@ -4666,7 +4667,7 @@
      ]
     ]
    },
-   "dias": -20,
+   "dias": -21,
    "estado": "pasada",
    "race_id": "202608040211",
    "hora_jst": "15:30",
@@ -4857,7 +4858,7 @@
      ]
     ]
    },
-   "dias": -14,
+   "dias": -15,
    "estado": "pasada",
    "race_id": "202605040311",
    "hora_jst": "15:45",
@@ -4985,7 +4986,7 @@
      ]
     ]
    },
-   "dias": -13,
+   "dias": -14,
    "estado": "pasada",
    "race_id": "202605040411",
    "hora_jst": "15:45",
@@ -5158,7 +5159,7 @@
      ]
     ]
    },
-   "dias": -12,
+   "dias": -13,
    "estado": "pasada",
    "race_id": "202608040511",
    "hora_jst": "15:45",
@@ -5349,7 +5350,7 @@
      ]
     ]
    },
-   "dias": -7,
+   "dias": -8,
    "estado": "pasada",
    "race_id": "202605040611",
    "hora_jst": "15:45",
@@ -5497,7 +5498,7 @@
    "ficha": {
     "que_es": "Tercera y última pata de la triple corona femenina japonesa."
    },
-   "dias": -6
+   "dias": -7
   },
   {
    "id": "0133728f9c",
@@ -5521,7 +5522,7 @@
      ]
     ]
    },
-   "dias": -6,
+   "dias": -7,
    "estado": "pasada",
    "race_id": "202608040711",
    "hora_jst": "15:40",
@@ -5703,8 +5704,8 @@
      ]
     ]
    },
-   "dias": 0,
-   "estado": "cuadro_cerrado",
+   "dias": -1,
+   "estado": "pasada",
    "race_id": "202605040811",
    "hora_jst": "15:45",
    "participantes": [
@@ -5849,7 +5850,7 @@
      ]
     ]
    },
-   "dias": 1,
+   "dias": 0,
    "estado": "cuadro_cerrado",
    "race_id": "202608040911",
    "participantes": [
@@ -6039,8 +6040,120 @@
      ]
     ]
    },
-   "dias": 7,
-   "estado": "lejana"
+   "dias": 6,
+   "estado": "cuadro_cerrado",
+   "race_id": "202608041011",
+   "hora_jst": "15:45",
+   "participantes": [
+    {
+     "caballo": "Imogen",
+     "jockey": "C.Demuro",
+     "entrenador": "M.IkezoeRitto",
+     "peso": "55.0",
+     "sexo_edad": "2F",
+     "odds": "",
+     "horse_id": ""
+    },
+    {
+     "caballo": "Shigure",
+     "jockey": "Y.Take",
+     "entrenador": "H.TakeRitto",
+     "peso": "55.0",
+     "sexo_edad": "2F",
+     "odds": "",
+     "horse_id": ""
+    },
+    {
+     "caballo": "Chant des Vagues",
+     "jockey": "K.Sameshima",
+     "entrenador": "K.MoriMiho",
+     "peso": "55.0",
+     "sexo_edad": "2F",
+     "odds": "",
+     "horse_id": ""
+    },
+    {
+     "caballo": "Seiun My Love",
+     "jockey": "O.Tayama",
+     "entrenador": "K.HasegawaRitto",
+     "peso": "55.0",
+     "sexo_edad": "2F",
+     "odds": "",
+     "horse_id": ""
+    },
+    {
+     "caballo": "Tsukimi",
+     "jockey": "--",
+     "entrenador": "H.ShimizuRitto",
+     "peso": "55.0",
+     "sexo_edad": "2F",
+     "odds": "",
+     "horse_id": ""
+    },
+    {
+     "caballo": "Nix Luna",
+     "jockey": "M.Iwata",
+     "entrenador": "D.TakayanagiRitto",
+     "peso": "55.0",
+     "sexo_edad": "2F",
+     "odds": "",
+     "horse_id": ""
+    },
+    {
+     "caballo": "Butterfly",
+     "jockey": "K.Harada",
+     "entrenador": "M.MatsuyamaMiho",
+     "peso": "55.0",
+     "sexo_edad": "2F",
+     "odds": "",
+     "horse_id": ""
+    },
+    {
+     "caballo": "Biscuit Sand",
+     "jockey": "Y.Kitamura",
+     "entrenador": "Y.SatoRitto",
+     "peso": "55.0",
+     "sexo_edad": "2F",
+     "odds": "",
+     "horse_id": ""
+    },
+    {
+     "caballo": "Felicita",
+     "jockey": "K.Matsuyama",
+     "entrenador": "T.SuzukiRitto",
+     "peso": "55.0",
+     "sexo_edad": "2F",
+     "odds": "",
+     "horse_id": ""
+    },
+    {
+     "caballo": "Bright Script",
+     "jockey": "K.Ikezoe",
+     "entrenador": "T.MatsushitaRitto",
+     "peso": "55.0",
+     "sexo_edad": "2F",
+     "odds": "",
+     "horse_id": ""
+    },
+    {
+     "caballo": "Benibana",
+     "jockey": "H.Miyuki",
+     "entrenador": "K.WatanabeRitto",
+     "peso": "55.0",
+     "sexo_edad": "2F",
+     "odds": "",
+     "horse_id": ""
+    },
+    {
+     "caballo": "Les Nuages",
+     "jockey": "A.Nishimura",
+     "entrenador": "H.FujiwaraRitto",
+     "peso": "55.0",
+     "sexo_edad": "2F",
+     "odds": "",
+     "horse_id": ""
+    }
+   ]
   },
   {
    "id": "e13d97c27f",
@@ -6064,7 +6177,7 @@
      ]
     ]
    },
-   "dias": 8,
+   "dias": 7,
    "estado": "cuadro_cerrado",
    "race_id": "202605041111",
    "hora_jst": "15:40",
@@ -6246,7 +6359,7 @@
      ]
     ]
    },
-   "dias": 14,
+   "dias": 13,
    "estado": "lejana"
   },
   {
@@ -6271,7 +6384,7 @@
      ]
     ]
    },
-   "dias": 15,
+   "dias": 14,
    "estado": "lejana"
   },
   {
@@ -6296,7 +6409,7 @@
      ]
     ]
    },
-   "dias": 15,
+   "dias": 14,
    "estado": "lejana"
   },
   {
@@ -6321,7 +6434,7 @@
      ]
     ]
    },
-   "dias": 21,
+   "dias": 20,
    "estado": "lejana"
   },
   {
@@ -6346,7 +6459,7 @@
      ]
     ]
    },
-   "dias": 21,
+   "dias": 20,
    "estado": "lejana"
   },
   {
@@ -6371,7 +6484,7 @@
      ]
     ]
    },
-   "dias": 22,
+   "dias": 21,
    "estado": "lejana"
   },
   {
@@ -6396,7 +6509,7 @@
      ]
     ]
    },
-   "dias": 28,
+   "dias": 27,
    "estado": "lejana"
   },
   {
@@ -6421,7 +6534,7 @@
      ]
     ]
    },
-   "dias": 29,
+   "dias": 28,
    "estado": "lejana"
   },
   {
@@ -6446,7 +6559,7 @@
      ]
     ]
    },
-   "dias": 30,
+   "dias": 29,
    "estado": "lejana"
   },
   {
@@ -6471,7 +6584,7 @@
      ]
     ]
    },
-   "dias": 35,
+   "dias": 34,
    "estado": "lejana"
   },
   {
@@ -6486,7 +6599,7 @@
    "ficha": {
     "que_es": "Invitación internacional. La carrera con la que Japón se mide al resto del mundo en casa."
    },
-   "dias": 36
+   "dias": 35
   },
   {
    "id": "1c928af2dc",
@@ -6510,7 +6623,7 @@
      ]
     ]
    },
-   "dias": 36,
+   "dias": 35,
    "estado": "lejana"
   },
   {
@@ -6535,7 +6648,7 @@
      ]
     ]
    },
-   "dias": 36,
+   "dias": 35,
    "estado": "lejana"
   },
   {
@@ -6560,7 +6673,7 @@
      ]
     ]
    },
-   "dias": 42,
+   "dias": 41,
    "estado": "lejana"
   },
   {
@@ -6585,7 +6698,7 @@
      ]
     ]
    },
-   "dias": 42,
+   "dias": 41,
    "estado": "lejana"
   },
   {
@@ -6596,7 +6709,7 @@
    "fecha": "2026-12-06",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1206champions.html",
    "anio": 2026,
-   "dias": 43,
+   "dias": 42,
    "estado": "lejana",
    "distancia": 1800,
    "superficie": "arena",
@@ -6621,7 +6734,7 @@
    "fecha": "2026-12-12",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1212chunichi.html",
    "anio": 2026,
-   "dias": 49,
+   "dias": 48,
    "estado": "lejana",
    "distancia": 2000,
    "superficie": "cesped",
@@ -6646,7 +6759,7 @@
    "fecha": "2026-12-13",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1213capella.html",
    "anio": 2026,
-   "dias": 50,
+   "dias": 49,
    "estado": "lejana",
    "distancia": 1200,
    "superficie": "arena",
@@ -6671,7 +6784,7 @@
    "fecha": "2026-12-13",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1213juvenile.html",
    "anio": 2026,
-   "dias": 50,
+   "dias": 49,
    "estado": "lejana",
    "distancia": 1600,
    "superficie": "cesped",
@@ -6696,7 +6809,7 @@
    "fecha": "2026-12-19",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1219turquoise.html",
    "anio": 2026,
-   "dias": 56,
+   "dias": 55,
    "estado": "lejana",
    "distancia": 1600,
    "superficie": "cesped",
@@ -6721,7 +6834,7 @@
    "fecha": "2026-12-20",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1220futurity.html",
    "anio": 2026,
-   "dias": 57,
+   "dias": 56,
    "estado": "lejana",
    "distancia": 1600,
    "superficie": "cesped",
@@ -6746,7 +6859,7 @@
    "fecha": "2026-12-26",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1226hopeful.html",
    "anio": 2026,
-   "dias": 63,
+   "dias": 62,
    "estado": "lejana",
    "distancia": 2000,
    "superficie": "cesped",
@@ -6771,7 +6884,7 @@
    "fecha": "2026-12-26",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1226hanshin.html",
    "anio": 2026,
-   "dias": 63,
+   "dias": 62,
    "estado": "lejana",
    "distancia": 1400,
    "superficie": "cesped",
@@ -6803,7 +6916,7 @@
    "ficha": {
     "que_es": "El otro Grand Prix: cuadro votado por los aficionados y cierre del año. La carrera más vista del calendario japonés."
    },
-   "dias": 64
+   "dias": 63
   },
   {
    "id": "3dac49e093",
@@ -6813,7 +6926,7 @@
    "fecha": "2026-12-27",
    "url": "https://japanracing.jp/en/racing/schedule/graded/list/2026/1227arima.html",
    "anio": 2026,
-   "dias": 64,
+   "dias": 63,
    "estado": "lejana",
    "distancia": 2500,
    "superficie": "cesped",
@@ -6965,7 +7078,7 @@
    "nombre": "Lovcen",
    "historial": [],
    "forma": [],
-   "menciones": 15,
+   "menciones": 16,
    "jockey": "K.Matsuyama",
    "perfil": "3C",
    "proxima": "bf516f4741",
@@ -7119,6 +7232,16 @@
    "seguido": false
   },
   {
+   "nombre": "American Stage",
+   "historial": [],
+   "forma": [],
+   "menciones": 4,
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
    "nombre": "Finger",
    "historial": [],
    "forma": [],
@@ -7257,16 +7380,6 @@
    "jockey": "M.Sakai",
    "perfil": "3C",
    "proxima": "bf516f4741",
-   "victorias": 0,
-   "podios": 0,
-   "g1": 0,
-   "seguido": false
-  },
-  {
-   "nombre": "American Stage",
-   "historial": [],
-   "forma": [],
-   "menciones": 3,
    "victorias": 0,
    "podios": 0,
    "g1": 0,
@@ -7465,6 +7578,18 @@
    "seguido": false
   },
   {
+   "nombre": "Deep Monster",
+   "historial": [],
+   "forma": [],
+   "menciones": 2,
+   "jockey": "S.Hamanaka",
+   "perfil": "8H",
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
    "nombre": "Ecoro Dinos",
    "historial": [],
    "forma": [],
@@ -7606,6 +7731,16 @@
    "jockey": "Y.Kawada",
    "perfil": "3C",
    "proxima": "bf516f4741",
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Kitasan Black",
+   "historial": [],
+   "forma": [],
+   "menciones": 2,
    "victorias": 0,
    "podios": 0,
    "g1": 0,
@@ -7931,18 +8066,6 @@
    "seguido": false
   },
   {
-   "nombre": "Deep Monster",
-   "historial": [],
-   "forma": [],
-   "menciones": 1,
-   "jockey": "S.Hamanaka",
-   "perfil": "8H",
-   "victorias": 0,
-   "podios": 0,
-   "g1": 0,
-   "seguido": false
-  },
-  {
    "nombre": "Aqua Vernal",
    "historial": [],
    "forma": [],
@@ -8129,7 +8252,6 @@
    "menciones": 1,
    "jockey": "R.Sakai",
    "perfil": "2F",
-   "proxima": "92d6919ac5",
    "victorias": 0,
    "podios": 0,
    "g1": 0,
@@ -8142,7 +8264,6 @@
    "menciones": 1,
    "jockey": "C.Lemaire",
    "perfil": "2F",
-   "proxima": "92d6919ac5",
    "victorias": 0,
    "podios": 0,
    "g1": 0,
@@ -9777,7 +9898,6 @@
    "menciones": 0,
    "jockey": "D.Ozawa",
    "perfil": "2F",
-   "proxima": "92d6919ac5",
    "victorias": 0,
    "podios": 0,
    "g1": 0,
@@ -9790,7 +9910,6 @@
    "menciones": 0,
    "jockey": "T.Yokoyama",
    "perfil": "2F",
-   "proxima": "92d6919ac5",
    "victorias": 0,
    "podios": 0,
    "g1": 0,
@@ -9803,7 +9922,6 @@
    "menciones": 0,
    "jockey": "S.Yoshimura",
    "perfil": "2F",
-   "proxima": "92d6919ac5",
    "victorias": 0,
    "podios": 0,
    "g1": 0,
@@ -9816,7 +9934,6 @@
    "menciones": 0,
    "jockey": "A.Tsumura",
    "perfil": "2F",
-   "proxima": "92d6919ac5",
    "victorias": 0,
    "podios": 0,
    "g1": 0,
@@ -9829,7 +9946,6 @@
    "menciones": 0,
    "jockey": "N.Yokoyama",
    "perfil": "2F",
-   "proxima": "92d6919ac5",
    "victorias": 0,
    "podios": 0,
    "g1": 0,
@@ -9842,7 +9958,6 @@
    "menciones": 0,
    "jockey": "K.Ikezoe",
    "perfil": "2F",
-   "proxima": "92d6919ac5",
    "victorias": 0,
    "podios": 0,
    "g1": 0,
@@ -9855,7 +9970,6 @@
    "menciones": 0,
    "jockey": "M.Yamamoto",
    "perfil": "2F",
-   "proxima": "92d6919ac5",
    "victorias": 0,
    "podios": 0,
    "g1": 0,
@@ -9868,7 +9982,6 @@
    "menciones": 0,
    "jockey": "A.Nishimura",
    "perfil": "2F",
-   "proxima": "92d6919ac5",
    "victorias": 0,
    "podios": 0,
    "g1": 0,
@@ -9881,7 +9994,6 @@
    "menciones": 0,
    "jockey": "S.Imamura",
    "perfil": "2F",
-   "proxima": "92d6919ac5",
    "victorias": 0,
    "podios": 0,
    "g1": 0,
@@ -9894,7 +10006,6 @@
    "menciones": 0,
    "jockey": "H.Tanabe",
    "perfil": "2F",
-   "proxima": "92d6919ac5",
    "victorias": 0,
    "podios": 0,
    "g1": 0,
@@ -9907,7 +10018,6 @@
    "menciones": 0,
    "jockey": "M.Kobayashi",
    "perfil": "2F",
-   "proxima": "92d6919ac5",
    "victorias": 0,
    "podios": 0,
    "g1": 0,
@@ -10005,6 +10115,162 @@
    "seguido": false
   },
   {
+   "nombre": "Imogen",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "C.Demuro",
+   "perfil": "2F",
+   "proxima": "da333a4d1e",
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Shigure",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "Y.Take",
+   "perfil": "2F",
+   "proxima": "da333a4d1e",
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Chant des Vagues",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "K.Sameshima",
+   "perfil": "2F",
+   "proxima": "da333a4d1e",
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Seiun My Love",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "O.Tayama",
+   "perfil": "2F",
+   "proxima": "da333a4d1e",
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Tsukimi",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "--",
+   "perfil": "2F",
+   "proxima": "da333a4d1e",
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Nix Luna",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "M.Iwata",
+   "perfil": "2F",
+   "proxima": "da333a4d1e",
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Butterfly",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "K.Harada",
+   "perfil": "2F",
+   "proxima": "da333a4d1e",
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Biscuit Sand",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "Y.Kitamura",
+   "perfil": "2F",
+   "proxima": "da333a4d1e",
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Felicita",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "K.Matsuyama",
+   "perfil": "2F",
+   "proxima": "da333a4d1e",
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Bright Script",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "K.Ikezoe",
+   "perfil": "2F",
+   "proxima": "da333a4d1e",
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Benibana",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "H.Miyuki",
+   "perfil": "2F",
+   "proxima": "da333a4d1e",
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "Les Nuages",
+   "historial": [],
+   "forma": [],
+   "menciones": 0,
+   "jockey": "A.Nishimura",
+   "perfil": "2F",
+   "proxima": "da333a4d1e",
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "seguido": false
+  },
+  {
    "nombre": "Sakura Farrel",
    "historial": [],
    "forma": [],
@@ -10087,7 +10353,8 @@
     "Erika Express",
     "Admire Zoom",
     "Master Soarer",
-    "Going to Sky"
+    "Going to Sky",
+    "Shigure"
    ],
    "historial": [
     {
@@ -10148,6 +10415,11 @@
      "carrera": "bf516f4741",
      "caballo": "Going to Sky",
      "fecha": "2026-10-25"
+    },
+    {
+     "carrera": "da333a4d1e",
+     "caballo": "Shigure",
+     "fecha": "2026-10-31"
     }
    ],
    "pct": 100.0,
@@ -10199,7 +10471,8 @@
     "Safira",
     "Wide Latour",
     "Garnet Flare",
-    "Narita Esperanza"
+    "Narita Esperanza",
+    "Biscuit Sand"
    ],
    "historial": [
     {
@@ -10230,6 +10503,11 @@
      "carrera": "bf516f4741",
      "caballo": "Narita Esperanza",
      "fecha": "2026-10-25"
+    },
+    {
+     "carrera": "da333a4d1e",
+     "caballo": "Biscuit Sand",
+     "fecha": "2026-10-31"
     }
    ],
    "pct": 0.0,
@@ -10954,7 +11232,8 @@
     "Shonan Galleon",
     "Lugal",
     "Family Time",
-    "Labeling"
+    "Labeling",
+    "Chant des Vagues"
    ],
    "historial": [],
    "proximas": [
@@ -10977,6 +11256,11 @@
      "carrera": "b7d16597df",
      "caballo": "Labeling",
      "fecha": "2026-10-12"
+    },
+    {
+     "carrera": "da333a4d1e",
+     "caballo": "Chant des Vagues",
+     "fecha": "2026-10-31"
     }
    ],
    "pct": 0,
@@ -11285,7 +11569,8 @@
     "Aqua Vernal",
     "Win Marvel",
     "Something Sweet",
-    "Lovcen"
+    "Lovcen",
+    "Felicita"
    ],
    "historial": [],
    "proximas": [
@@ -11323,6 +11608,11 @@
      "carrera": "bf516f4741",
      "caballo": "Lovcen",
      "fecha": "2026-10-25"
+    },
+    {
+     "carrera": "da333a4d1e",
+     "caballo": "Felicita",
+     "fecha": "2026-10-31"
     },
     {
      "carrera": "e13d97c27f",
@@ -11497,6 +11787,7 @@
     "Ampadu",
     "Canal Saint Martin",
     "M's Begin",
+    "Nix Luna",
     "Regaleira"
    ],
    "historial": [],
@@ -11532,6 +11823,11 @@
      "fecha": "2026-10-25"
     },
     {
+     "carrera": "da333a4d1e",
+     "caballo": "Nix Luna",
+     "fecha": "2026-10-31"
+    },
+    {
      "carrera": "e13d97c27f",
      "caballo": "Regaleira",
      "fecha": "2026-11-01"
@@ -11549,7 +11845,8 @@
    "caballos": [
     "Yabusame",
     "Birthday Flight",
-    "Shonan Gulf"
+    "Shonan Gulf",
+    "Seiun My Love"
    ],
    "historial": [],
    "proximas": [
@@ -11567,6 +11864,11 @@
      "carrera": "bf516f4741",
      "caballo": "Shonan Gulf",
      "fecha": "2026-10-25"
+    },
+    {
+     "carrera": "da333a4d1e",
+     "caballo": "Seiun My Love",
+     "fecha": "2026-10-31"
     }
    ],
    "pct": 0,
@@ -11638,7 +11940,8 @@
     "Mini Transat",
     "Taisei Vogue",
     "G T Carry",
-    "Congestus"
+    "Congestus",
+    "Les Nuages"
    ],
    "historial": [],
    "proximas": [
@@ -11696,6 +11999,11 @@
      "carrera": "bf516f4741",
      "caballo": "Congestus",
      "fecha": "2026-10-25"
+    },
+    {
+     "carrera": "da333a4d1e",
+     "caballo": "Les Nuages",
+     "fecha": "2026-10-31"
     }
    ],
    "pct": 0,
@@ -11712,7 +12020,8 @@
     "Hapi",
     "Ai Sansan",
     "Seiun Hades",
-    "Water Licht"
+    "Water Licht",
+    "Benibana"
    ],
    "historial": [],
    "proximas": [
@@ -11745,6 +12054,11 @@
      "carrera": "1b3b6c8864",
      "caballo": "Water Licht",
      "fecha": "2026-10-17"
+    },
+    {
+     "carrera": "da333a4d1e",
+     "caballo": "Benibana",
+     "fecha": "2026-10-31"
     },
     {
      "carrera": "e13d97c27f",
@@ -11823,7 +12137,8 @@
     "Shonan Xanadu",
     "David Barows",
     "Ho O Prema",
-    "Shonan Hayanami"
+    "Shonan Hayanami",
+    "Bright Script"
    ],
    "historial": [],
    "proximas": [
@@ -11861,6 +12176,11 @@
      "carrera": "bf516f4741",
      "caballo": "Shonan Hayanami",
      "fecha": "2026-10-25"
+    },
+    {
+     "carrera": "da333a4d1e",
+     "caballo": "Bright Script",
+     "fecha": "2026-10-31"
     }
    ],
    "pct": 0,
@@ -12540,14 +12860,60 @@
    "podios": 0,
    "g1": 0,
    "caballos": [
+    "Imogen",
     "Croix du Nord"
    ],
    "historial": [],
    "proximas": [
     {
+     "carrera": "da333a4d1e",
+     "caballo": "Imogen",
+     "fecha": "2026-10-31"
+    },
+    {
      "carrera": "e13d97c27f",
      "caballo": "Croix du Nord",
      "fecha": "2026-11-01"
+    }
+   ],
+   "pct": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "--",
+   "montas": 0,
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "caballos": [
+    "Tsukimi"
+   ],
+   "historial": [],
+   "proximas": [
+    {
+     "carrera": "da333a4d1e",
+     "caballo": "Tsukimi",
+     "fecha": "2026-10-31"
+    }
+   ],
+   "pct": 0,
+   "seguido": false
+  },
+  {
+   "nombre": "K.Harada",
+   "montas": 0,
+   "victorias": 0,
+   "podios": 0,
+   "g1": 0,
+   "caballos": [
+    "Butterfly"
+   ],
+   "historial": [],
+   "proximas": [
+    {
+     "carrera": "da333a4d1e",
+     "caballo": "Butterfly",
+     "fecha": "2026-10-31"
     }
    ],
    "pct": 0,
