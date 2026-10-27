@@ -1,6 +1,34 @@
 {
  "noticias": [
   {
+   "id": "n4297",
+   "titular_en": "American Stage completes final domestic trackwork ahead of G1 Breeders' Cup Sprint 19 hrs",
+   "fecha_texto": "2026-10-16 14:19",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4297",
+   "medio": "netkeiba",
+   "categoria": "internacional",
+   "titular": "American Stage completa su último entrenamiento en Japón antes de la G1 Breeders' Cup Sprint",
+   "resumen": "El potro de cuatro años American Stage ha finalizado su preparación en el Ritto Training Center de cara a la G1 Breeders' Cup Sprint en Estados Unidos. El preparador Yoshito Yahagi se ha mostrado satisfecho con el estado del animal antes de su viaje.",
+   "texto": "American Stage completa su último entrenamiento en Japón antes de la G1 Breeders' Cup Sprint\n\nAmerican Stage, un potro de cuatro años inscrito para disputar la G1 Breeders' Cup Sprint en Keeneland, Estados Unidos, el 31 de octubre, completó su último entrenamiento en suelo nacional el 15 de octubre en la pista de pendiente del Ritto Training Center. Trabajando en solitario, marcó 53,9 segundos para los cuatro furlongs, seguidos de 39,7 segundos y un último furlong de 12,7 segundos. El entrenador Yoshito Yahagi se mostró satisfecho con el esfuerzo, señalando: «Su mecánica siempre es un poco rígida. Ha estado progresando sin contratiempos según lo planeado. También es un caballo capaz de marcar tiempos más rápidos si se le pide».\n\nAmerican Stage terminó cuarto en la edición del año pasado de la carrera en Del Mar, y este será su segundo viaje a Estados Unidos. «Keeneland tiene una superficie relativamente blanda y un trazado cerrado, un hipódromo americano típico. No creo que eso sea un problema», indicó el preparador, de amplia experiencia internacional.",
+   "caballos": [
+    "American Stage"
+   ]
+  },
+  {
+   "id": "n4293",
+   "titular_en": "Admire Zoom shows promising form ahead of G2 Fuji Stakes return after six-month absence 15 Oct 2026 20:02",
+   "fecha_texto": "2026-10-15 20:02",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4293",
+   "medio": "netkeiba",
+   "categoria": "jra",
+   "titular": "Admire Zoom muestra una forma prometedora ante su regreso en el G2 Fuji Stakes tras una ausencia de seis meses",
+   "resumen": "Admire Zoom se ha ejercitado en el Ritto Training Center de cara a su reaparición en el G2 Fuji Stakes, la prueba preparatoria hacia los grandes hitos de la milla. El caballo regresa tras una ausencia de seis meses mostrando un notable desarrollo físico.",
+   "texto": "Admire Zoom muestra una forma prometedora ante su regreso en el G2 Fuji Stakes -una prueba de Grado 2 clave en el otoño nipón- tras una ausencia de seis meses\n\nAdmire Zoom, que volverá a competir por primera vez en seis meses, se ejercitó en solitario en el Ritto Training Center el 14 de octubre de cara al G2 Fuji Stakes. Ascendió con fuerza por la pista de pendiente con zancadas vivas y mucha impulsión hacia adelante, marcando 54,0 segundos para los cuatro furlongs, con un parcial final de tres furlongs en 38,8 segundos y un último furlong en 11,9 segundos. El cuidador Oe valoró positivamente el entrenamiento al señalar: \"No queríamos forzarlo demasiado, pero al ser su primera salida tras la pausa, tampoco queríamos que la sesión fuera demasiado suave. Se movió bien y con buen equilibrio. Creo que está listo a más del 80%\".\n\nAunque el G2 Fuji Stakes marcará su regreso, el ejemplar no ha permanecido inactivo durante su tiempo fuera de las pistas. Oe se mostró impresionado por el desarrollo físico del animal y declaró: \"Cuando regresó, noté que se había vuelto mucho más sólido. Ha ganado masa muscular\". Y añadió con confianza: \"Tendremos que seguir vigilando su casco, pero recibió cuidados exhaustivos en el Yamamoto Training Center, en la prefectura de Miyagi, y hemos podido prepararlo bien\".\n\nLa distancia de una milla en el Tokyo Racecourse trae recuerdos difíciles para Admire Zoom, que terminó en una decepcionante decimocuarta posición en el G1 NHK Mile Cup -el prestigioso campeonato de máxima categoría para potros de tres años sobre la milla-.\n\ncuando era potrillo de tres años. Sin embargo, Oe no se muestra preocupado y afirma: \"Perdió una herradura ese día, así que no me ha quedado una impresión negativa de la pista\". Sigue confiando en su ejemplar, al que describe como \"un caballo potente con una velocidad tremenda que es capaz de mantener\". Con el inicio de la campaña de otoño, Admire Zoom buscará demostrar una vez más la calidad propia de un ganador de G1.",
+   "caballos": [
+    "Admire Zoom"
+   ]
+  },
+  {
    "id": "n4292",
    "titular_en": "Sweet Happiness shows sharper action ahead of G1 Shuka Sho as she targets rebound 15 Oct 2026 19:58",
    "fecha_texto": "2026-10-15 19:58",
@@ -16,14 +44,14 @@
   },
   {
    "id": "n4296",
-   "titular_en": "Hokkaido Autumn Sale concludes with 793.8 million JPY in total sales as Pignus Amoris 2025 tops final day 15 Oct 2026 19:27",
+   "titular_en": "Hokkaido Autumn Sale concludes with 793.8 million JPY in total sales as Pignus Amoris 2025 tops final day 15 Oct 2026 19:27 Breeding & Sales",
    "fecha_texto": "2026-10-15 19:27",
    "url": "https://en.netkeiba.com/news/news_detail.html?id=4296",
    "medio": "netkeiba",
    "categoria": "cria",
    "titular": "La Hokkaido Autumn Sale concluye con unas ventas totales de 793,8 millones de yenes y Pignus Amoris 2025 como líder de la última jornada",
-   "resumen": "La subasta de yearlings -potros de un año- Hokkaido Autumn Sale finalizó con 793,8 millones de yenes en ventas totales tras dos días de actividad. El semental Pignus Amoris 2025 marcó el precio más alto de la última jornada.",
-   "texto": "La segunda y última jornada de la Autumn Sale de yearlings -potros de un año- purasangre se celebró en el Hokkaido Market de Shin Hidaka, Hokkaido, el 14 de octubre.\n\nDe los 186 caballos presentados, 136 (63 potros y 73 potrancas) fueron vendidos por un total de 351,3 millones de yenes, impuestos no incluidos. El porcentaje de ventas fue del 73,1 %, con un precio medio de 2,583 millones de yenes.\n\nEl caballo más caro de la jornada fue el lote número 199, Pignus Amoris 2025 (potro, por...)\n\nLa Autumn Sale concluyó su calendario de dos días con el final de la sesión de hoy. A lo largo de ambas jornadas, 264 de los 346 caballos presentados (114 potros y 150 potrancas) fueron vendidos, generando unas ventas totales de 793,8 millones de yenes. El porcentaje de ventas fue del 76,3 %.",
+   "resumen": "La Hokkaido Autumn Sale finalizó su subasta de año -el término hípico para los potros de un año de edad- con un volumen total de 793,8 millones de yenes tras dos días de actividad. Pignus Amoris 2025 marcó el precio más alto de la última jornada celebrada en el Hokkaido Market.",
+   "texto": "La segunda y última jornada de la Autumn Sale de potros de año -el término hípico para los potros de un año de edad- se celebró en el Hokkaido Market de Shin Hidaka, Hokkaido, el 14 de octubre.\n\nDe los 186 caballos presentados, 136 (63 machos y 73 hembras) fueron vendidos por un total de 351,3 millones de yenes, impuestos no incluidos. El porcentaje de ventas fue del 73,1 %, con un precio medio de 2,583 millones de yenes.\n\nEl caballo más caro de la jornada fue el lote 199, Pignus Amoris 2025 (macho, hijo de...).\n\nLa Autumn Sale concluyó su calendario de dos días con el cierre de las sesiones de la jornada. En el conjunto de ambos días, 264 de los 346 caballos presentados (114 machos y 150 hembras) fueron vendidos, generando unas ventas totales de 793,8 millones de yenes. El porcentaje de ventas fue del 76,3 %.",
    "caballos": [
     "Pignus Amoris 2025"
    ]
