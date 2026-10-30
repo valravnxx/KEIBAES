@@ -1,6 +1,41 @@
 {
  "noticias": [
   {
+   "id": "n4305",
+   "titular_en": "Lovcen's fighting spirit takes center stage in Kikuka Sho triple crown bid 19 Oct 2026 17:52",
+   "fecha_texto": "2026-10-19 17:52",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4305",
+   "medio": "netkeiba",
+   "categoria": "jra",
+   "titular": "El espíritu de lucha de Lovcen cobra protagonismo en su intento de triple corona en el Kikuka Sho",
+   "resumen": "Lovcen busca convertirse en el noveno caballo en lograr la Triple Corona en el Kikuka Sho, la última carrera de la serie para potros de tres años. El competitivo cartel en el hipódromo de Kyoto incluye a aspirantes como Audacia y Danon History.",
+   "texto": "El temple que Lovcen ha demostrado en finales apretados será uno de sus mayores activos en su intento de completar la Triple -Crown, el circuito de tres clásicas reservadas a potros de tres años-.\n\nNinguna de esas victorias de G1 llegó por un margen amplio, pero eso solo subraya su determinación en los metros finales. Su victoria, en la que mantuvo una larga arrancada hasta la línea de meta, también sugiere que el aumento a los 3000 metros no debería suponer un problema para él.\n\nEl entrenador Haruki Sugiyama y el jockey Kohei Matsuyama ya han completado una Fillies' Triple -la versión femenina del circuito clásico-.\n\naspirante en el St. Lite Kinen -una de las pruebas preparatorias oficiales del circuito clásico-. Si bien el desarrollo final benefició a los caballos que corrieron en puestos delanteros y ahorraron terreno en la curva final, Audacia abrió el abanico al máximo y cerró con el registro parcial final más rápido compartido. Su actuación sugirió que ha progresado considerablemente desde la primavera.\n\nen el Oaks -el Yushun Himba, equivalente al Oaks británico-, y Audacia parece bien equipado para una exigente prueba de fondo. Akihide Tsumura será el jockey.\n\nEntre otros aspirantes destacados figuran Danon History, cuya fortaleza reside en mantener la velocidad en distancias prolongadas; Going to Sky, que posee un remate incisivo; y Congestus, cuya resistencia debería ser una ventaja sobre los 3000 metros.\n\n, entra también en escena, mientras que Majorelle Bleu, dotado de gran fondo, es otro de los que podría beneficiarse de las exigencias del último Clásico -las tres carreras principales que definen la generación de tres años-.\n\nCon la última corona de la temporada de tres años en juego, un nutrido lote se dará cita en Kyoto. Pero todas las miradas estarán puestas en Lovcen en su intento de convertirse en el noveno Triple -Crown de la historia-.",
+   "caballos": [
+    "Lovcen",
+    "Audacia",
+    "Danon History",
+    "Going to Sky",
+    "Congestus",
+    "Majorelle Bleu"
+   ]
+  },
+  {
+   "id": "n4304",
+   "titular_en": "Lovcen's triple crown bid headlines weekend graded action 2 hrs",
+   "fecha_texto": "2026-10-19 08:43",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4304",
+   "medio": "netkeiba",
+   "categoria": "jra",
+   "titular": "El asalto de Lovcen a la triple corona encabeza la acción de carreras graduales del fin de semana",
+   "resumen": "Las jornadas hípicas del fin de semana en Tokio, Kioto y Niigata cuentan con dos carreras de grado en el programa. El potro Lovcen busca la gloria en el Kikuka Sho, el St. Leger japonés, para completar la triple corona de potros -una serie de tres pruebas clásicas reservadas a machos de tres años-.",
+   "texto": "",
+   "caballos": [
+    "Lovcen",
+    "Danon History",
+    "Going to Sky"
+   ]
+  },
+  {
    "id": "n4303",
    "titular_en": "Monroe Walk makes it five straight in G1 Shuka Sho, \"Please keep supporting her future success\" 21 hrs",
    "fecha_texto": "2026-10-18 13:43",
