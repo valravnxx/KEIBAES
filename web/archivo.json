@@ -1,6 +1,93 @@
 {
  "noticias": [
   {
+   "id": "n4370",
+   "titular_en": "Aureate claims first graded stakes victory in Jpn3 JBC Nisai Yushun in Mombetsu 04 Nov 2026 20:20",
+   "fecha_texto": "2026-11-04 20:20",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4370",
+   "medio": "netkeiba",
+   "categoria": "nar",
+   "titular": "Aureate consigue su primera victoria en carreras de grupo en el Jpn3 JBC Nisai Yushun en Mombetsu",
+   "resumen": "Aureate se impuso por un corto margen en el Jpn3 JBC Nisai Yushun disputado en Mombetsu. El potro de dos años, dirigido por Seinosuke Yoshimura, suma así su primer triunfo en el circuito de carreras con rango de grupo -las pruebas de la máxima categoría deportiva en Japón-.",
+   "texto": "",
+   "caballos": [
+    "Aureate",
+    "Maruka"
+   ]
+  },
+  {
+   "id": "n4369",
+   "titular_en": "Outrange dominates JBC Classic by four lengths to claim long-awaited first Jpn1 victory 04 Nov 2026 20:13",
+   "fecha_texto": "2026-11-04 20:13",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4369",
+   "medio": "netkeiba",
+   "categoria": "nar",
+   "titular": "Outrange domina el JBC Classic por cuatro cuerpos y logra su esperada primera victoria de Grado 1 (Jpn1)",
+   "resumen": "Outrange se impuso con claridad como favorito en el JBC Classic disputado en el hipódromo de Kanazawa. Esta victoria supone su primer título de máxima categoría (Jpn1) tras varios puestos de honor previos.",
+   "texto": "",
+   "caballos": [
+    "Outrange"
+   ]
+  },
+  {
+   "id": "n4368",
+   "titular_en": "Meisho Hachiro completes back-to-back Jpn1 wins in JBC Sprint at Kanazawa 04 Nov 2026 20:01 NAR",
+   "fecha_texto": "2026-11-04 20:01",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4368",
+   "medio": "netkeiba",
+   "categoria": "nar",
+   "titular": "Meisho Hachiro encadena su segunda victoria de Grado 1 (Jpn1) en el JBC Sprint de Kanazawa",
+   "resumen": "Meisho Hachiro se impuso en el JBC Sprint de Kanazawa con la monta del jinete local Hiroto Yoshihara. El caballo firmó así su segundo triunfo consecutivo en el máximo nivel nacional -la categoría Jpn1 de carreras de la NAR- tras su victoria en el Nambu Hai.",
+   "texto": "",
+   "caballos": [
+    "Meisho Hachiro"
+   ]
+  },
+  {
+   "id": "n4367",
+   "titular_en": "Anzu Ame claims first Jpn1 victory in JBC Ladies' Classic at Kanazawa 04 Nov 2026 19:53 NAR",
+   "fecha_texto": "2026-11-04 19:53",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4367",
+   "medio": "netkeiba",
+   "categoria": "nar",
+   "titular": "Anzu Ame logra su primera victoria Jpn1 en el JBC Ladies' Classic en Kanazawa",
+   "resumen": "Anzu Ame se impuso en el JBC Ladies' Classic en el hipódromo de Kanazawa bajo la monta de Yuga Kawada. Esta victoria sobre 1.500 metros representa el primer título de máxima categoría Jpn1 -grado máximo en el circuito NAR de la Asociación Nacional de Carreras- para la yegua.",
+   "texto": "Anzu Ame, la cuarta favorita, capturó su primer título Jpn1 en la séptima carrera, el JBC Ladies' Classic, en el hipódromo NAR de Kanazawa.\n\nFue una actuación autoritaria que no dejó dudas sobre su capacidad. Partiendo bien desde los cajones, Anzu Ame, montada por Yuga Kawada, se situó cómodamente en cuarta posición sin ser presionada al frente. El jockey y la yegua permanecieron en perfecta sincronía durante todo el recorrido, y ella comenzó a mover ficha justo antes de la tercera curva. Ligeramente requetida hacia delante, avanzó por el interior y tomó el liderato pronto. Memoria Cafe, que había ganado sus tres salidas anteriores, se acercó en la recta, pero no pudo recortar terreno con facilidad. Anzu Ame firmó una victoria concluyente ante una rival fuerte. El triunfo sucedió a su éxito en el Cluster Cup en agosto, otorgándole otra victoria en carreras de grupo y, lo que es más importante, su primer título de la máxima categoría -grado máximo en el circuito NAR-. Ha ganado sus tres carreras bajo la monta de Kawada.\n\nAnzu Ame centró su atención en las carreras de arena sobre 1.200 metros a finales del año pasado. Dado que esta carrera le exigía aumentar la distancia en 300 metros, Kawada admitió que tenía ciertas reservas. «Es una yegua cuya resistencia en esta distancia era una incógnita, así que esperaba que pudiera completarla. Esta victoria le abre un abanico de posibilidades», declaró, expresando su agradecimiento por el esfuerzo de la yegua para cumplir las expectativas.\n\nEl preparador Daisuke Takayanagi ya había saboreado un éxito importante el 1 de noviembre, cuando T O Elvis se impuso en el G1 Breeders' Cup Sprint en Keeneland, en Estados Unidos. A aquello le sumó otra victoria de calibre aquí en Kanazawa con Anzu Ame. «Tras su anterior carrera, vigilé su estado y consideré que esta era la prueba adecuada a la que apuntar si íbamos a dejar pasar un tiempo entre salidas. Nunca nos ha defraudado de verdad, y mientras se encuentre en buena forma, corre con regularidad. Estoy encantado de haber ganado las Breeders' Cup tanto japonesa como estadounidense», comentó Takayanagi.",
+   "caballos": [
+    "Anzu Ame",
+    "Memoria Cafe"
+   ]
+  },
+  {
+   "id": "n4366",
+   "titular_en": "London Guards looks to extend Maekawa stable's dominance in two-year-old division in G2 Keio Hai Nisai Stakes 04 Nov 2026 19:45 JRA",
+   "fecha_texto": "2026-11-04 19:45",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4366",
+   "medio": "netkeiba",
+   "categoria": "jra",
+   "titular": "London Guards busca ampliar el dominio de la cuadra de Maekawa en la división de dos años en el G2 Keio Hai Nisai Stakes",
+   "resumen": "La entrenadora Kyoko Maekawa encabeza con claridad la clasificación de entrenadores de dos años en la JRA. Su ejemplar London Guards competirá este fin de semana en el G2 Keio Hai Nisai Stakes en el hipódromo de Tokyo.",
+   "texto": "",
+   "caballos": [
+    "London Guards",
+    "G T Maika"
+   ]
+  },
+  {
+   "id": "n4365",
+   "titular_en": "Joy Boy set for graded stakes debut in G2 Copa Republica Argentina after breakthrough win 04 Nov 2026 19:34",
+   "fecha_texto": "2026-11-04 19:34",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4365",
+   "medio": "netkeiba",
+   "categoria": "jra",
+   "titular": "Joy Boy debutará en carreras de Grupo en el G2 Copa Republica Argentina tras su última victoria",
+   "resumen": "El progresivo caballo de cuatro años Joy Boy afrontará su primer test en el circuito de stakes -carreras principales del calendario selectivo- en el G2 Copa Republica Argentina. El preparador Hirofumi Shii ha confirmado su evolución física tras una reciente victoria que avala este salto de categoría.",
+   "texto": "",
+   "caballos": [
+    "Joy Boy"
+   ]
+  },
+  {
    "id": "n4362",
    "titular_en": "Douradores set for comeback in G2 Copa Republica Argentina after surgery and gelding 3 hrs",
    "fecha_texto": "2026-11-03 09:45",
@@ -17,14 +104,14 @@
   },
   {
    "id": "n4360",
-   "titular_en": "Forever Young finishes fifth in Breeders' Cup Classic as jockey Sakai says, \"He had nothing left in the tank\" 02 Nov 2026 19:48",
+   "titular_en": "Forever Young finishes fifth in Breeders' Cup Classic as jockey Sakai says, \"He had nothing left in the tank\" 02 Nov 2026 19:48 International",
    "fecha_texto": "2026-11-02 19:48",
    "url": "https://en.netkeiba.com/news/news_detail.html?id=4360",
    "medio": "netkeiba",
    "categoria": "internacional",
-   "titular": "Forever Young termina quinto en la Breeders' Cup Classic y su jockey Sakai afirma: \"No le quedaban fuerzas\"",
-   "resumen": "Forever Young no pudo revalidar su triunfo y concluyó en quinta posición en la Breeders' Cup Classic. Su jinete, Ryusei Sakai, señaló tras la prueba que el caballo se quedó sin energía en la recta final.",
-   "texto": "Forever Young termina quinto en la Breeders' Cup Classic as jockey Sakai says, \"He had nothing left in the tank\"\n\nEl hito histórico de convertirse en el segundo caballo en ganar ediciones consecutivas del G1 Breeders' Cup Classic -la máxima categoría de la escala internacional de carreras de grupo- quedó fuera de su alcance.\n\nEl ejemplar finalizó en quinta posición tras no lograr destacar desde la segunda plaza en la recta de llegada. El ganador fue el rival correspondiente.\n\nQuizá esto sirvió como recordatorio de lo difícil que resulta vencer en la Breeders' Cup Classic de manera consecutiva. En los 42 años de historia de la carrera, solo se ha logrado en contadas ocasiones.\n\nEl equino había llegado con el objetivo de convertirse en el segundo caballo en lograr el doblete histórico, pero sufrió una sorprendente derrota al terminar quinto.\n\nEl animal se situó justo detrás del líder y aguardó su oportunidad. El jinete Ryusei Sakai declaró posteriormente: \"No esperaba poder tomar la segunda posición con tanta fluidez, así que pensé: 'Esto va bien'. Se sintió exactamente igual que el año pasado y creí que todo iba realmente bien. Tenía la sensación de que podíamos ganar de nuevo hoy\". Era el mismo estilo de carrera formidable que le había permitido superar a los mejores del mundo en numerosas ocasiones.\n\nSin embargo, el escenario de victoria que había parecido al alcance de la mano se desmoronó repentinamente en la recta final.\n\nEl contendiente estadounidense avanzó por el exterior y continuó alejándose. \"No le quedaban fuerzas\", afirmó Sakai. Incapaz de mostrar su determinación característica, el caballo terminó fuera de los tres primeros puestos por primera vez en su carrera, registrando así su peor resultado histórico.\n\n«Pensé que el ritmo era tal que los caballos que venían por detrás no podrían alcanzarle», declaró el entrenador Yoshito Yahagi con visible desánimo. Al ser preguntado por los motivos de la derrota, respondió: «No lo sé. Siento el resultado, pero ante todo me alivia que el caballo haya regresado sano y salvo. Ocurra lo que ocurra a continuación, quiero examinarlo con atención y llegar al fondo de qué salió mal. En cualquier caso, no deja de ser una decepción».\n\nno pudo reproducir las actuaciones de clase mundial que habían cautivado a los aficionados a las carreras de todo el mundo, el valiente intento de la cuadra por defender el título y los numerosos logros que ya ha grabado en la historia hípica internacional no se verán mermados en absoluto.",
+   "titular": "Forever Young termina quinto en la Breeders' Cup Classic y el jockey Sakai declara: \"No le quedaban fuerzas\"",
+   "resumen": "Forever Young no pudo lograr su segunda victoria consecutiva en la Breeders' Cup Classic y terminó en quinta posición. Su jockey, Ryusei Sakai, reconoció tras la carrera que el caballo se quedó sin fuerzas en la recta final.",
+   "texto": "Forever Young termina quinto en la Breeders' Cup Classic y el jockey Sakai declara: \"No le quedaban fuerzas\"\n\nLa hazaña histórica de convertirse en el segundo caballo en ganar ediciones consecutivas de la G1 Breeders' Cup Classic -la prestigiosa prueba estadounidense de máxima categoría- quedó fuera de su alcance.\n\nEl ejemplar finalizó quinto tras no poder mantener su posición desde el segundo puesto en la recta final.\n\nQuizás esto sirvió como recordatorio de lo difícil que es ganar la Breeders' Cup Classic en años consecutivos. A lo largo de los 42 años de historia de la carrera, solo se ha conseguido en raras ocasiones.\n\nEl favorito se había situado justo detrás del líder y esperaba su oportunidad. El jockey Ryusei Sakai reflexionó después: \"No esperaba poder tomar la segunda posición con tanta facilidad, así que pensé: 'Esto va bien'. Se sintió exactamente igual que el año pasado, y pensé que todo iba realmente bien. Tenía la sensación de que podíamos ganar de nuevo hoy\". Era el mismo estilo de carrera formidable que le había permitido superar a los mejores del mundo en numerosas ocasiones.\n\nSin embargo, el escenario de victoria que parecía al alcance de la mano se desmoronó repentinamente en la recta final.\n\nEl ganador avanzó por el exterior y continuó distanciándose. \"No le quedaban fuerzas\", declaró Sakai. Incapaz de mostrar su determinación característica, el caballo terminó fuera de los tres primeros puestos por primera vez en su carrera, registrando su peor resultado histórico.\n\n«Pensé que el ritmo era tal que los caballos que venían por detrás no podrían alcanzarle», declaró el entrenador Yoshito Yahagi con visible desánimo. Al ser preguntado por el motivo de la derrota, respondió: «No lo sé. Siento el resultado, pero, ante todo, me alivia que el caballo haya regresado sano y salvo».\n\nIndependientemente de lo que ocurra a partir de ahora, quiero examinarlo con atención y llegar al fondo de lo que ha fallado. En cualquier caso, no deja de ser decepcionante».\n\nno fue capaz de reproducir las actuaciones de nivel mundial que habían cautivado a los aficionados a las carreras de todo el planeta, el valiente intento de la cuadra por defender el título y los numerosos logros que ya ha grabado en la historia de la hípica internacional jamás se verán disminuidos.",
    "caballos": [
     "Forever Young"
    ]
