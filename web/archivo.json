@@ -1,15 +1,47 @@
 {
  "noticias": [
   {
+   "id": "n4380",
+   "titular_en": "\"His heart is huge,\" Christophe Lemaire eyes G1 targets after Blue Jay's third straight win in G2 Keio Hai Nisai Stakes 07 Nov 2026 20:38",
+   "fecha_texto": "2026-11-07 20:38",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4380",
+   "medio": "netkeiba",
+   "categoria": "jras",
+   "titular": "\"Tiene un corazón enorme\", Christophe Lemaire apunta a objetivos de G1 tras la tercera victoria consecutiva de Blue Jay en el G2 Keio Hai Nisai Stakes",
+   "resumen": "El potro Blue Jay se mantuvo invicto al imponerse por narices en el G2 Keio Hai Nisai Stakes bajo la monta de Christophe Lemaire. El jinete francés destacó la valentía del animal y ya contempla metas en el máximo circuito de G1.",
+   "texto": "Blue Jay (potro de dos años), el favorito montado por Christophe Lemaire, se empleó a fondo tras tomar la cabeza en la cuarta curva para contener una fuerte carga final por un corto margen y ganar el G2 Keio Hai Nisai Stakes -una prueba de grupo para juveniles-. La victoria amplió su racha invicta a tres triunfos en otras tantas actuaciones y le valió su primer título en carreras de grupo. Asimismo, supuso la quinta victoria de la jornada para Lemaire. El segundo favorito, Fraochan, terminó segundo, mientras que el séptimo en discordia, Groovens, fue tercero. El tiempo ganador fue de 1:21.3.\n\n\"La situación se puso apretada, pero mi caballo lo hizo muy bien\", declaró Lemaire, alabando el esfuerzo de su compañero. \"Mostró mucha velocidad desde el principio. Pensé que el ritmo podría ser más rápido hoy, pero pude ponerme en cabeza con rapidez y fue fácil de controlar. Después de eso, siguió avanzando con fuerza durante una recta muy larga\", recordó con una sonrisa.\n\n\"Ahora lleva tres de tres. Esto era un G2, así que creo que puede dar el salto a un G1 de dos años -la máxima categoría de la escala gradual-. Tiene velocidad y su corazón es enorme, por lo que puede seguir dando lo mejor de sí mismo. Pienso que puede alcanzar la máxima categoría\", concluyó Lemaire, quien ya vislumbra grandes objetivos en el horizonte.",
+   "caballos": [
+    "Blue Jay",
+    "Fraochan",
+    "Groovens"
+   ]
+  },
+  {
+   "id": "n4379",
+   "titular_en": "Blue Jay with Christophe Lemaire holds off Fraochan by a nose to stay undefeated and win G2 Keio Hai Nisai Stakes 07 Nov 2026 20:33",
+   "fecha_texto": "2026-11-07 20:33",
+   "url": "https://en.netkeiba.com/news/news_detail.html?id=4379",
+   "medio": "netkeiba",
+   "categoria": "jra",
+   "titular": "Blue Jay y Christophe Lemaire resisten por una nariz ante Fraochan para mantener la imbatibilidad y ganar el G2 Keio Hai Nisai Stakes",
+   "resumen": "Blue Jay se impuso por un margen mínimo en el G2 Keio Hai Nisai Stakes celebrado en el hipódromo de Tokyo. Con esta victoria bajo la monta de Christophe Lemaire, el potro mantiene su condición de invicto en tres carreras.",
+   "texto": "Blue Jay with Christophe Lemaire holds off Fraochan by a nose to stay undefeated and win G2 Keio Hai Nisai Stakes\n\nwas held at Tokyo Racecourse on the 7th. Blue Jay (Colt, 2yo), the favourite ridden by Christophe Lemaire, took the lead after racing a close second and held on to score by a nose over second favourite Fraochan (Colt, 2yo), who drew alongside him in the final strides. The winning time was 1:21.3.\n\nGroovens (Colt, 2yo), the 7th favourite, finished another half-length back in third.\n\n. He has now won all three of his starts, following victories in the Newcomers race and Clover Sho, to claim his first graded stakes title -una victoria en carreras de grupo, el primer nivel de la élite-.",
+   "caballos": [
+    "Blue Jay",
+    "Fraochan",
+    "Groovens"
+   ]
+  },
+  {
    "id": "n4375",
-   "titular_en": "JRA announces Japanese nominations for Hong Kong International Races 06 Nov 2026 23:33",
+   "titular_en": "JRA announces Japanese nominations for Hong Kong International Races 06 Nov 2026 23:33 International",
    "fecha_texto": "2026-11-06 23:33",
    "url": "https://en.netkeiba.com/news/news_detail.html?id=4375",
    "medio": "netkeiba",
    "categoria": "internacional",
    "titular": "La JRA anuncia las nominaciones japonesas para las Hong Kong International Races",
-   "resumen": "La Japan Racing Association ha hecho pública la lista de caballos entrenados bajo su tutela para las Hong Kong International Races. Las pruebas se disputarán en el hipódromo de Sha Tin el próximo 13 de diciembre.",
-   "texto": "The Japan Racing Association announced on Nov. 5 the list of JRA-trained horses provisionally nominated for the Hong Kong International Races, to be held at Sha Tin Racecourse in Hong Kong on Dec. 13.\n\nHong Kong Cup (Turf, 2,000m): 23 horses, including Masquerade Ball (Colt, 4yo) and Nebra Disk (Colt, 4yo)",
+   "resumen": "La Japan Racing Association ha publicado la lista provisional de caballos entrenados bajo su tutela para las Hong Kong International Races. Las pruebas se disputarán en el hipódromo de Sha Tin el próximo 13 de diciembre.",
+   "texto": "La Japan Racing Association anunció el 5 de noviembre la lista de caballos entrenados por la JRA nominados provisionalmente para las Hong Kong International Races, que se celebrarán en el Sha Tin Racecourse en Hong Kong el 13 de diciembre.\n\nHong Kong Cup (Turf, 2.000m): 23 caballos, incluidos Masquerade Ball (potro de 4 años) y Nebra Disk (potro de 4 años)",
    "caballos": [
     "Masquerade Ball",
     "Nebra Disk"
